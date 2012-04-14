@@ -3,3 +3,5 @@ Check encoding:
 import chardet
 enc = chardet.detect(item)
 print item[1], enc['encoding']
+
++1 usefull thing
