@@ -30,3 +30,9 @@ import chardet
 enc = chardet.detect(item)
 print item[1], enc['encoding']
 
+<<<<<<< HEAD
+=======
+a teper' proverka tret'ego commita
+
+4to eto?!
+>>>>>>> 66df4e5f1829396e57cabf007281bab6090528f7
