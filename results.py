@@ -7,7 +7,7 @@ import wx.lib.mixins.listctrl as listmix #@UnusedImport
 import adv
 import oracle
 import logging
-import report
+import report_html
 
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
@@ -106,7 +106,7 @@ class main_stat(listmix.ColumnSorterMixin):
         mod.TextAdv()
     
     def OnReport(self, event):
-        report.CreateRep(self.data)
+        report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat)
         
     def OnColClick(self, event):
         print ("OnColClick: %d\n" % event.GetColumn())
@@ -238,17 +238,14 @@ class history_stat():
     
     def OnExtStat(self, event):
         try:
-            cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
-            cols.insert(0, u'Название параметра')
+            self.ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
+            self.ext_cols.insert(0, u'Название параметра')
             self.ext_stat = self.stat.take_ext_stat(self.date)
-            for param in self.ext_stat:
-                if param is None:
-                    index = self.ext_stat.index(param)
-                    self.ext_stat.pop(index)
-                    del self.ext_stat[index]
-            frame = Popup(cols, self.ext_stat)
+            self.ext_stat = [ i for i in self.ext_stat if i is not None] 
+            frame = Popup(self.ext_cols, self.ext_stat)
             frame.Show()
         except Exception, info:
+            print info
             if 'object is not subscriptable' in str(info):
                 wx.MessageBox(u'Для данной статистике нет расширенной статистики')
 
@@ -257,7 +254,10 @@ class history_stat():
         mod.TextAdv()
     
     def OnReport(self, event):
-        report.CreateRep(self.data)
+        ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
+        ext_cols.insert(0, u'Название параметра')
+        ext_stat = self.stat.take_ext_stat(self.date)
+        report_html.make_report(self.columns, self.data, ext_cols, ext_stat)
 
     def OnDelStat(self, event):
         self.stat.del_stat(self.date)
@@ -292,6 +292,7 @@ class history_stat():
         
     def destr(self):
         self.list.Destroy()
+
 class Popup ( wx.Frame ):
     
     def __init__( self, columns, rows ):
