@@ -2049,3 +2049,539 @@
 2012-04-16 21:30:41,453 INFO ######################################################################################
 2012-04-16 21:30:41,453 INFO start session
 2012-04-16 21:30:43,078 INFO end session
+2012-04-17 11:07:12,895 INFO ######################################################################################
+2012-04-17 11:07:12,897 INFO start session
+2012-04-17 11:07:14,171 INFO connect to db
+2012-04-17 11:07:14,177 INFO connecting to local database successfully
+2012-04-17 11:07:14,256 INFO list of connections loaded
+2012-04-17 11:07:14,279 INFO list of connections loaded
+2012-04-17 11:07:14,292 INFO listing of conneciton succesfully loading
+2012-04-17 11:07:15,966 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 11:07:15,969 INFO list of connections loaded
+2012-04-17 11:07:15,973 INFO listing of conneciton succesfully loading
+2012-04-17 11:07:17,525 INFO choose table
+2012-04-17 11:07:17,631 INFO list of schemas loaded successfully
+2012-04-17 11:07:19,477 INFO list of tables loaded successfully
+2012-04-17 11:07:19,477 INFO schema ARTUR choosed
+2012-04-17 11:07:20,019 INFO table TEST choosed
+2012-04-17 11:07:20,914 INFO choose table
+2012-04-17 11:07:20,967 INFO list of schemas loaded successfully
+2012-04-17 11:07:22,753 INFO open local history
+2012-04-17 11:50:25,517 INFO end session
+2012-04-17 12:08:05,121 INFO ######################################################################################
+2012-04-17 12:08:05,121 INFO start session
+2012-04-17 12:08:06,262 INFO connect to db
+2012-04-17 12:08:06,269 INFO connecting to local database successfully
+2012-04-17 12:08:06,319 INFO list of connections loaded
+2012-04-17 12:08:06,339 INFO list of connections loaded
+2012-04-17 12:08:06,349 INFO listing of conneciton succesfully loading
+2012-04-17 12:08:07,493 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 12:08:07,496 INFO list of connections loaded
+2012-04-17 12:08:07,500 INFO listing of conneciton succesfully loading
+2012-04-17 12:08:07,930 INFO choose table
+2012-04-17 12:08:08,003 INFO list of schemas loaded successfully
+2012-04-17 12:08:09,335 INFO list of tables loaded successfully
+2012-04-17 12:08:09,335 INFO schema ARTUR choosed
+2012-04-17 12:08:09,884 INFO table TEST choosed
+2012-04-17 12:08:10,716 INFO open local history
+2012-04-17 12:45:51,641 INFO end session
+2012-04-17 12:56:20,869 INFO ######################################################################################
+2012-04-17 12:56:20,871 INFO start session
+2012-04-17 12:56:22,000 INFO connect to db
+2012-04-17 12:56:22,007 INFO connecting to local database successfully
+2012-04-17 12:56:22,030 INFO list of connections loaded
+2012-04-17 12:56:22,052 INFO list of connections loaded
+2012-04-17 12:56:22,061 INFO listing of conneciton succesfully loading
+2012-04-17 12:56:22,938 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 12:56:22,940 INFO list of connections loaded
+2012-04-17 12:56:22,944 INFO listing of conneciton succesfully loading
+2012-04-17 12:56:23,286 INFO choose table
+2012-04-17 12:56:23,342 INFO list of schemas loaded successfully
+2012-04-17 12:56:24,788 INFO list of tables loaded successfully
+2012-04-17 12:56:24,788 INFO schema ARTUR choosed
+2012-04-17 12:56:25,319 INFO table TEST choosed
+2012-04-17 12:56:26,263 INFO open local history
+2012-04-17 12:57:35,339 INFO end session
+2012-04-17 12:57:36,816 INFO ######################################################################################
+2012-04-17 12:57:36,816 INFO start session
+2012-04-17 12:57:38,078 INFO connect to db
+2012-04-17 12:57:38,082 INFO connecting to local database successfully
+2012-04-17 12:57:38,107 INFO list of connections loaded
+2012-04-17 12:57:38,127 INFO list of connections loaded
+2012-04-17 12:57:38,134 INFO listing of conneciton succesfully loading
+2012-04-17 12:57:39,010 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 12:57:39,013 INFO list of connections loaded
+2012-04-17 12:57:39,017 INFO listing of conneciton succesfully loading
+2012-04-17 12:57:39,388 INFO choose table
+2012-04-17 12:57:39,446 INFO list of schemas loaded successfully
+2012-04-17 12:57:40,986 INFO list of tables loaded successfully
+2012-04-17 12:57:40,986 INFO schema ARTUR choosed
+2012-04-17 12:57:41,605 INFO table TEST choosed
+2012-04-17 12:57:42,397 INFO open local history
+2012-04-17 12:59:04,769 INFO end session
+2012-04-17 13:01:03,167 INFO ######################################################################################
+2012-04-17 13:01:03,167 INFO start session
+2012-04-17 13:01:04,094 INFO connect to db
+2012-04-17 13:01:04,098 INFO connecting to local database successfully
+2012-04-17 13:01:04,124 INFO list of connections loaded
+2012-04-17 13:01:04,145 INFO list of connections loaded
+2012-04-17 13:01:04,153 INFO listing of conneciton succesfully loading
+2012-04-17 13:01:05,009 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:01:05,012 INFO list of connections loaded
+2012-04-17 13:01:05,017 INFO listing of conneciton succesfully loading
+2012-04-17 13:01:05,562 INFO choose table
+2012-04-17 13:01:05,618 INFO list of schemas loaded successfully
+2012-04-17 13:01:07,130 INFO list of tables loaded successfully
+2012-04-17 13:01:07,130 INFO schema ARTUR choosed
+2012-04-17 13:01:07,667 INFO table TEST choosed
+2012-04-17 13:01:08,492 INFO open local history
+2012-04-17 13:01:31,805 INFO end session
+2012-04-17 13:10:56,815 INFO ######################################################################################
+2012-04-17 13:10:56,815 INFO start session
+2012-04-17 13:10:58,401 INFO connect to db
+2012-04-17 13:10:58,407 INFO connecting to local database successfully
+2012-04-17 13:10:58,434 INFO list of connections loaded
+2012-04-17 13:10:58,457 INFO list of connections loaded
+2012-04-17 13:10:58,470 INFO listing of conneciton succesfully loading
+2012-04-17 13:10:59,161 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:10:59,164 INFO list of connections loaded
+2012-04-17 13:10:59,170 INFO listing of conneciton succesfully loading
+2012-04-17 13:10:59,878 INFO choose table
+2012-04-17 13:10:59,936 INFO list of schemas loaded successfully
+2012-04-17 13:11:02,221 INFO list of tables loaded successfully
+2012-04-17 13:11:02,221 INFO schema ARTUR choosed
+2012-04-17 13:11:03,767 INFO table TEST choosed
+2012-04-17 13:11:04,822 INFO open local history
+2012-04-17 13:11:16,615 INFO end session
+2012-04-17 13:11:18,345 INFO ######################################################################################
+2012-04-17 13:11:18,345 INFO start session
+2012-04-17 13:11:19,403 INFO connect to db
+2012-04-17 13:11:19,407 INFO connecting to local database successfully
+2012-04-17 13:11:19,434 INFO list of connections loaded
+2012-04-17 13:11:19,460 INFO list of connections loaded
+2012-04-17 13:11:19,469 INFO listing of conneciton succesfully loading
+2012-04-17 13:11:20,266 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:11:20,269 INFO list of connections loaded
+2012-04-17 13:11:20,273 INFO listing of conneciton succesfully loading
+2012-04-17 13:11:20,615 INFO choose table
+2012-04-17 13:11:20,670 INFO list of schemas loaded successfully
+2012-04-17 13:11:21,996 INFO list of tables loaded successfully
+2012-04-17 13:11:21,996 INFO schema ARTUR choosed
+2012-04-17 13:11:22,536 INFO table TEST choosed
+2012-04-17 13:11:23,303 INFO open local history
+2012-04-17 13:12:32,588 INFO end session
+2012-04-17 13:12:34,421 INFO ######################################################################################
+2012-04-17 13:12:34,421 INFO start session
+2012-04-17 13:12:35,569 INFO connect to db
+2012-04-17 13:12:35,572 INFO connecting to local database successfully
+2012-04-17 13:12:35,586 INFO list of connections loaded
+2012-04-17 13:12:35,608 INFO list of connections loaded
+2012-04-17 13:12:35,614 INFO listing of conneciton succesfully loading
+2012-04-17 13:12:36,336 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:12:36,339 INFO list of connections loaded
+2012-04-17 13:12:36,344 INFO listing of conneciton succesfully loading
+2012-04-17 13:12:36,638 INFO choose table
+2012-04-17 13:12:36,691 INFO list of schemas loaded successfully
+2012-04-17 13:12:38,147 INFO list of tables loaded successfully
+2012-04-17 13:12:38,147 INFO schema ARTUR choosed
+2012-04-17 13:12:38,743 INFO table TEST choosed
+2012-04-17 13:12:39,549 INFO open local history
+2012-04-17 13:12:51,086 INFO end session
+2012-04-17 13:12:52,542 INFO ######################################################################################
+2012-04-17 13:12:52,543 INFO start session
+2012-04-17 13:12:53,490 INFO connect to db
+2012-04-17 13:12:53,494 INFO connecting to local database successfully
+2012-04-17 13:12:53,523 INFO list of connections loaded
+2012-04-17 13:12:53,549 INFO list of connections loaded
+2012-04-17 13:12:53,556 INFO listing of conneciton succesfully loading
+2012-04-17 13:12:54,533 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:12:54,536 INFO list of connections loaded
+2012-04-17 13:12:54,539 INFO listing of conneciton succesfully loading
+2012-04-17 13:12:54,750 INFO choose table
+2012-04-17 13:12:54,806 INFO list of schemas loaded successfully
+2012-04-17 13:12:56,753 INFO list of tables loaded successfully
+2012-04-17 13:12:56,753 INFO schema ARTUR choosed
+2012-04-17 13:12:57,279 INFO table TEST choosed
+2012-04-17 13:12:58,015 INFO open local history
+2012-04-17 13:35:04,743 INFO end session
+2012-04-17 13:40:05,746 INFO ######################################################################################
+2012-04-17 13:40:05,746 INFO start session
+2012-04-17 13:40:07,546 INFO connect to db
+2012-04-17 13:40:07,549 INFO connecting to local database successfully
+2012-04-17 13:40:07,575 INFO list of connections loaded
+2012-04-17 13:40:07,596 INFO list of connections loaded
+2012-04-17 13:40:07,605 INFO listing of conneciton succesfully loading
+2012-04-17 13:40:08,457 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:40:08,460 INFO list of connections loaded
+2012-04-17 13:40:08,463 INFO listing of conneciton succesfully loading
+2012-04-17 13:40:09,197 INFO choose table
+2012-04-17 13:40:09,256 INFO list of schemas loaded successfully
+2012-04-17 13:40:10,542 INFO list of tables loaded successfully
+2012-04-17 13:40:10,543 INFO schema ARTUR choosed
+2012-04-17 13:40:11,102 INFO table TEST choosed
+2012-04-17 13:40:11,967 INFO open local history
+2012-04-17 13:40:22,927 INFO end session
+2012-04-17 13:40:33,575 INFO ######################################################################################
+2012-04-17 13:40:33,575 INFO start session
+2012-04-17 13:40:34,532 INFO connect to db
+2012-04-17 13:40:34,536 INFO connecting to local database successfully
+2012-04-17 13:40:34,565 INFO list of connections loaded
+2012-04-17 13:40:34,591 INFO list of connections loaded
+2012-04-17 13:40:34,598 INFO listing of conneciton succesfully loading
+2012-04-17 13:40:35,428 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:40:35,431 INFO list of connections loaded
+2012-04-17 13:40:35,437 INFO listing of conneciton succesfully loading
+2012-04-17 13:40:35,792 INFO choose table
+2012-04-17 13:40:35,851 INFO list of schemas loaded successfully
+2012-04-17 13:40:37,440 INFO list of tables loaded successfully
+2012-04-17 13:40:37,440 INFO schema ARTUR choosed
+2012-04-17 13:40:37,969 INFO table TEST choosed
+2012-04-17 13:40:38,624 INFO open local history
+2012-04-17 13:41:56,325 INFO end session
+2012-04-17 13:44:02,134 INFO ######################################################################################
+2012-04-17 13:44:02,134 INFO start session
+2012-04-17 13:44:04,009 INFO connect to db
+2012-04-17 13:44:04,015 INFO connecting to local database successfully
+2012-04-17 13:44:04,040 INFO list of connections loaded
+2012-04-17 13:44:04,065 INFO list of connections loaded
+2012-04-17 13:44:04,072 INFO listing of conneciton succesfully loading
+2012-04-17 13:44:04,796 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 13:44:04,798 INFO list of connections loaded
+2012-04-17 13:44:04,802 INFO listing of conneciton succesfully loading
+2012-04-17 13:44:05,104 INFO choose table
+2012-04-17 13:44:05,158 INFO list of schemas loaded successfully
+2012-04-17 13:44:06,770 INFO list of tables loaded successfully
+2012-04-17 13:44:06,770 INFO schema ARTUR choosed
+2012-04-17 13:44:07,512 INFO table TEST choosed
+2012-04-17 13:44:08,864 INFO open local history
+2012-04-17 13:47:47,217 INFO end session
+2012-04-17 14:23:51,273 INFO ######################################################################################
+2012-04-17 14:23:51,273 INFO start session
+2012-04-17 14:23:52,529 INFO connect to db
+2012-04-17 14:23:52,533 INFO connecting to local database successfully
+2012-04-17 14:23:52,558 INFO list of connections loaded
+2012-04-17 14:23:52,578 INFO list of connections loaded
+2012-04-17 14:23:52,584 INFO listing of conneciton succesfully loading
+2012-04-17 14:23:53,354 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 14:23:53,355 INFO list of connections loaded
+2012-04-17 14:23:53,359 INFO listing of conneciton succesfully loading
+2012-04-17 14:23:54,013 INFO choose table
+2012-04-17 14:23:54,059 INFO list of schemas loaded successfully
+2012-04-17 14:23:55,648 INFO list of tables loaded successfully
+2012-04-17 14:23:55,648 INFO schema ARTUR choosed
+2012-04-17 14:23:56,230 INFO table TEST choosed
+2012-04-17 14:23:57,134 INFO open local history
+2012-04-17 14:24:02,559 INFO end session
+2012-04-17 14:24:35,782 INFO ######################################################################################
+2012-04-17 14:24:35,782 INFO start session
+2012-04-17 14:24:37,155 INFO connect to db
+2012-04-17 14:24:37,161 INFO connecting to local database successfully
+2012-04-17 14:24:37,188 INFO list of connections loaded
+2012-04-17 14:24:37,217 INFO list of connections loaded
+2012-04-17 14:24:37,226 INFO listing of conneciton succesfully loading
+2012-04-17 14:24:38,147 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 14:24:38,150 INFO list of connections loaded
+2012-04-17 14:24:38,154 INFO listing of conneciton succesfully loading
+2012-04-17 14:24:38,417 INFO choose table
+2012-04-17 14:24:38,471 INFO list of schemas loaded successfully
+2012-04-17 14:24:39,934 INFO list of tables loaded successfully
+2012-04-17 14:24:39,934 INFO schema ARTUR choosed
+2012-04-17 14:24:41,194 INFO table TEST choosed
+2012-04-17 14:24:41,986 INFO open local history
+2012-04-17 14:25:24,196 INFO end session
+2012-04-17 14:25:41,286 INFO ######################################################################################
+2012-04-17 14:25:41,286 INFO start session
+2012-04-17 14:25:42,513 INFO connect to db
+2012-04-17 14:25:42,520 INFO connecting to local database successfully
+2012-04-17 14:25:42,545 INFO list of connections loaded
+2012-04-17 14:25:42,565 INFO list of connections loaded
+2012-04-17 14:25:42,572 INFO listing of conneciton succesfully loading
+2012-04-17 14:25:43,384 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 14:25:43,385 INFO list of connections loaded
+2012-04-17 14:25:43,391 INFO listing of conneciton succesfully loading
+2012-04-17 14:25:43,686 INFO choose table
+2012-04-17 14:25:43,740 INFO list of schemas loaded successfully
+2012-04-17 14:25:45,540 INFO list of tables loaded successfully
+2012-04-17 14:25:45,540 INFO schema ARTUR choosed
+2012-04-17 14:25:46,407 INFO table TEST choosed
+2012-04-17 14:25:49,302 INFO open local history
+2012-04-17 14:26:10,584 INFO end session
+2012-04-17 14:27:00,395 INFO ######################################################################################
+2012-04-17 14:27:00,395 INFO start session
+2012-04-17 14:27:01,717 INFO connect to db
+2012-04-17 14:27:01,723 INFO connecting to local database successfully
+2012-04-17 14:27:01,749 INFO list of connections loaded
+2012-04-17 14:27:01,770 INFO list of connections loaded
+2012-04-17 14:27:01,779 INFO listing of conneciton succesfully loading
+2012-04-17 14:27:02,819 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 14:27:02,821 INFO list of connections loaded
+2012-04-17 14:27:02,825 INFO listing of conneciton succesfully loading
+2012-04-17 14:27:03,131 INFO choose table
+2012-04-17 14:27:03,184 INFO list of schemas loaded successfully
+2012-04-17 14:27:04,451 INFO list of tables loaded successfully
+2012-04-17 14:27:04,451 INFO schema ARTUR choosed
+2012-04-17 14:27:04,980 INFO table TEST choosed
+2012-04-17 14:27:05,772 INFO open local history
+2012-04-17 14:27:18,525 INFO end session
+2012-04-17 14:27:20,799 INFO ######################################################################################
+2012-04-17 14:27:20,799 INFO start session
+2012-04-17 14:27:22,048 INFO connect to db
+2012-04-17 14:27:22,052 INFO connecting to local database successfully
+2012-04-17 14:27:22,078 INFO list of connections loaded
+2012-04-17 14:27:22,104 INFO list of connections loaded
+2012-04-17 14:27:22,111 INFO listing of conneciton succesfully loading
+2012-04-17 14:27:22,756 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 14:27:22,759 INFO list of connections loaded
+2012-04-17 14:27:22,763 INFO listing of conneciton succesfully loading
+2012-04-17 14:27:24,013 INFO choose table
+2012-04-17 14:27:24,059 INFO list of schemas loaded successfully
+2012-04-17 14:27:25,538 INFO list of tables loaded successfully
+2012-04-17 14:27:25,538 INFO schema ARTUR choosed
+2012-04-17 14:27:26,526 INFO table TEST choosed
+2012-04-17 14:27:27,309 INFO open local history
+2012-04-17 14:29:49,703 INFO end session
+2012-04-17 14:29:50,779 INFO ######################################################################################
+2012-04-17 14:29:50,780 INFO start session
+2012-04-17 14:29:51,931 INFO connect to db
+2012-04-17 14:29:51,937 INFO connecting to local database successfully
+2012-04-17 14:29:51,959 INFO list of connections loaded
+2012-04-17 14:29:51,980 INFO list of connections loaded
+2012-04-17 14:29:51,990 INFO listing of conneciton succesfully loading
+2012-04-17 14:29:53,009 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 14:29:53,010 INFO list of connections loaded
+2012-04-17 14:29:53,016 INFO listing of conneciton succesfully loading
+2012-04-17 14:29:53,655 INFO choose table
+2012-04-17 14:29:53,713 INFO list of schemas loaded successfully
+2012-04-17 14:29:55,131 INFO list of tables loaded successfully
+2012-04-17 14:29:55,131 INFO schema ARTUR choosed
+2012-04-17 14:29:56,361 INFO table TEST choosed
+2012-04-17 14:29:57,144 INFO open local history
+2012-04-17 14:42:04,717 INFO end session
+2012-04-17 15:57:28,573 INFO ######################################################################################
+2012-04-17 15:57:28,575 INFO start session
+2012-04-17 15:57:29,526 INFO connect to db
+2012-04-17 15:57:29,536 INFO connecting to local database successfully
+2012-04-17 15:57:29,578 INFO list of connections loaded
+2012-04-17 15:57:29,602 INFO list of connections loaded
+2012-04-17 15:57:29,615 INFO listing of conneciton succesfully loading
+2012-04-17 15:57:30,628 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 15:57:30,631 INFO list of connections loaded
+2012-04-17 15:57:30,637 INFO listing of conneciton succesfully loading
+2012-04-17 15:57:31,283 INFO choose table
+2012-04-17 15:57:31,335 INFO list of schemas loaded successfully
+2012-04-17 15:57:32,750 INFO list of tables loaded successfully
+2012-04-17 15:57:32,750 INFO schema ARTUR choosed
+2012-04-17 15:57:35,012 INFO table TEST choosed
+2012-04-17 16:00:13,759 INFO open local history
+2012-04-17 16:00:33,279 INFO end session
+2012-04-17 16:00:35,575 INFO ######################################################################################
+2012-04-17 16:00:35,575 INFO start session
+2012-04-17 16:00:36,470 INFO connect to db
+2012-04-17 16:00:36,473 INFO connecting to local database successfully
+2012-04-17 16:00:36,500 INFO list of connections loaded
+2012-04-17 16:00:36,525 INFO list of connections loaded
+2012-04-17 16:00:36,532 INFO listing of conneciton succesfully loading
+2012-04-17 16:00:37,223 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 16:00:37,224 INFO list of connections loaded
+2012-04-17 16:00:37,230 INFO listing of conneciton succesfully loading
+2012-04-17 16:00:37,601 INFO choose table
+2012-04-17 16:00:37,653 INFO list of schemas loaded successfully
+2012-04-17 16:00:38,908 INFO list of tables loaded successfully
+2012-04-17 16:00:38,908 INFO schema ARTUR choosed
+2012-04-17 16:00:39,369 INFO table TEST choosed
+2012-04-17 16:00:40,128 INFO open local history
+2012-04-17 17:10:52,249 INFO end session
+2012-04-17 17:14:21,411 INFO ######################################################################################
+2012-04-17 17:14:21,411 INFO start session
+2012-04-17 17:14:22,530 INFO connect to db
+2012-04-17 17:14:22,539 INFO connecting to local database successfully
+2012-04-17 17:14:22,578 INFO list of connections loaded
+2012-04-17 17:14:22,601 INFO list of connections loaded
+2012-04-17 17:14:22,617 INFO listing of conneciton succesfully loading
+2012-04-17 17:14:23,592 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 17:14:23,595 INFO list of connections loaded
+2012-04-17 17:14:23,602 INFO listing of conneciton succesfully loading
+2012-04-17 17:14:24,232 INFO choose table
+2012-04-17 17:14:24,289 INFO list of schemas loaded successfully
+2012-04-17 17:14:25,772 INFO list of tables loaded successfully
+2012-04-17 17:14:25,773 INFO schema ARTUR choosed
+2012-04-17 17:14:26,473 INFO table TEST choosed
+2012-04-17 17:14:27,463 INFO open local history
+2012-04-17 17:27:53,282 INFO end session
+2012-04-17 17:27:55,051 INFO ######################################################################################
+2012-04-17 17:27:55,051 INFO start session
+2012-04-17 17:27:56,239 INFO connect to db
+2012-04-17 17:27:56,244 INFO connecting to local database successfully
+2012-04-17 17:27:56,272 INFO list of connections loaded
+2012-04-17 17:27:56,296 INFO list of connections loaded
+2012-04-17 17:27:56,305 INFO listing of conneciton succesfully loading
+2012-04-17 17:27:57,459 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 17:27:57,461 INFO list of connections loaded
+2012-04-17 17:27:57,466 INFO listing of conneciton succesfully loading
+2012-04-17 17:27:57,684 INFO choose table
+2012-04-17 17:27:57,740 INFO list of schemas loaded successfully
+2012-04-17 17:27:58,941 INFO list of tables loaded successfully
+2012-04-17 17:27:58,941 INFO schema ARTUR choosed
+2012-04-17 17:27:59,772 INFO table TEST choosed
+2012-04-17 17:28:01,140 INFO open local history
+2012-04-17 17:28:15,328 INFO end session
+2012-04-17 17:29:12,617 INFO ######################################################################################
+2012-04-17 17:29:12,617 INFO start session
+2012-04-17 17:29:13,947 INFO connect to db
+2012-04-17 17:29:13,953 INFO connecting to local database successfully
+2012-04-17 17:29:13,980 INFO list of connections loaded
+2012-04-17 17:29:14,003 INFO list of connections loaded
+2012-04-17 17:29:14,013 INFO listing of conneciton succesfully loading
+2012-04-17 17:29:14,757 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 17:29:14,762 INFO list of connections loaded
+2012-04-17 17:29:14,766 INFO listing of conneciton succesfully loading
+2012-04-17 17:29:15,096 INFO choose table
+2012-04-17 17:29:15,157 INFO list of schemas loaded successfully
+2012-04-17 17:29:16,746 INFO list of tables loaded successfully
+2012-04-17 17:29:16,746 INFO schema ARTUR choosed
+2012-04-17 17:29:17,898 INFO table TEST choosed
+2012-04-17 17:29:18,713 INFO open local history
+2012-04-17 17:50:20,598 INFO end session
+2012-04-17 17:50:24,312 INFO ######################################################################################
+2012-04-17 17:50:24,313 INFO start session
+2012-04-17 17:50:25,424 INFO connect to db
+2012-04-17 17:50:25,430 INFO connecting to local database successfully
+2012-04-17 17:50:25,463 INFO list of connections loaded
+2012-04-17 17:50:25,484 INFO list of connections loaded
+2012-04-17 17:50:25,494 INFO listing of conneciton succesfully loading
+2012-04-17 17:50:26,575 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 17:50:26,578 INFO list of connections loaded
+2012-04-17 17:50:26,582 INFO listing of conneciton succesfully loading
+2012-04-17 17:50:27,237 INFO choose table
+2012-04-17 17:50:27,286 INFO list of schemas loaded successfully
+2012-04-17 17:50:29,316 INFO list of tables loaded successfully
+2012-04-17 17:50:29,318 INFO schema ARTUR choosed
+2012-04-17 17:50:29,831 INFO table TEST choosed
+2012-04-17 17:50:30,661 INFO open local history
+2012-04-17 18:03:16,160 INFO end session
+2012-04-17 18:03:33,773 INFO ######################################################################################
+2012-04-17 18:03:33,773 INFO start session
+2012-04-17 18:03:35,265 INFO connect to db
+2012-04-17 18:03:35,273 INFO connecting to local database successfully
+2012-04-17 18:03:35,309 INFO list of connections loaded
+2012-04-17 18:03:35,332 INFO list of connections loaded
+2012-04-17 18:03:35,341 INFO listing of conneciton succesfully loading
+2012-04-17 18:03:36,483 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:03:36,486 INFO list of connections loaded
+2012-04-17 18:03:36,490 INFO listing of conneciton succesfully loading
+2012-04-17 18:03:39,836 INFO choose table
+2012-04-17 18:03:39,897 INFO list of schemas loaded successfully
+2012-04-17 18:03:42,740 INFO list of tables loaded successfully
+2012-04-17 18:03:42,740 INFO schema ARTUR choosed
+2012-04-17 18:03:43,934 INFO table TEST choosed
+2012-04-17 18:03:46,155 INFO open local history
+2012-04-17 18:07:49,997 INFO end session
+2012-04-17 18:07:51,585 INFO ######################################################################################
+2012-04-17 18:07:51,585 INFO start session
+2012-04-17 18:07:53,456 INFO connect to db
+2012-04-17 18:07:53,461 INFO connecting to local database successfully
+2012-04-17 18:07:53,487 INFO list of connections loaded
+2012-04-17 18:07:53,509 INFO list of connections loaded
+2012-04-17 18:07:53,517 INFO listing of conneciton succesfully loading
+2012-04-17 18:07:54,447 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:07:54,450 INFO list of connections loaded
+2012-04-17 18:07:54,454 INFO listing of conneciton succesfully loading
+2012-04-17 18:07:56,318 INFO choose table
+2012-04-17 18:07:56,361 INFO list of schemas loaded successfully
+2012-04-17 18:07:57,970 INFO list of tables loaded successfully
+2012-04-17 18:07:57,970 INFO schema ARTUR choosed
+2012-04-17 18:07:59,260 INFO table TEST choosed
+2012-04-17 18:08:00,460 INFO choose table
+2012-04-17 18:08:00,507 INFO list of schemas loaded successfully
+2012-04-17 18:08:02,155 INFO open local history
+2012-04-17 18:10:19,253 INFO end session
+2012-04-17 18:10:20,533 INFO ######################################################################################
+2012-04-17 18:10:20,535 INFO start session
+2012-04-17 18:10:21,811 INFO connect to db
+2012-04-17 18:10:21,813 INFO connecting to local database successfully
+2012-04-17 18:10:21,828 INFO list of connections loaded
+2012-04-17 18:10:21,871 INFO list of connections loaded
+2012-04-17 18:10:21,881 INFO listing of conneciton succesfully loading
+2012-04-17 18:10:22,648 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:10:22,651 INFO list of connections loaded
+2012-04-17 18:10:22,657 INFO listing of conneciton succesfully loading
+2012-04-17 18:10:23,733 INFO choose table
+2012-04-17 18:10:23,793 INFO list of schemas loaded successfully
+2012-04-17 18:10:25,467 INFO list of tables loaded successfully
+2012-04-17 18:10:25,467 INFO schema ARTUR choosed
+2012-04-17 18:10:26,127 INFO table TEST choosed
+2012-04-17 18:10:27,062 INFO open local history
+2012-04-17 18:19:57,119 INFO end session
+2012-04-17 18:19:58,630 INFO ######################################################################################
+2012-04-17 18:19:58,630 INFO start session
+2012-04-17 18:19:59,835 INFO connect to db
+2012-04-17 18:19:59,841 INFO connecting to local database successfully
+2012-04-17 18:19:59,867 INFO list of connections loaded
+2012-04-17 18:19:59,888 INFO list of connections loaded
+2012-04-17 18:19:59,895 INFO listing of conneciton succesfully loading
+2012-04-17 18:20:01,007 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:20:01,009 INFO list of connections loaded
+2012-04-17 18:20:01,015 INFO listing of conneciton succesfully loading
+2012-04-17 18:20:01,743 INFO choose table
+2012-04-17 18:20:01,802 INFO list of schemas loaded successfully
+2012-04-17 18:20:03,181 INFO list of tables loaded successfully
+2012-04-17 18:20:03,181 INFO schema TEST_UIR choosed
+2012-04-17 18:20:04,322 INFO list of tables loaded successfully
+2012-04-17 18:20:04,322 INFO schema ARTUR choosed
+2012-04-17 18:20:05,112 INFO table TEST choosed
+2012-04-17 18:20:06,417 INFO open local history
+2012-04-17 18:32:05,204 INFO end session
+2012-04-17 18:32:24,657 INFO ######################################################################################
+2012-04-17 18:32:24,657 INFO start session
+2012-04-17 18:32:26,161 INFO connect to db
+2012-04-17 18:32:26,170 INFO connecting to local database successfully
+2012-04-17 18:32:26,257 INFO list of connections loaded
+2012-04-17 18:32:26,282 INFO list of connections loaded
+2012-04-17 18:32:26,292 INFO listing of conneciton succesfully loading
+2012-04-17 18:32:27,117 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:32:27,119 INFO list of connections loaded
+2012-04-17 18:32:27,124 INFO listing of conneciton succesfully loading
+2012-04-17 18:32:27,510 INFO choose table
+2012-04-17 18:32:27,569 INFO list of schemas loaded successfully
+2012-04-17 18:32:29,012 INFO list of tables loaded successfully
+2012-04-17 18:32:29,013 INFO schema ARTUR choosed
+2012-04-17 18:32:29,543 INFO table TEST choosed
+2012-04-17 18:32:30,407 INFO open local history
+2012-04-17 18:32:40,088 INFO end session
+2012-04-17 18:33:13,108 INFO ######################################################################################
+2012-04-17 18:33:13,109 INFO start session
+2012-04-17 18:33:14,092 INFO connect to db
+2012-04-17 18:33:14,098 INFO connecting to local database successfully
+2012-04-17 18:33:14,128 INFO list of connections loaded
+2012-04-17 18:33:14,157 INFO list of connections loaded
+2012-04-17 18:33:14,171 INFO listing of conneciton succesfully loading
+2012-04-17 18:33:14,236 INFO list of connections loaded
+2012-04-17 18:33:14,243 INFO listing of conneciton succesfully loading
+2012-04-17 18:33:14,980 INFO list of connections loaded
+2012-04-17 18:33:14,987 INFO listing of conneciton succesfully loading
+2012-04-17 18:33:15,539 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:33:15,542 INFO list of connections loaded
+2012-04-17 18:33:15,548 INFO listing of conneciton succesfully loading
+2012-04-17 18:33:15,963 INFO choose table
+2012-04-17 18:33:16,022 INFO list of schemas loaded successfully
+2012-04-17 18:33:17,292 INFO list of tables loaded successfully
+2012-04-17 18:33:17,292 INFO schema ARTUR choosed
+2012-04-17 18:33:17,786 INFO table TEST choosed
+2012-04-17 18:33:18,651 INFO open local history
+2012-04-17 18:33:50,540 INFO end session
+2012-04-17 18:33:51,928 INFO ######################################################################################
+2012-04-17 18:33:51,928 INFO start session
+2012-04-17 18:33:52,855 INFO connect to db
+2012-04-17 18:33:52,858 INFO connecting to local database successfully
+2012-04-17 18:33:52,872 INFO list of connections loaded
+2012-04-17 18:33:52,901 INFO list of connections loaded
+2012-04-17 18:33:52,910 INFO listing of conneciton succesfully loading
+2012-04-17 18:33:53,709 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-17 18:33:53,711 INFO list of connections loaded
+2012-04-17 18:33:53,716 INFO listing of conneciton succesfully loading
+2012-04-17 18:33:55,351 INFO choose table
+2012-04-17 18:33:55,411 INFO list of schemas loaded successfully
+2012-04-17 18:33:56,684 INFO list of tables loaded successfully
+2012-04-17 18:33:56,684 INFO schema ARTUR choosed
+2012-04-17 18:33:57,302 INFO table TEST choosed
+2012-04-17 18:33:57,996 INFO open local history

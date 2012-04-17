@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*- 
 
 
-asd = [None, None, None, [1], [2]]
+l1 = [1,3,4,5]
+l2 = [6,7,8,9]
 
-for i in asd[:]:
-    if i is not None:
-        print i
-    else:
-        asd.remove(i)
-print asd
+l3 = l1 + l2
+
+print l3
 
 
 #print filter(bool, [None, None, None, [1]])

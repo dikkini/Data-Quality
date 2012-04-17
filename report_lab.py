@@ -18,13 +18,13 @@ class CreateRep:
         print data
         # пути к фонтам и регистрация фонта
         reportlab.rl_config.TTFSearchPath='./data/fonts/'
-        pdfmetrics.registerFont(TTFont('Arial', './data/reports/arial.ttf'))
+        pdfmetrics.registerFont(TTFont('Arial', './data/source_reports/arial.ttf'))
         story=[]  # словарь документа
         styles = getSampleStyleSheet() # дефолтовые стили
         # создаем объект документа с размером страницы A4
         #doc=SimpleDocTemplate('test.pdf',pagesize = A4,title='sss',author=u'test')
         #story.append(Paragraph(u'TEST', styles['Heading1']))
-        MyCanvas = canvas.Canvas('./data/reports/results.pdf')
+        MyCanvas = canvas.Canvas('./data/source_reports/results.pdf')
         MyCanvas.drawString(10*cm, 15*cm, u'Результаты оценки качества данных:')
         MyCanvas.drawString(1*cm, 1*cm, '%s' % str(data))
         MyCanvas.save()

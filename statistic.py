@@ -11,7 +11,7 @@ class stats():
         
     def take_main_stat(self, date):
         key = str(date)
-        filename = './data/%s_%s_main_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_main_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         data = d[key]
         d.close()
@@ -19,7 +19,7 @@ class stats():
     
     def take_ext_stat(self, date):
         key = str(date)
-        filename = './data/%s_%s_ext_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_ext_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         data = d[key]
         d.close()
@@ -27,7 +27,7 @@ class stats():
     
     def add_main_stat(self, date, data):
         key = str(date)
-        filename = './data/%s_%s_main_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_main_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         d[key] = data
         d.sync()
@@ -35,18 +35,18 @@ class stats():
     
     def del_stat(self, date):
         key = str(date)
-        filename = './data/%s_%s_main_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_main_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         del d[key]
         d.close()
-        filename = './data/%s_%s_ext_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_ext_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         del d[key]
         d.close()
         
     def add_ext_stat(self, date, data):
         key = str(date)
-        filename = './data/%s_%s_ext_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_ext_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         d[key] = data
         d.sync()
@@ -54,7 +54,7 @@ class stats():
     
     def history_stat(self, parent):
         main = parent
-        filename = './data/%s_%s_main_stat.dat' % (self.schema, self.table)
+        filename = './data/statistic/%s_%s_main_stat.dat' % (self.schema, self.table)
         d = shelve.open(filename)
         keys = d.keys()
         dat = []

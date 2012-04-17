@@ -106,7 +106,7 @@ class main_stat(listmix.ColumnSorterMixin):
         mod.TextAdv()
     
     def OnReport(self, event):
-        report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat)
+        report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat, self.date)
         
     def OnColClick(self, event):
         print ("OnColClick: %d\n" % event.GetColumn())
@@ -257,7 +257,7 @@ class history_stat():
         ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
         ext_cols.insert(0, u'Название параметра')
         ext_stat = self.stat.take_ext_stat(self.date)
-        report_html.make_report(self.columns, self.data, ext_cols, ext_stat)
+        report_html.make_report(self.columns, self.data, ext_cols, ext_stat, self.date)
 
     def OnDelStat(self, event):
         self.stat.del_stat(self.date)
