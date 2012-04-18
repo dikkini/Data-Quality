@@ -1,4 +1,4 @@
-# -*- coding: cp1251 -*- 
+# -*- coding: utf-8 -*-
 import cx_Oracle
 from itertools import chain
 import wx
@@ -11,7 +11,7 @@ class WorkDB():
 
     def get_tables(self, schema):
         cursor = cx_Oracle.Cursor(self.connection)
-        # Получать все таблицы доступные пользователю.
+        # РџРѕР»СѓС‡Р°С‚СЊ РІСЃРµ С‚Р°Р±Р»РёС†С‹ РґРѕСЃС‚СѓРїРЅС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ.
         sql = ("select TABLE_NAME from dba_tables WHERE OWNER = '%s'" % schema)
         cursor.execute(sql)
         tables = cursor.fetchall()
@@ -29,7 +29,7 @@ class WorkDB():
             cursor.close()
             return schemas
         except TypeError, info:
-            wx.MessageBox(u'Подключитесь к базе данных!')
+            wx.MessageBox(u'РџРѕРґРєР»СЋС‡РёС‚РµСЃСЊ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…!')
             print info
     def get_all_count(self, schema, table):
         try:
@@ -41,7 +41,7 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…')
             print info
     def get_regexp_count(self, schema, table, regexp):
         try:
@@ -53,7 +53,7 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…')
             print info
 
     def get_empty_values(self, schema, table):
@@ -70,7 +70,7 @@ class WorkDB():
             EV = float(EV)
             return EV
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…')
             print info
 
     def get_uniq_values(self, column, schema, table):
@@ -83,7 +83,7 @@ class WorkDB():
             cursor.close()
             return cou
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…')
             print info
 
     def get_cols(self, table):

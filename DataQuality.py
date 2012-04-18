@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf8 -*-
 
 import wx
 import wx.aui
@@ -175,8 +175,8 @@ class MainWindow ( wx.Frame ):
             sys.exit()
         except Exception, info:
             self.Destroy()
-            sys.exit()
             logging.info(u'end session: %s' % info)
+            sys.exit()
             
     def DoDQ(self, event):
         try:

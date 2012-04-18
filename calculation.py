@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf8 -*-
 import oracle
 import sqlite
 import datetime
@@ -17,7 +17,7 @@ class DQ(object):
 		logging.info(u'starting calculation data quality model')
 		self.data = []
 		dt = datetime.datetime.now()
-		timedq = dt.strftime('%Y.%m.%d-%H:%M:%S')
+		timedq = dt.strftime('%Y.%m.%d-%H-%M-%S')
 		self.data.append(timedq)
 		sql = sqlite.sqliteDB(self.schema, self.table)
 		stat = statistic.stats(self.schema, self.table)
@@ -151,7 +151,7 @@ class DQ(object):
 			else:
 				avgident = 0
 				self.data.append(u'-')
-			print 'noise_level:', avgident, '%'
+			print 'identifiabilit:', avgident, '%'
 			
 		except Exception, info:
 			logging.error(u'indentify parameter calculation failed: %s' % str(info))
