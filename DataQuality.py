@@ -197,7 +197,11 @@ class MainWindow ( wx.Frame ):
                 result2 = self.dataquality.mathDQ(self.weights, self.using_params)
                 self.result_ctrl.list.Append(result2[0])
         except Exception, info:
-            wx.MessageBox(str(info))
+            if "'NoneType' object is not iterable" in info:
+                wx.MessageBox(u'Выберите параметры для оценки качества данных преждем чем начать процесс оценки качества данных!')
+            else:
+                wx.MessageBox(str(info))
+                logging.error(u'starting calculate dq process failed: %s' % (str(info)))
     
     def OnTabClose(self, event):
         self.sel_page = event.GetSelection()

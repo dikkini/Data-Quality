@@ -3285,3 +3285,522 @@
 2012-04-18 17:04:24,341 INFO launch edit regexps module
 2012-04-18 17:04:24,403 INFO connecting to local database successfully
 2012-04-18 17:04:25,269 INFO loading regular expressions for parameter no_information successfully 
+2012-04-19 09:52:03,023 INFO ######################################################################################
+2012-04-19 09:52:03,025 INFO start session
+2012-04-19 09:52:50,691 INFO connect to db
+2012-04-19 09:52:50,701 INFO connecting to local database successfully
+2012-04-19 09:52:50,826 INFO list of connections loaded
+2012-04-19 09:52:50,861 INFO list of connections loaded
+2012-04-19 09:52:50,880 INFO listing of conneciton succesfully loading
+2012-04-19 09:52:53,815 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 09:52:53,816 INFO list of connections loaded
+2012-04-19 09:52:53,822 INFO listing of conneciton succesfully loading
+2012-04-19 09:52:57,295 INFO end session
+2012-04-19 09:52:59,421 INFO ######################################################################################
+2012-04-19 09:52:59,421 INFO start session
+2012-04-19 09:53:03,368 INFO connect to db
+2012-04-19 09:53:03,371 INFO connecting to local database successfully
+2012-04-19 09:53:03,384 INFO list of connections loaded
+2012-04-19 09:53:03,403 INFO list of connections loaded
+2012-04-19 09:53:03,411 INFO listing of conneciton succesfully loading
+2012-04-19 09:53:05,420 INFO connecting to local database successfully
+2012-04-19 09:53:05,421 INFO editing connection: testlinux
+2012-04-19 09:53:05,427 INFO list of connections loaded
+2012-04-19 09:53:05,436 INFO listing of conneciton succesfully loading
+2012-04-19 09:53:05,443 INFO editing connection: testlinux
+2012-04-19 09:53:09,407 INFO list of connections loaded
+2012-04-19 09:53:09,420 INFO listing of conneciton succesfully loading
+2012-04-19 09:53:13,914 INFO trying to connect using conneciton: testlinux
+2012-04-19 09:53:16,009 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 09:53:16,013 INFO list of connections loaded
+2012-04-19 09:53:16,019 INFO listing of conneciton succesfully loading
+2012-04-19 09:53:18,726 INFO choose table
+2012-04-19 09:53:18,861 INFO list of schemas loaded successfully
+2012-04-19 09:53:20,759 INFO list of tables loaded successfully
+2012-04-19 09:53:20,759 INFO schema ARTUR choosed
+2012-04-19 09:53:22,312 INFO table TEST choosed
+2012-04-19 09:53:25,698 INFO launch edit regexps module
+2012-04-19 09:53:25,734 INFO connecting to local database successfully
+2012-04-19 09:53:27,233 INFO loading regular expressions for parameter no_information successfully 
+2012-04-19 09:53:28,621 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 09:53:30,763 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 09:53:33,619 INFO loading regular expressions for parameter no_information successfully 
+2012-04-19 09:53:35,460 INFO deleting regular expression t for parameter no_information successfully
+2012-04-19 09:53:35,461 INFO loading regular expressions for parameter no_information successfully 
+2012-04-19 09:55:11,278 INFO end session
+2012-04-19 10:13:53,095 INFO ######################################################################################
+2012-04-19 10:13:53,095 INFO start session
+2012-04-19 10:13:54,746 INFO connect to db
+2012-04-19 10:13:54,752 INFO connecting to local database successfully
+2012-04-19 10:13:54,776 INFO list of connections loaded
+2012-04-19 10:13:54,806 INFO list of connections loaded
+2012-04-19 10:13:54,826 INFO listing of conneciton succesfully loading
+2012-04-19 10:13:55,944 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 10:13:55,946 INFO list of connections loaded
+2012-04-19 10:13:55,950 INFO listing of conneciton succesfully loading
+2012-04-19 10:13:57,884 INFO choose table
+2012-04-19 10:13:57,940 INFO list of schemas loaded successfully
+2012-04-19 10:13:59,966 INFO list of tables loaded successfully
+2012-04-19 10:13:59,966 INFO schema ARTUR choosed
+2012-04-19 10:14:00,950 INFO table TEST choosed
+2012-04-19 10:14:03,309 INFO launch edit regexps module
+2012-04-19 10:14:03,368 INFO connecting to local database successfully
+2012-04-19 10:14:05,438 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 10:14:14,081 INFO uploading regular expression not regexp_like (NAMEU, '^\О{3}\s\"\w+\"$|O{3}\s\"\w+\"$|\Z\A\O\s\"\w+\"$|\З\А\О\s\"\w+\"$') for parameter bad_format successfully
+2012-04-19 10:14:14,082 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:20:26,290 INFO ######################################################################################
+2012-04-19 12:20:26,292 INFO start session
+2012-04-19 12:20:29,013 INFO connect to db
+2012-04-19 12:20:29,017 INFO connecting to local database successfully
+2012-04-19 12:20:29,042 INFO list of connections loaded
+2012-04-19 12:20:29,075 INFO list of connections loaded
+2012-04-19 12:20:29,094 INFO listing of conneciton succesfully loading
+2012-04-19 12:20:30,335 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:20:30,338 INFO list of connections loaded
+2012-04-19 12:20:30,345 INFO listing of conneciton succesfully loading
+2012-04-19 12:20:32,904 INFO choose table
+2012-04-19 12:20:32,977 INFO list of schemas loaded successfully
+2012-04-19 12:20:36,823 INFO list of tables loaded successfully
+2012-04-19 12:20:36,823 INFO schema ARTUR choosed
+2012-04-19 12:20:40,078 INFO table TEST choosed
+2012-04-19 12:20:41,398 INFO launch edit regexps module
+2012-04-19 12:20:41,454 INFO connecting to local database successfully
+2012-04-19 12:20:59,147 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:21:13,230 INFO uploading regular expression not regexp_like (ID, '^\d{6}$') for parameter bad_format successfully
+2012-04-19 12:21:13,230 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:21:22,483 INFO uploading regular expression not regexp_like (KODCR, '^\d{5}$') for parameter bad_format successfully
+2012-04-19 12:21:22,483 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:21:30,052 INFO uploading regular expression not regexp_like (KODCN, '^\d{5}$') for parameter bad_format successfully
+2012-04-19 12:21:30,052 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:21:37,825 INFO uploading regular expression not regexp_like (KD, '^\d{2,}$') for parameter bad_format successfully
+2012-04-19 12:21:37,825 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:21:45,698 INFO uploading regular expression not regexp_like (SD, '^\d{13}$') and not regexp_like (SD, '^\d{4}$') and not regexp_like (SD, '^\d{8}$')  for parameter bad_format successfully
+2012-04-19 12:21:45,700 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:21:54,427 INFO uploading regular expression not regexp_like (RG, '^\d{5}$') for parameter bad_format successfully
+2012-04-19 12:21:54,428 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:22:08,296 INFO uploading regular expression not regexp_like (ND, '^\d{10}$') and not regexp_like (ND, '^\d{12}$') and not regexp_like (ND, '^\d{11}$')  for parameter bad_format successfully
+2012-04-19 12:22:08,296 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:22:17,183 INFO uploading regular expression not regexp_like (ACC_B, '^\d{20,}$') or not regexp_like (NAME_B, '^\О{3}|\О\А\О|\З\А\О\s\w+')  for parameter bad_format successfully
+2012-04-19 12:22:17,184 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:22:23,907 INFO uploading regular expression not regexp_like (BIK_B, '^\d{8,}*') for parameter bad_format successfully
+2012-04-19 12:22:23,907 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:22:28,999 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:22:34,746 INFO uploading regular expression regexp_like (ID, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:22:34,746 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:22:42,538 INFO uploading regular expression regexp_like (NAMEU, '\.{2,}|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+') for parameter noise_level successfully
+2012-04-19 12:22:42,539 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:22:48,746 INFO uploading regular expression regexp_like (KODCR, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:22:48,746 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:09,336 INFO uploading regular expression regexp_like (KODCN, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:09,338 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:17,186 INFO uploading regular expression regexp_like (AMR, '\.{2,}|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:17,187 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:23,325 INFO uploading regular expression regexp_like (ADRESS, '\.{2,}+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:23,326 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:34,990 INFO uploading regular expression regexp_like (KD, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:34,992 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:43,032 INFO uploading regular expression regexp_like (SD, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:43,032 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:49,525 INFO uploading regular expression regexp_like (RG, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:49,526 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:23:55,640 INFO uploading regular expression regexp_like (ND, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:23:55,641 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:24:09,719 INFO uploading regular expression regexp_like (VD, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:24:09,720 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:24:16,948 INFO uploading regular expression regexp_like (GR, '\.{2,}|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+') for parameter noise_level successfully
+2012-04-19 12:24:16,950 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:24:25,154 INFO uploading regular expression regexp_like (ACC_B, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:24:25,155 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:24:32,299 INFO uploading regular expression regexp_like (NAME_B, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-04-19 12:24:32,299 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:24:41,131 INFO uploading regular expression regexp_like (BIK_B, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+') for parameter noise_level successfully
+2012-04-19 12:24:41,131 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:24:52,381 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-19 12:24:55,315 INFO uploading regular expression (length(ND) = 10 and (VD like '%МНС%')) or (lower(VD) like '%паспорт%' or lower(VD) like '%овд%' or lower(VD) like '%увд%' or lower(VD) like '%милиция%' or lower(VD) like '%отделен%' or lower(VD) like '%райо%' and length(SD) = 4 and length(RG) = 6) for parameter identifiability successfully
+2012-04-19 12:24:55,316 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-19 12:25:16,244 INFO loading regular expressions for parameter harmony successfully 
+2012-04-19 12:25:19,132 INFO uploading regular expression regexp_like (NAMEU, '^\w*\s\w*\s\w*$') and upper(NAMEU) not like '%ООО%' and upper(NAMEU) not like '%ОАО%' and upper(NAMEU) not like '%ЗАО%' and upper(NAMEU) not like '%LTD%' and upper(NAMEU) not like '%LLC%' and upper(NAMEU) not like '%СПК%'and upper(NAMEU) not like '%CORP%' and upper(NAMEU) not like '%LIMITED%' and upper(NAMEU) not like '%ЛИМИТ%' and  not regexp_like (NAMEU, '\d') and upper(NAMEU) not like '%БАНК%' and length(ND) = 10 for parameter harmony successfully
+2012-04-19 12:25:19,132 INFO loading regular expressions for parameter harmony successfully 
+2012-04-19 12:25:27,507 INFO uploading regular expression (upper(NAMEU) like '%ООО%' or upper(NAMEU) like '%ОАО%' or upper(NAMEU) like '%ЗАО%' or upper(NAMEU) like '%LTD%' or upper(NAMEU) like '%LLC%' or upper(NAMEU) like '%СПК%' or upper(NAMEU) like '%CORP%' or upper(NAMEU) like '%LIMITED%' or upper(NAMEU) like '%ЛИМИТ%' or upper(NAMEU) like '%БАНК%') and length(ND) = 12 for parameter harmony successfully
+2012-04-19 12:25:27,509 INFO loading regular expressions for parameter harmony successfully 
+2012-04-19 12:25:35,694 INFO loading regular expressions for parameter no_information successfully 
+2012-04-19 12:25:38,674 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:25:40,591 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:25:41,940 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-19 12:25:47,375 INFO launch edit regexps module
+2012-04-19 12:25:47,424 INFO connecting to local database successfully
+2012-04-19 12:26:04,062 INFO loading regular expressions for parameter no_information successfully 
+2012-04-19 12:26:10,630 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:26:15,763 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:26:22,263 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-19 12:26:29,105 INFO loading regular expressions for parameter harmony successfully 
+2012-04-19 12:26:39,686 INFO starting calculation data quality model
+2012-04-19 12:26:39,687 INFO connecting to local database successfully
+2012-04-19 12:26:40,135 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-19 12:26:41,171 INFO bad fromat parameter calculation successfully
+2012-04-19 12:26:41,171 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-19 12:26:50,538 INFO noise level parameter calculation successfully
+2012-04-19 12:26:50,538 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-19 12:26:50,558 INFO identify parameter calculation successfully
+2012-04-19 12:26:50,558 INFO loading regular expressions for parameter harmony successfully 
+2012-04-19 12:26:50,572 INFO harmony parameter calculation successfully
+2012-04-19 12:26:50,658 INFO uniq parameter calculation successfully
+2012-04-19 12:26:50,716 INFO calculation successfully
+2012-04-19 12:28:18,256 INFO end session
+2012-04-19 12:28:21,275 INFO ######################################################################################
+2012-04-19 12:28:21,275 INFO start session
+2012-04-19 12:28:22,852 INFO connect to db
+2012-04-19 12:28:22,858 INFO connecting to local database successfully
+2012-04-19 12:28:22,884 INFO list of connections loaded
+2012-04-19 12:28:22,923 INFO list of connections loaded
+2012-04-19 12:28:22,946 INFO listing of conneciton succesfully loading
+2012-04-19 12:28:23,854 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:28:23,858 INFO list of connections loaded
+2012-04-19 12:28:23,862 INFO listing of conneciton succesfully loading
+2012-04-19 12:28:24,440 INFO choose table
+2012-04-19 12:28:24,482 INFO list of schemas loaded successfully
+2012-04-19 12:28:26,832 INFO list of tables loaded successfully
+2012-04-19 12:28:26,832 INFO schema ARTUR choosed
+2012-04-19 12:28:28,851 INFO table TEST choosed
+2012-04-19 12:28:30,029 INFO open local history
+2012-04-19 12:29:18,201 INFO end session
+2012-04-19 12:31:11,280 INFO ######################################################################################
+2012-04-19 12:31:11,280 INFO start session
+2012-04-19 12:31:13,732 INFO connect to db
+2012-04-19 12:31:13,736 INFO connecting to local database successfully
+2012-04-19 12:31:13,763 INFO list of connections loaded
+2012-04-19 12:31:13,802 INFO list of connections loaded
+2012-04-19 12:31:13,821 INFO listing of conneciton succesfully loading
+2012-04-19 12:31:15,163 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:31:15,167 INFO list of connections loaded
+2012-04-19 12:31:15,173 INFO listing of conneciton succesfully loading
+2012-04-19 12:31:15,654 INFO choose table
+2012-04-19 12:31:15,717 INFO list of schemas loaded successfully
+2012-04-19 12:31:18,403 INFO list of tables loaded successfully
+2012-04-19 12:31:18,403 INFO schema ARTUR choosed
+2012-04-19 12:31:19,994 INFO table TEST choosed
+2012-04-19 12:31:21,493 INFO open local history
+2012-04-19 12:31:43,539 INFO end session
+2012-04-19 12:31:46,565 INFO ######################################################################################
+2012-04-19 12:31:46,565 INFO start session
+2012-04-19 12:31:48,720 INFO connect to db
+2012-04-19 12:31:48,726 INFO connecting to local database successfully
+2012-04-19 12:31:48,750 INFO list of connections loaded
+2012-04-19 12:31:48,778 INFO list of connections loaded
+2012-04-19 12:31:48,789 INFO listing of conneciton succesfully loading
+2012-04-19 12:31:49,999 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:31:50,002 INFO list of connections loaded
+2012-04-19 12:31:50,006 INFO listing of conneciton succesfully loading
+2012-04-19 12:31:51,700 INFO choose table
+2012-04-19 12:31:51,749 INFO list of schemas loaded successfully
+2012-04-19 12:31:54,421 INFO list of tables loaded successfully
+2012-04-19 12:31:54,423 INFO schema ARTUR choosed
+2012-04-19 12:31:55,365 INFO table TEST choosed
+2012-04-19 12:31:56,667 INFO open local history
+2012-04-19 12:33:11,977 INFO end session
+2012-04-19 12:33:28,838 INFO ######################################################################################
+2012-04-19 12:33:28,838 INFO start session
+2012-04-19 12:33:30,380 INFO connect to db
+2012-04-19 12:33:30,388 INFO connecting to local database successfully
+2012-04-19 12:33:30,415 INFO list of connections loaded
+2012-04-19 12:33:30,440 INFO list of connections loaded
+2012-04-19 12:33:30,448 INFO listing of conneciton succesfully loading
+2012-04-19 12:33:33,973 INFO list of connections loaded
+2012-04-19 12:33:33,986 INFO listing of conneciton succesfully loading
+2012-04-19 12:33:41,020 INFO list of connections loaded
+2012-04-19 12:33:41,032 INFO listing of conneciton succesfully loading
+2012-04-19 12:33:41,190 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:33:41,194 INFO list of connections loaded
+2012-04-19 12:33:41,197 INFO listing of conneciton succesfully loading
+2012-04-19 12:33:43,598 INFO choose table
+2012-04-19 12:33:43,658 INFO list of schemas loaded successfully
+2012-04-19 12:33:45,716 INFO list of tables loaded successfully
+2012-04-19 12:33:45,716 INFO schema ARTUR choosed
+2012-04-19 12:33:47,259 INFO table TEST choosed
+2012-04-19 12:33:48,683 INFO open local history
+2012-04-19 12:34:38,668 INFO end session
+2012-04-19 12:34:56,926 INFO ######################################################################################
+2012-04-19 12:34:56,926 INFO start session
+2012-04-19 12:35:00,342 INFO connect to db
+2012-04-19 12:35:00,348 INFO connecting to local database successfully
+2012-04-19 12:35:00,371 INFO list of connections loaded
+2012-04-19 12:35:00,403 INFO list of connections loaded
+2012-04-19 12:35:00,414 INFO listing of conneciton succesfully loading
+2012-04-19 12:35:02,654 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:35:02,657 INFO list of connections loaded
+2012-04-19 12:35:02,665 INFO listing of conneciton succesfully loading
+2012-04-19 12:35:03,631 INFO choose table
+2012-04-19 12:35:03,703 INFO list of schemas loaded successfully
+2012-04-19 12:35:05,887 INFO list of tables loaded successfully
+2012-04-19 12:35:05,888 INFO schema TEST_UIR choosed
+2012-04-19 12:35:07,921 INFO list of tables loaded successfully
+2012-04-19 12:35:07,921 INFO schema ARTUR choosed
+2012-04-19 12:35:09,065 INFO table TEST choosed
+2012-04-19 12:35:09,255 INFO table TEST_IDEAL choosed
+2012-04-19 12:35:09,437 INFO table TEST_IDEAL_UIR choosed
+2012-04-19 12:35:09,740 INFO table TEST_IDEAL choosed
+2012-04-19 12:35:09,892 INFO table TEST choosed
+2012-04-19 12:35:12,841 INFO open local history
+2012-04-19 12:36:28,773 INFO end session
+2012-04-19 12:36:35,970 INFO ######################################################################################
+2012-04-19 12:36:35,970 INFO start session
+2012-04-19 12:36:39,384 INFO connect to db
+2012-04-19 12:36:39,388 INFO connecting to local database successfully
+2012-04-19 12:36:39,414 INFO list of connections loaded
+2012-04-19 12:36:39,447 INFO list of connections loaded
+2012-04-19 12:36:39,456 INFO listing of conneciton succesfully loading
+2012-04-19 12:36:41,936 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:36:41,938 INFO list of connections loaded
+2012-04-19 12:36:41,944 INFO listing of conneciton succesfully loading
+2012-04-19 12:36:42,599 INFO choose table
+2012-04-19 12:36:42,645 INFO list of schemas loaded successfully
+2012-04-19 12:36:43,737 INFO list of tables loaded successfully
+2012-04-19 12:36:43,739 INFO schema MGMT_VIEW choosed
+2012-04-19 12:36:45,015 INFO list of tables loaded successfully
+2012-04-19 12:36:45,016 INFO schema SYS choosed
+2012-04-19 12:36:45,246 INFO list of tables loaded successfully
+2012-04-19 12:36:45,246 INFO schema SYSTEM choosed
+2012-04-19 12:36:45,275 INFO list of tables loaded successfully
+2012-04-19 12:36:45,275 INFO schema TEST_UIR choosed
+2012-04-19 12:36:45,319 INFO list of tables loaded successfully
+2012-04-19 12:36:45,319 INFO schema ARTUR choosed
+2012-04-19 12:36:45,440 INFO list of tables loaded successfully
+2012-04-19 12:36:45,440 INFO schema DBSNMP choosed
+2012-04-19 12:36:46,079 INFO list of tables loaded successfully
+2012-04-19 12:36:46,079 INFO schema SYSMAN choosed
+2012-04-19 12:36:46,144 INFO list of tables loaded successfully
+2012-04-19 12:36:46,144 INFO schema DBSNMP choosed
+2012-04-19 12:36:46,187 INFO list of tables loaded successfully
+2012-04-19 12:36:46,187 INFO schema ARTUR choosed
+2012-04-19 12:36:46,260 INFO list of tables loaded successfully
+2012-04-19 12:36:46,260 INFO schema DBSNMP choosed
+2012-04-19 12:36:46,859 INFO list of tables loaded successfully
+2012-04-19 12:36:46,859 INFO schema SYSMAN choosed
+2012-04-19 12:36:46,973 INFO list of tables loaded successfully
+2012-04-19 12:36:46,973 INFO schema ATFM choosed
+2012-04-19 12:36:47,586 INFO list of tables loaded successfully
+2012-04-19 12:36:47,588 INFO schema SYSMAN choosed
+2012-04-19 12:36:47,658 INFO list of tables loaded successfully
+2012-04-19 12:36:47,658 INFO schema DBSNMP choosed
+2012-04-19 12:36:48,273 INFO list of tables loaded successfully
+2012-04-19 12:36:48,273 INFO schema SYSMAN choosed
+2012-04-19 12:36:48,339 INFO list of tables loaded successfully
+2012-04-19 12:36:48,341 INFO schema ATFM choosed
+2012-04-19 12:36:48,444 INFO list of tables loaded successfully
+2012-04-19 12:36:48,444 INFO schema OUTLN choosed
+2012-04-19 12:36:48,987 INFO list of tables loaded successfully
+2012-04-19 12:36:48,987 INFO schema FLOWS_FILES choosed
+2012-04-19 12:36:49,523 INFO list of tables loaded successfully
+2012-04-19 12:36:49,523 INFO schema MDSYS choosed
+2012-04-19 12:36:49,732 INFO list of tables loaded successfully
+2012-04-19 12:36:49,732 INFO schema ORDSYS choosed
+2012-04-19 12:36:49,947 INFO list of tables loaded successfully
+2012-04-19 12:36:49,947 INFO schema EXFSYS choosed
+2012-04-19 12:36:50,111 INFO list of tables loaded successfully
+2012-04-19 12:36:50,111 INFO schema WMSYS choosed
+2012-04-19 12:36:50,266 INFO list of tables loaded successfully
+2012-04-19 12:36:50,266 INFO schema APPQOSSYS choosed
+2012-04-19 12:36:50,773 INFO list of tables loaded successfully
+2012-04-19 12:36:50,773 INFO schema APEX_030200 choosed
+2012-04-19 12:36:50,812 INFO list of tables loaded successfully
+2012-04-19 12:36:50,812 INFO schema APPQOSSYS choosed
+2012-04-19 12:36:51,184 INFO list of tables loaded successfully
+2012-04-19 12:36:51,184 INFO schema WMSYS choosed
+2012-04-19 12:36:51,289 INFO list of tables loaded successfully
+2012-04-19 12:36:51,289 INFO schema EXFSYS choosed
+2012-04-19 12:36:51,585 INFO list of tables loaded successfully
+2012-04-19 12:36:51,585 INFO schema WMSYS choosed
+2012-04-19 12:36:51,703 INFO list of tables loaded successfully
+2012-04-19 12:36:51,703 INFO schema APPQOSSYS choosed
+2012-04-19 12:36:52,176 INFO list of tables loaded successfully
+2012-04-19 12:36:52,176 INFO schema APEX_030200 choosed
+2012-04-19 12:36:52,256 INFO list of tables loaded successfully
+2012-04-19 12:36:52,257 INFO schema OWBSYS_AUDIT choosed
+2012-04-19 12:36:52,434 INFO list of tables loaded successfully
+2012-04-19 12:36:52,434 INFO schema ORDDATA choosed
+2012-04-19 12:36:52,588 INFO list of tables loaded successfully
+2012-04-19 12:36:52,588 INFO schema CTXSYS choosed
+2012-04-19 12:36:52,713 INFO list of tables loaded successfully
+2012-04-19 12:36:52,714 INFO schema ANONYMOUS choosed
+2012-04-19 12:36:53,128 INFO list of tables loaded successfully
+2012-04-19 12:36:53,128 INFO schema CTXSYS choosed
+2012-04-19 12:36:53,674 INFO list of tables loaded successfully
+2012-04-19 12:36:53,674 INFO schema ORDDATA choosed
+2012-04-19 12:36:53,704 INFO list of tables loaded successfully
+2012-04-19 12:36:53,704 INFO schema OWBSYS_AUDIT choosed
+2012-04-19 12:36:54,045 INFO list of tables loaded successfully
+2012-04-19 12:36:54,046 INFO schema APEX_030200 choosed
+2012-04-19 12:36:54,091 INFO list of tables loaded successfully
+2012-04-19 12:36:54,092 INFO schema APPQOSSYS choosed
+2012-04-19 12:36:54,187 INFO list of tables loaded successfully
+2012-04-19 12:36:54,188 INFO schema WMSYS choosed
+2012-04-19 12:36:54,285 INFO list of tables loaded successfully
+2012-04-19 12:36:54,286 INFO schema EXFSYS choosed
+2012-04-19 12:36:54,342 INFO list of tables loaded successfully
+2012-04-19 12:36:54,342 INFO schema ORDSYS choosed
+2012-04-19 12:36:54,493 INFO list of tables loaded successfully
+2012-04-19 12:36:54,493 INFO schema MDSYS choosed
+2012-04-19 12:36:54,539 INFO list of tables loaded successfully
+2012-04-19 12:36:54,539 INFO schema FLOWS_FILES choosed
+2012-04-19 12:36:54,588 INFO list of tables loaded successfully
+2012-04-19 12:36:54,588 INFO schema OUTLN choosed
+2012-04-19 12:36:54,658 INFO list of tables loaded successfully
+2012-04-19 12:36:54,658 INFO schema ATFM choosed
+2012-04-19 12:36:55,259 INFO list of tables loaded successfully
+2012-04-19 12:36:55,259 INFO schema SYSMAN choosed
+2012-04-19 12:36:55,335 INFO list of tables loaded successfully
+2012-04-19 12:36:55,335 INFO schema DBSNMP choosed
+2012-04-19 12:36:55,953 INFO list of tables loaded successfully
+2012-04-19 12:36:55,953 INFO schema SYSMAN choosed
+2012-04-19 12:36:56,020 INFO list of tables loaded successfully
+2012-04-19 12:36:56,022 INFO schema ATFM choosed
+2012-04-19 12:36:56,657 INFO list of tables loaded successfully
+2012-04-19 12:36:56,657 INFO schema OUTLN choosed
+2012-04-19 12:36:57,135 INFO list of tables loaded successfully
+2012-04-19 12:36:57,135 INFO schema FLOWS_FILES choosed
+2012-04-19 12:36:57,687 INFO list of tables loaded successfully
+2012-04-19 12:36:57,687 INFO schema MDSYS choosed
+2012-04-19 12:36:57,966 INFO list of tables loaded successfully
+2012-04-19 12:36:57,966 INFO schema ORDSYS choosed
+2012-04-19 12:37:02,828 INFO list of tables loaded successfully
+2012-04-19 12:37:02,828 INFO schema ARTUR choosed
+2012-04-19 12:37:04,638 INFO table TEST choosed
+2012-04-19 12:37:07,486 INFO open local history
+2012-04-19 12:37:28,279 INFO end session
+2012-04-19 12:37:37,713 INFO ######################################################################################
+2012-04-19 12:37:37,713 INFO start session
+2012-04-19 12:37:39,709 INFO connect to db
+2012-04-19 12:37:39,713 INFO connecting to local database successfully
+2012-04-19 12:37:39,740 INFO list of connections loaded
+2012-04-19 12:37:39,776 INFO list of connections loaded
+2012-04-19 12:37:39,789 INFO listing of conneciton succesfully loading
+2012-04-19 12:37:42,812 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:37:42,815 INFO list of connections loaded
+2012-04-19 12:37:42,819 INFO listing of conneciton succesfully loading
+2012-04-19 12:37:43,522 INFO choose table
+2012-04-19 12:37:43,581 INFO list of schemas loaded successfully
+2012-04-19 12:37:44,436 INFO list of tables loaded successfully
+2012-04-19 12:37:44,436 INFO schema MGMT_VIEW choosed
+2012-04-19 12:37:45,418 INFO list of tables loaded successfully
+2012-04-19 12:37:45,418 INFO schema SYS choosed
+2012-04-19 12:37:45,588 INFO list of tables loaded successfully
+2012-04-19 12:37:45,588 INFO schema SYSTEM choosed
+2012-04-19 12:37:45,617 INFO list of tables loaded successfully
+2012-04-19 12:37:45,617 INFO schema TEST_UIR choosed
+2012-04-19 12:37:47,058 INFO list of tables loaded successfully
+2012-04-19 12:37:47,058 INFO schema ARTUR choosed
+2012-04-19 12:37:48,638 INFO table TEST choosed
+2012-04-19 12:37:50,430 INFO open local history
+2012-04-19 12:38:53,282 INFO end session
+2012-04-19 12:38:56,332 INFO ######################################################################################
+2012-04-19 12:38:56,332 INFO start session
+2012-04-19 12:38:58,526 INFO connect to db
+2012-04-19 12:38:58,530 INFO connecting to local database successfully
+2012-04-19 12:38:58,555 INFO list of connections loaded
+2012-04-19 12:38:58,578 INFO list of connections loaded
+2012-04-19 12:38:58,588 INFO listing of conneciton succesfully loading
+2012-04-19 12:39:00,361 INFO list of connections loaded
+2012-04-19 12:39:00,371 INFO listing of conneciton succesfully loading
+2012-04-19 12:39:02,562 INFO end session
+2012-04-19 12:39:02,562 INFO end session: 'NoneType' object has no attribute 'close'
+2012-04-19 12:40:01,517 INFO ######################################################################################
+2012-04-19 12:40:01,519 INFO start session
+2012-04-19 12:40:03,158 INFO connect to db
+2012-04-19 12:40:03,161 INFO connecting to local database successfully
+2012-04-19 12:40:03,173 INFO list of connections loaded
+2012-04-19 12:40:03,190 INFO list of connections loaded
+2012-04-19 12:40:03,197 INFO listing of conneciton succesfully loading
+2012-04-19 12:40:06,826 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-19 12:40:06,829 INFO list of connections loaded
+2012-04-19 12:40:06,835 INFO listing of conneciton succesfully loading
+2012-04-19 12:40:07,279 INFO choose table
+2012-04-19 12:40:07,348 INFO list of schemas loaded successfully
+2012-04-19 12:40:08,339 INFO list of tables loaded successfully
+2012-04-19 12:40:08,341 INFO schema MGMT_VIEW choosed
+2012-04-19 12:40:09,239 INFO list of tables loaded successfully
+2012-04-19 12:40:09,239 INFO schema SYS choosed
+2012-04-19 12:40:09,400 INFO list of tables loaded successfully
+2012-04-19 12:40:09,400 INFO schema SYSTEM choosed
+2012-04-19 12:40:09,595 INFO list of tables loaded successfully
+2012-04-19 12:40:09,595 INFO schema TEST_UIR choosed
+2012-04-19 12:40:10,825 INFO list of tables loaded successfully
+2012-04-19 12:40:10,825 INFO schema ARTUR choosed
+2012-04-19 12:40:12,144 INFO table TEST choosed
+2012-04-19 12:40:24,081 INFO open local history
+2012-04-19 20:10:38,075 INFO end session
+2012-04-20 06:50:35,217 INFO ######################################################################################
+2012-04-20 06:50:35,217 INFO start session
+2012-04-20 06:50:36,523 INFO connect to db
+2012-04-20 06:50:36,529 INFO connecting to local database successfully
+2012-04-20 06:50:36,628 INFO list of connections loaded
+2012-04-20 06:50:36,651 INFO list of connections loaded
+2012-04-20 06:50:36,717 INFO listing of conneciton succesfully loading
+2012-04-20 06:50:38,032 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-20 06:50:38,036 INFO list of connections loaded
+2012-04-20 06:50:38,040 INFO listing of conneciton succesfully loading
+2012-04-20 06:50:39,266 INFO choose table
+2012-04-20 06:50:39,453 INFO list of schemas loaded successfully
+2012-04-20 06:50:40,947 INFO list of tables loaded successfully
+2012-04-20 06:50:40,948 INFO schema ARTUR choosed
+2012-04-20 06:50:41,857 INFO table TEST choosed
+2012-04-20 06:50:52,539 INFO end session
+2012-04-20 06:53:15,263 INFO ######################################################################################
+2012-04-20 06:53:15,263 INFO start session
+2012-04-20 06:53:16,477 INFO connect to db
+2012-04-20 06:53:16,483 INFO connecting to local database successfully
+2012-04-20 06:53:16,509 INFO list of connections loaded
+2012-04-20 06:53:16,536 INFO list of connections loaded
+2012-04-20 06:53:16,543 INFO listing of conneciton succesfully loading
+2012-04-20 06:53:17,490 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-20 06:53:17,492 INFO list of connections loaded
+2012-04-20 06:53:17,496 INFO listing of conneciton succesfully loading
+2012-04-20 06:53:18,803 INFO choose table
+2012-04-20 06:53:18,864 INFO list of schemas loaded successfully
+2012-04-20 06:53:21,398 INFO list of tables loaded successfully
+2012-04-20 06:53:21,398 INFO schema ARTUR choosed
+2012-04-20 06:53:22,892 INFO table TEST choosed
+2012-04-20 06:53:23,732 INFO open local history
+2012-04-20 06:53:27,576 ERROR starting calculate dq process failed: 'NoneType' object is not iterable
+2012-04-20 06:53:29,184 INFO end session
+2012-04-20 06:53:34,845 INFO ######################################################################################
+2012-04-20 06:53:34,846 INFO start session
+2012-04-20 06:53:36,223 INFO connect to db
+2012-04-20 06:53:36,230 INFO connecting to local database successfully
+2012-04-20 06:53:36,257 INFO list of connections loaded
+2012-04-20 06:53:36,286 INFO list of connections loaded
+2012-04-20 06:53:36,295 INFO listing of conneciton succesfully loading
+2012-04-20 06:53:37,059 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-20 06:53:37,062 INFO list of connections loaded
+2012-04-20 06:53:37,065 INFO listing of conneciton succesfully loading
+2012-04-20 06:53:37,588 INFO choose table
+2012-04-20 06:53:37,644 INFO list of schemas loaded successfully
+2012-04-20 06:53:39,601 INFO list of tables loaded successfully
+2012-04-20 06:53:39,601 INFO schema ARTUR choosed
+2012-04-20 06:53:40,894 INFO table TEST choosed
+2012-04-20 06:53:49,835 ERROR starting calculate dq process failed: 'NoneType' object is not iterable
+2012-04-20 06:54:25,357 ERROR starting calculate dq process failed: 'NoneType' object is not iterable
+2012-04-20 06:54:26,168 INFO end session
+2012-04-20 06:54:53,525 INFO ######################################################################################
+2012-04-20 06:54:53,525 INFO start session
+2012-04-20 06:54:54,732 INFO connect to db
+2012-04-20 06:54:54,734 INFO connecting to local database successfully
+2012-04-20 06:54:54,753 INFO list of connections loaded
+2012-04-20 06:54:54,776 INFO list of connections loaded
+2012-04-20 06:54:54,783 INFO listing of conneciton succesfully loading
+2012-04-20 06:54:55,898 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-20 06:54:55,901 INFO list of connections loaded
+2012-04-20 06:54:55,907 INFO listing of conneciton succesfully loading
+2012-04-20 06:54:58,221 INFO choose table
+2012-04-20 06:54:58,282 INFO list of schemas loaded successfully
+2012-04-20 06:54:59,858 INFO list of tables loaded successfully
+2012-04-20 06:54:59,858 INFO schema ARTUR choosed
+2012-04-20 06:55:00,451 INFO table TEST choosed
+2012-04-20 06:55:55,338 INFO launch edit regexps module
+2012-04-20 06:55:55,394 INFO connecting to local database successfully
+2012-04-20 06:55:58,826 ERROR failed calculation dq: NO PARAMS FOR DATA QUALITY
+2012-04-20 06:56:00,329 INFO launch edit regexps module
+2012-04-20 06:56:00,387 INFO connecting to local database successfully
+2012-04-20 06:56:02,818 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-20 06:56:04,009 INFO loading regular expressions for parameter no_information successfully 
+2012-04-20 06:56:05,688 INFO loading regular expressions for parameter no_information successfully 
+2012-04-20 06:56:39,555 INFO end session

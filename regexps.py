@@ -537,18 +537,21 @@ class regexps ( wx.Frame ):
             self.regexp9 = self.edit_regexp_txt.GetValue()
     
     def OnTestBtn(self, event):
-        cursor = cx_Oracle.Cursor(self.connection)
-        regexp = self.edit_regexp_txt.GetValue()
-        sql = ('select * from %s.%s where %s') % (self.schema, self.table, regexp)
-        cursor.execute(sql)
-        grid_data=cursor.fetchall()
-        data = []
-        for item in grid_data:
-            data.append(map(lambda a: a.decode('cp1251') if isinstance(a, basestring) else a, item))
-        self.grid_table = GridTable(data, self.connection, self.table)
-        cursor.close()
-        self.check_grid.SetTable(self.grid_table, True)
-        self.check_grid.AutoSizeColumns( True )
+        try:
+            cursor = cx_Oracle.Cursor(self.connection)
+            regexp = self.edit_regexp_txt.GetValue()
+            sql = ('select * from %s.%s where %s') % (self.schema, self.table, regexp)
+            cursor.execute(sql)
+            grid_data=cursor.fetchall()
+            data = []
+            for item in grid_data:
+                data.append(map(lambda a: a.decode('cp1251') if isinstance(a, basestring) else a, item))
+            self.grid_table = GridTable(data, self.connection, self.table)
+            cursor.close()
+            self.check_grid.SetTable(self.grid_table, True)
+            self.check_grid.AutoSizeColumns( True )
+        except Exception, info:
+            wx.MessageBox('Error sql syntaxis')
     
     def OnAddBtn(self, event):
         if self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[0]:
