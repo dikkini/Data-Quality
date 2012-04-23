@@ -10,15 +10,17 @@ class WorkDB():
         self.connection = connection
 
     def get_tables(self, schema):
-        cursor = cx_Oracle.Cursor(self.connection)
-        # Получать все таблицы доступные пользователю.
-        sql = ("select TABLE_NAME from dba_tables WHERE OWNER = '%s'" % schema)
-        cursor.execute(sql)
-        tables = cursor.fetchall()
-        tables=[i[0] for i in tables]
-        cursor.close()
-        return tables
-
+        try:
+            cursor = cx_Oracle.Cursor(self.connection)
+            # Получать все таблицы доступные пользователю.
+            sql = ("select TABLE_NAME from dba_tables WHERE OWNER = '%s'" % schema)
+            cursor.execute(sql)
+            tables = cursor.fetchall()
+            tables=[i[0] for i in tables]
+            cursor.close()
+            return tables
+        except Exception, info:
+            logging.error(u'loading list of tables failed - code 23:', str(info))
     def get_schemas(self):
         try:
             cursor = cx_Oracle.Cursor(self.connection)
@@ -30,7 +32,7 @@ class WorkDB():
             return schemas
         except TypeError, info:
             wx.MessageBox(u'Подключитесь к базе данных!')
-            print info
+
     def get_all_count(self, schema, table):
         try:
             cursor = cx_Oracle.Cursor(self.connection)
@@ -42,7 +44,7 @@ class WorkDB():
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
             wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            
     def get_regexp_count(self, schema, table, regexp):
         try:
             cursor = cx_Oracle.Cursor(self.connection)
@@ -53,8 +55,7 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            wx.MessageBox(u'Внешняя ошибка базы данных - code 56')
 
     def get_empty_values(self, schema, table):
         try:
@@ -70,8 +71,7 @@ class WorkDB():
             EV = float(EV)
             return EV
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            wx.MessageBox(u'Внешняя ошибка базы данных - code 72')
 
     def get_uniq_values(self, column, schema, table):
         try:
@@ -83,8 +83,7 @@ class WorkDB():
             cursor.close()
             return cou
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            wx.MessageBox(u'Внешняя ошибка базы данных - code 84')
 
     def get_cols(self, table):
         try:

@@ -89,25 +89,13 @@ class main_stat(listmix.ColumnSorterMixin):
             self.ext_list.list.DeleteAllItems()
             self.ext_list.list.Destroy()
         except Exception, info:
-            print info
+            wx.MessageBox(u'Ошибка отображения расширенной статистики. Code: 92')
             
         self.ext_stat = self.stat.take_ext_stat(self.date)
         self.ext_stat = [ i for i in self.ext_stat if i is not None] 
         self.ext_list = extend_stat(self.main.panelMainStat, self.ext_cols, self.ext_stat)
         self.ext_list.list.SetSize((900, 150))
-#        for param in self.ext_stat:
-#            if param == 'None':
-#                self.ext_stat.remove(param)
-#        if self.ext_stat[0] is not None:
-#            self.ext_list.list.Append(self.ext_stat[0])
-#        if self.ext_stat[1] is not None:
-#            self.ext_list.list.Append(self.ext_stat[1])
-#        if self.ext_stat[2] is not None:
-#            self.ext_list.list.Append(self.ext_stat[2])
-#        if self.ext_stat[3] is not None:
-#            self.ext_list.list.Append(self.ext_stat[3])
-#        self.ext_list.list.Show(True)
-
+        
     def OnAdviceMode(self, event):
         mod = adv.advices(self.data)
         mod.TextAdv()
