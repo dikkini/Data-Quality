@@ -168,21 +168,21 @@ class MainWindow ( wx.Frame ):
         frame.ShowModal()
         
     def DisconnectDB(self, event):
-        logging.info(u'end session')
         try:
             self.connection.close()
             self.Destroy()
             sys.exit()
+            logging.info(u'end session: %s')
         except Exception, info:
             self.Destroy()
-            logging.info(u'end session: %s' % info)
+            logging.error(u'end session error - code 178: %s' % info)
             sys.exit()
             
     def DoDQ(self, event):
         try:
             if not sum(self.using_params):
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
-                logging.error(u'failed calculation dq: NO PARAMS FOR DATA QUALITY')
+                logging.error(u'failed calculation dq - code 185: NO PARAMS FOR DATA QUALITY')
                 return False
             if self.flagres is None:
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
@@ -201,11 +201,11 @@ class MainWindow ( wx.Frame ):
                 wx.MessageBox(u'Выберите параметры для оценки качества данных преждем чем начать процесс оценки качества данных!')
             else:
                 wx.MessageBox(str(info))
-                logging.error(u'starting calculate dq process failed: %s' % (str(info)))
+                logging.error(u'starting calculate dq process failed - code 204: %s' % (str(info)))
     
     def OnTabClose(self, event):
         temp_page = event.GetSelection()
-        sel_page = self.notebook.GetPageText(tem)
+        sel_page = self.notebook.GetPageText(temp_page)
         if u'Результаты оценки качества данных' in sel_page:
             self.flagres is None
         
@@ -219,7 +219,7 @@ class MainWindow ( wx.Frame ):
             self.histres = results.history_stat(self, self.histcols, histrows)
         except TypeError, info:
             wx.MessageBox(str(info))
-            logging.error(u'error while looking history', str(info))
+            logging.error(u'error while looking history - code: 222 -', str(info))
     
     def RefrshHist(self):
         try:
@@ -243,8 +243,11 @@ class MainWindow ( wx.Frame ):
         print "Oops, dontknow"
         
     def logEvents(self, event):
-        file = 'journal_events.log'
-        os.system('notepad.exe ' + file)
+        try:
+            file = 'journal_events.log'
+            os.system('notepad.exe ' + file)
+        except Exception, info:
+            logging.error(u'error while opening journal events - code 250 ', str(info))
         
     def logUses(self, event):
         print "Log Uses"

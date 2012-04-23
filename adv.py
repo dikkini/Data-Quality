@@ -131,10 +131,11 @@ class ShowAdv ( wx.Frame ):
             future_dq = sum(alldata) / len(alldata)
             delta_dq = round(float(future_dq), 2) - round(float(prev_dq), 2)
             future_dq = round(future_dq, 2)
-
+            
             info = (u'Если качество данных параметра -  %s%s - увеличить на 10%s,\n то качество данных возрастет на %s%s и итоговый процент будет составлять %s%s.                       ' % (param, perc, perc, delta_dq, perc, future_dq, perc))
+            print info
             self.text_adv = wx.StaticText( self.m_panel3, wx.ID_ANY, info, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
-            self.text_adv.Wrap( -1 )
+            #self.text_adv.Wrap( -1 )
             bSizer3.Add( self.text_adv, 0, wx.ALL, 5 )
         
         
