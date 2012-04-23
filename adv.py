@@ -124,7 +124,7 @@ class ShowAdv ( wx.Frame ):
                 try:
                     number = float(temp)
                 except ValueError:
-                    print "not float"
+                    wx.MessageBox(u'ошибка')
             alldata.remove(number)
             future_element = number + 10
             alldata.append(future_element)
