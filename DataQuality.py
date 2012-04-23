@@ -204,7 +204,10 @@ class MainWindow ( wx.Frame ):
                 logging.error(u'starting calculate dq process failed: %s' % (str(info)))
     
     def OnTabClose(self, event):
-        self.sel_page = event.GetSelection()
+        temp_page = event.GetSelection()
+        sel_page = self.notebook.GetPageText(tem)
+        if u'Результаты оценки качества данных' in sel_page:
+            self.flagres is None
         
     def HistDQ(self, event):
         try:
