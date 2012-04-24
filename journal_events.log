@@ -4704,3 +4704,6 @@
 2012-04-24 22:22:47,615 INFO ######################################################################################
 2012-04-24 22:22:47,615 INFO start session
 2012-04-24 22:22:53,398 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 23:38:14,542 INFO ######################################################################################
+2012-04-24 23:38:14,542 INFO start session
+2012-04-24 23:38:50,654 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
