@@ -4316,3 +4316,391 @@
 2012-04-24 00:57:05,348 INFO uniq parameter calculation successfully
 2012-04-24 00:57:05,430 INFO calculation successfully
 2012-04-24 00:57:19,375 INFO end session
+2012-04-24 02:05:40,608 INFO ######################################################################################
+2012-04-24 02:05:40,608 INFO start session
+2012-04-24 02:05:41,990 INFO connect to db
+2012-04-24 02:05:41,993 INFO connecting to local database successfully
+2012-04-24 02:05:42,007 INFO list of connections loaded
+2012-04-24 02:05:42,029 INFO list of connections loaded
+2012-04-24 02:05:42,039 INFO listing of conneciton succesfully loading
+2012-04-24 02:05:43,566 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:05:43,569 INFO list of connections loaded
+2012-04-24 02:05:43,572 INFO listing of conneciton succesfully loading
+2012-04-24 02:05:44,020 INFO choose table
+2012-04-24 02:05:44,052 INFO list of schemas loaded successfully
+2012-04-24 02:05:45,506 INFO list of tables loaded successfully
+2012-04-24 02:05:45,506 INFO schema ARTUR choosed
+2012-04-24 02:05:46,369 INFO table TEST choosed
+2012-04-24 02:05:47,269 INFO open local history
+2012-04-24 02:06:11,124 INFO ######################################################################################
+2012-04-24 02:06:11,124 INFO start session
+2012-04-24 02:06:12,516 INFO connect to db
+2012-04-24 02:06:12,519 INFO connecting to local database successfully
+2012-04-24 02:06:12,532 INFO list of connections loaded
+2012-04-24 02:06:12,553 INFO list of connections loaded
+2012-04-24 02:06:12,562 INFO listing of conneciton succesfully loading
+2012-04-24 02:06:13,233 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:06:13,236 INFO list of connections loaded
+2012-04-24 02:06:13,240 INFO listing of conneciton succesfully loading
+2012-04-24 02:06:13,592 INFO choose table
+2012-04-24 02:06:13,624 INFO list of schemas loaded successfully
+2012-04-24 02:06:14,770 INFO list of tables loaded successfully
+2012-04-24 02:06:14,770 INFO schema ARTUR choosed
+2012-04-24 02:06:15,369 INFO table TEST choosed
+2012-04-24 02:06:16,312 INFO open local history
+2012-04-24 02:06:42,335 INFO ######################################################################################
+2012-04-24 02:06:42,335 INFO start session
+2012-04-24 02:06:43,522 INFO connect to db
+2012-04-24 02:06:43,525 INFO connecting to local database successfully
+2012-04-24 02:06:43,538 INFO list of connections loaded
+2012-04-24 02:06:43,556 INFO list of connections loaded
+2012-04-24 02:06:43,565 INFO listing of conneciton succesfully loading
+2012-04-24 02:06:44,176 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:06:44,177 INFO list of connections loaded
+2012-04-24 02:06:44,181 INFO listing of conneciton succesfully loading
+2012-04-24 02:06:46,118 INFO choose table
+2012-04-24 02:06:46,148 INFO list of schemas loaded successfully
+2012-04-24 02:06:47,542 INFO list of tables loaded successfully
+2012-04-24 02:06:47,542 INFO schema ARTUR choosed
+2012-04-24 02:06:48,085 INFO table TEST choosed
+2012-04-24 02:06:48,943 INFO open local history
+2012-04-24 02:07:19,078 INFO ######################################################################################
+2012-04-24 02:07:19,078 INFO start session
+2012-04-24 02:07:20,280 INFO connect to db
+2012-04-24 02:07:20,285 INFO connecting to local database successfully
+2012-04-24 02:07:20,298 INFO list of connections loaded
+2012-04-24 02:07:20,316 INFO list of connections loaded
+2012-04-24 02:07:20,322 INFO listing of conneciton succesfully loading
+2012-04-24 02:07:21,016 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:07:21,019 INFO list of connections loaded
+2012-04-24 02:07:21,022 INFO listing of conneciton succesfully loading
+2012-04-24 02:07:21,335 INFO choose table
+2012-04-24 02:07:21,367 INFO list of schemas loaded successfully
+2012-04-24 02:07:22,993 INFO list of tables loaded successfully
+2012-04-24 02:07:22,993 INFO schema ARTUR choosed
+2012-04-24 02:07:23,575 INFO table TEST choosed
+2012-04-24 02:07:24,266 INFO open local history
+2012-04-24 02:08:53,645 INFO ######################################################################################
+2012-04-24 02:08:53,645 INFO start session
+2012-04-24 02:08:54,700 INFO connect to db
+2012-04-24 02:08:54,703 INFO connecting to local database successfully
+2012-04-24 02:08:54,716 INFO list of connections loaded
+2012-04-24 02:08:54,734 INFO list of connections loaded
+2012-04-24 02:08:54,743 INFO listing of conneciton succesfully loading
+2012-04-24 02:08:55,663 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:08:55,664 INFO list of connections loaded
+2012-04-24 02:08:55,668 INFO listing of conneciton succesfully loading
+2012-04-24 02:08:56,007 INFO choose table
+2012-04-24 02:08:56,040 INFO list of schemas loaded successfully
+2012-04-24 02:08:57,180 INFO list of tables loaded successfully
+2012-04-24 02:08:57,180 INFO schema ARTUR choosed
+2012-04-24 02:08:57,707 INFO table TEST choosed
+2012-04-24 02:08:58,411 INFO open local history
+2012-04-24 02:16:39,924 INFO ######################################################################################
+2012-04-24 02:16:39,924 INFO start session
+2012-04-24 02:16:40,780 INFO connect to db
+2012-04-24 02:16:40,783 INFO connecting to local database successfully
+2012-04-24 02:16:40,796 INFO list of connections loaded
+2012-04-24 02:16:40,816 INFO list of connections loaded
+2012-04-24 02:16:40,826 INFO listing of conneciton succesfully loading
+2012-04-24 02:16:41,900 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:16:41,903 INFO list of connections loaded
+2012-04-24 02:16:41,905 INFO listing of conneciton succesfully loading
+2012-04-24 02:16:42,302 INFO choose table
+2012-04-24 02:16:42,332 INFO list of schemas loaded successfully
+2012-04-24 02:16:43,704 INFO list of tables loaded successfully
+2012-04-24 02:16:43,704 INFO schema ARTUR choosed
+2012-04-24 02:16:44,426 INFO table TEST choosed
+2012-04-24 02:16:45,279 INFO open local history
+2012-04-24 02:18:41,207 INFO ######################################################################################
+2012-04-24 02:18:41,207 INFO start session
+2012-04-24 02:18:43,759 INFO connect to db
+2012-04-24 02:18:43,763 INFO connecting to local database successfully
+2012-04-24 02:18:43,776 INFO list of connections loaded
+2012-04-24 02:18:43,795 INFO list of connections loaded
+2012-04-24 02:18:43,805 INFO listing of conneciton succesfully loading
+2012-04-24 02:18:44,637 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:18:44,640 INFO list of connections loaded
+2012-04-24 02:18:44,642 INFO listing of conneciton succesfully loading
+2012-04-24 02:18:45,010 INFO choose table
+2012-04-24 02:18:45,043 INFO list of schemas loaded successfully
+2012-04-24 02:18:46,515 INFO list of tables loaded successfully
+2012-04-24 02:18:46,515 INFO schema ARTUR choosed
+2012-04-24 02:18:47,071 INFO table TEST choosed
+2012-04-24 02:18:47,857 INFO open local history
+2012-04-24 02:19:03,299 INFO ######################################################################################
+2012-04-24 02:19:03,299 INFO start session
+2012-04-24 02:19:04,842 INFO connect to db
+2012-04-24 02:19:04,845 INFO connecting to local database successfully
+2012-04-24 02:19:04,858 INFO list of connections loaded
+2012-04-24 02:19:04,878 INFO list of connections loaded
+2012-04-24 02:19:04,885 INFO listing of conneciton succesfully loading
+2012-04-24 02:19:05,585 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:19:05,588 INFO list of connections loaded
+2012-04-24 02:19:05,591 INFO listing of conneciton succesfully loading
+2012-04-24 02:19:06,704 INFO choose table
+2012-04-24 02:19:06,736 INFO list of schemas loaded successfully
+2012-04-24 02:19:08,154 INFO list of tables loaded successfully
+2012-04-24 02:19:08,154 INFO schema ARTUR choosed
+2012-04-24 02:19:08,756 INFO table TEST choosed
+2012-04-24 02:19:09,269 INFO choose table
+2012-04-24 02:19:09,302 INFO list of schemas loaded successfully
+2012-04-24 02:19:10,658 INFO open local history
+2012-04-24 02:20:10,369 INFO ######################################################################################
+2012-04-24 02:20:10,369 INFO start session
+2012-04-24 02:20:11,460 INFO connect to db
+2012-04-24 02:20:11,463 INFO connecting to local database successfully
+2012-04-24 02:20:11,476 INFO list of connections loaded
+2012-04-24 02:20:11,496 INFO list of connections loaded
+2012-04-24 02:20:11,503 INFO listing of conneciton succesfully loading
+2012-04-24 02:20:13,003 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:20:13,006 INFO list of connections loaded
+2012-04-24 02:20:13,009 INFO listing of conneciton succesfully loading
+2012-04-24 02:20:13,355 INFO choose table
+2012-04-24 02:20:13,388 INFO list of schemas loaded successfully
+2012-04-24 02:20:14,845 INFO list of tables loaded successfully
+2012-04-24 02:20:14,845 INFO schema ARTUR choosed
+2012-04-24 02:20:15,443 INFO table TEST choosed
+2012-04-24 02:20:16,124 INFO open local history
+2012-04-24 02:20:35,516 INFO ######################################################################################
+2012-04-24 02:20:35,516 INFO start session
+2012-04-24 02:20:37,309 INFO connect to db
+2012-04-24 02:20:37,312 INFO connecting to local database successfully
+2012-04-24 02:20:37,326 INFO list of connections loaded
+2012-04-24 02:20:37,346 INFO list of connections loaded
+2012-04-24 02:20:37,352 INFO listing of conneciton succesfully loading
+2012-04-24 02:20:38,196 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:20:38,197 INFO list of connections loaded
+2012-04-24 02:20:38,201 INFO listing of conneciton succesfully loading
+2012-04-24 02:20:38,348 INFO choose table
+2012-04-24 02:20:38,380 INFO list of schemas loaded successfully
+2012-04-24 02:20:40,200 INFO list of tables loaded successfully
+2012-04-24 02:20:40,200 INFO schema ARTUR choosed
+2012-04-24 02:20:40,767 INFO table TEST choosed
+2012-04-24 02:20:41,904 INFO open local history
+2012-04-24 02:21:23,282 INFO ######################################################################################
+2012-04-24 02:21:23,282 INFO start session
+2012-04-24 02:21:24,601 INFO connect to db
+2012-04-24 02:21:24,605 INFO connecting to local database successfully
+2012-04-24 02:21:24,618 INFO list of connections loaded
+2012-04-24 02:21:24,637 INFO list of connections loaded
+2012-04-24 02:21:24,644 INFO listing of conneciton succesfully loading
+2012-04-24 02:21:25,361 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 02:21:25,365 INFO list of connections loaded
+2012-04-24 02:21:25,368 INFO listing of conneciton succesfully loading
+2012-04-24 02:21:25,553 INFO choose table
+2012-04-24 02:21:25,585 INFO list of schemas loaded successfully
+2012-04-24 02:21:26,938 INFO list of tables loaded successfully
+2012-04-24 02:21:26,938 INFO schema ARTUR choosed
+2012-04-24 02:21:27,509 INFO table TEST choosed
+2012-04-24 02:21:28,101 INFO open local history
+2012-04-24 02:21:29,605 ERROR error while looking history - code: 222 - __init__() takes exactly 4 arguments (5 given)
+2012-04-24 15:22:53,351 INFO ######################################################################################
+2012-04-24 15:22:53,421 INFO start session
+2012-04-24 15:23:03,555 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:24:42,829 INFO ######################################################################################
+2012-04-24 15:24:42,829 INFO start session
+2012-04-24 15:25:20,584 INFO ######################################################################################
+2012-04-24 15:25:20,584 INFO start session
+2012-04-24 15:25:25,506 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:25:26,517 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:25:46,546 INFO ######################################################################################
+2012-04-24 15:25:46,546 INFO start session
+2012-04-24 15:25:50,480 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:26:03,653 INFO ######################################################################################
+2012-04-24 15:26:03,653 INFO start session
+2012-04-24 15:27:13,275 INFO ######################################################################################
+2012-04-24 15:27:13,275 INFO start session
+2012-04-24 15:27:22,697 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:29:27,493 INFO ######################################################################################
+2012-04-24 15:29:27,493 INFO start session
+2012-04-24 15:29:37,858 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:29:38,497 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 15:29:41,190 INFO ######################################################################################
+2012-04-24 15:29:41,190 INFO start session
+2012-04-24 15:29:45,940 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 16:33:14,558 INFO ######################################################################################
+2012-04-24 16:33:14,558 INFO start session
+2012-04-24 16:33:15,903 INFO connect to db
+2012-04-24 16:33:15,907 INFO connecting to local database successfully
+2012-04-24 16:33:15,973 INFO list of connections loaded
+2012-04-24 16:33:15,997 INFO list of connections loaded
+2012-04-24 16:33:16,010 INFO listing of conneciton succesfully loading
+2012-04-24 16:33:18,664 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 16:33:18,665 INFO list of connections loaded
+2012-04-24 16:33:18,670 INFO listing of conneciton succesfully loading
+2012-04-24 16:33:19,918 INFO choose table
+2012-04-24 16:33:20,479 INFO list of schemas loaded successfully
+2012-04-24 16:33:23,055 INFO list of tables loaded successfully
+2012-04-24 16:33:23,055 INFO schema ARTUR choosed
+2012-04-24 16:33:23,730 INFO table TEST choosed
+2012-04-24 16:33:24,467 INFO open local history
+2012-04-24 16:33:25,914 INFO launch edit regexps module
+2012-04-24 16:33:25,967 INFO connecting to local database successfully
+2012-04-24 16:33:30,471 INFO starting calculation data quality model
+2012-04-24 16:33:30,490 INFO connecting to local database successfully
+2012-04-24 16:33:31,085 INFO calculation successfully
+2012-04-24 16:33:33,641 INFO launch edit regexps module
+2012-04-24 16:33:33,677 INFO connecting to local database successfully
+2012-04-24 16:33:38,217 INFO starting calculation data quality model
+2012-04-24 16:33:38,219 INFO connecting to local database successfully
+2012-04-24 16:33:38,562 INFO calculation successfully
+2012-04-24 16:35:31,803 ERROR starting calculate dq process failed - code 204: The C++ part of the ListCtrl object has been deleted, attribute access no longer allowed.
+2012-04-24 17:31:07,638 INFO ######################################################################################
+2012-04-24 17:31:07,638 INFO start session
+2012-04-24 17:31:20,706 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 17:38:00,825 INFO ######################################################################################
+2012-04-24 17:38:00,826 INFO start session
+2012-04-24 17:38:16,283 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 18:01:01,861 INFO ######################################################################################
+2012-04-24 18:01:01,861 INFO start session
+2012-04-24 18:04:41,127 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 18:24:32,641 INFO ######################################################################################
+2012-04-24 18:24:32,641 INFO start session
+2012-04-24 18:24:34,000 INFO connect to db
+2012-04-24 18:24:34,003 INFO connecting to local database successfully
+2012-04-24 18:24:34,016 INFO list of connections loaded
+2012-04-24 18:24:34,038 INFO list of connections loaded
+2012-04-24 18:24:34,048 INFO listing of conneciton succesfully loading
+2012-04-24 18:24:37,292 INFO connecting to local database successfully
+2012-04-24 18:24:37,292 INFO new connection creating
+2012-04-24 18:24:37,295 INFO list of connections loaded
+2012-04-24 18:24:37,301 INFO listing of conneciton succesfully loading
+2012-04-24 18:24:37,306 INFO creating new connection
+2012-04-24 18:24:42,867 INFO new connection test  created
+2012-04-24 18:24:42,869 INFO list of connections loaded
+2012-04-24 18:24:42,875 INFO listing of conneciton succesfully loading
+2012-04-24 18:24:43,749 INFO list of connections loaded
+2012-04-24 18:24:43,757 INFO listing of conneciton succesfully loading
+2012-04-24 18:24:44,628 INFO list of connections loaded
+2012-04-24 18:24:44,638 INFO listing of conneciton succesfully loading
+2012-04-24 18:24:45,773 INFO trying to connect using conneciton: test
+2012-04-24 18:24:46,191 INFO connecting to local database successfully
+2012-04-24 18:24:46,191 INFO editing connection: test
+2012-04-24 18:24:46,196 INFO list of connections loaded
+2012-04-24 18:24:46,201 INFO listing of conneciton succesfully loading
+2012-04-24 18:24:46,207 INFO editing connection: test
+2012-04-24 18:24:50,729 INFO list of connections loaded
+2012-04-24 18:24:50,736 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:04,015 INFO connecting to local database successfully
+2012-04-24 18:25:04,015 INFO new connection creating
+2012-04-24 18:25:04,017 INFO list of connections loaded
+2012-04-24 18:25:04,023 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:04,030 INFO creating new connection
+2012-04-24 18:25:15,269 INFO new connection test  created
+2012-04-24 18:25:15,272 INFO list of connections loaded
+2012-04-24 18:25:15,279 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:16,848 INFO trying to connect using conneciton: test
+2012-04-24 18:25:17,200 INFO connecting to local database successfully
+2012-04-24 18:25:17,200 INFO editing connection: test
+2012-04-24 18:25:17,203 INFO list of connections loaded
+2012-04-24 18:25:17,210 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:17,217 INFO editing connection: test
+2012-04-24 18:25:20,591 INFO editing connection test successfully: test
+2012-04-24 18:25:20,594 INFO list of connections loaded
+2012-04-24 18:25:20,602 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:22,355 INFO trying to connect using conneciton: test
+2012-04-24 18:25:22,622 INFO connecting to local database successfully
+2012-04-24 18:25:22,622 INFO editing connection: test
+2012-04-24 18:25:22,625 INFO list of connections loaded
+2012-04-24 18:25:22,631 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:22,644 INFO editing connection: test
+2012-04-24 18:25:31,186 INFO list of connections loaded
+2012-04-24 18:25:31,191 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:32,575 INFO trying to connect using conneciton: test
+2012-04-24 18:25:32,944 INFO delete connection test succesfully
+2012-04-24 18:25:33,015 INFO list of connections loaded
+2012-04-24 18:25:33,019 INFO try to delete connection: test
+2012-04-24 18:25:33,961 INFO trying to connect using conneciton: 12312
+2012-04-24 18:25:34,325 INFO delete connection 12312 succesfully
+2012-04-24 18:25:34,404 INFO list of connections loaded
+2012-04-24 18:25:34,405 INFO try to delete connection: 12312
+2012-04-24 18:25:35,226 INFO trying to connect using conneciton: testlinux
+2012-04-24 18:25:36,094 INFO list of connections loaded
+2012-04-24 18:25:36,096 INFO listing of conneciton succesfully loading
+2012-04-24 18:25:39,651 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 18:29:14,150 INFO ######################################################################################
+2012-04-24 18:29:14,150 INFO start session
+2012-04-24 18:51:12,262 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 19:00:41,019 INFO ######################################################################################
+2012-04-24 19:00:41,019 INFO start session
+2012-04-24 19:00:42,302 INFO connect to db
+2012-04-24 19:00:42,308 INFO connecting to local database successfully
+2012-04-24 19:00:42,325 INFO list of connections loaded
+2012-04-24 19:00:42,346 INFO list of connections loaded
+2012-04-24 19:00:42,358 INFO listing of conneciton succesfully loading
+2012-04-24 19:00:43,184 INFO list of connections loaded
+2012-04-24 19:00:43,188 INFO listing of conneciton succesfully loading
+2012-04-24 20:42:29,994 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 21:41:13,562 INFO ######################################################################################
+2012-04-24 21:41:13,562 INFO start session
+2012-04-24 21:58:36,423 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 21:59:29,897 INFO ######################################################################################
+2012-04-24 21:59:29,897 INFO start session
+2012-04-24 22:01:45,543 INFO connect to db
+2012-04-24 22:01:45,549 INFO connecting to local database successfully
+2012-04-24 22:01:45,562 INFO list of connections loaded
+2012-04-24 22:01:45,581 INFO list of connections loaded
+2012-04-24 22:01:45,588 INFO listing of conneciton succesfully loading
+2012-04-24 22:01:47,290 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-24 22:01:47,293 INFO list of connections loaded
+2012-04-24 22:01:47,296 INFO listing of conneciton succesfully loading
+2012-04-24 22:01:47,747 INFO choose table
+2012-04-24 22:01:48,171 INFO list of schemas loaded successfully
+2012-04-24 22:01:49,878 INFO list of tables loaded successfully
+2012-04-24 22:01:49,878 INFO schema ARTUR choosed
+2012-04-24 22:01:50,506 INFO table TEST choosed
+2012-04-24 22:01:51,328 INFO open local history
+2012-04-24 22:01:53,437 INFO launch edit regexps module
+2012-04-24 22:01:53,563 INFO connecting to local database successfully
+2012-04-24 22:17:01,171 INFO ######################################################################################
+2012-04-24 22:17:01,171 INFO start session
+2012-04-24 22:17:23,375 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 22:18:25,884 INFO ######################################################################################
+2012-04-24 22:18:25,884 INFO start session
+2012-04-24 22:18:32,417 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 22:18:43,931 INFO ######################################################################################
+2012-04-24 22:18:43,933 INFO start session
+2012-04-24 22:18:49,246 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 22:19:00,676 INFO ######################################################################################
+2012-04-24 22:19:00,677 INFO start session
+2012-04-24 22:19:36,674 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 22:19:43,648 INFO ######################################################################################
+2012-04-24 22:19:43,648 INFO start session
+2012-04-24 22:19:44,838 INFO connect to db
+2012-04-24 22:19:44,842 INFO connecting to local database successfully
+2012-04-24 22:19:44,855 INFO list of connections loaded
+2012-04-24 22:19:44,877 INFO list of connections loaded
+2012-04-24 22:19:44,884 INFO listing of conneciton succesfully loading
+2012-04-24 22:19:47,026 INFO connecting to local database successfully
+2012-04-24 22:19:47,026 INFO editing connection: testlinux
+2012-04-24 22:19:47,033 INFO list of connections loaded
+2012-04-24 22:19:47,038 INFO listing of conneciton succesfully loading
+2012-04-24 22:19:47,042 INFO editing connection: testlinux
+2012-04-24 22:19:58,388 INFO editing connection testlinux successfully: localhost
+2012-04-24 22:19:58,392 INFO list of connections loaded
+2012-04-24 22:19:58,395 INFO listing of conneciton succesfully loading
+2012-04-24 22:20:02,091 INFO list of connections loaded
+2012-04-24 22:20:02,098 INFO listing of conneciton succesfully loading
+2012-04-24 22:20:07,864 INFO list of connections loaded
+2012-04-24 22:20:07,868 INFO listing of conneciton succesfully loading
+2012-04-24 22:20:07,934 INFO list of connections loaded
+2012-04-24 22:20:07,937 INFO listing of conneciton succesfully loading
+2012-04-24 22:20:53,605 INFO connect to db
+2012-04-24 22:20:53,611 INFO connecting to local database successfully
+2012-04-24 22:20:53,611 INFO list of connections loaded
+2012-04-24 22:20:53,631 INFO list of connections loaded
+2012-04-24 22:20:53,634 INFO listing of conneciton succesfully loading
+2012-04-24 22:20:55,346 INFO connecting to local database successfully
+2012-04-24 22:20:55,348 INFO new connection creating
+2012-04-24 22:20:55,349 INFO list of connections loaded
+2012-04-24 22:20:55,352 INFO listing of conneciton succesfully loading
+2012-04-24 22:20:55,361 INFO creating new connection
+2012-04-24 22:21:27,788 INFO list of connections loaded
+2012-04-24 22:21:27,790 INFO listing of conneciton succesfully loading
+2012-04-24 22:21:27,859 INFO list of connections loaded
+2012-04-24 22:21:27,861 INFO listing of conneciton succesfully loading
+2012-04-24 22:21:28,180 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-24 22:22:47,615 INFO ######################################################################################
+2012-04-24 22:22:47,615 INFO start session
+2012-04-24 22:22:53,398 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'

@@ -9,7 +9,7 @@ import os
 import calculation
 import results
 import statistic
-import help_frame
+import help
 import about
 import logging
 import os
@@ -54,7 +54,7 @@ class MainWindow ( wx.Frame ):
         self.Layout()
         self.menubar = wx.MenuBar( 0 )
         self.BD = wx.Menu()
-        self.m_menuItem1 = wx.MenuItem( self.BD, 1, u"Подключиться к базе", u'Выполнить подключение к базе данных', wx.ITEM_NORMAL )
+        self.m_menuItem1 = wx.MenuItem( self.BD, 1, u"Подключиться к базе\tCtrl+F", u'Выполнить подключение к базе данных', wx.ITEM_NORMAL )
         self.BD.AppendItem(self.m_menuItem1, )
         
         self.m_menuItem2 = wx.MenuItem( self.BD, 2, u"Выбрать таблицу\tCtrl+T", u'Выбрать схему и таблицу для оценки качества данных', wx.ITEM_NORMAL )
@@ -219,7 +219,7 @@ class MainWindow ( wx.Frame ):
             self.histres = results.history_stat(self, self.histcols, histrows)
         except TypeError, info:
             wx.MessageBox(str(info))
-            logging.error(u'error while looking history - code: 222 -', str(info))
+            logging.error(u'error while looking history - code: 222 - %s' % str(info))
     
     def RefrshHist(self):
         try:
@@ -257,7 +257,7 @@ class MainWindow ( wx.Frame ):
         frame.Show()
     
     def show_help(self, event):
-        frame = help_frame.help_frame()
+        frame = help.help_frame()
         frame.Show()
         
     def __del__( self ):

@@ -162,7 +162,7 @@ class history_stat():
         self.main = parent
         
         self.stat = statistic.stats(self.main.schema, self.main.table)
-        
+    
         self.list = wx.ListCtrl(self.main.panelHist, 0,
                                  style=wx.LC_REPORT
                                  | wx.BORDER_NONE
