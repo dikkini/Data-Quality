@@ -104,40 +104,45 @@ class regexps ( wx.Frame ):
         self.regexps_tab.Layout()
         sizer3.Fit( self.regexps_tab )
         self.regexps_notebook.AddPage( self.regexps_tab, u"Ввод регулярных выражений", True )
-        self.check_sql_tab = wx.Panel( self.regexps_notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        #self.check_sql_tab = wx.Panel( self.regexps_notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         sizer4 = wx.BoxSizer( wx.VERTICAL )
         
-        self.check_grid = wx.grid.Grid( self.check_sql_tab, wx.ID_ANY, wx.DefaultPosition, wx.Size(480,407), wx.HSCROLL|wx.VSCROLL )
+        #Вкладка с маленьким гридом, на при этом багает большой грид. Есть мысля переиначить интерфейс модуля редактирования регулярных выражений.
+        #=======================================================================
+        # self.check_grid = wx.grid.Grid( self.check_sql_tab, wx.ID_ANY, wx.DefaultPosition, wx.Size(480,407), wx.HSCROLL|wx.VSCROLL )
+        # 
+        # # Grid
+        # self.check_grid.CreateGrid( 5, 5 )
+        # self.check_grid.EnableEditing( False )
+        # self.check_grid.EnableGridLines( True )
+        # self.check_grid.EnableDragGridSize( False )
+        # self.check_grid.SetMargins( 0, 0 )
+        # 
+        # # Columns
+        # self.check_grid.EnableDragColMove( False )
+        # self.check_grid.EnableDragColSize( False )
+        # self.check_grid.SetColLabelSize( 20 )
+        # self.check_grid.SetColLabelAlignment( wx.ALIGN_CENTRE, wx.ALIGN_CENTRE )
+        # 
+        # # Rows
+        # self.check_grid.AutoSizeRows( True )
+        # self.check_grid.EnableDragRowSize( True )
+        # self.check_grid.SetRowLabelSize( 40 )
+        # self.check_grid.SetRowLabelAlignment( wx.ALIGN_CENTRE, wx.ALIGN_CENTRE )
+        # 
+        # # Label Appearance
+        # 
+        # # Cell Defaults
+        # self.check_grid.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
+        # sizer4.Add( self.check_grid, 0, wx.ALL, 5 )
+        #=======================================================================
         
-        # Grid
-        self.check_grid.CreateGrid( 5, 5 )
-        self.check_grid.EnableEditing( False )
-        self.check_grid.EnableGridLines( True )
-        self.check_grid.EnableDragGridSize( False )
-        self.check_grid.SetMargins( 0, 0 )
-        
-        # Columns
-        self.check_grid.EnableDragColMove( False )
-        self.check_grid.EnableDragColSize( False )
-        self.check_grid.SetColLabelSize( 20 )
-        self.check_grid.SetColLabelAlignment( wx.ALIGN_CENTRE, wx.ALIGN_CENTRE )
-        
-        # Rows
-        self.check_grid.AutoSizeRows( True )
-        self.check_grid.EnableDragRowSize( True )
-        self.check_grid.SetRowLabelSize( 40 )
-        self.check_grid.SetRowLabelAlignment( wx.ALIGN_CENTRE, wx.ALIGN_CENTRE )
-        
-        # Label Appearance
-        
-        # Cell Defaults
-        self.check_grid.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
-        sizer4.Add( self.check_grid, 0, wx.ALL, 5 )
-        
-        self.check_sql_tab.SetSizer( sizer4 )
-        self.check_sql_tab.Layout()
-        sizer4.Fit( self.check_sql_tab )
-        self.regexps_notebook.AddPage( self.check_sql_tab, u"Проверка регулярных выражений", False )
+        #=======================================================================
+        # self.check_sql_tab.SetSizer( sizer4 )
+        # self.check_sql_tab.Layout()
+        # sizer4.Fit( self.check_sql_tab )
+        # self.regexps_notebook.AddPage( self.check_sql_tab, u"Проверка регулярных выражений", False )
+        #=======================================================================
         
         sizer1.Add( self.regexps_notebook, 1, wx.EXPAND |wx.ALL, 5 )
         
@@ -151,7 +156,7 @@ class regexps ( wx.Frame ):
         self.params_choice_pull.Bind(wx.EVT_CHOICE, self.OnChParamDQ)
         self.regexp_choice_pull.Bind(wx.EVT_CHOICE, self.OnChParamRegexp)
         self.edit_regexp_txt.Bind(wx.EVT_TEXT, self.OnEditRegexp)
-        self.check_sql_tab.Bind( wx.EVT_LEFT_DCLICK, self.OnGridTab)
+        #self.check_sql_tab.Bind( wx.EVT_LEFT_DCLICK, self.OnGridTab)
                                         
         #Events Buttons
         self.Bind(wx.EVT_BUTTON, self.OnTestBtn, self.checksql_btn)
@@ -178,10 +183,11 @@ class regexps ( wx.Frame ):
     def OnGridTab(self, event):
         fsg = fs_grid.fullgrid(self.grid_table)
         fsg.Show()
+        self.check_grid.Destroy()
             
     def OnCheckUseParam(self, event):
         try:
-            if self.weights_txt.GetValue() == wx.EmptyString or self.weights_txt.GetValue() in string.punctuation or float(self.weights_txt.GetValue()) > 1:
+            if self.weights_txt.GetValue() == wx.EmptyString or self.weights_txt.GetValue() in string.punctuation or float(self.weights_txt.GetValue()) > 1 or self.weights_txt.GetValue() == '0':
                 wx.MessageBox(u'Введен не верный весовой коэффициент. За описанием обратитесь в справку.')
                 self.use_param_checkbox.SetValue( False )
                 event.Skip()
@@ -548,11 +554,15 @@ class regexps ( wx.Frame ):
                 data.append(map(lambda a: a.decode('cp1251') if isinstance(a, basestring) else a, item))
             self.grid_table = GridTable(data, self.connection, self.table)
             cursor.close()
-            self.check_grid.SetTable(self.grid_table, True)
+            #self.check_grid.SetTable(self.grid_table, True)
+            fsg = fs_grid.fullgrid(self.grid_table)
+            fsg.Show()
             self.check_grid.AutoSizeColumns( True )
         except Exception, info:
-            wx.MessageBox('Error sql syntaxis')
-    
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(info)
+            
     def OnAddBtn(self, event):
         if self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[0]:
             self.param = 'no_information'
@@ -652,6 +662,8 @@ class GridTable(wx.grid.PyGridTableBase):
                 col_names = [i[1] for i in cuu]
                 return col_names [col]
             except (NameError, cx_Oracle.DatabaseError), info:
+                info = str(info)
+                info = info.decode('cp1251').encode('utf8')
                 logging.info(u'Oracle Data Base error:', info)
                 error = "Database Error:", info
                 wx.MessageBox(error)
@@ -706,5 +718,6 @@ class WeightsValidator(wx.PyValidator):
             else:
                 return False
         except ValueError, info:
+            print info
             return False
         return     
