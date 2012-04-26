@@ -5884,3 +5884,90 @@
 2012-04-26 16:42:55,490 INFO table TEST choosed
 2012-04-26 16:42:56,618 INFO launch edit regexps module
 2012-04-26 16:42:56,661 INFO connecting to local database successfully
+2012-04-27 00:11:22,664 INFO ######################################################################################
+2012-04-27 00:11:22,664 INFO start session
+2012-04-27 00:11:38,322 INFO connect to db
+2012-04-27 00:11:38,325 INFO connecting to local database successfully
+2012-04-27 00:11:38,421 INFO list of connections loaded
+2012-04-27 00:11:38,440 INFO list of connections loaded
+2012-04-27 00:11:38,459 INFO listing of conneciton succesfully loading
+2012-04-27 00:11:39,914 INFO connecting to local database successfully
+2012-04-27 00:11:39,914 INFO editing connection: localhost
+2012-04-27 00:11:39,920 INFO list of connections loaded
+2012-04-27 00:11:39,924 INFO listing of conneciton succesfully loading
+2012-04-27 00:11:39,928 INFO editing connection: localhost
+2012-04-27 00:11:40,980 INFO list of connections loaded
+2012-04-27 00:11:40,980 INFO listing of conneciton succesfully loading
+2012-04-27 00:11:45,750 INFO list of connections loaded
+2012-04-27 00:11:45,750 INFO listing of conneciton succesfully loading
+2012-04-27 00:11:46,081 INFO end session. but there are no connection to db
+2012-04-27 00:11:46,081 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 00:27:35,441 INFO ######################################################################################
+2012-04-27 00:27:35,443 INFO start session
+2012-04-27 00:27:36,497 INFO connect to db
+2012-04-27 00:27:36,497 INFO connecting to local database successfully
+2012-04-27 00:27:36,513 INFO list of connections loaded
+2012-04-27 00:27:36,529 INFO list of connections loaded
+2012-04-27 00:27:36,529 INFO listing of conneciton succesfully loading
+2012-04-27 00:27:37,487 INFO list of connections loaded
+2012-04-27 00:27:37,490 INFO listing of conneciton succesfully loading
+2012-04-27 00:27:59,385 INFO connect to db
+2012-04-27 00:27:59,390 INFO connecting to local database successfully
+2012-04-27 00:27:59,391 INFO list of connections loaded
+2012-04-27 00:27:59,411 INFO list of connections loaded
+2012-04-27 00:27:59,414 INFO listing of conneciton succesfully loading
+2012-04-27 00:28:14,448 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 00:28:14,516 INFO list of connections loaded
+2012-04-27 00:28:14,519 INFO listing of conneciton succesfully loading
+2012-04-27 00:28:15,651 INFO choose table
+2012-04-27 00:28:15,793 INFO list of schemas loaded successfully
+2012-04-27 00:28:18,496 INFO list of tables loaded successfully
+2012-04-27 00:28:18,496 INFO schema ARTUR choosed
+2012-04-27 00:28:19,165 INFO table TEST choosed
+2012-04-27 00:28:20,299 INFO launch edit regexps module
+2012-04-27 00:28:20,329 INFO connecting to local database successfully
+2012-04-27 00:30:23,007 INFO launch edit regexps module
+2012-04-27 00:30:23,042 INFO connecting to local database successfully
+2012-04-27 00:35:51,796 INFO ######################################################################################
+2012-04-27 00:35:51,796 INFO start session
+2012-04-27 00:35:53,078 INFO connect to db
+2012-04-27 00:35:53,082 INFO connecting to local database successfully
+2012-04-27 00:35:53,095 INFO list of connections loaded
+2012-04-27 00:35:53,115 INFO list of connections loaded
+2012-04-27 00:35:53,118 INFO listing of conneciton succesfully loading
+2012-04-27 00:35:54,009 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 00:35:54,013 INFO list of connections loaded
+2012-04-27 00:35:54,015 INFO listing of conneciton succesfully loading
+2012-04-27 00:35:54,585 INFO choose table
+2012-04-27 00:35:54,615 INFO list of schemas loaded successfully
+2012-04-27 00:35:56,555 INFO list of tables loaded successfully
+2012-04-27 00:35:56,555 INFO schema ARTUR choosed
+2012-04-27 00:35:57,345 INFO table TEST choosed
+2012-04-27 00:35:58,387 INFO launch edit regexps module
+2012-04-27 00:35:58,414 INFO connecting to local database successfully
+2012-04-27 00:37:10,256 INFO ######################################################################################
+2012-04-27 00:37:10,256 INFO start session
+2012-04-27 00:37:12,017 INFO end session. but there are no connection to db
+2012-04-27 00:37:12,017 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 00:37:19,825 INFO ######################################################################################
+2012-04-27 00:37:19,825 INFO start session
+2012-04-27 00:37:21,062 INFO connect to db
+2012-04-27 00:37:21,065 INFO connecting to local database successfully
+2012-04-27 00:37:21,076 INFO list of connections loaded
+2012-04-27 00:37:21,095 INFO list of connections loaded
+2012-04-27 00:37:21,101 INFO listing of conneciton succesfully loading
+2012-04-27 00:37:21,842 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 00:37:21,844 INFO list of connections loaded
+2012-04-27 00:37:21,845 INFO listing of conneciton succesfully loading
+2012-04-27 00:37:22,098 INFO choose table
+2012-04-27 00:37:22,128 INFO list of schemas loaded successfully
+2012-04-27 00:37:23,471 INFO list of tables loaded successfully
+2012-04-27 00:37:23,471 INFO schema ARTUR choosed
+2012-04-27 00:37:24,062 INFO table TEST choosed
+2012-04-27 00:37:25,082 INFO open local history
+2012-04-27 00:37:29,413 INFO open local history
+2012-04-27 00:37:32,619 INFO launch edit regexps module
+2012-04-27 00:37:32,650 INFO connecting to local database successfully
+2012-04-27 00:37:42,819 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 00:37:43,552 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 00:37:51,615 INFO loading regular expressions for parameter harmony successfully 

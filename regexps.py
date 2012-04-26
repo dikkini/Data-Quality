@@ -16,7 +16,7 @@ class regexps ( wx.Frame ):
     
     def __init__( self, main, schema, table, connection ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Выбор и отладка регулярных выражений", 
-                            pos = wx.DefaultPosition, size = wx.Size( 510,477 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
+                            pos = wx.DefaultPosition, size = wx.Size( 510,477 ), style = wx.CAPTION|wx.TAB_TRAVERSAL )
         
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
         
@@ -557,7 +557,6 @@ class regexps ( wx.Frame ):
             #self.check_grid.SetTable(self.grid_table, True)
             fsg = fs_grid.fullgrid(self.grid_table)
             fsg.Show()
-            self.check_grid.AutoSizeColumns( True )
         except Exception, info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
