@@ -11,7 +11,7 @@ logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelnam
 class fullgrid ( wx.Frame ):
     
     def __init__( self, gridtable ):
-        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 1000,700 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB )
+        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 1000,700 ))#, style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU )
         
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
         
