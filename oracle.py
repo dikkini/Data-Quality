@@ -20,7 +20,11 @@ class WorkDB():
             cursor.close()
             return tables
         except Exception, info:
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Внешняя ошибка базы данных:%s - code 60' % info)
             logging.error(u'loading list of tables failed - code 23:', str(info))
+
     def get_schemas(self):
         try:
             cursor = cx_Oracle.Cursor(self.connection)
@@ -43,7 +47,9 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 48' % info)
             
     def get_regexp_count(self, schema, table, regexp):
         try:
@@ -55,7 +61,9 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных - code 56')
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 60' % info)
 
     def get_empty_values(self, schema, table):
         try:
@@ -71,7 +79,9 @@ class WorkDB():
             EV = float(EV)
             return EV
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных - code 72')
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 78' % info)
 
     def get_uniq_values(self, column, schema, table):
         try:
@@ -83,7 +93,9 @@ class WorkDB():
             cursor.close()
             return cou
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных - code 84')
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Внешняя ошибка базы данных - code 92')
 
     def get_cols(self, table):
         try:
@@ -94,6 +106,8 @@ class WorkDB():
             cursor.close()
             col_names = [i[1] for i in cuu]
         except (NameError, cx_Oracle.DatabaseError), info:
-            error = ("Database Error: %s" % info)
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            error = ("Database Error: %s - code 105" % info)
             wx.MessageBox(str(error))
         return col_names
