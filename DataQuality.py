@@ -14,7 +14,11 @@ import about
 import logging
 import os
 import sys
-
+try:
+    from agw import pybusyinfo as PBI
+except ImportError: # if it's not there locally, try the wxPython lib.
+    import wx.lib.agw.pybusyinfo as PBI
+    
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 # Set Envroiment
@@ -174,8 +178,10 @@ class MainWindow ( wx.Frame ):
             sys.exit()
             logging.info(u'end session: %s')
         except Exception, info:
+            if "'NoneType' object has no attribute 'close'" in info:
+                logging.info(u'end session. but there are no connection to db')
             self.Destroy()
-            logging.error(u'end session error - code 178: %s' % info)
+            logging.error(u'end session error - code 178: %s' % str(info))
             sys.exit()
             
     def DoDQ(self, event):
@@ -185,6 +191,11 @@ class MainWindow ( wx.Frame ):
                 logging.error(u'failed calculation dq - code 185: NO PARAMS FOR DATA QUALITY')
                 return False
             if self.flagres is None:
+                message = "Please wait 5 seconds, working..."
+                busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
+
+                wx.Yield()
+                
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
                 self.dataquality = calculation.DQ(self.connection, self.schema,  self.table)
                 self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params)
@@ -193,9 +204,17 @@ class MainWindow ( wx.Frame ):
                     return None
                 self.notebook.AddPage( self.panelMainStat, u"Результаты оценки качества данных", False, wx.NullBitmap )
                 self.result_ctrl = results.main_stat( self, result, self.dataquality.namecols )
+                
+                del busy
             else:
+                message = 'Пожалуйста подождите, происходит оценка качества данных...'
+                busy = PBI.PyBusyInfo(message, parent=None)
+
+                wx.Yield()
+                    
                 result2 = self.dataquality.mathDQ(self.weights, self.using_params)
                 self.result_ctrl.list.Append(result2[0])
+                del busy
         except Exception, info:
             if "'NoneType' object is not iterable" in info:
                 wx.MessageBox(u'Выберите параметры для оценки качества данных преждем чем начать процесс оценки качества данных!')
