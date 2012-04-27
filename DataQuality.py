@@ -14,6 +14,9 @@ import about
 import logging
 import os
 import sys
+import regexps_editor
+import params_chooser
+
 try:
     from agw import pybusyinfo as PBI
 except ImportError: # if it's not there locally, try the wxPython lib.
@@ -33,7 +36,7 @@ class MainWindow ( wx.Frame ):
     
     def __init__( self ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Главное окно", 
-                            pos = wx.DefaultPosition, size = wx.Size( 920,472 ) )
+                            pos = wx.DefaultPosition, size = wx.Size( 800,600 ) )
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
         
         self.sizer1 = wx.BoxSizer( wx.VERTICAL )
@@ -64,27 +67,35 @@ class MainWindow ( wx.Frame ):
         self.m_menuItem2 = wx.MenuItem( self.BD, 2, u"Выбрать таблицу\tCtrl+T", u'Выбрать схему и таблицу для оценки качества данных', wx.ITEM_NORMAL )
         self.BD.AppendItem( self.m_menuItem2 )
         
-        self.m_menuItem3 = wx.MenuItem( self.BD, 3, u"Отключиться и выйти\tCtrl+Q", u'Отключиться от базы данных в выйти из приложения', wx.ITEM_NORMAL )
+        self.m_menuItem3 = wx.MenuItem( self.BD, 3, u"Отключиться и выйти\tCtrl+Q", 
+                                        u'Отключиться от базы данных в выйти из приложения', wx.ITEM_NORMAL )
+        
         self.BD.AppendItem( self.m_menuItem3 )
         
         self.menubar.Append(self.BD, u"База данных")
         
         self.DQ = wx.Menu()
-        self.m_menuItem4 = wx.MenuItem( self.DQ, 4, u"Выполнить оценку качества данных\tShift+D", u'Произвести запуск процесса оценки качества данных', wx.ITEM_NORMAL )
+        self.m_menuItem4 = wx.MenuItem( self.DQ, 4, u"Выполнить оценку качества данных\tShift+D", 
+                                        u'Произвести запуск процесса оценки качества данных', wx.ITEM_NORMAL )
+        
         self.DQ.AppendItem( self.m_menuItem4 )
         
-        self.m_menuItem5 = wx.MenuItem( self.DQ, 5, u"Посмотреть историю оценок\tShift+H", u'Просмотр истории оценок выбранной таблицы.', wx.ITEM_NORMAL )
+        self.m_menuItem5 = wx.MenuItem( self.DQ, 5, u"Посмотреть историю оценок\tShift+H", 
+                                        u'Просмотр истории оценок выбранной таблицы.', wx.ITEM_NORMAL )
+        
         self.DQ.AppendItem( self.m_menuItem5 )
         
         self.menubar.Append( self.DQ, u"Оценка" ) 
         
         self.regexp = wx.Menu()
-        self.m_menuItem6 = wx.MenuItem( self.regexp, 6, u"Выбор и отладка регулярных выражений\tCtrl+R", 
-                                        u'Запуск инструмента для ввода и отладки регулярных выражений. На их основе будет производится оценка качества данных', 
-                                        wx.ITEM_NORMAL )
+        self.m_menuItem6 = wx.MenuItem( self.regexp, 6, u"Отладка регулярных выражений\tCtrl+R", 
+                                        u'Запуск инструмента для отладки регулярных выражений.', wx.ITEM_NORMAL )
+        
         self.regexp.AppendItem( self.m_menuItem6 )
         
-        self.m_menuItem7 = wx.MenuItem( self.regexp, 7, u"Пока не знаю что за пункт", wx.EmptyString, wx.ITEM_NORMAL )
+        self.m_menuItem7 = wx.MenuItem( self.regexp, 7, u"Выбор регулярных выражения для оценки\tCtrl+E", 
+                                        u'На их основе будет производится оценка качества данных', wx.ITEM_NORMAL )
+        
         self.regexp.AppendItem( self.m_menuItem7 )
         
         self.menubar.Append( self.regexp, u"Регулярные выражения" ) 
@@ -138,7 +149,7 @@ class MainWindow ( wx.Frame ):
         self.Bind(wx.EVT_MENU, self.DoDQ, id=4)
         self.Bind(wx.EVT_MENU, self.HistDQ, id=5)
         self.Bind(wx.EVT_MENU, self.EditRegexps, id=6)
-        self.Bind(wx.EVT_MENU, self.DontKnow, id=7)
+        self.Bind(wx.EVT_MENU, self.ChooseParams, id=7)
         self.Bind(wx.EVT_MENU, self.logEvents, id=8)
         self.Bind(wx.EVT_MENU, self.logUses, id=9)
         self.Bind(wx.EVT_MENU, self.About, id=10)
@@ -279,11 +290,14 @@ class MainWindow ( wx.Frame ):
                 wx.MessageBox(u'Выберите таблицу!')
         else:
             logging.info(u'launch edit regexps module')
-            frame = regexps.regexps(self, self.schema, self.table, self.connection)
-            frame.Show()
+            regexps_editor.page_editor(self, self.schema, self.table, self.connection)
+            
         
-    def DontKnow(self, event):
-        print "Oops, dontknow"
+    def ChooseParams(self, event):
+        try:
+            params_chooser.frame_chooser(self, self.schema, self.table, self.connection).Show()
+        except Exception, info:
+            print info
         
     def logEvents(self, event):
         try:
