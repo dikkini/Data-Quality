@@ -9,6 +9,10 @@ import string
 import logging
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
+###########################################################################
+## Class RegExpEditor
+###########################################################################
+
 class page_editor():
     def __init__(self, parent, schema, table, connection):
         bSizer3 = wx.BoxSizer( wx.VERTICAL )

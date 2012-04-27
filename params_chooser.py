@@ -9,6 +9,10 @@ import string
 import logging
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
+###########################################################################
+## Class ParamsChooser
+###########################################################################
+
 class frame_chooser ( wx.Frame ):
     
     def __init__(self, parent, schema, table, connection):

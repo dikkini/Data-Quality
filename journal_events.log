@@ -8402,3 +8402,38 @@
 2012-04-27 22:46:38,767 INFO schema ARTUR choosed
 2012-04-27 22:46:39,403 INFO table TEST choosed
 2012-04-27 22:46:41,226 INFO open local history
+2012-04-28 00:28:49,250 INFO ######################################################################################
+2012-04-28 00:28:49,252 INFO start session
+2012-04-28 00:28:57,430 INFO end session. but there are no connection to db
+2012-04-28 00:28:57,430 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-28 00:33:34,398 INFO ######################################################################################
+2012-04-28 00:33:34,398 INFO start session
+2012-04-28 00:33:38,321 INFO end session. but there are no connection to db
+2012-04-28 00:33:38,321 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-28 00:34:35,038 INFO ######################################################################################
+2012-04-28 00:34:35,038 INFO start session
+2012-04-28 00:34:38,953 INFO connect to db
+2012-04-28 00:34:38,957 INFO connecting to local database successfully
+2012-04-28 00:34:38,973 INFO list of connections loaded
+2012-04-28 00:34:38,990 INFO list of connections loaded
+2012-04-28 00:34:39,000 INFO listing of conneciton succesfully loading
+2012-04-28 00:35:03,394 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-28 00:35:03,398 INFO list of connections loaded
+2012-04-28 00:35:03,401 INFO listing of conneciton succesfully loading
+2012-04-28 00:36:31,329 INFO choose table
+2012-04-28 00:36:34,016 INFO list of schemas loaded successfully
+2012-04-28 00:36:46,395 INFO list of tables loaded successfully
+2012-04-28 00:36:46,395 INFO schema ARTUR choosed
+2012-04-28 00:36:47,134 INFO table TEST choosed
+2012-04-28 00:36:49,095 INFO launch edit regexps module
+2012-04-28 00:36:49,112 INFO connecting to local database successfully
+2012-04-28 00:36:50,793 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-28 00:36:51,614 INFO loading regular expressions for parameter no_information successfully 
+2012-04-28 00:36:54,601 INFO loading regular expressions for parameter no_information successfully 
+2012-04-28 00:36:55,420 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-28 00:36:56,746 INFO loading regular expressions for parameter efficiency successfully 
+2012-04-28 00:36:58,025 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-28 00:37:00,423 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-28 00:37:01,362 INFO loading regular expressions for parameter no_information successfully 
+2012-04-28 00:38:43,400 INFO uploading regular expression regexp_like (ID, '^0+$') for parameter no_information successfully
+2012-04-28 00:38:43,400 INFO loading regular expressions for parameter no_information successfully 

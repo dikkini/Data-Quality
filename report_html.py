@@ -6,6 +6,10 @@ import logging
 
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
+###########################################################################
+## Class ReportClass
+###########################################################################
+
 def make_report(name_main, main_stat, name_ext, ext_stat, date):
     try:
         OUTPUT_ROOT = os.path.join(os.path.dirname(__file__), 'reports')

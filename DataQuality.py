@@ -28,6 +28,7 @@ logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelnam
 # Encoding for database Oracle
 os.environ["NLS_LANG"] = "RUSSIAN_CIS.CL8MSWIN1251"
 os.putenv("ORACLE_HOME","/usr/lib/oracle/11.2/client")
+
 ###########################################################################
 ## Class MainWindow
 ###########################################################################
@@ -37,7 +38,8 @@ class MainWindow ( wx.Frame ):
     def __init__( self ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Главное окно", 
                             pos = wx.DefaultPosition, size = wx.Size( 800,600 ) )
-        self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
+        
+        self.SetSizeHintsSz( wx.Size( 800,600 ), wx.DefaultSize )
         
         self.sizer1 = wx.BoxSizer( wx.VERTICAL )
         
@@ -75,12 +77,12 @@ class MainWindow ( wx.Frame ):
         self.menubar.Append(self.BD, u"База данных")
         
         self.DQ = wx.Menu()
-        self.m_menuItem4 = wx.MenuItem( self.DQ, 4, u"Выполнить оценку качества данных\tShift+D", 
+        self.m_menuItem4 = wx.MenuItem( self.DQ, 4, u"Выполнить оценку качества данных\tCtrl+D", 
                                         u'Произвести запуск процесса оценки качества данных', wx.ITEM_NORMAL )
         
         self.DQ.AppendItem( self.m_menuItem4 )
         
-        self.m_menuItem5 = wx.MenuItem( self.DQ, 5, u"Посмотреть историю оценок\tShift+H", 
+        self.m_menuItem5 = wx.MenuItem( self.DQ, 5, u"Посмотреть историю оценок\tCtrl+H", 
                                         u'Просмотр истории оценок выбранной таблицы.', wx.ITEM_NORMAL )
         
         self.DQ.AppendItem( self.m_menuItem5 )
@@ -110,7 +112,7 @@ class MainWindow ( wx.Frame ):
         self.menubar.Append( self.logs, u"Журналы" ) 
         
         self.help = wx.Menu()
-        self.m_menuItem10 = wx.MenuItem( self.help, 10, u'О программе', wx.EmptyString, wx.ITEM_NORMAL)
+        self.m_menuItem10 = wx.MenuItem( self.help, 10, u'О программе\tF2', wx.EmptyString, wx.ITEM_NORMAL)
         self.help.AppendItem( self.m_menuItem10 )
         
         self.m_menuItem11 = wx.MenuItem( self.help, 11, u'Справка\tF1', u'Вызов справки по приложению', wx.ITEM_NORMAL)
