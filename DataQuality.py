@@ -33,7 +33,7 @@ class MainWindow ( wx.Frame ):
     
     def __init__( self ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Главное окно", 
-                            pos = wx.DefaultPosition, size = wx.Size( 920,472 ), style = wx.CAPTION|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB )
+                            pos = wx.DefaultPosition, size = wx.Size( 920,472 ) )
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
         
         self.sizer1 = wx.BoxSizer( wx.VERTICAL )
@@ -183,15 +183,16 @@ class MainWindow ( wx.Frame ):
             self.Destroy()
             logging.error(u'end session error - code 178: %s' % str(info))
             sys.exit()
-            
+    
     def DoDQ(self, event):
+        message = 'Пожалуйста подождите, происходит оценка качества данных...'
         try:
             if not sum(self.using_params):
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
                 logging.error(u'failed calculation dq - code 185: NO PARAMS FOR DATA QUALITY')
                 return False
             if self.flagres is None:
-                message = "Please wait 5 seconds, working..."
+                
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
 
                 wx.Yield()
@@ -205,15 +206,28 @@ class MainWindow ( wx.Frame ):
                 self.notebook.AddPage( self.panelMainStat, u"Результаты оценки качества данных", False, wx.NullBitmap )
                 self.result_ctrl = results.main_stat( self, result, self.dataquality.namecols )
                 
+                
+                self.sb = wx.StaticBox(self.panelMainStat)
+                self.sbs = wx.StaticBoxSizer(self.sb, orient=wx.VERTICAL)
+                self.sizer = wx.BoxSizer(wx.VERTICAL)
+            
+                self.sizer.Add(self.result_ctrl.list, 1, wx.EXPAND)
+                self.sbs.Add(self.sizer, proportion=1,flag=wx.EXPAND|wx.ALL)
+                self.panelMainStat.SetSizer(self.sbs)
+                self.panelMainStat.Layout()
+            
                 del busy
             else:
-                message = 'Пожалуйста подождите, происходит оценка качества данных...'
-                busy = PBI.PyBusyInfo(message, parent=None)
+                busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
 
                 wx.Yield()
                     
                 result2 = self.dataquality.mathDQ(self.weights, self.using_params)
                 self.result_ctrl.list.Append(result2[0])
+                
+                self.panelMainStat.SetSizer(self.sbs)
+                self.panelMainStat.Layout()
+                
                 del busy
         except Exception, info:
             if "'NoneType' object is not iterable" in info:
@@ -236,6 +250,16 @@ class MainWindow ( wx.Frame ):
             self.histcols = self.main_stat_columns
             histrows = statistic.stats(self.schema, self.table).history_stat(self) 
             self.histres = results.history_stat(self, self.histcols, histrows)
+            
+            sb = wx.StaticBox(self.panelHist)
+            sbs = wx.StaticBoxSizer(sb, orient=wx.VERTICAL)
+            sizer = wx.BoxSizer(wx.VERTICAL)
+            
+            sizer.Add(self.histres.list, 1, wx.EXPAND)
+            sbs.Add(sizer, proportion=1,flag=wx.EXPAND|wx.ALL)
+            self.panelHist.SetSizer(sbs)
+            self.panelHist.Layout()
+            
         except TypeError, info:
             wx.MessageBox(str(info))
             logging.error(u'error while looking history - code: 222 - %s' % str(info))
