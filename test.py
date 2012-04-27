@@ -1,77 +1,66 @@
-# -*- coding: utf-8 -*- 
 import wx
-import sys
+import re, os, sys
+from wx.lib.mixins.listctrl import CheckListCtrlMixin, ListCtrlAutoWidthMixin
 
-class advices ( wx.Frame ):
-    
-    def __init__( self, rows ):
-        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 900,250 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
-        
-        self.SetSizeHintsSz( wx.Size( 700,230 ), wx.Size( 900,250 ) )
-        
-        bSizer10 = wx.BoxSizer( wx.VERTICAL )
-        
-        self.m_panel5 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-        bSizer11 = wx.BoxSizer( wx.VERTICAL )
-        
-        self.list = wx.ListCtrl(self.m_panel5, 0,
-                                 style=wx.LC_REPORT | wx.BORDER_NONE | wx.LC_EDIT_LABELS | wx.LC_SORT_ASCENDING | wx.LC_SINGLE_SEL, 
-                                 pos=(1,1))
-        columns = [u'Название параметра', u'Качество данных', u'Выберите увеличение', u'Итоговая оценка', u'Возможная итоговая оценка']  
-               
-        for col, text in enumerate(columns):
-            self.list.InsertColumn(col, text) 
-        for item in rows:   
-            index = self.list.InsertStringItem(sys.maxint, item[0]) 
-            for col, text in enumerate(item[1:]): 
-                self.list.SetStringItem(index, col+1, text) 
-        self.list.SetColumnWidth(0, 120)   
-        self.list.SetColumnWidth(1, 45) 
-        self.list.SetColumnWidth(2, 45) 
-        self.list.SetColumnWidth(3, 45)
-        self.list.SetColumnWidth(4, 45) 
-        self.list.SetColumnWidth(5, 45)
-        self.list.SetColumnWidth(6, 45) 
-        self.list.SetColumnWidth(7, 45)
-        self.list.SetColumnWidth(8, 45) 
-        self.list.SetColumnWidth(9, 45)
-        self.list.SetColumnWidth(10, 45) 
-        self.list.SetColumnWidth(11, 45)
-        self.list.SetColumnWidth(12, 45) 
-        self.list.SetColumnWidth(13, 45)
-        self.list.SetColumnWidth(14, 45) 
-        self.list.SetColumnWidth(15, 45)
-        self.list.SetColumnWidth(16, 40)
-        self.list.SetSize((900,350))
-        
-        
-        self.m_panel5.SetSizer( bSizer11 )
-        self.m_panel5.Layout()
-        bSizer11.Fit( self.m_panel5 )
-        bSizer10.Add( self.m_panel5, 1, wx.EXPAND |wx.ALL, 5 )
-        
-        
-        self.SetSizer( bSizer10 )
-        self.Layout()
-        
-        self.Centre( wx.BOTH )
-        self.list.Bind( wx.EVT_LEFT_DCLICK, self.OnELD )
+class CheckListCtrl(wx.ListCtrl, CheckListCtrlMixin, ListCtrlAutoWidthMixin):
+    def __init__(self, parent):
+        wx.ListCtrl.__init__(self, parent, -1, style=wx.LC_REPORT | wx.SUNKEN_BORDER)
+        CheckListCtrlMixin.__init__(self)
+        ListCtrlAutoWidthMixin.__init__(self)
 
-    def OnELD(self, event):
+class QueueDialog(wx.Dialog):
+
+    def __init__(self, parent, title):
+        super(QueueDialog, self).__init__(parent=parent, 
+            title=title, size=(400, 500))
+
+
+        panel = wx.Panel(self)
+        vbox = wx.BoxSizer(wx.VERTICAL)
+
+        sb = wx.StaticBox(panel, label='Queue')
+        sbs = wx.StaticBoxSizer(sb, orient=wx.VERTICAL)
+
+        hbox3 = wx.BoxSizer(wx.VERTICAL)
+        listB = CheckListCtrl(panel)
+        listB.InsertColumn(0, "Test", width=100)
+        listB.InsertColumn(1, "Status", wx.LIST_FORMAT_RIGHT)
+        hbox3.Add(listB, 1, wx.EXPAND)
+
+        dalist = ["heh", "ha", "hello"]
+        for name in dalist[0:3]:
+            index = listB.InsertStringItem(sys.maxint, name[0:-1])
+
+        sbs.Add(hbox3, proportion=1,flag=wx.EXPAND|wx.ALL)
+        panel.SetSizer(sbs)
+
+        hbox2 = wx.BoxSizer(wx.HORIZONTAL)
+
+        okButton = wx.Button(self, label='OK')
+        closeButton = wx.Button(self, label='Cancel')
+        hbox2.Add(okButton)
+        hbox2.Add(closeButton, flag=wx.LEFT, border=5)
+        vbox = wx.BoxSizer(wx.VERTICAL)
+        vbox.Add(panel, proportion=1, flag=wx.EXPAND|wx.ALL, border=10)
+        vbox.Add(hbox2, flag= wx.ALIGN_CENTER|wx.BOTTOM, border=10)
+
+        self.SetSizer(vbox)
+
+    def OnClose(self, e):
         self.Destroy()
 
-rows = [['1','2','3','a','b'], ['3','4','5','c','d'], ['6','7','8','e','f']]
 
-class A(wx.App):
-    def __init__(self, *a, **k):
-        wx.App.__init__(self, *a, **k)
-        frame = advices(rows)
-        frame.Show()
-        self.SetTopWindow(frame)
+class window(wx.Frame):
+    def __init__(self, parent, id, title):
+        wx.Frame.__init__(self, parent, id, title, size=(600, 400))
 
-if __name__ == '__main__':
-    a = A(
-        redirect=False,
-        filename=None,
-        useBestVisual=True)
-    a.MainLoop()
+        e = QueueDialog(None, title='Queue')
+        e.ShowModal()
+        e.Destroy()
+
+        self.Centre()
+        self.Show(True)
+
+app = wx.App(0)
+window(None, -1, 'e')
+app.MainLoop()
