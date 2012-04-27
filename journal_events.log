@@ -5971,3 +5971,1492 @@
 2012-04-27 00:37:42,819 INFO loading regular expressions for parameter no_information successfully 
 2012-04-27 00:37:43,552 INFO loading regular expressions for parameter noise_level successfully 
 2012-04-27 00:37:51,615 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 08:33:51,638 INFO ######################################################################################
+2012-04-27 08:33:51,638 INFO start session
+2012-04-27 08:33:54,885 INFO connect to db
+2012-04-27 08:33:54,890 INFO connecting to local database successfully
+2012-04-27 08:33:54,960 INFO list of connections loaded
+2012-04-27 08:33:54,980 INFO list of connections loaded
+2012-04-27 08:33:54,992 INFO listing of conneciton succesfully loading
+2012-04-27 08:33:56,673 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:33:56,676 INFO list of connections loaded
+2012-04-27 08:33:56,677 INFO listing of conneciton succesfully loading
+2012-04-27 08:33:57,184 INFO choose table
+2012-04-27 08:33:57,236 INFO list of schemas loaded successfully
+2012-04-27 08:33:58,905 INFO list of tables loaded successfully
+2012-04-27 08:33:58,907 INFO schema ARTUR choosed
+2012-04-27 08:34:00,332 INFO table TEST choosed
+2012-04-27 08:34:02,174 INFO choose table
+2012-04-27 08:34:02,236 INFO list of schemas loaded successfully
+2012-04-27 08:34:04,358 INFO open local history
+2012-04-27 08:35:33,405 INFO launch edit regexps module
+2012-04-27 08:35:33,469 INFO connecting to local database successfully
+2012-04-27 08:36:33,927 INFO ######################################################################################
+2012-04-27 08:36:33,927 INFO start session
+2012-04-27 08:36:35,621 INFO connect to db
+2012-04-27 08:36:35,627 INFO connecting to local database successfully
+2012-04-27 08:36:35,653 INFO list of connections loaded
+2012-04-27 08:36:35,680 INFO list of connections loaded
+2012-04-27 08:36:35,687 INFO listing of conneciton succesfully loading
+2012-04-27 08:36:36,690 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:36:36,691 INFO list of connections loaded
+2012-04-27 08:36:36,694 INFO listing of conneciton succesfully loading
+2012-04-27 08:36:37,085 INFO choose table
+2012-04-27 08:36:37,141 INFO list of schemas loaded successfully
+2012-04-27 08:36:38,953 INFO list of tables loaded successfully
+2012-04-27 08:36:38,953 INFO schema ARTUR choosed
+2012-04-27 08:36:40,119 INFO table TEST choosed
+2012-04-27 08:36:46,489 INFO open local history
+2012-04-27 08:39:03,223 INFO ######################################################################################
+2012-04-27 08:39:03,223 INFO start session
+2012-04-27 08:39:04,770 INFO connect to db
+2012-04-27 08:39:04,776 INFO connecting to local database successfully
+2012-04-27 08:39:04,799 INFO list of connections loaded
+2012-04-27 08:39:04,822 INFO list of connections loaded
+2012-04-27 08:39:04,828 INFO listing of conneciton succesfully loading
+2012-04-27 08:39:06,171 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:39:06,174 INFO list of connections loaded
+2012-04-27 08:39:06,177 INFO listing of conneciton succesfully loading
+2012-04-27 08:39:06,516 INFO choose table
+2012-04-27 08:39:06,575 INFO list of schemas loaded successfully
+2012-04-27 08:39:07,951 INFO list of tables loaded successfully
+2012-04-27 08:39:07,951 INFO schema ARTUR choosed
+2012-04-27 08:39:09,299 INFO table TEST choosed
+2012-04-27 08:39:10,177 INFO open local history
+2012-04-27 08:39:43,216 INFO ######################################################################################
+2012-04-27 08:39:43,217 INFO start session
+2012-04-27 08:39:44,872 INFO connect to db
+2012-04-27 08:39:44,878 INFO connecting to local database successfully
+2012-04-27 08:39:44,901 INFO list of connections loaded
+2012-04-27 08:39:44,927 INFO list of connections loaded
+2012-04-27 08:39:44,937 INFO listing of conneciton succesfully loading
+2012-04-27 08:39:46,066 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:39:46,069 INFO list of connections loaded
+2012-04-27 08:39:46,072 INFO listing of conneciton succesfully loading
+2012-04-27 08:39:46,411 INFO choose table
+2012-04-27 08:39:46,471 INFO list of schemas loaded successfully
+2012-04-27 08:39:47,730 INFO list of tables loaded successfully
+2012-04-27 08:39:47,730 INFO schema ARTUR choosed
+2012-04-27 08:39:48,365 INFO table TEST choosed
+2012-04-27 08:39:49,128 INFO open local history
+2012-04-27 08:40:35,164 INFO ######################################################################################
+2012-04-27 08:40:35,164 INFO start session
+2012-04-27 08:40:36,407 INFO connect to db
+2012-04-27 08:40:36,411 INFO connecting to local database successfully
+2012-04-27 08:40:36,436 INFO list of connections loaded
+2012-04-27 08:40:36,461 INFO list of connections loaded
+2012-04-27 08:40:36,470 INFO listing of conneciton succesfully loading
+2012-04-27 08:40:38,664 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:40:38,668 INFO list of connections loaded
+2012-04-27 08:40:38,671 INFO listing of conneciton succesfully loading
+2012-04-27 08:40:39,196 INFO choose table
+2012-04-27 08:40:39,240 INFO list of schemas loaded successfully
+2012-04-27 08:40:40,884 INFO list of tables loaded successfully
+2012-04-27 08:40:40,884 INFO schema ARTUR choosed
+2012-04-27 08:40:41,489 INFO table TEST choosed
+2012-04-27 08:40:42,354 INFO open local history
+2012-04-27 08:40:53,907 INFO ######################################################################################
+2012-04-27 08:40:53,907 INFO start session
+2012-04-27 08:40:54,907 INFO connect to db
+2012-04-27 08:40:54,917 INFO connecting to local database successfully
+2012-04-27 08:40:55,033 INFO list of connections loaded
+2012-04-27 08:40:55,062 INFO list of connections loaded
+2012-04-27 08:40:55,071 INFO listing of conneciton succesfully loading
+2012-04-27 08:40:56,463 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:40:56,467 INFO list of connections loaded
+2012-04-27 08:40:56,469 INFO listing of conneciton succesfully loading
+2012-04-27 08:40:56,861 INFO choose table
+2012-04-27 08:40:56,923 INFO list of schemas loaded successfully
+2012-04-27 08:40:58,493 INFO list of tables loaded successfully
+2012-04-27 08:40:58,493 INFO schema ARTUR choosed
+2012-04-27 08:40:59,515 INFO table TEST choosed
+2012-04-27 08:41:00,249 INFO open local history
+2012-04-27 08:41:02,640 ERROR error while looking history - code: 222 - wx.Window, wx.Sizer, wx.Size, or (w,h) expected for item
+2012-04-27 08:43:03,632 INFO ######################################################################################
+2012-04-27 08:43:03,632 INFO start session
+2012-04-27 08:43:04,344 INFO connect to db
+2012-04-27 08:43:04,348 INFO connecting to local database successfully
+2012-04-27 08:43:04,372 INFO list of connections loaded
+2012-04-27 08:43:04,398 INFO list of connections loaded
+2012-04-27 08:43:04,408 INFO listing of conneciton succesfully loading
+2012-04-27 08:43:05,980 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:43:05,983 INFO list of connections loaded
+2012-04-27 08:43:05,986 INFO listing of conneciton succesfully loading
+2012-04-27 08:43:06,223 INFO choose table
+2012-04-27 08:43:06,283 INFO list of schemas loaded successfully
+2012-04-27 08:43:07,888 INFO list of tables loaded successfully
+2012-04-27 08:43:07,890 INFO schema ARTUR choosed
+2012-04-27 08:43:08,437 INFO table TEST choosed
+2012-04-27 08:43:10,102 INFO open local history
+2012-04-27 08:43:20,650 ERROR error while looking history - code: 222 - wx.Window, wx.Sizer, wx.Size, or (w,h) expected for item
+2012-04-27 08:44:14,940 INFO ######################################################################################
+2012-04-27 08:44:14,940 INFO start session
+2012-04-27 08:44:16,148 INFO connect to db
+2012-04-27 08:44:16,153 INFO connecting to local database successfully
+2012-04-27 08:44:16,177 INFO list of connections loaded
+2012-04-27 08:44:16,203 INFO list of connections loaded
+2012-04-27 08:44:16,211 INFO listing of conneciton succesfully loading
+2012-04-27 08:44:17,155 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:44:17,158 INFO list of connections loaded
+2012-04-27 08:44:17,161 INFO listing of conneciton succesfully loading
+2012-04-27 08:44:17,582 INFO choose table
+2012-04-27 08:44:17,638 INFO list of schemas loaded successfully
+2012-04-27 08:44:19,125 INFO list of tables loaded successfully
+2012-04-27 08:44:19,125 INFO schema ARTUR choosed
+2012-04-27 08:44:19,730 INFO table TEST choosed
+2012-04-27 08:44:21,971 INFO open local history
+2012-04-27 08:44:23,197 ERROR error while looking history - code: 222 - wx.Window, wx.Sizer, wx.Size, or (w,h) expected for item
+2012-04-27 08:45:32,969 INFO ######################################################################################
+2012-04-27 08:45:32,969 INFO start session
+2012-04-27 08:45:34,032 INFO connect to db
+2012-04-27 08:45:34,036 INFO connecting to local database successfully
+2012-04-27 08:45:34,052 INFO list of connections loaded
+2012-04-27 08:45:34,072 INFO list of connections loaded
+2012-04-27 08:45:34,078 INFO listing of conneciton succesfully loading
+2012-04-27 08:45:35,299 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:45:35,302 INFO list of connections loaded
+2012-04-27 08:45:35,305 INFO listing of conneciton succesfully loading
+2012-04-27 08:45:35,677 INFO choose table
+2012-04-27 08:45:35,739 INFO list of schemas loaded successfully
+2012-04-27 08:45:37,109 INFO list of tables loaded successfully
+2012-04-27 08:45:37,109 INFO schema ARTUR choosed
+2012-04-27 08:45:37,848 INFO table TEST choosed
+2012-04-27 08:45:42,002 INFO open local history
+2012-04-27 08:46:45,348 INFO ######################################################################################
+2012-04-27 08:46:45,348 INFO start session
+2012-04-27 08:46:46,831 INFO end session. but there are no connection to db
+2012-04-27 08:46:46,831 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 08:46:55,098 INFO ######################################################################################
+2012-04-27 08:46:55,098 INFO start session
+2012-04-27 08:46:57,543 INFO connect to db
+2012-04-27 08:46:57,548 INFO connecting to local database successfully
+2012-04-27 08:46:57,572 INFO list of connections loaded
+2012-04-27 08:46:57,595 INFO list of connections loaded
+2012-04-27 08:46:57,601 INFO listing of conneciton succesfully loading
+2012-04-27 08:46:59,048 INFO trying to connect using conneciton: localhost
+2012-04-27 08:47:00,266 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:47:00,269 INFO list of connections loaded
+2012-04-27 08:47:00,273 INFO listing of conneciton succesfully loading
+2012-04-27 08:47:01,201 INFO choose table
+2012-04-27 08:47:01,267 INFO list of schemas loaded successfully
+2012-04-27 08:47:02,677 INFO list of tables loaded successfully
+2012-04-27 08:47:02,678 INFO schema ARTUR choosed
+2012-04-27 08:47:03,269 INFO table TEST choosed
+2012-04-27 08:47:04,023 INFO open local history
+2012-04-27 08:47:07,128 ERROR error while looking history - code: 222 - history_stat instance has no attribute 'SetSizer'
+2012-04-27 08:47:35,115 INFO ######################################################################################
+2012-04-27 08:47:35,115 INFO start session
+2012-04-27 08:47:39,457 INFO end session. but there are no connection to db
+2012-04-27 08:47:39,457 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 08:47:44,039 INFO ######################################################################################
+2012-04-27 08:47:44,039 INFO start session
+2012-04-27 08:47:45,470 INFO connect to db
+2012-04-27 08:47:45,476 INFO connecting to local database successfully
+2012-04-27 08:47:45,500 INFO list of connections loaded
+2012-04-27 08:47:45,532 INFO list of connections loaded
+2012-04-27 08:47:45,539 INFO listing of conneciton succesfully loading
+2012-04-27 08:47:47,750 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:47:47,753 INFO list of connections loaded
+2012-04-27 08:47:47,756 INFO listing of conneciton succesfully loading
+2012-04-27 08:47:48,622 INFO choose table
+2012-04-27 08:47:48,684 INFO list of schemas loaded successfully
+2012-04-27 08:47:50,099 INFO list of tables loaded successfully
+2012-04-27 08:47:50,099 INFO schema ARTUR choosed
+2012-04-27 08:47:50,713 INFO table TEST choosed
+2012-04-27 08:47:51,444 INFO open local history
+2012-04-27 08:48:28,657 INFO ######################################################################################
+2012-04-27 08:48:28,658 INFO start session
+2012-04-27 08:48:30,157 INFO connect to db
+2012-04-27 08:48:30,161 INFO connecting to local database successfully
+2012-04-27 08:48:30,187 INFO list of connections loaded
+2012-04-27 08:48:30,216 INFO list of connections loaded
+2012-04-27 08:48:30,223 INFO listing of conneciton succesfully loading
+2012-04-27 08:48:32,012 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:48:32,015 INFO list of connections loaded
+2012-04-27 08:48:32,017 INFO listing of conneciton succesfully loading
+2012-04-27 08:48:32,290 INFO choose table
+2012-04-27 08:48:32,355 INFO list of schemas loaded successfully
+2012-04-27 08:48:34,423 INFO list of tables loaded successfully
+2012-04-27 08:48:34,423 INFO schema ARTUR choosed
+2012-04-27 08:48:34,964 INFO table TEST choosed
+2012-04-27 08:48:35,802 INFO open local history
+2012-04-27 08:51:56,655 INFO ######################################################################################
+2012-04-27 08:51:56,655 INFO start session
+2012-04-27 08:51:57,661 INFO connect to db
+2012-04-27 08:51:57,668 INFO connecting to local database successfully
+2012-04-27 08:51:57,691 INFO list of connections loaded
+2012-04-27 08:51:57,723 INFO list of connections loaded
+2012-04-27 08:51:57,736 INFO listing of conneciton succesfully loading
+2012-04-27 08:51:58,641 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:51:58,644 INFO list of connections loaded
+2012-04-27 08:51:58,648 INFO listing of conneciton succesfully loading
+2012-04-27 08:51:59,092 INFO choose table
+2012-04-27 08:51:59,154 INFO list of schemas loaded successfully
+2012-04-27 08:52:01,640 INFO list of tables loaded successfully
+2012-04-27 08:52:01,641 INFO schema ARTUR choosed
+2012-04-27 08:52:03,207 INFO table TEST choosed
+2012-04-27 08:52:04,006 INFO open local history
+2012-04-27 08:52:21,755 INFO ######################################################################################
+2012-04-27 08:52:21,755 INFO start session
+2012-04-27 08:52:23,542 INFO connect to db
+2012-04-27 08:52:23,548 INFO connecting to local database successfully
+2012-04-27 08:52:23,572 INFO list of connections loaded
+2012-04-27 08:52:23,596 INFO list of connections loaded
+2012-04-27 08:52:23,607 INFO listing of conneciton succesfully loading
+2012-04-27 08:52:24,664 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 08:52:24,667 INFO list of connections loaded
+2012-04-27 08:52:24,671 INFO listing of conneciton succesfully loading
+2012-04-27 08:52:25,007 INFO choose table
+2012-04-27 08:52:25,066 INFO list of schemas loaded successfully
+2012-04-27 08:52:26,464 INFO list of tables loaded successfully
+2012-04-27 08:52:26,464 INFO schema ARTUR choosed
+2012-04-27 08:52:27,486 INFO table TEST choosed
+2012-04-27 08:52:28,306 INFO open local history
+2012-04-27 08:54:52,049 INFO ######################################################################################
+2012-04-27 08:54:52,049 INFO start session
+2012-04-27 08:54:53,046 INFO end session. but there are no connection to db
+2012-04-27 08:54:53,046 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 09:29:29,338 INFO ######################################################################################
+2012-04-27 09:29:29,339 INFO start session
+2012-04-27 09:29:30,805 INFO connect to db
+2012-04-27 09:29:30,812 INFO connecting to local database successfully
+2012-04-27 09:29:30,836 INFO list of connections loaded
+2012-04-27 09:29:30,862 INFO list of connections loaded
+2012-04-27 09:29:30,868 INFO listing of conneciton succesfully loading
+2012-04-27 09:29:31,670 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:29:31,673 INFO list of connections loaded
+2012-04-27 09:29:31,676 INFO listing of conneciton succesfully loading
+2012-04-27 09:29:32,000 INFO choose table
+2012-04-27 09:29:32,069 INFO list of schemas loaded successfully
+2012-04-27 09:29:33,509 INFO list of tables loaded successfully
+2012-04-27 09:29:33,509 INFO schema TEST_UIR choosed
+2012-04-27 09:29:34,934 INFO list of tables loaded successfully
+2012-04-27 09:29:34,934 INFO schema ARTUR choosed
+2012-04-27 09:29:35,676 INFO table TEST choosed
+2012-04-27 09:29:36,466 INFO open local history
+2012-04-27 09:29:38,696 ERROR error while looking history - code: 222 - in method 'RendererNative_DrawCheckBox', expected argument 2 of type 'wxWindow *'
+2012-04-27 09:29:41,875 INFO open local history
+2012-04-27 09:29:47,871 ERROR error while looking history - code: 222 - in method 'RendererNative_DrawCheckBox', expected argument 2 of type 'wxWindow *'
+2012-04-27 09:30:02,934 INFO ######################################################################################
+2012-04-27 09:30:02,934 INFO start session
+2012-04-27 09:30:03,707 INFO connect to db
+2012-04-27 09:30:03,713 INFO connecting to local database successfully
+2012-04-27 09:30:03,739 INFO list of connections loaded
+2012-04-27 09:30:03,762 INFO list of connections loaded
+2012-04-27 09:30:03,767 INFO listing of conneciton succesfully loading
+2012-04-27 09:30:04,905 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:30:04,908 INFO list of connections loaded
+2012-04-27 09:30:04,911 INFO listing of conneciton succesfully loading
+2012-04-27 09:30:05,266 INFO choose table
+2012-04-27 09:30:05,331 INFO list of schemas loaded successfully
+2012-04-27 09:30:06,733 INFO list of tables loaded successfully
+2012-04-27 09:30:06,733 INFO schema ARTUR choosed
+2012-04-27 09:30:07,382 INFO table TEST choosed
+2012-04-27 09:30:08,812 INFO open local history
+2012-04-27 09:30:10,618 ERROR error while looking history - code: 222 - in method 'RendererNative_DrawCheckBox', expected argument 2 of type 'wxWindow *'
+2012-04-27 09:32:32,477 INFO ######################################################################################
+2012-04-27 09:32:32,477 INFO start session
+2012-04-27 09:32:33,868 INFO connect to db
+2012-04-27 09:32:33,874 INFO connecting to local database successfully
+2012-04-27 09:32:33,898 INFO list of connections loaded
+2012-04-27 09:32:33,930 INFO list of connections loaded
+2012-04-27 09:32:33,937 INFO listing of conneciton succesfully loading
+2012-04-27 09:32:35,048 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:32:35,051 INFO list of connections loaded
+2012-04-27 09:32:35,053 INFO listing of conneciton succesfully loading
+2012-04-27 09:32:35,299 INFO choose table
+2012-04-27 09:32:35,371 INFO list of schemas loaded successfully
+2012-04-27 09:32:36,555 INFO list of tables loaded successfully
+2012-04-27 09:32:36,555 INFO schema TEST_UIR choosed
+2012-04-27 09:32:37,859 INFO list of tables loaded successfully
+2012-04-27 09:32:37,859 INFO schema ARTUR choosed
+2012-04-27 09:32:38,793 INFO table TEST choosed
+2012-04-27 09:32:39,888 INFO open local history
+2012-04-27 09:33:17,431 INFO ######################################################################################
+2012-04-27 09:33:17,431 INFO start session
+2012-04-27 09:33:19,835 INFO connect to db
+2012-04-27 09:33:19,841 INFO connecting to local database successfully
+2012-04-27 09:33:19,865 INFO list of connections loaded
+2012-04-27 09:33:19,895 INFO list of connections loaded
+2012-04-27 09:33:19,904 INFO listing of conneciton succesfully loading
+2012-04-27 09:33:21,033 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:33:21,036 INFO list of connections loaded
+2012-04-27 09:33:21,040 INFO listing of conneciton succesfully loading
+2012-04-27 09:33:21,134 INFO choose table
+2012-04-27 09:33:21,197 INFO list of schemas loaded successfully
+2012-04-27 09:33:22,575 INFO list of tables loaded successfully
+2012-04-27 09:33:22,575 INFO schema ARTUR choosed
+2012-04-27 09:33:23,117 INFO table TEST_IDEAL choosed
+2012-04-27 09:33:24,805 INFO table TEST choosed
+2012-04-27 09:33:26,526 INFO open local history
+2012-04-27 09:33:46,835 INFO ######################################################################################
+2012-04-27 09:33:46,835 INFO start session
+2012-04-27 09:33:47,976 INFO connect to db
+2012-04-27 09:33:47,982 INFO connecting to local database successfully
+2012-04-27 09:33:48,006 INFO list of connections loaded
+2012-04-27 09:33:48,030 INFO list of connections loaded
+2012-04-27 09:33:48,036 INFO listing of conneciton succesfully loading
+2012-04-27 09:33:48,770 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:33:48,773 INFO list of connections loaded
+2012-04-27 09:33:48,778 INFO listing of conneciton succesfully loading
+2012-04-27 09:33:49,239 INFO choose table
+2012-04-27 09:33:49,302 INFO list of schemas loaded successfully
+2012-04-27 09:33:50,977 INFO list of tables loaded successfully
+2012-04-27 09:33:50,979 INFO schema TEST_UIR choosed
+2012-04-27 09:33:52,246 INFO list of tables loaded successfully
+2012-04-27 09:33:52,246 INFO schema ARTUR choosed
+2012-04-27 09:33:53,062 INFO table TEST choosed
+2012-04-27 09:33:53,869 INFO open local history
+2012-04-27 09:37:02,069 INFO ######################################################################################
+2012-04-27 09:37:02,069 INFO start session
+2012-04-27 09:37:03,183 INFO connect to db
+2012-04-27 09:37:03,187 INFO connecting to local database successfully
+2012-04-27 09:37:03,210 INFO list of connections loaded
+2012-04-27 09:37:03,240 INFO list of connections loaded
+2012-04-27 09:37:03,249 INFO listing of conneciton succesfully loading
+2012-04-27 09:37:04,066 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:37:04,069 INFO list of connections loaded
+2012-04-27 09:37:04,072 INFO listing of conneciton succesfully loading
+2012-04-27 09:37:04,605 INFO choose table
+2012-04-27 09:37:04,670 INFO list of schemas loaded successfully
+2012-04-27 09:37:06,138 INFO list of tables loaded successfully
+2012-04-27 09:37:06,138 INFO schema ARTUR choosed
+2012-04-27 09:37:06,709 INFO table TEST choosed
+2012-04-27 09:37:07,634 INFO open local history
+2012-04-27 09:37:13,986 ERROR error while looking history - code: 222 - in method 'RendererNative_DrawCheckBox', expected argument 2 of type 'wxWindow *'
+2012-04-27 09:39:21,963 INFO ######################################################################################
+2012-04-27 09:39:21,963 INFO start session
+2012-04-27 09:39:23,203 INFO connect to db
+2012-04-27 09:39:23,210 INFO connecting to local database successfully
+2012-04-27 09:39:23,233 INFO list of connections loaded
+2012-04-27 09:39:23,263 INFO list of connections loaded
+2012-04-27 09:39:23,273 INFO listing of conneciton succesfully loading
+2012-04-27 09:39:24,371 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:39:24,374 INFO list of connections loaded
+2012-04-27 09:39:24,377 INFO listing of conneciton succesfully loading
+2012-04-27 09:39:25,173 INFO choose table
+2012-04-27 09:39:25,233 INFO list of schemas loaded successfully
+2012-04-27 09:39:27,101 INFO list of tables loaded successfully
+2012-04-27 09:39:27,101 INFO schema ARTUR choosed
+2012-04-27 09:39:27,664 INFO table TEST choosed
+2012-04-27 09:39:28,510 INFO open local history
+2012-04-27 09:39:29,796 ERROR error while looking history - code: 222 - wx.Window, wx.Sizer, wx.Size, or (w,h) expected for item
+2012-04-27 09:39:32,470 INFO open local history
+2012-04-27 09:39:35,124 ERROR error while looking history - code: 222 - wx.Window, wx.Sizer, wx.Size, or (w,h) expected for item
+2012-04-27 09:42:55,332 INFO ######################################################################################
+2012-04-27 09:42:55,332 INFO start session
+2012-04-27 09:42:56,706 INFO connect to db
+2012-04-27 09:42:56,713 INFO connecting to local database successfully
+2012-04-27 09:42:56,739 INFO list of connections loaded
+2012-04-27 09:42:56,773 INFO list of connections loaded
+2012-04-27 09:42:56,780 INFO listing of conneciton succesfully loading
+2012-04-27 09:42:57,990 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:42:57,993 INFO list of connections loaded
+2012-04-27 09:42:57,996 INFO listing of conneciton succesfully loading
+2012-04-27 09:42:58,346 INFO choose table
+2012-04-27 09:42:58,407 INFO list of schemas loaded successfully
+2012-04-27 09:42:59,757 INFO list of tables loaded successfully
+2012-04-27 09:42:59,759 INFO schema ARTUR choosed
+2012-04-27 09:43:00,746 INFO table TEST choosed
+2012-04-27 09:43:01,788 INFO open local history
+2012-04-27 09:43:07,957 INFO ######################################################################################
+2012-04-27 09:43:07,957 INFO start session
+2012-04-27 09:43:09,801 INFO connect to db
+2012-04-27 09:43:09,806 INFO connecting to local database successfully
+2012-04-27 09:43:09,835 INFO list of connections loaded
+2012-04-27 09:43:09,869 INFO list of connections loaded
+2012-04-27 09:43:09,875 INFO listing of conneciton succesfully loading
+2012-04-27 09:43:10,801 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:43:10,803 INFO list of connections loaded
+2012-04-27 09:43:10,806 INFO listing of conneciton succesfully loading
+2012-04-27 09:43:11,161 INFO choose table
+2012-04-27 09:43:11,224 INFO list of schemas loaded successfully
+2012-04-27 09:43:12,730 INFO list of tables loaded successfully
+2012-04-27 09:43:12,730 INFO schema ARTUR choosed
+2012-04-27 09:43:13,361 INFO table TEST choosed
+2012-04-27 09:43:15,072 INFO open local history
+2012-04-27 09:43:39,326 INFO ######################################################################################
+2012-04-27 09:43:39,326 INFO start session
+2012-04-27 09:43:41,219 INFO connect to db
+2012-04-27 09:43:41,223 INFO connecting to local database successfully
+2012-04-27 09:43:41,250 INFO list of connections loaded
+2012-04-27 09:43:41,276 INFO list of connections loaded
+2012-04-27 09:43:41,282 INFO listing of conneciton succesfully loading
+2012-04-27 09:43:42,642 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:43:42,645 INFO list of connections loaded
+2012-04-27 09:43:42,648 INFO listing of conneciton succesfully loading
+2012-04-27 09:43:42,928 INFO choose table
+2012-04-27 09:43:42,993 INFO list of schemas loaded successfully
+2012-04-27 09:43:44,438 INFO list of tables loaded successfully
+2012-04-27 09:43:44,438 INFO schema TEST_UIR choosed
+2012-04-27 09:43:46,145 INFO list of tables loaded successfully
+2012-04-27 09:43:46,145 INFO schema ARTUR choosed
+2012-04-27 09:43:46,973 INFO table TEST choosed
+2012-04-27 09:43:47,950 INFO open local history
+2012-04-27 09:45:25,655 INFO ######################################################################################
+2012-04-27 09:45:25,655 INFO start session
+2012-04-27 09:45:27,338 INFO connect to db
+2012-04-27 09:45:27,344 INFO connecting to local database successfully
+2012-04-27 09:45:27,368 INFO list of connections loaded
+2012-04-27 09:45:27,400 INFO list of connections loaded
+2012-04-27 09:45:27,408 INFO listing of conneciton succesfully loading
+2012-04-27 09:45:28,471 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:45:28,474 INFO list of connections loaded
+2012-04-27 09:45:28,477 INFO listing of conneciton succesfully loading
+2012-04-27 09:45:28,618 INFO choose table
+2012-04-27 09:45:28,686 INFO list of schemas loaded successfully
+2012-04-27 09:45:30,194 INFO list of tables loaded successfully
+2012-04-27 09:45:30,196 INFO schema ARTUR choosed
+2012-04-27 09:45:31,039 INFO table TEST choosed
+2012-04-27 09:45:31,885 INFO open local history
+2012-04-27 09:46:06,288 INFO ######################################################################################
+2012-04-27 09:46:06,288 INFO start session
+2012-04-27 09:46:07,128 INFO connect to db
+2012-04-27 09:46:07,134 INFO connecting to local database successfully
+2012-04-27 09:46:07,158 INFO list of connections loaded
+2012-04-27 09:46:07,187 INFO list of connections loaded
+2012-04-27 09:46:07,196 INFO listing of conneciton succesfully loading
+2012-04-27 09:46:08,374 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:46:08,375 INFO list of connections loaded
+2012-04-27 09:46:08,378 INFO listing of conneciton succesfully loading
+2012-04-27 09:46:08,644 INFO choose table
+2012-04-27 09:46:08,703 INFO list of schemas loaded successfully
+2012-04-27 09:46:10,463 INFO list of tables loaded successfully
+2012-04-27 09:46:10,463 INFO schema ARTUR choosed
+2012-04-27 09:46:11,338 INFO table TEST choosed
+2012-04-27 09:46:12,134 INFO open local history
+2012-04-27 09:46:31,055 INFO ######################################################################################
+2012-04-27 09:46:31,055 INFO start session
+2012-04-27 09:46:33,073 INFO connect to db
+2012-04-27 09:46:33,079 INFO connecting to local database successfully
+2012-04-27 09:46:33,105 INFO list of connections loaded
+2012-04-27 09:46:33,132 INFO list of connections loaded
+2012-04-27 09:46:33,141 INFO listing of conneciton succesfully loading
+2012-04-27 09:46:34,203 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:46:34,206 INFO list of connections loaded
+2012-04-27 09:46:34,209 INFO listing of conneciton succesfully loading
+2012-04-27 09:46:35,211 INFO choose table
+2012-04-27 09:46:35,255 INFO list of schemas loaded successfully
+2012-04-27 09:46:36,746 INFO list of tables loaded successfully
+2012-04-27 09:46:36,746 INFO schema ARTUR choosed
+2012-04-27 09:46:37,328 INFO table TEST choosed
+2012-04-27 09:46:38,098 INFO open local history
+2012-04-27 09:47:17,453 INFO ######################################################################################
+2012-04-27 09:47:17,454 INFO start session
+2012-04-27 09:47:18,661 INFO connect to db
+2012-04-27 09:47:18,664 INFO connecting to local database successfully
+2012-04-27 09:47:18,687 INFO list of connections loaded
+2012-04-27 09:47:18,719 INFO list of connections loaded
+2012-04-27 09:47:18,724 INFO listing of conneciton succesfully loading
+2012-04-27 09:47:19,755 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:47:19,757 INFO list of connections loaded
+2012-04-27 09:47:19,759 INFO listing of conneciton succesfully loading
+2012-04-27 09:47:19,963 INFO choose table
+2012-04-27 09:47:20,026 INFO list of schemas loaded successfully
+2012-04-27 09:47:21,555 INFO list of tables loaded successfully
+2012-04-27 09:47:21,555 INFO schema ARTUR choosed
+2012-04-27 09:47:22,114 INFO table TEST choosed
+2012-04-27 09:47:22,842 INFO open local history
+2012-04-27 09:47:24,221 ERROR error while looking history - code: 222 - 'Panel' object has no attribute 'list'
+2012-04-27 09:48:41,805 INFO ######################################################################################
+2012-04-27 09:48:41,805 INFO start session
+2012-04-27 09:48:43,220 INFO connect to db
+2012-04-27 09:48:43,226 INFO connecting to local database successfully
+2012-04-27 09:48:43,250 INFO list of connections loaded
+2012-04-27 09:48:43,282 INFO list of connections loaded
+2012-04-27 09:48:43,290 INFO listing of conneciton succesfully loading
+2012-04-27 09:48:44,450 INFO trying to connect using conneciton: localhost
+2012-04-27 09:48:45,240 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:48:45,243 INFO list of connections loaded
+2012-04-27 09:48:45,246 INFO listing of conneciton succesfully loading
+2012-04-27 09:48:45,470 INFO choose table
+2012-04-27 09:48:45,519 INFO list of schemas loaded successfully
+2012-04-27 09:48:46,917 INFO list of tables loaded successfully
+2012-04-27 09:48:46,917 INFO schema ARTUR choosed
+2012-04-27 09:48:47,559 INFO table TEST choosed
+2012-04-27 09:48:48,319 INFO open local history
+2012-04-27 09:48:50,811 ERROR error while looking history - code: 222 - in method 'new_StaticBoxSizer', expected argument 1 of type 'wxStaticBox *'
+2012-04-27 09:49:24,766 INFO ######################################################################################
+2012-04-27 09:49:24,767 INFO start session
+2012-04-27 09:49:25,214 INFO connect to db
+2012-04-27 09:49:25,220 INFO connecting to local database successfully
+2012-04-27 09:49:25,246 INFO list of connections loaded
+2012-04-27 09:49:25,269 INFO list of connections loaded
+2012-04-27 09:49:25,276 INFO listing of conneciton succesfully loading
+2012-04-27 09:49:26,414 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:49:26,417 INFO list of connections loaded
+2012-04-27 09:49:26,420 INFO listing of conneciton succesfully loading
+2012-04-27 09:49:26,694 INFO choose table
+2012-04-27 09:49:26,753 INFO list of schemas loaded successfully
+2012-04-27 09:49:27,967 INFO list of tables loaded successfully
+2012-04-27 09:49:27,967 INFO schema ARTUR choosed
+2012-04-27 09:49:28,609 INFO table TEST choosed
+2012-04-27 09:49:29,325 INFO open local history
+2012-04-27 09:50:27,904 INFO ######################################################################################
+2012-04-27 09:50:27,904 INFO start session
+2012-04-27 09:50:29,078 INFO connect to db
+2012-04-27 09:50:29,082 INFO connecting to local database successfully
+2012-04-27 09:50:29,107 INFO list of connections loaded
+2012-04-27 09:50:29,137 INFO list of connections loaded
+2012-04-27 09:50:29,148 INFO listing of conneciton succesfully loading
+2012-04-27 09:50:30,119 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:50:30,125 INFO list of connections loaded
+2012-04-27 09:50:30,128 INFO listing of conneciton succesfully loading
+2012-04-27 09:50:30,227 INFO choose table
+2012-04-27 09:50:30,289 INFO list of schemas loaded successfully
+2012-04-27 09:50:31,987 INFO list of tables loaded successfully
+2012-04-27 09:50:31,987 INFO schema ARTUR choosed
+2012-04-27 09:50:32,665 INFO table TEST choosed
+2012-04-27 09:50:33,859 INFO open local history
+2012-04-27 09:51:59,187 INFO ######################################################################################
+2012-04-27 09:51:59,187 INFO start session
+2012-04-27 09:52:00,099 INFO connect to db
+2012-04-27 09:52:00,105 INFO connecting to local database successfully
+2012-04-27 09:52:00,128 INFO list of connections loaded
+2012-04-27 09:52:00,151 INFO list of connections loaded
+2012-04-27 09:52:00,157 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:01,282 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:52:01,285 INFO list of connections loaded
+2012-04-27 09:52:01,288 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:01,589 INFO choose table
+2012-04-27 09:52:01,644 INFO list of schemas loaded successfully
+2012-04-27 09:52:03,000 INFO list of tables loaded successfully
+2012-04-27 09:52:03,000 INFO schema ARTUR choosed
+2012-04-27 09:52:03,573 INFO table TEST_IDEAL choosed
+2012-04-27 09:52:05,101 INFO table TEST choosed
+2012-04-27 09:52:05,878 INFO open local history
+2012-04-27 09:52:20,391 INFO ######################################################################################
+2012-04-27 09:52:20,392 INFO start session
+2012-04-27 09:52:21,848 INFO connect to db
+2012-04-27 09:52:21,854 INFO connecting to local database successfully
+2012-04-27 09:52:21,878 INFO list of connections loaded
+2012-04-27 09:52:21,911 INFO list of connections loaded
+2012-04-27 09:52:21,920 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:22,838 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:52:22,842 INFO list of connections loaded
+2012-04-27 09:52:22,844 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:22,957 INFO choose table
+2012-04-27 09:52:23,016 INFO list of schemas loaded successfully
+2012-04-27 09:52:24,266 INFO list of tables loaded successfully
+2012-04-27 09:52:24,266 INFO schema ARTUR choosed
+2012-04-27 09:52:24,828 INFO table TEST choosed
+2012-04-27 09:52:25,427 INFO open local history
+2012-04-27 09:52:33,614 INFO connect to db
+2012-04-27 09:52:33,621 INFO connecting to local database successfully
+2012-04-27 09:52:33,625 INFO list of connections loaded
+2012-04-27 09:52:33,648 INFO list of connections loaded
+2012-04-27 09:52:33,657 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:36,901 INFO list of connections loaded
+2012-04-27 09:52:36,907 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:39,943 INFO connect to db
+2012-04-27 09:52:39,947 INFO connecting to local database successfully
+2012-04-27 09:52:39,950 INFO list of connections loaded
+2012-04-27 09:52:39,980 INFO list of connections loaded
+2012-04-27 09:52:39,989 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:40,736 INFO list of connections loaded
+2012-04-27 09:52:40,740 INFO listing of conneciton succesfully loading
+2012-04-27 09:52:59,246 INFO ######################################################################################
+2012-04-27 09:52:59,246 INFO start session
+2012-04-27 09:53:00,757 INFO connect to db
+2012-04-27 09:53:00,763 INFO connecting to local database successfully
+2012-04-27 09:53:00,786 INFO list of connections loaded
+2012-04-27 09:53:00,815 INFO list of connections loaded
+2012-04-27 09:53:00,822 INFO listing of conneciton succesfully loading
+2012-04-27 09:53:01,650 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:53:01,653 INFO list of connections loaded
+2012-04-27 09:53:01,654 INFO listing of conneciton succesfully loading
+2012-04-27 09:53:01,836 INFO choose table
+2012-04-27 09:53:01,898 INFO list of schemas loaded successfully
+2012-04-27 09:53:03,522 INFO list of tables loaded successfully
+2012-04-27 09:53:03,522 INFO schema ARTUR choosed
+2012-04-27 09:53:04,183 INFO table TEST choosed
+2012-04-27 09:53:05,286 INFO open local history
+2012-04-27 09:56:54,529 INFO ######################################################################################
+2012-04-27 09:56:54,530 INFO start session
+2012-04-27 09:56:55,786 INFO connect to db
+2012-04-27 09:56:55,790 INFO connecting to local database successfully
+2012-04-27 09:56:55,816 INFO list of connections loaded
+2012-04-27 09:56:55,849 INFO list of connections loaded
+2012-04-27 09:56:55,858 INFO listing of conneciton succesfully loading
+2012-04-27 09:56:57,069 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 09:56:57,072 INFO list of connections loaded
+2012-04-27 09:56:57,075 INFO listing of conneciton succesfully loading
+2012-04-27 09:56:58,135 INFO choose table
+2012-04-27 09:56:58,197 INFO list of schemas loaded successfully
+2012-04-27 09:56:59,905 INFO list of tables loaded successfully
+2012-04-27 09:56:59,905 INFO schema ARTUR choosed
+2012-04-27 09:57:00,536 INFO table TEST choosed
+2012-04-27 09:57:01,345 INFO open local history
+2012-04-27 10:11:28,928 INFO ######################################################################################
+2012-04-27 10:11:28,930 INFO start session
+2012-04-27 10:11:31,073 INFO connect to db
+2012-04-27 10:11:31,078 INFO connecting to local database successfully
+2012-04-27 10:11:31,104 INFO list of connections loaded
+2012-04-27 10:11:31,134 INFO list of connections loaded
+2012-04-27 10:11:31,142 INFO listing of conneciton succesfully loading
+2012-04-27 10:11:32,467 INFO list of connections loaded
+2012-04-27 10:11:32,471 INFO listing of conneciton succesfully loading
+2012-04-27 10:11:33,118 INFO end session. but there are no connection to db
+2012-04-27 10:11:33,118 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 10:11:39,746 INFO ######################################################################################
+2012-04-27 10:11:39,746 INFO start session
+2012-04-27 10:11:40,780 INFO connect to db
+2012-04-27 10:11:40,786 INFO connecting to local database successfully
+2012-04-27 10:11:40,808 INFO list of connections loaded
+2012-04-27 10:11:40,831 INFO list of connections loaded
+2012-04-27 10:11:40,836 INFO listing of conneciton succesfully loading
+2012-04-27 10:11:42,548 INFO list of connections loaded
+2012-04-27 10:11:42,552 INFO listing of conneciton succesfully loading
+2012-04-27 10:11:42,789 INFO end session. but there are no connection to db
+2012-04-27 10:11:42,789 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 10:14:01,171 INFO ######################################################################################
+2012-04-27 10:14:01,171 INFO start session
+2012-04-27 10:14:02,484 INFO connect to db
+2012-04-27 10:14:02,490 INFO connecting to local database successfully
+2012-04-27 10:14:02,509 INFO list of connections loaded
+2012-04-27 10:14:02,530 INFO list of connections loaded
+2012-04-27 10:14:02,536 INFO listing of conneciton succesfully loading
+2012-04-27 10:14:03,414 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 10:14:03,417 INFO list of connections loaded
+2012-04-27 10:14:03,420 INFO listing of conneciton succesfully loading
+2012-04-27 10:14:04,552 INFO choose table
+2012-04-27 10:14:04,614 INFO list of schemas loaded successfully
+2012-04-27 10:14:05,839 INFO list of tables loaded successfully
+2012-04-27 10:14:05,839 INFO schema ARTUR choosed
+2012-04-27 10:14:06,411 INFO table TEST choosed
+2012-04-27 10:14:07,082 INFO open local history
+2012-04-27 10:14:08,622 ERROR error while looking history - code: 222 - 'MainWindow' object has no attribute 'panelHist'
+2012-04-27 10:14:58,431 INFO ######################################################################################
+2012-04-27 10:14:58,433 INFO start session
+2012-04-27 10:14:58,967 INFO connect to db
+2012-04-27 10:14:58,973 INFO connecting to local database successfully
+2012-04-27 10:14:58,997 INFO list of connections loaded
+2012-04-27 10:14:59,035 INFO list of connections loaded
+2012-04-27 10:14:59,042 INFO listing of conneciton succesfully loading
+2012-04-27 10:15:00,025 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 10:15:00,028 INFO list of connections loaded
+2012-04-27 10:15:00,030 INFO listing of conneciton succesfully loading
+2012-04-27 10:15:00,207 INFO choose table
+2012-04-27 10:15:00,269 INFO list of schemas loaded successfully
+2012-04-27 10:15:01,864 INFO list of tables loaded successfully
+2012-04-27 10:15:01,864 INFO schema ARTUR choosed
+2012-04-27 10:15:02,447 INFO table TEST choosed
+2012-04-27 10:15:03,167 INFO open local history
+2012-04-27 10:15:06,898 INFO launch edit regexps module
+2012-04-27 10:15:06,960 INFO connecting to local database successfully
+2012-04-27 10:15:11,266 INFO launch edit regexps module
+2012-04-27 10:15:11,325 INFO connecting to local database successfully
+2012-04-27 10:15:15,601 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 10:15:19,687 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 10:15:27,510 INFO starting calculation data quality model
+2012-04-27 10:15:27,513 INFO connecting to local database successfully
+2012-04-27 10:15:27,921 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 10:15:28,930 INFO bad fromat parameter calculation successfully
+2012-04-27 10:15:28,956 INFO calculation successfully
+2012-04-27 10:15:33,756 ERROR starting calculate dq process failed - code 204: in method 'new_ListCtrl', expected argument 1 of type 'wxWindow *'
+2012-04-27 10:16:10,506 INFO ######################################################################################
+2012-04-27 10:16:10,506 INFO start session
+2012-04-27 10:16:11,348 INFO connect to db
+2012-04-27 10:16:11,354 INFO connecting to local database successfully
+2012-04-27 10:16:11,378 INFO list of connections loaded
+2012-04-27 10:16:11,401 INFO list of connections loaded
+2012-04-27 10:16:11,407 INFO listing of conneciton succesfully loading
+2012-04-27 10:16:12,273 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 10:16:12,276 INFO list of connections loaded
+2012-04-27 10:16:12,278 INFO listing of conneciton succesfully loading
+2012-04-27 10:16:12,358 INFO choose table
+2012-04-27 10:16:12,438 INFO list of schemas loaded successfully
+2012-04-27 10:16:14,000 INFO list of tables loaded successfully
+2012-04-27 10:16:14,000 INFO schema ARTUR choosed
+2012-04-27 10:16:14,563 INFO table TEST choosed
+2012-04-27 10:16:15,438 INFO open local history
+2012-04-27 10:16:17,374 INFO launch edit regexps module
+2012-04-27 10:16:17,420 INFO connecting to local database successfully
+2012-04-27 10:16:21,082 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 10:16:24,769 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 10:16:26,447 INFO starting calculation data quality model
+2012-04-27 10:16:26,448 INFO connecting to local database successfully
+2012-04-27 10:16:26,809 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 10:16:27,812 INFO bad fromat parameter calculation successfully
+2012-04-27 10:16:27,841 INFO calculation successfully
+2012-04-27 10:16:36,061 ERROR starting calculate dq process failed - code 204: in method 'new_ListCtrl', expected argument 1 of type 'wxWindow *'
+2012-04-27 10:17:41,483 INFO ######################################################################################
+2012-04-27 10:17:41,483 INFO start session
+2012-04-27 10:17:42,562 INFO connect to db
+2012-04-27 10:17:42,568 INFO connecting to local database successfully
+2012-04-27 10:17:42,589 INFO list of connections loaded
+2012-04-27 10:17:42,614 INFO list of connections loaded
+2012-04-27 10:17:42,621 INFO listing of conneciton succesfully loading
+2012-04-27 10:17:43,605 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 10:17:43,608 INFO list of connections loaded
+2012-04-27 10:17:43,611 INFO listing of conneciton succesfully loading
+2012-04-27 10:17:44,424 INFO choose table
+2012-04-27 10:17:44,490 INFO list of schemas loaded successfully
+2012-04-27 10:17:45,730 INFO list of tables loaded successfully
+2012-04-27 10:17:45,730 INFO schema ARTUR choosed
+2012-04-27 10:17:46,759 INFO table TEST choosed
+2012-04-27 10:17:47,681 INFO launch edit regexps module
+2012-04-27 10:17:47,739 INFO connecting to local database successfully
+2012-04-27 10:17:50,990 INFO starting calculation data quality model
+2012-04-27 10:17:50,990 INFO connecting to local database successfully
+2012-04-27 10:17:51,375 INFO calculation successfully
+2012-04-27 10:26:49,971 INFO ######################################################################################
+2012-04-27 10:26:49,971 INFO start session
+2012-04-27 10:26:52,453 INFO connect to db
+2012-04-27 10:26:52,457 INFO connecting to local database successfully
+2012-04-27 10:26:52,483 INFO list of connections loaded
+2012-04-27 10:26:52,512 INFO list of connections loaded
+2012-04-27 10:26:52,519 INFO listing of conneciton succesfully loading
+2012-04-27 10:26:53,414 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 10:26:53,417 INFO list of connections loaded
+2012-04-27 10:26:53,418 INFO listing of conneciton succesfully loading
+2012-04-27 10:26:54,013 INFO choose table
+2012-04-27 10:26:54,075 INFO list of schemas loaded successfully
+2012-04-27 10:26:55,892 INFO list of tables loaded successfully
+2012-04-27 10:26:55,892 INFO schema ARTUR choosed
+2012-04-27 10:26:56,562 INFO table TEST choosed
+2012-04-27 10:26:57,265 INFO open local history
+2012-04-27 10:28:12,329 INFO ######################################################################################
+2012-04-27 10:28:12,329 INFO start session
+2012-04-27 10:28:13,391 INFO connect to db
+2012-04-27 10:28:13,397 INFO connecting to local database successfully
+2012-04-27 10:28:13,421 INFO list of connections loaded
+2012-04-27 10:28:13,450 INFO list of connections loaded
+2012-04-27 10:28:13,457 INFO listing of conneciton succesfully loading
+2012-04-27 10:28:14,466 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 10:28:14,469 INFO list of connections loaded
+2012-04-27 10:28:14,470 INFO listing of conneciton succesfully loading
+2012-04-27 10:28:14,621 INFO choose table
+2012-04-27 10:28:14,683 INFO list of schemas loaded successfully
+2012-04-27 10:28:15,992 INFO list of tables loaded successfully
+2012-04-27 10:28:15,992 INFO schema ARTUR choosed
+2012-04-27 10:28:16,561 INFO table TEST_IDEAL choosed
+2012-04-27 10:28:17,946 INFO table TEST choosed
+2012-04-27 10:28:19,828 INFO launch edit regexps module
+2012-04-27 10:28:19,885 INFO connecting to local database successfully
+2012-04-27 10:28:25,755 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 10:28:27,101 INFO starting calculation data quality model
+2012-04-27 10:28:27,102 INFO connecting to local database successfully
+2012-04-27 10:28:27,642 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 10:28:28,667 INFO bad fromat parameter calculation successfully
+2012-04-27 10:28:28,694 INFO calculation successfully
+2012-04-27 12:08:19,558 INFO ######################################################################################
+2012-04-27 12:08:19,558 INFO start session
+2012-04-27 12:08:20,650 INFO connect to db
+2012-04-27 12:08:20,665 INFO connecting to local database successfully
+2012-04-27 12:08:20,759 INFO list of connections loaded
+2012-04-27 12:08:20,775 INFO list of connections loaded
+2012-04-27 12:08:20,789 INFO listing of conneciton succesfully loading
+2012-04-27 12:08:43,545 INFO list of connections loaded
+2012-04-27 12:08:43,551 INFO listing of conneciton succesfully loading
+2012-04-27 12:08:58,512 INFO list of connections loaded
+2012-04-27 12:08:58,520 INFO listing of conneciton succesfully loading
+2012-04-27 12:08:59,226 INFO list of connections loaded
+2012-04-27 12:08:59,230 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:02,292 ERROR connection error
+2012-04-27 12:09:04,082 INFO connect to db
+2012-04-27 12:09:04,088 INFO connecting to local database successfully
+2012-04-27 12:09:04,089 INFO list of connections loaded
+2012-04-27 12:09:04,109 INFO list of connections loaded
+2012-04-27 12:09:04,117 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:04,938 INFO list of connections loaded
+2012-04-27 12:09:04,943 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:06,243 INFO list of connections loaded
+2012-04-27 12:09:06,246 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:06,246 ERROR connection error
+2012-04-27 12:09:06,249 INFO list of connections loaded
+2012-04-27 12:09:06,250 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:07,740 INFO connect to db
+2012-04-27 12:09:07,749 INFO connecting to local database successfully
+2012-04-27 12:09:07,750 INFO list of connections loaded
+2012-04-27 12:09:07,773 INFO list of connections loaded
+2012-04-27 12:09:07,778 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:08,651 INFO list of connections loaded
+2012-04-27 12:09:08,655 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:09,668 INFO list of connections loaded
+2012-04-27 12:09:09,674 INFO listing of conneciton succesfully loading
+2012-04-27 12:09:09,674 ERROR connection error
+2012-04-27 12:09:09,677 INFO list of connections loaded
+2012-04-27 12:09:09,681 INFO listing of conneciton succesfully loading
+2012-04-27 12:39:24,026 INFO end session. but there are no connection to db
+2012-04-27 12:39:24,026 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 12:39:43,783 INFO ######################################################################################
+2012-04-27 12:39:43,785 INFO start session
+2012-04-27 12:39:44,954 INFO connect to db
+2012-04-27 12:39:44,963 INFO connecting to local database successfully
+2012-04-27 12:39:44,997 INFO list of connections loaded
+2012-04-27 12:39:45,017 INFO list of connections loaded
+2012-04-27 12:39:45,030 INFO listing of conneciton succesfully loading
+2012-04-27 12:39:46,334 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:39:46,336 INFO list of connections loaded
+2012-04-27 12:39:46,338 INFO listing of conneciton succesfully loading
+2012-04-27 12:39:46,342 INFO choose table
+2012-04-27 12:39:46,414 INFO list of schemas loaded successfully
+2012-04-27 12:39:48,180 INFO list of tables loaded successfully
+2012-04-27 12:39:48,180 INFO schema ARTUR choosed
+2012-04-27 12:39:48,736 INFO table TEST choosed
+2012-04-27 12:39:50,091 INFO launch edit regexps module
+2012-04-27 12:39:50,145 INFO connecting to local database successfully
+2012-04-27 12:39:55,650 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:39:56,917 INFO starting calculation data quality model
+2012-04-27 12:39:56,918 INFO connecting to local database successfully
+2012-04-27 12:39:57,374 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:40:06,755 INFO noise level parameter calculation successfully
+2012-04-27 12:40:06,805 INFO calculation successfully
+2012-04-27 12:41:44,989 INFO ######################################################################################
+2012-04-27 12:41:44,990 INFO start session
+2012-04-27 12:41:46,500 INFO connect to db
+2012-04-27 12:41:46,503 INFO connecting to local database successfully
+2012-04-27 12:41:46,526 INFO list of connections loaded
+2012-04-27 12:41:46,546 INFO list of connections loaded
+2012-04-27 12:41:46,551 INFO listing of conneciton succesfully loading
+2012-04-27 12:41:47,513 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:41:47,516 INFO list of connections loaded
+2012-04-27 12:41:47,519 INFO listing of conneciton succesfully loading
+2012-04-27 12:41:47,862 INFO choose table
+2012-04-27 12:41:47,920 INFO list of schemas loaded successfully
+2012-04-27 12:41:49,244 INFO list of tables loaded successfully
+2012-04-27 12:41:49,246 INFO schema ARTUR choosed
+2012-04-27 12:41:49,809 INFO table TEST choosed
+2012-04-27 12:41:51,911 INFO launch edit regexps module
+2012-04-27 12:41:51,960 INFO connecting to local database successfully
+2012-04-27 12:41:56,911 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:42:00,023 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:42:01,596 INFO starting calculation data quality model
+2012-04-27 12:42:01,596 INFO connecting to local database successfully
+2012-04-27 12:42:01,852 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:42:02,872 INFO bad fromat parameter calculation successfully
+2012-04-27 12:42:02,874 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:42:12,470 INFO noise level parameter calculation successfully
+2012-04-27 12:42:12,500 INFO calculation successfully
+2012-04-27 12:42:39,845 INFO launch edit regexps module
+2012-04-27 12:42:39,891 INFO connecting to local database successfully
+2012-04-27 12:42:44,210 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 12:42:48,872 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:42:53,671 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 12:42:55,127 INFO starting calculation data quality model
+2012-04-27 12:42:55,128 INFO connecting to local database successfully
+2012-04-27 12:42:55,368 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:42:56,398 INFO bad fromat parameter calculation successfully
+2012-04-27 12:42:56,398 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 12:42:56,411 INFO identify parameter calculation successfully
+2012-04-27 12:42:56,411 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 12:42:56,423 INFO harmony parameter calculation successfully
+2012-04-27 12:42:56,490 INFO uniq parameter calculation successfully
+2012-04-27 12:42:56,526 INFO calculation successfully
+2012-04-27 12:43:48,993 INFO ######################################################################################
+2012-04-27 12:43:48,993 INFO start session
+2012-04-27 12:43:51,107 INFO connect to db
+2012-04-27 12:43:51,111 INFO connecting to local database successfully
+2012-04-27 12:43:51,135 INFO list of connections loaded
+2012-04-27 12:43:51,154 INFO list of connections loaded
+2012-04-27 12:43:51,160 INFO listing of conneciton succesfully loading
+2012-04-27 12:43:52,105 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:43:52,108 INFO list of connections loaded
+2012-04-27 12:43:52,109 INFO listing of conneciton succesfully loading
+2012-04-27 12:43:52,391 INFO choose table
+2012-04-27 12:43:52,441 INFO list of schemas loaded successfully
+2012-04-27 12:43:53,621 INFO list of tables loaded successfully
+2012-04-27 12:43:53,621 INFO schema ARTUR choosed
+2012-04-27 12:43:54,105 INFO table TEST choosed
+2012-04-27 12:43:56,726 INFO launch edit regexps module
+2012-04-27 12:43:56,766 INFO connecting to local database successfully
+2012-04-27 12:44:02,328 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:44:04,631 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:44:08,829 INFO starting calculation data quality model
+2012-04-27 12:44:08,831 INFO connecting to local database successfully
+2012-04-27 12:44:09,088 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:44:10,107 INFO bad fromat parameter calculation successfully
+2012-04-27 12:44:10,108 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:44:19,348 INFO noise level parameter calculation successfully
+2012-04-27 12:44:19,411 INFO uniq parameter calculation successfully
+2012-04-27 12:44:19,444 INFO calculation successfully
+2012-04-27 12:44:57,302 INFO ######################################################################################
+2012-04-27 12:44:57,302 INFO start session
+2012-04-27 12:44:58,283 INFO connect to db
+2012-04-27 12:44:58,289 INFO connecting to local database successfully
+2012-04-27 12:44:58,312 INFO list of connections loaded
+2012-04-27 12:44:58,336 INFO list of connections loaded
+2012-04-27 12:44:58,342 INFO listing of conneciton succesfully loading
+2012-04-27 12:44:59,088 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:44:59,091 INFO list of connections loaded
+2012-04-27 12:44:59,092 INFO listing of conneciton succesfully loading
+2012-04-27 12:45:01,118 INFO choose table
+2012-04-27 12:45:01,171 INFO list of schemas loaded successfully
+2012-04-27 12:45:02,522 INFO list of tables loaded successfully
+2012-04-27 12:45:02,522 INFO schema ARTUR choosed
+2012-04-27 12:45:04,063 INFO table TEST choosed
+2012-04-27 12:45:05,181 INFO launch edit regexps module
+2012-04-27 12:45:05,233 INFO connecting to local database successfully
+2012-04-27 12:45:12,164 INFO starting calculation data quality model
+2012-04-27 12:45:12,165 INFO connecting to local database successfully
+2012-04-27 12:45:12,510 INFO uniq parameter calculation successfully
+2012-04-27 12:45:12,542 INFO calculation successfully
+2012-04-27 12:45:18,664 ERROR starting calculate dq process failed - code 204: 'MainWindow' object has no attribute 'sbs'
+2012-04-27 12:45:28,687 INFO launch edit regexps module
+2012-04-27 12:45:28,732 INFO connecting to local database successfully
+2012-04-27 12:45:34,315 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 12:45:40,163 INFO loading regular expressions for parameter efficiency successfully 
+2012-04-27 12:45:44,066 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:45:45,426 INFO starting calculation data quality model
+2012-04-27 12:45:45,426 INFO connecting to local database successfully
+2012-04-27 12:45:45,671 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:45:55,141 INFO noise level parameter calculation successfully
+2012-04-27 12:45:55,142 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 12:45:55,157 INFO identify parameter calculation successfully
+2012-04-27 12:45:55,217 INFO uniq parameter calculation successfully
+2012-04-27 12:45:55,250 INFO calculation successfully
+2012-04-27 12:47:26,464 INFO ######################################################################################
+2012-04-27 12:47:26,464 INFO start session
+2012-04-27 12:47:27,638 INFO connect to db
+2012-04-27 12:47:27,641 INFO connecting to local database successfully
+2012-04-27 12:47:27,654 INFO list of connections loaded
+2012-04-27 12:47:27,677 INFO list of connections loaded
+2012-04-27 12:47:27,683 INFO listing of conneciton succesfully loading
+2012-04-27 12:47:28,707 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:47:28,709 INFO list of connections loaded
+2012-04-27 12:47:28,711 INFO listing of conneciton succesfully loading
+2012-04-27 12:47:29,243 INFO choose table
+2012-04-27 12:47:29,296 INFO list of schemas loaded successfully
+2012-04-27 12:47:30,680 INFO list of tables loaded successfully
+2012-04-27 12:47:30,681 INFO schema ARTUR choosed
+2012-04-27 12:47:31,612 INFO table TEST choosed
+2012-04-27 12:47:33,131 INFO launch edit regexps module
+2012-04-27 12:47:33,177 INFO connecting to local database successfully
+2012-04-27 12:47:39,036 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:47:44,770 INFO starting calculation data quality model
+2012-04-27 12:47:44,772 INFO connecting to local database successfully
+2012-04-27 12:47:45,017 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:47:46,062 INFO bad fromat parameter calculation successfully
+2012-04-27 12:47:46,102 INFO uniq parameter calculation successfully
+2012-04-27 12:47:46,134 INFO calculation successfully
+2012-04-27 12:47:48,701 ERROR starting calculate dq process failed - code 204: global name 'sb' is not defined
+2012-04-27 12:48:05,602 INFO ######################################################################################
+2012-04-27 12:48:05,604 INFO start session
+2012-04-27 12:48:06,246 INFO connect to db
+2012-04-27 12:48:06,252 INFO connecting to local database successfully
+2012-04-27 12:48:06,273 INFO list of connections loaded
+2012-04-27 12:48:06,293 INFO list of connections loaded
+2012-04-27 12:48:06,299 INFO listing of conneciton succesfully loading
+2012-04-27 12:48:07,602 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:48:07,605 INFO list of connections loaded
+2012-04-27 12:48:07,607 INFO listing of conneciton succesfully loading
+2012-04-27 12:48:08,151 INFO choose table
+2012-04-27 12:48:08,207 INFO list of schemas loaded successfully
+2012-04-27 12:48:09,499 INFO list of tables loaded successfully
+2012-04-27 12:48:09,500 INFO schema ARTUR choosed
+2012-04-27 12:48:11,023 INFO table TEST choosed
+2012-04-27 12:48:12,517 INFO launch edit regexps module
+2012-04-27 12:48:12,565 INFO connecting to local database successfully
+2012-04-27 12:48:16,200 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:48:20,782 INFO starting calculation data quality model
+2012-04-27 12:48:20,782 INFO connecting to local database successfully
+2012-04-27 12:48:21,089 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:48:22,098 INFO bad fromat parameter calculation successfully
+2012-04-27 12:48:22,138 INFO uniq parameter calculation successfully
+2012-04-27 12:48:22,170 INFO calculation successfully
+2012-04-27 12:48:47,206 INFO launch edit regexps module
+2012-04-27 12:48:47,250 INFO connecting to local database successfully
+2012-04-27 12:48:52,178 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 12:48:56,601 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:48:58,519 INFO starting calculation data quality model
+2012-04-27 12:48:58,520 INFO connecting to local database successfully
+2012-04-27 12:48:58,759 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 12:49:08,385 INFO noise level parameter calculation successfully
+2012-04-27 12:49:08,387 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 12:49:08,400 INFO identify parameter calculation successfully
+2012-04-27 12:49:08,444 INFO uniq parameter calculation successfully
+2012-04-27 12:49:08,473 INFO calculation successfully
+2012-04-27 12:49:41,519 INFO ######################################################################################
+2012-04-27 12:49:41,519 INFO start session
+2012-04-27 12:49:41,994 INFO connect to db
+2012-04-27 12:49:42,000 INFO connecting to local database successfully
+2012-04-27 12:49:42,016 INFO list of connections loaded
+2012-04-27 12:49:42,036 INFO list of connections loaded
+2012-04-27 12:49:42,042 INFO listing of conneciton succesfully loading
+2012-04-27 12:49:42,954 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 12:49:42,957 INFO list of connections loaded
+2012-04-27 12:49:42,960 INFO listing of conneciton succesfully loading
+2012-04-27 12:49:43,306 INFO choose table
+2012-04-27 12:49:43,361 INFO list of schemas loaded successfully
+2012-04-27 12:49:45,161 INFO list of tables loaded successfully
+2012-04-27 12:49:45,161 INFO schema ARTUR choosed
+2012-04-27 12:49:45,716 INFO table TEST choosed
+2012-04-27 12:49:46,793 INFO launch edit regexps module
+2012-04-27 12:49:46,842 INFO connecting to local database successfully
+2012-04-27 12:49:51,036 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:49:53,530 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 12:49:58,144 INFO starting calculation data quality model
+2012-04-27 12:49:58,145 INFO connecting to local database successfully
+2012-04-27 12:49:58,543 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 12:49:59,634 INFO bad fromat parameter calculation successfully
+2012-04-27 12:49:59,634 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 12:49:59,644 INFO harmony parameter calculation successfully
+2012-04-27 12:49:59,706 INFO uniq parameter calculation successfully
+2012-04-27 12:49:59,742 INFO calculation successfully
+2012-04-27 13:06:31,671 INFO ######################################################################################
+2012-04-27 13:06:31,673 INFO start session
+2012-04-27 13:06:32,230 INFO connect to db
+2012-04-27 13:06:32,237 INFO connecting to local database successfully
+2012-04-27 13:06:32,328 INFO list of connections loaded
+2012-04-27 13:06:32,346 INFO list of connections loaded
+2012-04-27 13:06:32,351 INFO listing of conneciton succesfully loading
+2012-04-27 13:06:33,377 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:06:33,378 INFO list of connections loaded
+2012-04-27 13:06:33,381 INFO listing of conneciton succesfully loading
+2012-04-27 13:06:33,765 INFO choose table
+2012-04-27 13:06:33,802 INFO list of schemas loaded successfully
+2012-04-27 13:06:35,088 INFO list of tables loaded successfully
+2012-04-27 13:06:35,088 INFO schema ARTUR choosed
+2012-04-27 13:06:36,503 INFO table TEST choosed
+2012-04-27 13:06:37,286 INFO open local history
+2012-04-27 13:06:40,565 INFO launch edit regexps module
+2012-04-27 13:06:40,617 INFO connecting to local database successfully
+2012-04-27 13:06:47,592 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 13:06:49,872 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 13:06:51,584 INFO starting calculation data quality model
+2012-04-27 13:06:51,585 INFO connecting to local database successfully
+2012-04-27 13:06:51,832 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 13:06:52,838 INFO bad fromat parameter calculation successfully
+2012-04-27 13:06:52,838 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 13:07:02,108 INFO noise level parameter calculation successfully
+2012-04-27 13:07:02,160 INFO calculation successfully
+2012-04-27 13:07:43,243 INFO ######################################################################################
+2012-04-27 13:07:43,243 INFO start session
+2012-04-27 13:07:45,739 INFO connect to db
+2012-04-27 13:07:45,743 INFO connecting to local database successfully
+2012-04-27 13:07:45,767 INFO list of connections loaded
+2012-04-27 13:07:45,789 INFO list of connections loaded
+2012-04-27 13:07:45,795 INFO listing of conneciton succesfully loading
+2012-04-27 13:07:46,831 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:07:46,834 INFO list of connections loaded
+2012-04-27 13:07:46,835 INFO listing of conneciton succesfully loading
+2012-04-27 13:07:47,164 INFO choose table
+2012-04-27 13:07:47,211 INFO list of schemas loaded successfully
+2012-04-27 13:07:48,510 INFO list of tables loaded successfully
+2012-04-27 13:07:48,510 INFO schema ARTUR choosed
+2012-04-27 13:07:49,061 INFO table TEST choosed
+2012-04-27 13:07:51,803 INFO launch edit regexps module
+2012-04-27 13:07:51,858 INFO connecting to local database successfully
+2012-04-27 13:07:56,813 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 13:08:01,572 INFO starting calculation data quality model
+2012-04-27 13:08:01,573 INFO connecting to local database successfully
+2012-04-27 13:08:02,002 INFO uniq parameter calculation successfully
+2012-04-27 13:08:02,033 INFO calculation successfully
+2012-04-27 13:08:51,448 INFO ######################################################################################
+2012-04-27 13:08:51,450 INFO start session
+2012-04-27 13:08:52,288 INFO connect to db
+2012-04-27 13:08:52,292 INFO connecting to local database successfully
+2012-04-27 13:08:52,316 INFO list of connections loaded
+2012-04-27 13:08:52,336 INFO list of connections loaded
+2012-04-27 13:08:52,342 INFO listing of conneciton succesfully loading
+2012-04-27 13:08:53,364 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:08:53,365 INFO list of connections loaded
+2012-04-27 13:08:53,368 INFO listing of conneciton succesfully loading
+2012-04-27 13:08:53,664 INFO choose table
+2012-04-27 13:08:53,713 INFO list of schemas loaded successfully
+2012-04-27 13:08:55,256 INFO list of tables loaded successfully
+2012-04-27 13:08:55,256 INFO schema ARTUR choosed
+2012-04-27 13:08:55,769 INFO table TEST choosed
+2012-04-27 13:08:57,279 INFO launch edit regexps module
+2012-04-27 13:08:57,335 INFO connecting to local database successfully
+2012-04-27 13:09:02,809 INFO starting calculation data quality model
+2012-04-27 13:09:02,809 INFO connecting to local database successfully
+2012-04-27 13:09:03,112 INFO uniq parameter calculation successfully
+2012-04-27 13:09:03,158 INFO calculation successfully
+2012-04-27 13:09:27,147 INFO ######################################################################################
+2012-04-27 13:09:27,147 INFO start session
+2012-04-27 13:09:28,141 INFO connect to db
+2012-04-27 13:09:28,148 INFO connecting to local database successfully
+2012-04-27 13:09:28,173 INFO list of connections loaded
+2012-04-27 13:09:28,191 INFO list of connections loaded
+2012-04-27 13:09:28,197 INFO listing of conneciton succesfully loading
+2012-04-27 13:09:29,036 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:09:29,039 INFO list of connections loaded
+2012-04-27 13:09:29,042 INFO listing of conneciton succesfully loading
+2012-04-27 13:09:29,315 INFO choose table
+2012-04-27 13:09:29,368 INFO list of schemas loaded successfully
+2012-04-27 13:09:31,017 INFO list of tables loaded successfully
+2012-04-27 13:09:31,017 INFO schema ARTUR choosed
+2012-04-27 13:09:31,548 INFO table TEST choosed
+2012-04-27 13:09:33,010 INFO choose table
+2012-04-27 13:09:33,063 INFO list of schemas loaded successfully
+2012-04-27 13:09:34,434 INFO launch edit regexps module
+2012-04-27 13:09:34,483 INFO connecting to local database successfully
+2012-04-27 13:09:42,043 INFO starting calculation data quality model
+2012-04-27 13:09:42,045 INFO connecting to local database successfully
+2012-04-27 13:09:42,322 INFO uniq parameter calculation successfully
+2012-04-27 13:09:42,351 INFO calculation successfully
+2012-04-27 13:10:02,176 INFO ######################################################################################
+2012-04-27 13:10:02,176 INFO start session
+2012-04-27 13:10:05,032 INFO connect to db
+2012-04-27 13:10:05,038 INFO connecting to local database successfully
+2012-04-27 13:10:05,062 INFO list of connections loaded
+2012-04-27 13:10:05,085 INFO list of connections loaded
+2012-04-27 13:10:05,089 INFO listing of conneciton succesfully loading
+2012-04-27 13:10:11,364 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:10:11,367 INFO list of connections loaded
+2012-04-27 13:10:11,368 INFO listing of conneciton succesfully loading
+2012-04-27 13:10:15,398 INFO choose table
+2012-04-27 13:10:15,453 INFO list of schemas loaded successfully
+2012-04-27 13:10:18,032 INFO list of tables loaded successfully
+2012-04-27 13:10:18,033 INFO schema ARTUR choosed
+2012-04-27 13:10:18,624 INFO table TEST choosed
+2012-04-27 13:10:21,573 INFO launch edit regexps module
+2012-04-27 13:10:21,625 INFO connecting to local database successfully
+2012-04-27 13:10:28,400 INFO starting calculation data quality model
+2012-04-27 13:10:28,400 INFO connecting to local database successfully
+2012-04-27 13:10:28,690 INFO uniq parameter calculation successfully
+2012-04-27 13:10:28,720 INFO calculation successfully
+2012-04-27 13:10:42,052 INFO launch edit regexps module
+2012-04-27 13:10:42,095 INFO connecting to local database successfully
+2012-04-27 13:10:48,394 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 13:10:51,313 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 13:10:53,967 INFO starting calculation data quality model
+2012-04-27 13:10:53,969 INFO connecting to local database successfully
+2012-04-27 13:10:54,305 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 13:11:04,446 INFO noise level parameter calculation successfully
+2012-04-27 13:11:04,447 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 13:11:04,460 INFO identify parameter calculation successfully
+2012-04-27 13:11:04,536 INFO uniq parameter calculation successfully
+2012-04-27 13:11:04,589 INFO calculation successfully
+2012-04-27 13:11:19,246 INFO launch edit regexps module
+2012-04-27 13:11:19,292 INFO connecting to local database successfully
+2012-04-27 13:11:25,836 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 13:11:28,236 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 13:11:30,188 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 13:11:32,431 INFO starting calculation data quality model
+2012-04-27 13:11:32,433 INFO connecting to local database successfully
+2012-04-27 13:11:32,783 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 13:11:33,884 INFO bad fromat parameter calculation successfully
+2012-04-27 13:11:33,884 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 13:11:43,525 INFO noise level parameter calculation successfully
+2012-04-27 13:11:43,525 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 13:11:43,538 INFO identify parameter calculation successfully
+2012-04-27 13:11:43,595 INFO uniq parameter calculation successfully
+2012-04-27 13:11:43,641 INFO calculation successfully
+2012-04-27 13:12:00,457 INFO ######################################################################################
+2012-04-27 13:12:00,457 INFO start session
+2012-04-27 13:12:01,640 INFO connect to db
+2012-04-27 13:12:01,641 INFO connecting to local database successfully
+2012-04-27 13:12:01,654 INFO list of connections loaded
+2012-04-27 13:12:01,668 INFO list of connections loaded
+2012-04-27 13:12:01,674 INFO listing of conneciton succesfully loading
+2012-04-27 13:12:02,525 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:12:02,528 INFO list of connections loaded
+2012-04-27 13:12:02,529 INFO listing of conneciton succesfully loading
+2012-04-27 13:12:03,565 INFO choose table
+2012-04-27 13:12:03,612 INFO list of schemas loaded successfully
+2012-04-27 13:12:05,734 INFO list of tables loaded successfully
+2012-04-27 13:12:05,734 INFO schema ARTUR choosed
+2012-04-27 13:12:06,367 INFO table TEST choosed
+2012-04-27 13:12:08,573 INFO launch edit regexps module
+2012-04-27 13:12:08,614 INFO connecting to local database successfully
+2012-04-27 13:12:15,286 INFO starting calculation data quality model
+2012-04-27 13:12:15,288 INFO connecting to local database successfully
+2012-04-27 13:12:15,568 INFO uniq parameter calculation successfully
+2012-04-27 13:12:15,598 INFO calculation successfully
+2012-04-27 13:13:26,362 INFO ######################################################################################
+2012-04-27 13:13:26,362 INFO start session
+2012-04-27 13:13:27,398 INFO connect to db
+2012-04-27 13:13:27,404 INFO connecting to local database successfully
+2012-04-27 13:13:27,427 INFO list of connections loaded
+2012-04-27 13:13:27,460 INFO list of connections loaded
+2012-04-27 13:13:27,467 INFO listing of conneciton succesfully loading
+2012-04-27 13:13:28,236 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:13:28,237 INFO list of connections loaded
+2012-04-27 13:13:28,240 INFO listing of conneciton succesfully loading
+2012-04-27 13:13:28,563 INFO choose table
+2012-04-27 13:13:28,625 INFO list of schemas loaded successfully
+2012-04-27 13:13:29,842 INFO list of tables loaded successfully
+2012-04-27 13:13:29,842 INFO schema ARTUR choosed
+2012-04-27 13:13:30,493 INFO table TEST choosed
+2012-04-27 13:13:32,723 INFO launch edit regexps module
+2012-04-27 13:13:32,763 INFO connecting to local database successfully
+2012-04-27 13:13:38,910 INFO starting calculation data quality model
+2012-04-27 13:13:38,911 INFO connecting to local database successfully
+2012-04-27 13:13:39,319 INFO uniq parameter calculation successfully
+2012-04-27 13:13:39,345 INFO calculation successfully
+2012-04-27 13:14:19,401 INFO ######################################################################################
+2012-04-27 13:14:19,401 INFO start session
+2012-04-27 13:14:20,658 INFO connect to db
+2012-04-27 13:14:20,664 INFO connecting to local database successfully
+2012-04-27 13:14:20,684 INFO list of connections loaded
+2012-04-27 13:14:20,707 INFO list of connections loaded
+2012-04-27 13:14:20,711 INFO listing of conneciton succesfully loading
+2012-04-27 13:14:21,477 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:14:21,480 INFO list of connections loaded
+2012-04-27 13:14:21,483 INFO listing of conneciton succesfully loading
+2012-04-27 13:14:23,303 INFO choose table
+2012-04-27 13:14:23,358 INFO list of schemas loaded successfully
+2012-04-27 13:14:24,786 INFO list of tables loaded successfully
+2012-04-27 13:14:24,788 INFO schema ARTUR choosed
+2012-04-27 13:14:25,369 INFO table TEST choosed
+2012-04-27 13:14:26,454 INFO launch edit regexps module
+2012-04-27 13:14:26,490 INFO connecting to local database successfully
+2012-04-27 13:14:33,345 INFO starting calculation data quality model
+2012-04-27 13:14:33,345 INFO connecting to local database successfully
+2012-04-27 13:14:33,700 INFO uniq parameter calculation successfully
+2012-04-27 13:14:33,726 INFO calculation successfully
+2012-04-27 13:28:40,832 INFO ######################################################################################
+2012-04-27 13:28:40,832 INFO start session
+2012-04-27 13:28:42,638 INFO connect to db
+2012-04-27 13:28:42,644 INFO connecting to local database successfully
+2012-04-27 13:28:42,667 INFO list of connections loaded
+2012-04-27 13:28:42,690 INFO list of connections loaded
+2012-04-27 13:28:42,696 INFO listing of conneciton succesfully loading
+2012-04-27 13:28:43,677 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:28:43,680 INFO list of connections loaded
+2012-04-27 13:28:43,683 INFO listing of conneciton succesfully loading
+2012-04-27 13:28:43,923 INFO choose table
+2012-04-27 13:28:43,983 INFO list of schemas loaded successfully
+2012-04-27 13:28:45,634 INFO list of tables loaded successfully
+2012-04-27 13:28:45,634 INFO schema ARTUR choosed
+2012-04-27 13:28:46,253 INFO table TEST choosed
+2012-04-27 13:28:47,171 INFO launch edit regexps module
+2012-04-27 13:28:47,194 INFO connecting to local database successfully
+2012-04-27 13:28:52,490 INFO starting calculation data quality model
+2012-04-27 13:28:52,490 INFO connecting to local database successfully
+2012-04-27 13:28:52,775 INFO uniq parameter calculation successfully
+2012-04-27 13:28:52,801 INFO calculation successfully
+2012-04-27 13:29:06,334 INFO ######################################################################################
+2012-04-27 13:29:06,334 INFO start session
+2012-04-27 13:29:07,500 INFO connect to db
+2012-04-27 13:29:07,505 INFO connecting to local database successfully
+2012-04-27 13:29:07,526 INFO list of connections loaded
+2012-04-27 13:29:07,545 INFO list of connections loaded
+2012-04-27 13:29:07,549 INFO listing of conneciton succesfully loading
+2012-04-27 13:29:08,270 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:29:08,273 INFO list of connections loaded
+2012-04-27 13:29:08,276 INFO listing of conneciton succesfully loading
+2012-04-27 13:29:08,480 INFO choose table
+2012-04-27 13:29:08,545 INFO list of schemas loaded successfully
+2012-04-27 13:29:10,075 INFO list of tables loaded successfully
+2012-04-27 13:29:10,075 INFO schema TEST_DIPLOM choosed
+2012-04-27 13:29:12,035 INFO list of tables loaded successfully
+2012-04-27 13:29:12,035 INFO schema ARTUR choosed
+2012-04-27 13:29:12,905 INFO table TEST choosed
+2012-04-27 13:29:14,479 INFO launch edit regexps module
+2012-04-27 13:29:14,530 INFO connecting to local database successfully
+2012-04-27 13:29:20,855 INFO starting calculation data quality model
+2012-04-27 13:29:20,855 INFO connecting to local database successfully
+2012-04-27 13:29:21,259 INFO uniq parameter calculation successfully
+2012-04-27 13:29:21,286 INFO calculation successfully
+2012-04-27 13:32:39,812 INFO ######################################################################################
+2012-04-27 13:32:39,812 INFO start session
+2012-04-27 13:32:40,857 INFO connect to db
+2012-04-27 13:32:40,862 INFO connecting to local database successfully
+2012-04-27 13:32:40,885 INFO list of connections loaded
+2012-04-27 13:32:40,904 INFO list of connections loaded
+2012-04-27 13:32:40,914 INFO listing of conneciton succesfully loading
+2012-04-27 13:32:41,717 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:32:41,720 INFO list of connections loaded
+2012-04-27 13:32:41,723 INFO listing of conneciton succesfully loading
+2012-04-27 13:32:41,861 INFO choose table
+2012-04-27 13:32:41,918 INFO list of schemas loaded successfully
+2012-04-27 13:32:43,107 INFO list of tables loaded successfully
+2012-04-27 13:32:43,107 INFO schema ARTUR choosed
+2012-04-27 13:32:43,654 INFO table TEST choosed
+2012-04-27 13:32:45,029 INFO open local history
+2012-04-27 13:32:47,200 INFO launch edit regexps module
+2012-04-27 13:32:47,250 INFO connecting to local database successfully
+2012-04-27 13:32:55,819 INFO starting calculation data quality model
+2012-04-27 13:32:55,821 INFO connecting to local database successfully
+2012-04-27 13:32:56,105 INFO uniq parameter calculation successfully
+2012-04-27 13:32:56,131 INFO calculation successfully
+2012-04-27 13:33:30,486 INFO ######################################################################################
+2012-04-27 13:33:30,486 INFO start session
+2012-04-27 13:33:32,033 INFO connect to db
+2012-04-27 13:33:32,039 INFO connecting to local database successfully
+2012-04-27 13:33:32,061 INFO list of connections loaded
+2012-04-27 13:33:32,079 INFO list of connections loaded
+2012-04-27 13:33:32,085 INFO listing of conneciton succesfully loading
+2012-04-27 13:33:32,891 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:33:32,894 INFO list of connections loaded
+2012-04-27 13:33:32,897 INFO listing of conneciton succesfully loading
+2012-04-27 13:33:33,263 INFO choose table
+2012-04-27 13:33:33,315 INFO list of schemas loaded successfully
+2012-04-27 13:33:34,591 INFO list of tables loaded successfully
+2012-04-27 13:33:34,591 INFO schema ARTUR choosed
+2012-04-27 13:33:35,191 INFO table TEST choosed
+2012-04-27 13:33:36,253 INFO open local history
+2012-04-27 13:33:40,430 INFO launch edit regexps module
+2012-04-27 13:33:40,476 INFO connecting to local database successfully
+2012-04-27 13:33:47,686 INFO starting calculation data quality model
+2012-04-27 13:33:47,686 INFO connecting to local database successfully
+2012-04-27 13:33:48,032 INFO uniq parameter calculation successfully
+2012-04-27 13:33:48,063 INFO calculation successfully
+2012-04-27 13:34:39,882 INFO ######################################################################################
+2012-04-27 13:34:39,882 INFO start session
+2012-04-27 13:34:40,914 INFO connect to db
+2012-04-27 13:34:40,917 INFO connecting to local database successfully
+2012-04-27 13:34:40,940 INFO list of connections loaded
+2012-04-27 13:34:40,964 INFO list of connections loaded
+2012-04-27 13:34:40,970 INFO listing of conneciton succesfully loading
+2012-04-27 13:34:41,630 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:34:41,631 INFO list of connections loaded
+2012-04-27 13:34:41,634 INFO listing of conneciton succesfully loading
+2012-04-27 13:34:41,798 INFO choose table
+2012-04-27 13:34:41,859 INFO list of schemas loaded successfully
+2012-04-27 13:34:43,180 INFO list of tables loaded successfully
+2012-04-27 13:34:43,180 INFO schema ARTUR choosed
+2012-04-27 13:34:43,703 INFO table TEST choosed
+2012-04-27 13:34:45,269 INFO launch edit regexps module
+2012-04-27 13:34:45,319 INFO connecting to local database successfully
+2012-04-27 13:34:53,677 INFO starting calculation data quality model
+2012-04-27 13:34:53,677 INFO connecting to local database successfully
+2012-04-27 13:34:53,964 INFO uniq parameter calculation successfully
+2012-04-27 13:34:54,313 INFO calculation successfully
+2012-04-27 13:35:29,994 INFO ######################################################################################
+2012-04-27 13:35:29,994 INFO start session
+2012-04-27 13:35:30,400 INFO connect to db
+2012-04-27 13:35:30,404 INFO connecting to local database successfully
+2012-04-27 13:35:30,428 INFO list of connections loaded
+2012-04-27 13:35:30,450 INFO list of connections loaded
+2012-04-27 13:35:30,456 INFO listing of conneciton succesfully loading
+2012-04-27 13:35:31,316 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:35:31,319 INFO list of connections loaded
+2012-04-27 13:35:31,322 INFO listing of conneciton succesfully loading
+2012-04-27 13:35:31,486 INFO choose table
+2012-04-27 13:35:31,545 INFO list of schemas loaded successfully
+2012-04-27 13:35:32,734 INFO list of tables loaded successfully
+2012-04-27 13:35:32,734 INFO schema ARTUR choosed
+2012-04-27 13:35:33,305 INFO table TEST choosed
+2012-04-27 13:35:35,263 INFO launch edit regexps module
+2012-04-27 13:35:35,316 INFO connecting to local database successfully
+2012-04-27 13:36:06,756 INFO starting calculation data quality model
+2012-04-27 13:36:06,756 INFO connecting to local database successfully
+2012-04-27 13:36:07,403 INFO uniq parameter calculation successfully
+2012-04-27 13:36:07,660 INFO calculation successfully
+2012-04-27 13:36:31,203 INFO ######################################################################################
+2012-04-27 13:36:31,203 INFO start session
+2012-04-27 13:36:32,308 INFO connect to db
+2012-04-27 13:36:32,312 INFO connecting to local database successfully
+2012-04-27 13:36:32,336 INFO list of connections loaded
+2012-04-27 13:36:32,357 INFO list of connections loaded
+2012-04-27 13:36:32,361 INFO listing of conneciton succesfully loading
+2012-04-27 13:36:33,233 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:36:33,236 INFO list of connections loaded
+2012-04-27 13:36:33,239 INFO listing of conneciton succesfully loading
+2012-04-27 13:36:34,519 INFO choose table
+2012-04-27 13:36:34,576 INFO list of schemas loaded successfully
+2012-04-27 13:36:35,855 INFO list of tables loaded successfully
+2012-04-27 13:36:35,855 INFO schema ARTUR choosed
+2012-04-27 13:36:36,433 INFO table TEST choosed
+2012-04-27 13:36:38,582 INFO launch edit regexps module
+2012-04-27 13:36:38,638 INFO connecting to local database successfully
+2012-04-27 13:36:51,677 INFO starting calculation data quality model
+2012-04-27 13:36:51,678 INFO connecting to local database successfully
+2012-04-27 13:36:52,109 INFO uniq parameter calculation successfully
+2012-04-27 13:36:52,144 INFO calculation successfully
+2012-04-27 13:38:47,808 INFO ######################################################################################
+2012-04-27 13:38:47,808 INFO start session
+2012-04-27 13:38:50,651 INFO connect to db
+2012-04-27 13:38:50,654 INFO connecting to local database successfully
+2012-04-27 13:38:50,670 INFO list of connections loaded
+2012-04-27 13:38:50,687 INFO list of connections loaded
+2012-04-27 13:38:50,693 INFO listing of conneciton succesfully loading
+2012-04-27 13:38:51,713 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:38:51,717 INFO list of connections loaded
+2012-04-27 13:38:51,719 INFO listing of conneciton succesfully loading
+2012-04-27 13:38:51,994 INFO choose table
+2012-04-27 13:38:52,046 INFO list of schemas loaded successfully
+2012-04-27 13:38:53,260 INFO list of tables loaded successfully
+2012-04-27 13:38:53,260 INFO schema ARTUR choosed
+2012-04-27 13:38:54,204 INFO table TEST choosed
+2012-04-27 13:39:02,236 INFO launch edit regexps module
+2012-04-27 13:39:02,290 INFO connecting to local database successfully
+2012-04-27 13:39:11,782 INFO starting calculation data quality model
+2012-04-27 13:39:11,782 INFO connecting to local database successfully
+2012-04-27 13:39:12,073 INFO uniq parameter calculation successfully
+2012-04-27 13:39:12,108 INFO calculation successfully
+2012-04-27 13:39:34,131 INFO ######################################################################################
+2012-04-27 13:39:34,131 INFO start session
+2012-04-27 13:39:35,065 INFO connect to db
+2012-04-27 13:39:35,071 INFO connecting to local database successfully
+2012-04-27 13:39:35,092 INFO list of connections loaded
+2012-04-27 13:39:35,111 INFO list of connections loaded
+2012-04-27 13:39:35,115 INFO listing of conneciton succesfully loading
+2012-04-27 13:39:36,026 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:39:36,028 INFO list of connections loaded
+2012-04-27 13:39:36,030 INFO listing of conneciton succesfully loading
+2012-04-27 13:39:37,263 INFO choose table
+2012-04-27 13:39:37,318 INFO list of schemas loaded successfully
+2012-04-27 13:39:38,736 INFO list of tables loaded successfully
+2012-04-27 13:39:38,736 INFO schema ARTUR choosed
+2012-04-27 13:39:39,536 INFO table TEST choosed
+2012-04-27 13:39:43,246 INFO launch edit regexps module
+2012-04-27 13:39:43,279 INFO connecting to local database successfully
+2012-04-27 13:39:50,359 INFO starting calculation data quality model
+2012-04-27 13:39:50,361 INFO connecting to local database successfully
+2012-04-27 13:39:50,655 INFO uniq parameter calculation successfully
+2012-04-27 13:39:50,690 INFO calculation successfully
+2012-04-27 13:42:56,961 INFO ######################################################################################
+2012-04-27 13:42:56,961 INFO start session
+2012-04-27 13:42:58,144 INFO connect to db
+2012-04-27 13:42:58,150 INFO connecting to local database successfully
+2012-04-27 13:42:58,173 INFO list of connections loaded
+2012-04-27 13:42:58,190 INFO list of connections loaded
+2012-04-27 13:42:58,196 INFO listing of conneciton succesfully loading
+2012-04-27 13:42:59,344 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 13:42:59,346 INFO list of connections loaded
+2012-04-27 13:42:59,348 INFO listing of conneciton succesfully loading
+2012-04-27 13:42:59,469 INFO choose table
+2012-04-27 13:42:59,525 INFO list of schemas loaded successfully
+2012-04-27 13:43:00,716 INFO list of tables loaded successfully
+2012-04-27 13:43:00,717 INFO schema ARTUR choosed
+2012-04-27 13:43:01,295 INFO table TEST choosed
+2012-04-27 14:16:31,604 INFO choose table
+2012-04-27 14:16:31,657 INFO list of schemas loaded successfully
+2012-04-27 14:16:33,374 INFO list of tables loaded successfully
+2012-04-27 14:16:33,375 INFO schema ARTUR choosed
+2012-04-27 14:16:34,022 INFO table TEST choosed
+2012-04-27 14:18:39,390 INFO ######################################################################################
+2012-04-27 14:18:39,390 INFO start session
+2012-04-27 14:18:41,009 INFO connect to db
+2012-04-27 14:18:41,016 INFO connecting to local database successfully
+2012-04-27 14:18:41,038 INFO list of connections loaded
+2012-04-27 14:18:41,062 INFO list of connections loaded
+2012-04-27 14:18:41,069 INFO listing of conneciton succesfully loading
+2012-04-27 14:18:41,871 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 14:18:41,872 INFO list of connections loaded
+2012-04-27 14:18:41,875 INFO listing of conneciton succesfully loading
+2012-04-27 14:18:42,190 INFO choose table
+2012-04-27 14:18:42,243 INFO list of schemas loaded successfully
+2012-04-27 14:18:43,398 INFO list of tables loaded successfully
+2012-04-27 14:18:43,398 INFO schema ARTUR choosed
+2012-04-27 14:18:43,920 INFO table TEST choosed
+2012-04-27 14:18:45,854 INFO launch edit regexps module
+2012-04-27 14:18:45,901 INFO connecting to local database successfully
+2012-04-27 14:18:53,223 INFO starting calculation data quality model
+2012-04-27 14:18:53,224 INFO connecting to local database successfully
+2012-04-27 14:18:53,644 INFO uniq parameter calculation successfully
+2012-04-27 14:18:53,678 INFO calculation successfully
+2012-04-27 14:19:19,394 INFO ######################################################################################
+2012-04-27 14:19:19,394 INFO start session
+2012-04-27 14:19:41,674 INFO ######################################################################################
+2012-04-27 14:19:41,674 INFO start session
+2012-04-27 14:19:42,661 INFO connect to db
+2012-04-27 14:19:42,665 INFO connecting to local database successfully
+2012-04-27 14:19:42,690 INFO list of connections loaded
+2012-04-27 14:19:42,713 INFO list of connections loaded
+2012-04-27 14:19:42,719 INFO listing of conneciton succesfully loading
+2012-04-27 14:19:43,463 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 14:19:43,467 INFO list of connections loaded
+2012-04-27 14:19:43,470 INFO listing of conneciton succesfully loading
+2012-04-27 14:19:43,713 INFO choose table
+2012-04-27 14:19:43,763 INFO list of schemas loaded successfully
+2012-04-27 14:19:45,039 INFO list of tables loaded successfully
+2012-04-27 14:19:45,040 INFO schema ARTUR choosed
+2012-04-27 14:19:45,569 INFO table TEST_IDEAL choosed
+2012-04-27 14:19:46,338 INFO table TEST choosed
+2012-04-27 14:19:47,839 INFO launch edit regexps module
+2012-04-27 14:19:47,891 INFO connecting to local database successfully
+2012-04-27 14:19:54,584 INFO starting calculation data quality model
+2012-04-27 14:19:54,585 INFO connecting to local database successfully
+2012-04-27 14:19:54,993 INFO uniq parameter calculation successfully
+2012-04-27 14:19:55,026 INFO calculation successfully
+2012-04-27 14:20:00,322 INFO starting calculation data quality model
+2012-04-27 14:20:00,322 INFO connecting to local database successfully
+2012-04-27 14:20:00,723 INFO uniq parameter calculation successfully
+2012-04-27 14:20:00,759 INFO calculation successfully
