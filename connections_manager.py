@@ -211,7 +211,9 @@ class connections ( wx.Frame ):
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError, AttributeError), info:
             error = u'Не возможно подключиться к базе данных. Проверьте правильность введенных данных.'
             wx.MessageBox(error)
-            logging.error(u'connection error')
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            logging.error(u'connection error: %s' % info)
             self.Close()
             
     def OnCancel( self, event ):
