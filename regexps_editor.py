@@ -47,7 +47,8 @@ class page_editor():
         self.label3.Wrap( -1 )
         bSizer1.Add( self.label3, 0, wx.ALL, 5 )
         
-        self.edit_regexp_txt = wx.TextCtrl( self.panel_regexps, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( -1,150 ), wx.HSCROLL )
+        # wx.TE_MULTILINE ставит ограничение на горячую клавишу Ctrl+A.
+        self.edit_regexp_txt = wx.TextCtrl( self.panel_regexps, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( -1,150 ), wx.HSCROLL|wx.TE_MULTILINE )
         bSizer1.Add( self.edit_regexp_txt, 0, wx.ALL|wx.EXPAND, 5 )
         
         self.add_regexp_btn = wx.Button( self.panel_regexps, wx.ID_ANY, u"Добавить регулярное выражение", wx.DefaultPosition, wx.DefaultSize, 0 )

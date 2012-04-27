@@ -8146,3 +8146,259 @@
 2012-04-27 22:11:15,440 INFO start session
 2012-04-27 22:11:16,078 INFO end session. but there are no connection to db
 2012-04-27 22:11:16,079 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-27 22:13:09,562 INFO ######################################################################################
+2012-04-27 22:13:09,562 INFO start session
+2012-04-27 22:13:10,825 INFO connect to db
+2012-04-27 22:13:10,829 INFO connecting to local database successfully
+2012-04-27 22:13:10,910 INFO list of connections loaded
+2012-04-27 22:13:10,927 INFO list of connections loaded
+2012-04-27 22:13:10,937 INFO listing of conneciton succesfully loading
+2012-04-27 22:13:14,358 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:13:14,359 INFO list of connections loaded
+2012-04-27 22:13:14,362 INFO listing of conneciton succesfully loading
+2012-04-27 22:13:15,510 INFO choose table
+2012-04-27 22:13:15,584 INFO list of schemas loaded successfully
+2012-04-27 22:13:17,122 INFO list of tables loaded successfully
+2012-04-27 22:13:17,122 INFO schema ARTUR choosed
+2012-04-27 22:13:17,697 INFO table TEST choosed
+2012-04-27 22:13:18,424 INFO launch edit regexps module
+2012-04-27 22:13:18,444 INFO connecting to local database successfully
+2012-04-27 22:13:21,796 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:13:22,691 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:13:57,845 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:14:10,654 INFO uploading regular expression testпривет'''""" for parameter no_information successfully
+2012-04-27 22:14:10,654 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:14:17,104 ERROR deleting regular expression testпривет'''""" for parameter no_information failed: unrecognized token: ""testпривет'''"""""
+2012-04-27 22:14:17,105 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:14:21,049 ERROR deleting regular expression testпривет'''""" for parameter no_information failed: unrecognized token: ""testпривет'''"""""
+2012-04-27 22:14:21,051 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:27,236 INFO ######################################################################################
+2012-04-27 22:17:27,236 INFO start session
+2012-04-27 22:17:28,608 INFO connect to db
+2012-04-27 22:17:28,614 INFO connecting to local database successfully
+2012-04-27 22:17:28,641 INFO list of connections loaded
+2012-04-27 22:17:28,663 INFO list of connections loaded
+2012-04-27 22:17:28,668 INFO listing of conneciton succesfully loading
+2012-04-27 22:17:29,733 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:17:29,736 INFO list of connections loaded
+2012-04-27 22:17:29,739 INFO listing of conneciton succesfully loading
+2012-04-27 22:17:30,109 INFO choose table
+2012-04-27 22:17:30,177 INFO list of schemas loaded successfully
+2012-04-27 22:17:31,871 INFO list of tables loaded successfully
+2012-04-27 22:17:31,872 INFO schema ARTUR choosed
+2012-04-27 22:17:32,486 INFO table TEST choosed
+2012-04-27 22:17:33,551 INFO launch edit regexps module
+2012-04-27 22:17:33,582 INFO connecting to local database successfully
+2012-04-27 22:17:35,450 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:37,263 INFO deleting regular expression testпривет'''""" for parameter no_information successfully
+2012-04-27 22:17:37,263 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:47,707 INFO uploading regular expression |":"|"''':":'\::'\;asd"|;\':asd'\;_(!@)#*)!@*(&$*(!&$*(!@^*&$!))! for parameter no_information successfully
+2012-04-27 22:17:47,707 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:49,795 INFO deleting regular expression |":"|"''':":'\::'\;asd"|;\':asd'\;_(!@)#*)!@*(&$*(!&$*(!@^*&$!))! for parameter no_information successfully
+2012-04-27 22:17:49,795 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:52,517 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:17:53,230 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:54,559 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:17:56,494 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:17:57,479 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:17:59,927 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:18:47,523 INFO uploading regular expression 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111 for parameter no_information successfully
+2012-04-27 22:18:47,523 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:18:59,526 INFO uploading regular expression 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111 or 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111 for parameter no_information successfully
+2012-04-27 22:18:59,528 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:19:03,910 INFO deleting regular expression 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111 or 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111 for parameter no_information successfully
+2012-04-27 22:19:03,911 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:19:05,687 INFO deleting regular expression 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111 for parameter no_information successfully
+2012-04-27 22:19:05,687 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:23:00,269 INFO ######################################################################################
+2012-04-27 22:23:00,269 INFO start session
+2012-04-27 22:23:01,293 INFO connect to db
+2012-04-27 22:23:01,299 INFO connecting to local database successfully
+2012-04-27 22:23:01,325 INFO list of connections loaded
+2012-04-27 22:23:01,358 INFO list of connections loaded
+2012-04-27 22:23:01,368 INFO listing of conneciton succesfully loading
+2012-04-27 22:23:02,604 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:23:02,608 INFO list of connections loaded
+2012-04-27 22:23:02,609 INFO listing of conneciton succesfully loading
+2012-04-27 22:23:02,802 INFO choose table
+2012-04-27 22:23:02,838 INFO list of schemas loaded successfully
+2012-04-27 22:23:04,292 INFO list of tables loaded successfully
+2012-04-27 22:23:04,292 INFO schema ARTUR choosed
+2012-04-27 22:23:04,914 INFO table TEST choosed
+2012-04-27 22:23:06,051 INFO launch edit regexps module
+2012-04-27 22:23:06,085 INFO connecting to local database successfully
+2012-04-27 22:23:08,740 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:23:09,628 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:38:24,299 INFO ######################################################################################
+2012-04-27 22:38:24,299 INFO start session
+2012-04-27 22:38:25,621 INFO connect to db
+2012-04-27 22:38:25,627 INFO connecting to local database successfully
+2012-04-27 22:38:25,651 INFO list of connections loaded
+2012-04-27 22:38:25,673 INFO list of connections loaded
+2012-04-27 22:38:25,680 INFO listing of conneciton succesfully loading
+2012-04-27 22:38:26,516 INFO connecting to local database successfully
+2012-04-27 22:38:26,516 INFO editing connection: localhost
+2012-04-27 22:38:26,523 INFO list of connections loaded
+2012-04-27 22:38:26,526 INFO listing of conneciton succesfully loading
+2012-04-27 22:38:26,536 INFO editing connection: localhost
+2012-04-27 22:38:27,602 INFO list of connections loaded
+2012-04-27 22:38:27,609 INFO listing of conneciton succesfully loading
+2012-04-27 22:38:28,318 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:38:28,319 INFO list of connections loaded
+2012-04-27 22:38:28,322 INFO listing of conneciton succesfully loading
+2012-04-27 22:38:28,742 INFO choose table
+2012-04-27 22:38:28,808 INFO list of schemas loaded successfully
+2012-04-27 22:38:30,173 INFO list of tables loaded successfully
+2012-04-27 22:38:30,173 INFO schema ARTUR choosed
+2012-04-27 22:38:30,750 INFO table TEST choosed
+2012-04-27 22:38:31,526 INFO launch edit regexps module
+2012-04-27 22:38:31,556 INFO connecting to local database successfully
+2012-04-27 22:38:33,135 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:38:33,920 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:38:35,496 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 22:39:24,290 INFO ######################################################################################
+2012-04-27 22:39:24,290 INFO start session
+2012-04-27 22:39:25,621 INFO connect to db
+2012-04-27 22:39:25,625 INFO connecting to local database successfully
+2012-04-27 22:39:25,648 INFO list of connections loaded
+2012-04-27 22:39:25,668 INFO list of connections loaded
+2012-04-27 22:39:25,674 INFO listing of conneciton succesfully loading
+2012-04-27 22:39:26,450 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:39:26,453 INFO list of connections loaded
+2012-04-27 22:39:26,456 INFO listing of conneciton succesfully loading
+2012-04-27 22:39:26,697 INFO choose table
+2012-04-27 22:39:26,755 INFO list of schemas loaded successfully
+2012-04-27 22:39:28,122 INFO list of tables loaded successfully
+2012-04-27 22:39:28,124 INFO schema ARTUR choosed
+2012-04-27 22:39:28,739 INFO table TEST choosed
+2012-04-27 22:39:29,594 INFO choose table
+2012-04-27 22:39:29,657 INFO list of schemas loaded successfully
+2012-04-27 22:39:31,418 INFO launch edit regexps module
+2012-04-27 22:39:31,453 INFO connecting to local database successfully
+2012-04-27 22:39:49,463 INFO ######################################################################################
+2012-04-27 22:39:49,463 INFO start session
+2012-04-27 22:39:50,494 INFO connect to db
+2012-04-27 22:39:50,500 INFO connecting to local database successfully
+2012-04-27 22:39:50,525 INFO list of connections loaded
+2012-04-27 22:39:50,546 INFO list of connections loaded
+2012-04-27 22:39:50,552 INFO listing of conneciton succesfully loading
+2012-04-27 22:39:51,375 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:39:51,378 INFO list of connections loaded
+2012-04-27 22:39:51,381 INFO listing of conneciton succesfully loading
+2012-04-27 22:39:51,660 INFO choose table
+2012-04-27 22:39:51,713 INFO list of schemas loaded successfully
+2012-04-27 22:39:52,839 INFO list of tables loaded successfully
+2012-04-27 22:39:52,839 INFO schema ARTUR choosed
+2012-04-27 22:39:53,372 INFO table TEST choosed
+2012-04-27 22:39:54,523 INFO launch edit regexps module
+2012-04-27 22:39:54,555 INFO connecting to local database successfully
+2012-04-27 22:40:08,944 INFO ######################################################################################
+2012-04-27 22:40:08,944 INFO start session
+2012-04-27 22:40:10,141 INFO connect to db
+2012-04-27 22:40:10,147 INFO connecting to local database successfully
+2012-04-27 22:40:10,173 INFO list of connections loaded
+2012-04-27 22:40:10,194 INFO list of connections loaded
+2012-04-27 22:40:10,200 INFO listing of conneciton succesfully loading
+2012-04-27 22:40:11,290 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:40:11,292 INFO list of connections loaded
+2012-04-27 22:40:11,296 INFO listing of conneciton succesfully loading
+2012-04-27 22:40:11,390 INFO choose table
+2012-04-27 22:40:11,447 INFO list of schemas loaded successfully
+2012-04-27 22:40:12,881 INFO list of tables loaded successfully
+2012-04-27 22:40:12,881 INFO schema TEST_UIR choosed
+2012-04-27 22:40:14,253 INFO list of tables loaded successfully
+2012-04-27 22:40:14,253 INFO schema ARTUR choosed
+2012-04-27 22:40:15,493 INFO table TEST choosed
+2012-04-27 22:40:16,381 INFO launch edit regexps module
+2012-04-27 22:40:16,415 INFO connecting to local database successfully
+2012-04-27 22:40:29,871 INFO ######################################################################################
+2012-04-27 22:40:29,871 INFO start session
+2012-04-27 22:40:30,993 INFO connect to db
+2012-04-27 22:40:30,999 INFO connecting to local database successfully
+2012-04-27 22:40:31,023 INFO list of connections loaded
+2012-04-27 22:40:31,043 INFO list of connections loaded
+2012-04-27 22:40:31,049 INFO listing of conneciton succesfully loading
+2012-04-27 22:40:32,112 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:40:32,115 INFO list of connections loaded
+2012-04-27 22:40:32,118 INFO listing of conneciton succesfully loading
+2012-04-27 22:40:32,831 INFO choose table
+2012-04-27 22:40:32,888 INFO list of schemas loaded successfully
+2012-04-27 22:40:34,091 INFO list of tables loaded successfully
+2012-04-27 22:40:34,091 INFO schema ARTUR choosed
+2012-04-27 22:40:34,680 INFO table TEST choosed
+2012-04-27 22:40:35,519 INFO launch edit regexps module
+2012-04-27 22:40:35,549 INFO connecting to local database successfully
+2012-04-27 22:42:31,315 INFO ######################################################################################
+2012-04-27 22:42:31,315 INFO start session
+2012-04-27 22:42:32,394 INFO connect to db
+2012-04-27 22:42:32,400 INFO connecting to local database successfully
+2012-04-27 22:42:32,423 INFO list of connections loaded
+2012-04-27 22:42:32,441 INFO list of connections loaded
+2012-04-27 22:42:32,447 INFO listing of conneciton succesfully loading
+2012-04-27 22:42:33,305 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:42:33,309 INFO list of connections loaded
+2012-04-27 22:42:33,312 INFO listing of conneciton succesfully loading
+2012-04-27 22:42:34,888 INFO choose table
+2012-04-27 22:42:34,950 INFO list of schemas loaded successfully
+2012-04-27 22:42:36,733 INFO list of tables loaded successfully
+2012-04-27 22:42:36,733 INFO schema ARTUR choosed
+2012-04-27 22:42:37,384 INFO table TEST choosed
+2012-04-27 22:42:38,631 INFO launch edit regexps module
+2012-04-27 22:42:38,665 INFO connecting to local database successfully
+2012-04-27 22:42:43,562 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 22:43:19,802 INFO launch edit regexps module
+2012-04-27 22:43:19,835 INFO connecting to local database successfully
+2012-04-27 22:43:20,811 INFO launch edit regexps module
+2012-04-27 22:43:20,846 INFO connecting to local database successfully
+2012-04-27 22:43:23,005 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:43:25,078 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 22:43:31,427 INFO connecting to local database successfully
+2012-04-27 22:43:37,108 INFO loading regular expressions for parameter no_information successfully 
+2012-04-27 22:43:45,740 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:43:48,694 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 22:43:50,829 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 22:43:53,773 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 22:43:59,451 INFO starting calculation data quality model
+2012-04-27 22:43:59,453 INFO connecting to local database successfully
+2012-04-27 22:44:00,017 INFO loading regular expressions for parameter bad_format successfully 
+2012-04-27 22:44:01,098 INFO bad fromat parameter calculation successfully
+2012-04-27 22:44:01,098 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 22:44:10,956 INFO noise level parameter calculation successfully
+2012-04-27 22:44:10,957 INFO loading regular expressions for parameter identifiability successfully 
+2012-04-27 22:44:10,973 INFO identify parameter calculation successfully
+2012-04-27 22:44:10,973 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 22:44:10,984 INFO harmony parameter calculation successfully
+2012-04-27 22:44:11,052 INFO uniq parameter calculation successfully
+2012-04-27 22:44:11,089 INFO calculation successfully
+2012-04-27 22:44:26,262 INFO open local history
+2012-04-27 22:44:36,236 INFO launch edit regexps module
+2012-04-27 22:44:36,269 INFO connecting to local database successfully
+2012-04-27 22:45:01,207 INFO connecting to local database successfully
+2012-04-27 22:45:08,915 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 22:45:11,259 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 22:45:13,403 INFO starting calculation data quality model
+2012-04-27 22:45:13,404 INFO connecting to local database successfully
+2012-04-27 22:45:13,756 INFO loading regular expressions for parameter noise_level successfully 
+2012-04-27 22:45:23,845 INFO noise level parameter calculation successfully
+2012-04-27 22:45:23,845 INFO loading regular expressions for parameter harmony successfully 
+2012-04-27 22:45:23,857 INFO harmony parameter calculation successfully
+2012-04-27 22:45:23,887 INFO calculation successfully
+2012-04-27 22:45:58,931 INFO report succesfully done
+2012-04-27 22:46:02,747 INFO report succesfully done
+2012-04-27 22:46:06,763 INFO report succesfully done
+2012-04-27 22:46:34,775 INFO ######################################################################################
+2012-04-27 22:46:34,776 INFO start session
+2012-04-27 22:46:35,802 INFO connect to db
+2012-04-27 22:46:35,809 INFO connecting to local database successfully
+2012-04-27 22:46:35,831 INFO list of connections loaded
+2012-04-27 22:46:35,851 INFO list of connections loaded
+2012-04-27 22:46:35,857 INFO listing of conneciton succesfully loading
+2012-04-27 22:46:36,786 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-27 22:46:36,788 INFO list of connections loaded
+2012-04-27 22:46:36,790 INFO listing of conneciton succesfully loading
+2012-04-27 22:46:37,049 INFO choose table
+2012-04-27 22:46:37,111 INFO list of schemas loaded successfully
+2012-04-27 22:46:38,766 INFO list of tables loaded successfully
+2012-04-27 22:46:38,767 INFO schema ARTUR choosed
+2012-04-27 22:46:39,403 INFO table TEST choosed
+2012-04-27 22:46:41,226 INFO open local history

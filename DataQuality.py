@@ -280,6 +280,15 @@ class MainWindow ( wx.Frame ):
             self.histres.destr()
             histrows = statistic.stats(self.schema, self.table).history_stat(self) 
             self.histres = results.history_stat(self, self.histcols, histrows)
+            
+            sb = wx.StaticBox(self.panelHist)
+            sbs = wx.StaticBoxSizer(sb, orient=wx.VERTICAL)
+            sizer = wx.BoxSizer(wx.VERTICAL)
+            
+            sizer.Add(self.histres.list, 1, wx.EXPAND)
+            sbs.Add(sizer, proportion=1,flag=wx.EXPAND|wx.ALL)
+            self.panelHist.SetSizer(sbs)
+            self.panelHist.Layout()
         except Exception, info:
             print info
         
