@@ -91,7 +91,7 @@ class main_stat(listmix.ColumnSorterMixin):
         except Exception:
             pass
         
-        self.main.Freeze()
+#        self.main.Freeze()
         self.ext_stat = self.stat.take_ext_stat(self.date)
         self.ext_stat = [ i for i in self.ext_stat if i is not None] 
         self.ext_list = extend_stat(self.main.panelMainStat, self.ext_cols, self.ext_stat)
@@ -103,6 +103,7 @@ class main_stat(listmix.ColumnSorterMixin):
         print size
         print newsize
         self.main.SetSize(newsize)
+        
         
         #Тут графический баг. При полноэкранном расширении получение расширенной статистики для результатов оценки качества данных идут с багом.
         

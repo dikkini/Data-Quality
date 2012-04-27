@@ -1,5 +1,5 @@
 # -*- coding: utf8 -*-
-import wx #@UnusedImport
+import wx #
 import wx.grid
 import sqlite
 import cx_Oracle
