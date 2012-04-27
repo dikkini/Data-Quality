@@ -88,13 +88,23 @@ class main_stat(listmix.ColumnSorterMixin):
         try:
             self.ext_list.list.DeleteAllItems()
             self.ext_list.list.Destroy()
-        except Exception, info:
-            wx.MessageBox(u'Ошибка отображения расширенной статистики. Code: 92')
-            
+        except Exception:
+            pass
+        
+        self.main.Freeze()
         self.ext_stat = self.stat.take_ext_stat(self.date)
         self.ext_stat = [ i for i in self.ext_stat if i is not None] 
         self.ext_list = extend_stat(self.main.panelMainStat, self.ext_cols, self.ext_stat)
-        self.ext_list.list.SetSize((900, 150))
+        self.main.sizer.Add(self.ext_list.list, 2, wx.EXPAND)
+        self.main.panelMainStat.SetSizer(self.main.sbs)
+        self.main.panelMainStat.Layout()
+        size = self.main.GetSize()
+        newsize = size - (1,1)
+        print size
+        print newsize
+        self.main.SetSize(newsize)
+        
+        #Тут графический баг. При полноэкранном расширении получение расширенной статистики для результатов оценки качества данных идут с багом.
         
     def OnAdviceMode(self, event):
         mod = adv.advices(self.data)
@@ -194,7 +204,7 @@ class history_stat():
         self.list.SetColumnWidth(14, 55) 
         self.list.SetColumnWidth(15, 55)
         self.list.SetColumnWidth(16, 40)
-        self.list.SetSize((900,350))
+        #self.list.SetSize((900,350))
         #self.list.Bind(wx.EVT_LIST_COL_CLICK, self.OnColClick, self.list)
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
         self.list.Bind(wx.EVT_LIST_ITEM_SELECTED, self.OnItemSelected)
