@@ -4,7 +4,6 @@ import wx
 import wx.aui
 import schematable
 import connections_manager
-import regexps
 import os
 import calculation
 import results

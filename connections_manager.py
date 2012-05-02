@@ -53,9 +53,6 @@ class connections ( wx.Frame ):
         fgSizer7.Add( self.m_staticText18, 0, wx.ALL, 5 )
         
         # Получаем список коннектов
-        self.sqlite = sqlite.sqliteDB(self.main.schema, self.main.table)
-        
-        #items = self.sqlite.take_cons()
         items = self.wc.take_cons()
         self.connections_choice = wx.Choice( self.m_panel2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, items, 0 )
         
@@ -144,12 +141,20 @@ class connections ( wx.Frame ):
             event.Skip()
             logging.info(u'listing of conneciton succesfully loading')
         except wx._core.PyDeadObjectError, info:
+            info = str(info)
+            info = info.encode('utf8')
             logging.error(u'exit programm with code 0 before close all windows: %s' % info)
 
             return
         
     def OnChoiceCon( self, event ):
+        if not namecon:
+            namecon = 'none'
         namecon = self.connections_choice.GetStringSelection()
+        if not namecon:
+            namecon = 'none'
+            event.Skip()
+            return
         self.dbdata = self.wc.take_data_con(namecon)
         logging.info(u'trying to connect using conneciton: %s' % (namecon))
         
@@ -164,6 +169,10 @@ class connections ( wx.Frame ):
     def OnEditCon( self, event ):
         flag = False
         namecon = self.connections_choice.GetStringSelection()
+        if not namecon:
+            wx.MessageBox(u'Создайте новое соединение!')
+            event.Skip()
+            return
         editcon = db_info.dbinfo(flag, namecon, self.main)
         editcon.Show()
         logging.info(u'editing connection: %s' % (namecon))
@@ -179,6 +188,10 @@ class connections ( wx.Frame ):
         event.Skip()
     
     def OnOk( self, event ):
+        if not self.dbdata:
+            wx.MessageBox(u'Создайте новое соединение!')
+            event.Skip()
+            return
         if self.dbdata[4] == wx.EmptyString:
             passw = db_info.AskPassw(self)
             passw.ShowModal()

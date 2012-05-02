@@ -8437,3 +8437,465 @@
 2012-04-28 00:37:01,362 INFO loading regular expressions for parameter no_information successfully 
 2012-04-28 00:38:43,400 INFO uploading regular expression regexp_like (ID, '^0+$') for parameter no_information successfully
 2012-04-28 00:38:43,400 INFO loading regular expressions for parameter no_information successfully 
+2012-04-29 11:56:07,015 INFO ######################################################################################
+2012-04-29 11:56:07,025 INFO start session
+2012-04-29 11:56:15,148 INFO connect to db
+2012-04-29 11:56:15,203 INFO connecting to local database successfully
+2012-04-29 11:56:15,395 INFO list of connections loaded
+2012-04-29 11:56:15,428 INFO list of connections loaded
+2012-04-29 11:56:15,434 INFO listing of conneciton succesfully loading
+2012-04-29 11:56:17,164 INFO list of connections loaded
+2012-04-29 11:56:17,167 INFO listing of conneciton succesfully loading
+2012-04-29 11:56:51,707 INFO list of connections loaded
+2012-04-29 11:56:51,710 INFO listing of conneciton succesfully loading
+2012-04-29 11:57:07,161 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-29 11:57:07,167 INFO list of connections loaded
+2012-04-29 11:57:07,171 INFO listing of conneciton succesfully loading
+2012-04-29 12:38:50,374 INFO ######################################################################################
+2012-04-29 12:38:50,374 INFO start session
+2012-04-29 12:38:51,276 INFO connect to db
+2012-04-29 12:38:51,292 INFO connecting to local database successfully
+2012-04-29 12:38:51,315 INFO list of connections loaded
+2012-04-29 12:38:51,335 INFO list of connections loaded
+2012-04-29 12:38:51,341 INFO listing of conneciton succesfully loading
+2012-04-29 12:38:54,723 INFO list of connections loaded
+2012-04-29 12:38:54,724 INFO listing of conneciton succesfully loading
+2012-04-29 12:38:55,036 INFO end session. but there are no connection to db
+2012-04-29 12:38:55,036 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:39:12,654 INFO ######################################################################################
+2012-04-29 12:39:12,654 INFO start session
+2012-04-29 12:39:14,331 INFO connect to db
+2012-04-29 12:39:14,335 INFO connecting to local database successfully
+2012-04-29 12:39:14,348 INFO list of connections loaded
+2012-04-29 12:39:14,367 INFO list of connections loaded
+2012-04-29 12:39:14,375 INFO listing of conneciton succesfully loading
+2012-04-29 12:39:15,858 INFO list of connections loaded
+2012-04-29 12:39:15,861 INFO listing of conneciton succesfully loading
+2012-04-29 12:39:16,157 INFO end session. but there are no connection to db
+2012-04-29 12:39:16,157 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:49:19,154 INFO ######################################################################################
+2012-04-29 12:49:19,154 INFO start session
+2012-04-29 12:49:20,381 INFO connect to db
+2012-04-29 12:49:20,385 INFO connecting to local database successfully
+2012-04-29 12:49:20,405 INFO list of connections loaded
+2012-04-29 12:49:20,424 INFO list of connections loaded
+2012-04-29 12:49:20,430 INFO listing of conneciton succesfully loading
+2012-04-29 12:49:21,894 INFO list of connections loaded
+2012-04-29 12:49:21,897 INFO listing of conneciton succesfully loading
+2012-04-29 12:49:22,871 INFO end session. but there are no connection to db
+2012-04-29 12:49:22,872 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:50:49,503 INFO ######################################################################################
+2012-04-29 12:50:49,505 INFO start session
+2012-04-29 12:50:50,509 INFO connect to db
+2012-04-29 12:50:50,660 INFO list of connections loaded
+2012-04-29 12:50:50,683 INFO list of connections loaded
+2012-04-29 12:50:50,686 ERROR loading data connection  failed
+2012-04-29 12:50:50,687 INFO listing of conneciton succesfully loading
+2012-04-29 12:50:52,654 INFO list of connections loaded
+2012-04-29 12:50:52,655 ERROR loading data connection  failed
+2012-04-29 12:50:52,655 INFO listing of conneciton succesfully loading
+2012-04-29 12:50:53,624 INFO end session. but there are no connection to db
+2012-04-29 12:50:53,624 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:51:40,311 INFO ######################################################################################
+2012-04-29 12:51:40,311 INFO start session
+2012-04-29 12:51:41,334 INFO connect to db
+2012-04-29 12:51:41,351 INFO list of connections loaded
+2012-04-29 12:51:41,371 INFO list of connections loaded
+2012-04-29 12:51:41,374 ERROR loading data connection  failed
+2012-04-29 12:51:41,374 INFO listing of conneciton succesfully loading
+2012-04-29 12:51:45,335 INFO connecting to local database successfully
+2012-04-29 12:51:45,336 INFO editing connection: 
+2012-04-29 12:51:45,338 ERROR loading data connection  failed
+2012-04-29 12:51:47,844 INFO connecting to local database successfully
+2012-04-29 12:51:47,844 INFO new connection creating
+2012-04-29 12:51:47,845 INFO list of connections loaded
+2012-04-29 12:51:47,851 ERROR loading data connection  failed
+2012-04-29 12:51:47,851 INFO listing of conneciton succesfully loading
+2012-04-29 12:51:47,858 INFO creating new connection
+2012-04-29 12:51:48,910 INFO list of connections loaded
+2012-04-29 12:51:48,911 ERROR loading data connection  failed
+2012-04-29 12:51:48,913 INFO listing of conneciton succesfully loading
+2012-04-29 12:51:49,763 ERROR delete connection  failed: (-30988, 'DB_NOTFOUND: No matching key/data pair found')
+2012-04-29 12:51:49,765 INFO list of connections loaded
+2012-04-29 12:51:49,766 INFO try to delete connection: 
+2012-04-29 12:51:51,148 ERROR delete connection  failed: (-30988, 'DB_NOTFOUND: No matching key/data pair found')
+2012-04-29 12:51:51,150 INFO list of connections loaded
+2012-04-29 12:51:51,151 INFO try to delete connection: 
+2012-04-29 12:51:51,332 ERROR delete connection  failed: (-30988, 'DB_NOTFOUND: No matching key/data pair found')
+2012-04-29 12:51:51,334 INFO list of connections loaded
+2012-04-29 12:51:51,335 INFO try to delete connection: 
+2012-04-29 12:51:51,707 INFO connecting to local database successfully
+2012-04-29 12:51:51,707 INFO editing connection: 
+2012-04-29 12:51:51,709 ERROR loading data connection  failed
+2012-04-29 12:51:54,845 INFO list of connections loaded
+2012-04-29 12:51:54,848 ERROR loading data connection  failed
+2012-04-29 12:51:54,848 INFO listing of conneciton succesfully loading
+2012-04-29 12:51:55,575 INFO end session. but there are no connection to db
+2012-04-29 12:51:55,575 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:52:48,698 INFO ######################################################################################
+2012-04-29 12:52:48,698 INFO start session
+2012-04-29 12:52:49,940 INFO connect to db
+2012-04-29 12:52:49,960 INFO list of connections loaded
+2012-04-29 12:52:49,986 INFO list of connections loaded
+2012-04-29 12:52:49,990 ERROR loading data connection  failed
+2012-04-29 12:52:49,990 INFO listing of conneciton succesfully loading
+2012-04-29 12:52:51,006 INFO connecting to local database successfully
+2012-04-29 12:52:51,006 INFO editing connection: 
+2012-04-29 12:52:51,006 ERROR loading data connection  failed
+2012-04-29 12:52:51,039 INFO list of connections loaded
+2012-04-29 12:52:51,042 ERROR loading data connection  failed
+2012-04-29 12:52:51,042 INFO listing of conneciton succesfully loading
+2012-04-29 12:52:51,637 INFO list of connections loaded
+2012-04-29 12:52:51,638 ERROR loading data connection  failed
+2012-04-29 12:52:51,640 INFO listing of conneciton succesfully loading
+2012-04-29 12:52:51,644 INFO list of connections loaded
+2012-04-29 12:52:51,651 ERROR loading data connection  failed
+2012-04-29 12:52:51,651 INFO listing of conneciton succesfully loading
+2012-04-29 12:52:51,657 INFO editing connection: 
+2012-04-29 12:52:53,805 INFO list of connections loaded
+2012-04-29 12:52:53,808 ERROR loading data connection  failed
+2012-04-29 12:52:53,808 INFO listing of conneciton succesfully loading
+2012-04-29 12:52:55,565 INFO list of connections loaded
+2012-04-29 12:52:55,566 ERROR loading data connection  failed
+2012-04-29 12:52:55,568 INFO listing of conneciton succesfully loading
+2012-04-29 12:52:55,974 INFO end session. but there are no connection to db
+2012-04-29 12:52:55,974 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:53:48,282 INFO ######################################################################################
+2012-04-29 12:53:48,283 INFO start session
+2012-04-29 12:53:49,947 INFO connect to db
+2012-04-29 12:53:49,967 INFO list of connections loaded
+2012-04-29 12:53:49,987 INFO list of connections loaded
+2012-04-29 12:53:49,990 ERROR loading data connection  failed
+2012-04-29 12:53:49,990 INFO listing of conneciton succesfully loading
+2012-04-29 12:53:52,732 INFO list of connections loaded
+2012-04-29 12:53:52,734 ERROR loading data connection  failed
+2012-04-29 12:53:52,734 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:19,316 INFO list of connections loaded
+2012-04-29 12:54:19,319 ERROR loading data connection  failed
+2012-04-29 12:54:19,319 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:20,358 INFO list of connections loaded
+2012-04-29 12:54:20,358 ERROR loading data connection  failed
+2012-04-29 12:54:20,359 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:22,134 INFO end session. but there are no connection to db
+2012-04-29 12:54:22,134 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:54:24,076 INFO ######################################################################################
+2012-04-29 12:54:24,076 INFO start session
+2012-04-29 12:54:25,069 INFO connect to db
+2012-04-29 12:54:25,092 INFO list of connections loaded
+2012-04-29 12:54:25,115 INFO list of connections loaded
+2012-04-29 12:54:25,118 ERROR loading data connection  failed
+2012-04-29 12:54:25,119 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:26,039 INFO list of connections loaded
+2012-04-29 12:54:26,040 ERROR loading data connection  failed
+2012-04-29 12:54:26,042 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:26,700 INFO list of connections loaded
+2012-04-29 12:54:26,701 ERROR loading data connection  failed
+2012-04-29 12:54:26,703 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:27,933 INFO list of connections loaded
+2012-04-29 12:54:27,934 ERROR loading data connection  failed
+2012-04-29 12:54:27,934 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:28,181 INFO end session. but there are no connection to db
+2012-04-29 12:54:28,181 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:54:37,924 INFO ######################################################################################
+2012-04-29 12:54:37,924 INFO start session
+2012-04-29 12:54:38,900 INFO connect to db
+2012-04-29 12:54:38,918 INFO list of connections loaded
+2012-04-29 12:54:38,940 INFO list of connections loaded
+2012-04-29 12:54:38,943 ERROR loading data connection  failed
+2012-04-29 12:54:38,943 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:39,591 INFO list of connections loaded
+2012-04-29 12:54:39,592 ERROR loading data connection  failed
+2012-04-29 12:54:39,594 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:40,148 INFO list of connections loaded
+2012-04-29 12:54:40,151 ERROR loading data connection  failed
+2012-04-29 12:54:40,151 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:41,253 INFO connecting to local database successfully
+2012-04-29 12:54:41,253 INFO editing connection: 
+2012-04-29 12:54:41,253 ERROR loading data connection  failed
+2012-04-29 12:54:41,259 INFO list of connections loaded
+2012-04-29 12:54:41,262 ERROR loading data connection  failed
+2012-04-29 12:54:41,263 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:41,747 INFO list of connections loaded
+2012-04-29 12:54:41,750 ERROR loading data connection  failed
+2012-04-29 12:54:41,750 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:41,756 INFO list of connections loaded
+2012-04-29 12:54:41,759 ERROR loading data connection  failed
+2012-04-29 12:54:41,759 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:41,767 INFO editing connection: 
+2012-04-29 12:54:42,908 INFO list of connections loaded
+2012-04-29 12:54:42,911 ERROR loading data connection  failed
+2012-04-29 12:54:42,911 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:43,598 INFO list of connections loaded
+2012-04-29 12:54:43,601 ERROR loading data connection  failed
+2012-04-29 12:54:43,601 INFO listing of conneciton succesfully loading
+2012-04-29 12:54:44,053 INFO end session. but there are no connection to db
+2012-04-29 12:54:44,055 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:56:00,552 INFO ######################################################################################
+2012-04-29 12:56:00,552 INFO start session
+2012-04-29 12:56:01,723 INFO connect to db
+2012-04-29 12:56:01,743 INFO list of connections loaded
+2012-04-29 12:56:01,763 INFO list of connections loaded
+2012-04-29 12:56:01,766 ERROR loading data connection  failed
+2012-04-29 12:56:01,767 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:02,747 INFO connecting to local database successfully
+2012-04-29 12:56:02,747 INFO editing connection: 
+2012-04-29 12:56:02,749 ERROR loading data connection  failed
+2012-04-29 12:56:02,753 INFO list of connections loaded
+2012-04-29 12:56:02,756 ERROR loading data connection  failed
+2012-04-29 12:56:02,756 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:03,414 INFO list of connections loaded
+2012-04-29 12:56:03,415 ERROR loading data connection  failed
+2012-04-29 12:56:03,417 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:03,421 INFO list of connections loaded
+2012-04-29 12:56:03,424 ERROR loading data connection  failed
+2012-04-29 12:56:03,424 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:03,434 INFO editing connection: 
+2012-04-29 12:56:05,084 INFO list of connections loaded
+2012-04-29 12:56:05,085 ERROR loading data connection  failed
+2012-04-29 12:56:05,086 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:06,085 INFO list of connections loaded
+2012-04-29 12:56:06,088 ERROR loading data connection  failed
+2012-04-29 12:56:06,088 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:06,595 INFO list of connections loaded
+2012-04-29 12:56:06,598 ERROR loading data connection  failed
+2012-04-29 12:56:06,598 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:07,309 INFO list of connections loaded
+2012-04-29 12:56:07,312 ERROR loading data connection  failed
+2012-04-29 12:56:07,313 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:07,940 INFO list of connections loaded
+2012-04-29 12:56:07,941 ERROR loading data connection  failed
+2012-04-29 12:56:07,941 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:08,313 INFO connecting to local database successfully
+2012-04-29 12:56:08,315 INFO editing connection: 
+2012-04-29 12:56:08,315 ERROR loading data connection  failed
+2012-04-29 12:56:08,321 INFO list of connections loaded
+2012-04-29 12:56:08,323 ERROR loading data connection  failed
+2012-04-29 12:56:08,323 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:09,059 INFO list of connections loaded
+2012-04-29 12:56:09,062 ERROR loading data connection  failed
+2012-04-29 12:56:09,062 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:09,069 INFO list of connections loaded
+2012-04-29 12:56:09,072 ERROR loading data connection  failed
+2012-04-29 12:56:09,072 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:09,078 INFO editing connection: 
+2012-04-29 12:56:10,500 INFO list of connections loaded
+2012-04-29 12:56:10,502 ERROR loading data connection  failed
+2012-04-29 12:56:10,502 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:12,084 INFO list of connections loaded
+2012-04-29 12:56:12,085 ERROR loading data connection  failed
+2012-04-29 12:56:12,085 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:12,374 INFO end session. but there are no connection to db
+2012-04-29 12:56:12,374 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:56:37,233 INFO ######################################################################################
+2012-04-29 12:56:37,233 INFO start session
+2012-04-29 12:56:38,611 INFO connect to db
+2012-04-29 12:56:38,630 INFO list of connections loaded
+2012-04-29 12:56:38,648 INFO list of connections loaded
+2012-04-29 12:56:38,651 ERROR loading data connection  failed
+2012-04-29 12:56:38,651 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:40,786 INFO connecting to local database successfully
+2012-04-29 12:56:40,786 INFO editing connection: 
+2012-04-29 12:56:40,788 ERROR loading data connection  failed
+2012-04-29 12:56:40,792 INFO list of connections loaded
+2012-04-29 12:56:40,795 ERROR loading data connection  failed
+2012-04-29 12:56:40,796 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:41,348 INFO list of connections loaded
+2012-04-29 12:56:41,349 ERROR loading data connection  failed
+2012-04-29 12:56:41,349 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:41,354 INFO list of connections loaded
+2012-04-29 12:56:41,357 ERROR loading data connection  failed
+2012-04-29 12:56:41,357 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:41,367 INFO editing connection: 
+2012-04-29 12:56:42,315 INFO list of connections loaded
+2012-04-29 12:56:42,318 ERROR loading data connection  failed
+2012-04-29 12:56:42,319 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:43,171 INFO list of connections loaded
+2012-04-29 12:56:43,173 ERROR loading data connection  failed
+2012-04-29 12:56:43,174 INFO listing of conneciton succesfully loading
+2012-04-29 12:56:43,381 INFO end session. but there are no connection to db
+2012-04-29 12:56:43,381 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 12:57:18,098 INFO ######################################################################################
+2012-04-29 12:57:18,098 INFO start session
+2012-04-29 12:57:19,331 INFO connect to db
+2012-04-29 12:57:19,348 INFO list of connections loaded
+2012-04-29 12:57:19,368 INFO list of connections loaded
+2012-04-29 12:57:19,371 ERROR loading data connection  failed
+2012-04-29 12:57:19,371 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:20,157 INFO list of connections loaded
+2012-04-29 12:57:20,160 ERROR loading data connection  failed
+2012-04-29 12:57:20,161 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:20,730 INFO list of connections loaded
+2012-04-29 12:57:20,733 ERROR loading data connection  failed
+2012-04-29 12:57:20,733 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:21,132 INFO list of connections loaded
+2012-04-29 12:57:21,135 ERROR loading data connection  failed
+2012-04-29 12:57:21,137 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:21,627 INFO list of connections loaded
+2012-04-29 12:57:21,628 ERROR loading data connection  failed
+2012-04-29 12:57:21,630 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:22,233 ERROR delete connection  failed: (-30988, 'DB_NOTFOUND: No matching key/data pair found')
+2012-04-29 12:57:22,234 INFO list of connections loaded
+2012-04-29 12:57:22,236 INFO try to delete connection: 
+2012-04-29 12:57:22,946 INFO connecting to local database successfully
+2012-04-29 12:57:22,946 INFO new connection creating
+2012-04-29 12:57:22,947 INFO list of connections loaded
+2012-04-29 12:57:22,950 ERROR loading data connection  failed
+2012-04-29 12:57:22,950 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:22,956 INFO creating new connection
+2012-04-29 12:57:23,868 INFO list of connections loaded
+2012-04-29 12:57:23,869 ERROR loading data connection  failed
+2012-04-29 12:57:23,869 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:25,171 INFO list of connections loaded
+2012-04-29 12:57:25,173 ERROR loading data connection  failed
+2012-04-29 12:57:25,173 INFO listing of conneciton succesfully loading
+2012-04-29 12:57:26,789 INFO end session. but there are no connection to db
+2012-04-29 12:57:26,789 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:03:14,006 INFO ######################################################################################
+2012-04-29 13:03:14,007 INFO start session
+2012-04-29 13:03:15,121 INFO connect to db
+2012-04-29 13:03:16,387 INFO end session. but there are no connection to db
+2012-04-29 13:03:16,387 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:05:25,573 INFO ######################################################################################
+2012-04-29 13:05:25,575 INFO start session
+2012-04-29 13:05:26,640 INFO connect to db
+2012-04-29 13:05:26,644 ERROR list of connections not loaded
+2012-04-29 13:05:27,282 INFO end session. but there are no connection to db
+2012-04-29 13:05:27,282 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:05:43,072 INFO ######################################################################################
+2012-04-29 13:05:43,072 INFO start session
+2012-04-29 13:05:44,174 INFO connect to db
+2012-04-29 13:05:44,178 ERROR list of connections not loaded
+2012-04-29 13:05:45,009 INFO end session. but there are no connection to db
+2012-04-29 13:05:45,009 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:06:14,799 INFO ######################################################################################
+2012-04-29 13:06:14,799 INFO start session
+2012-04-29 13:06:15,862 INFO connect to db
+2012-04-29 13:06:17,312 INFO end session. but there are no connection to db
+2012-04-29 13:06:17,313 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:16:14,280 INFO ######################################################################################
+2012-04-29 13:16:14,280 INFO start session
+2012-04-29 13:16:15,674 INFO connect to db
+2012-04-29 13:16:15,691 ERROR list of connections not loaded
+2012-04-29 13:16:16,572 INFO end session. but there are no connection to db
+2012-04-29 13:16:16,572 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:16:23,461 INFO ######################################################################################
+2012-04-29 13:16:23,461 INFO start session
+2012-04-29 13:16:24,730 INFO connect to db
+2012-04-29 13:16:24,747 INFO list of connections loaded
+2012-04-29 13:16:24,767 INFO list of connections loaded
+2012-04-29 13:16:24,773 INFO listing of conneciton succesfully loading
+2012-04-29 13:16:25,842 INFO list of connections loaded
+2012-04-29 13:16:25,845 INFO listing of conneciton succesfully loading
+2012-04-29 13:16:26,188 INFO end session. but there are no connection to db
+2012-04-29 13:16:26,188 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:24:56,392 INFO ######################################################################################
+2012-04-29 13:24:56,392 INFO start session
+2012-04-29 13:24:57,551 INFO connect to db
+2012-04-29 13:24:57,555 ERROR list of connections not loaded
+2012-04-29 13:24:58,424 INFO end session. but there are no connection to db
+2012-04-29 13:24:58,424 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:25:06,838 INFO ######################################################################################
+2012-04-29 13:25:06,838 INFO start session
+2012-04-29 13:25:08,039 INFO connect to db
+2012-04-29 13:25:08,042 ERROR list of connections not loaded
+2012-04-29 13:25:08,585 INFO end session. but there are no connection to db
+2012-04-29 13:25:08,585 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:25:22,042 INFO ######################################################################################
+2012-04-29 13:25:22,042 INFO start session
+2012-04-29 13:25:22,934 INFO connect to db
+2012-04-29 13:25:22,951 INFO list of connections loaded
+2012-04-29 13:25:22,973 INFO list of connections loaded
+2012-04-29 13:25:22,976 INFO listing of conneciton succesfully loading
+2012-04-29 13:25:25,296 INFO list of connections loaded
+2012-04-29 13:25:25,299 INFO listing of conneciton succesfully loading
+2012-04-29 13:25:25,641 INFO end session. but there are no connection to db
+2012-04-29 13:25:25,641 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:26:34,052 INFO ######################################################################################
+2012-04-29 13:26:34,052 INFO start session
+2012-04-29 13:27:13,822 INFO connect to db
+2012-04-29 13:27:13,842 INFO list of connections loaded
+2012-04-29 13:27:13,872 INFO list of connections loaded
+2012-04-29 13:27:13,877 INFO listing of conneciton succesfully loading
+2012-04-29 13:27:15,552 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-04-29 13:27:15,555 INFO list of connections loaded
+2012-04-29 13:27:15,556 INFO listing of conneciton succesfully loading
+2012-04-29 13:50:38,250 INFO ######################################################################################
+2012-04-29 13:50:38,250 INFO start session
+2012-04-29 13:50:38,644 INFO connect to db
+2012-04-29 13:50:39,805 ERROR list of connections not loaded
+2012-04-29 13:50:40,013 INFO end session. but there are no connection to db
+2012-04-29 13:50:40,015 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:51:02,769 INFO ######################################################################################
+2012-04-29 13:51:02,770 INFO start session
+2012-04-29 13:51:03,838 INFO connect to db
+2012-04-29 13:51:04,525 ERROR list of connections not loaded
+2012-04-29 13:51:04,733 INFO end session. but there are no connection to db
+2012-04-29 13:51:04,733 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-04-29 13:52:06,289 INFO ######################################################################################
+2012-04-29 13:52:06,289 INFO start session
+2012-04-29 13:52:06,621 INFO connect to db
+2012-04-29 13:52:06,638 INFO list of connections loaded
+2012-04-29 13:52:06,658 INFO list of connections loaded
+2012-04-29 13:52:06,665 INFO listing of conneciton succesfully loading
+2012-04-29 13:52:08,036 INFO list of connections loaded
+2012-04-29 13:52:08,038 INFO listing of conneciton succesfully loading
+2012-04-29 13:52:08,316 INFO end session. but there are no connection to db
+2012-04-29 13:52:08,316 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 18:54:37,750 INFO ######################################################################################
+2012-05-02 18:54:37,765 INFO start session
+2012-05-02 18:56:19,608 INFO ######################################################################################
+2012-05-02 18:56:19,608 INFO start session
+2012-05-02 18:56:54,174 INFO ######################################################################################
+2012-05-02 18:56:54,174 INFO start session
+2012-05-02 18:57:42,210 INFO ######################################################################################
+2012-05-02 18:57:42,210 INFO start session
+2012-05-02 18:57:52,424 INFO end session. but there are no connection to db
+2012-05-02 18:57:52,424 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 18:57:57,506 INFO ######################################################################################
+2012-05-02 18:57:57,507 INFO start session
+2012-05-02 18:58:03,875 INFO end session. but there are no connection to db
+2012-05-02 18:58:03,875 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 18:58:22,701 INFO ######################################################################################
+2012-05-02 18:58:22,701 INFO start session
+2012-05-02 18:58:25,900 INFO end session. but there are no connection to db
+2012-05-02 18:58:25,900 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 18:58:33,641 INFO ######################################################################################
+2012-05-02 18:58:33,641 INFO start session
+2012-05-02 18:58:37,164 INFO end session. but there are no connection to db
+2012-05-02 18:58:37,164 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 18:58:49,625 INFO ######################################################################################
+2012-05-02 18:58:49,625 INFO start session
+2012-05-02 18:58:51,122 INFO end session. but there are no connection to db
+2012-05-02 18:58:51,122 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:20:25,190 INFO ######################################################################################
+2012-05-02 19:20:25,190 INFO start session
+2012-05-02 19:20:30,852 INFO end session. but there are no connection to db
+2012-05-02 19:20:30,852 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:20:37,892 INFO ######################################################################################
+2012-05-02 19:20:37,892 INFO start session
+2012-05-02 19:20:42,474 INFO end session. but there are no connection to db
+2012-05-02 19:20:42,474 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:21:30,302 INFO ######################################################################################
+2012-05-02 19:21:30,302 INFO start session
+2012-05-02 19:21:33,503 INFO end session. but there are no connection to db
+2012-05-02 19:21:33,503 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:21:35,430 INFO ######################################################################################
+2012-05-02 19:21:35,430 INFO start session
+2012-05-02 19:21:36,124 INFO end session. but there are no connection to db
+2012-05-02 19:21:36,124 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:22:56,907 INFO ######################################################################################
+2012-05-02 19:22:56,907 INFO start session
+2012-05-02 19:22:59,339 INFO end session. but there are no connection to db
+2012-05-02 19:22:59,339 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:23:09,500 INFO ######################################################################################
+2012-05-02 19:23:09,500 INFO start session
+2012-05-02 19:23:22,298 INFO end session. but there are no connection to db
+2012-05-02 19:23:22,298 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:23:59,986 INFO ######################################################################################
+2012-05-02 19:23:59,986 INFO start session
+2012-05-02 19:24:03,220 INFO end session. but there are no connection to db
+2012-05-02 19:24:03,220 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-02 19:24:07,145 INFO ######################################################################################
+2012-05-02 19:24:07,145 INFO start session
+2012-05-02 19:24:12,051 INFO end session. but there are no connection to db
+2012-05-02 19:24:12,051 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
