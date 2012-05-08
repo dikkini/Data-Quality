@@ -1,11 +1,18 @@
-import os, sys
+# -*- coding: utf-8 -*- 
 
-def _mainfile():
-    file = os.path.abspath(sys.executable if hasattr(sys, "frozen") else sys.modules['__main__'].__file__)
-    #while stat.S_ISLNK(os.lstat(file).st_mode): file = os.readlink(file)
-    print file
-    return file
-    
-    
-    
-_mainfile()
+
+list3 = []
+
+list1 = [0,0.0,1.0,2,3,4,5,6]
+
+for i in list1:
+    if  i == 0 and type(i) is int:
+       list3.append(i)
+       
+print list3
+
+#r1 = 0
+#r2 = 0.0
+#
+#print type(r1)
+#print type(r2)

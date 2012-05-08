@@ -45,7 +45,7 @@ class fullgrid ( wx.Frame ):
         
         # Cell Defaults
         self.m_grid2.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
-        bSizer2.Add( self.m_grid2, 0, wx.ALL, 5 )
+        bSizer2.Add( self.m_grid2, 1, wx.EXPAND)
         
         self.m_panel1.SetSizer( bSizer2 )
         self.m_panel1.Layout()
@@ -63,6 +63,7 @@ class fullgrid ( wx.Frame ):
         #self.m_grid2.AutoSize(True)
         
         self.SetFocus()
+        
     def OnRDC(self, event):
         self.Close()
         #self.Destroy()

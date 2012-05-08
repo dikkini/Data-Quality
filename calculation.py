@@ -54,8 +54,12 @@ class DQ(object):
 				count1 = []
 				param = 'no_information'
 				regexp = sql.take_regexps(param)
-				for i in range(len(regexp)):
-					count1.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
+				for col in self.namecols:
+					count1.append(0.0)
+					for reg in regexp:
+						if col in reg:
+							col_index = self.namecols.index(col)
+							count1[col_index] = orcl.get_regexp_count(self.schema, self.table, reg)
 				avgnoinf = (sum(count1) / len(count1)) * self.weights[1]
 				avgnoinf = float(avgnoinf)
 				avgnoinf = avgnoinf / self.countall * 100
@@ -65,9 +69,14 @@ class DQ(object):
 				# Расчет расширенной статистики по колонкам
 				ext_stat = []
 				info = [u'Не несущие значения']
-				for i in range(len(count1)):
-					ext_stat.append(str((float(count1[i]) / self.countall * 100)))
-					info.append(u'%s' % (ext_stat[i]))
+				for i in count1:
+					if i == 0.0 and type(i) is float:
+						ext_stat.append('-')
+					else:
+						ext_stat.append(str((float(i) / self.countall * 100)))
+				
+				for i in ext_stat:
+					info.append(i)
 				self.extend_stat.append(info)
 				logging.info(u'not informable parameter calculation successfully')
 			else:
@@ -83,9 +92,16 @@ class DQ(object):
 			if self.using_params[2] == 1:
 				count2 = []
 				param = 'bad_format'
+				
 				regexp = sql.take_regexps(param)
-				for i in range(len(regexp)):
-					count2.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
+
+				for col in self.namecols:
+					count2.append(0.0)
+					for reg in regexp:
+						if col in reg:
+							col_index = self.namecols.index(col)
+							count2[col_index] = orcl.get_regexp_count(self.schema, self.table, reg)
+				
 				avgbadform = (sum(count2) / len(count2)) * self.weights[2]
 				avgbadform = float(avgbadform)
 				avgbadform = avgbadform / self.countall * 100
@@ -93,9 +109,16 @@ class DQ(object):
 				self.data.append(str(avgbadform))
 				ext_stat = []
 				info = [u'Не соответствующие формату']
-				for i in range(len(count2)):
-					ext_stat.append(str((float(count2[i]) / self.countall * 100)))
-					info.append(u'%s' % (ext_stat[i]))
+				
+				for i in count2:
+					if i == 0.0 and type(i) is float:
+						ext_stat.append('-')
+					else:
+						ext_stat.append(str((float(i) / self.countall * 100)))
+				
+				for i in ext_stat:
+					info.append(i)
+					
 				self.extend_stat.append(info)
 				logging.info(u'bad fromat parameter calculation successfully')
 			else:
@@ -104,6 +127,7 @@ class DQ(object):
 				self.extend_stat.append(None)
 			print 'bad_format', avgbadform, '%'
 		except Exception, info:
+			print info
 			logging.error(u'bad format parameter calculation failed: %s' % str(info))
 
 		# Значение уровня шума
@@ -112,8 +136,12 @@ class DQ(object):
 				count3 = []
 				param = 'noise_level'
 				regexp = sql.take_regexps(param)
-				for i in range(len(regexp)):
-					count3.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
+				for col in self.namecols:
+					count3.append(0.0)
+					for reg in regexp:
+						if col in reg:
+							col_index = self.namecols.index(col)
+							count3[col_index] = orcl.get_regexp_count(self.schema, self.table, reg)
 				avgnoise = (sum(count3) / len(count3)) * self.weights[3]
 				avgnoise = float(avgnoise)
 				avgnoise = avgnoise / self.countall * 100
@@ -122,9 +150,13 @@ class DQ(object):
 
 				ext_stat = []
 				info = [u'Уровень шума']
-				for i in range(len(count3)):
-					ext_stat.append(str((float(count3[i]) / self.countall * 100)))
-					info.append(u'%s' % (ext_stat[i]))
+				for i in count3:
+					if i == 0.0 and type(i) is float:
+						ext_stat.append('-')
+					else:
+						ext_stat.append(str((float(i) / self.countall * 100)))
+				for i in ext_stat:
+					info.append(i)
 				self.extend_stat.append(info)
 				logging.info(u'noise level parameter calculation successfully')
 			else:
@@ -181,8 +213,8 @@ class DQ(object):
 			if self.using_params[6] == 1:
 				count6 = []
 				param = 'uniq'
-				for i in range(len(self.namecols)):
-					count6.append(orcl.get_uniq_values(self.namecols[i], self.schema, self.table))
+				for column in self.namecols:
+					count6.append(orcl.get_uniq_values(column, self.schema, self.table))
 				avguniq = (sum(count6) / len(count6)) * self.weights[6]
 				avguniq = float(avguniq)
 				avguniq = avguniq / self.countall * 100
@@ -190,9 +222,10 @@ class DQ(object):
 
 				ext_stat = []
 				info = [u'Унификация']
-				for i in range(len(count6)):
-					ext_stat.append(str((float(count6[i]) / self.countall * 100)))
-					info.append(u'%s' % (ext_stat[i]))
+				for i in count6:
+					ext_stat.append(str((float(i) / self.countall * 100)))
+				for i in ext_stat:
+					info.append(i)
 				self.extend_stat.append(info)
 				logging.info(u'uniq parameter calculation successfully')
 			else:

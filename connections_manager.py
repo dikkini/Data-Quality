@@ -148,8 +148,6 @@ class connections ( wx.Frame ):
             return
         
     def OnChoiceCon( self, event ):
-        if not namecon:
-            namecon = 'none'
         namecon = self.connections_choice.GetStringSelection()
         if not namecon:
             namecon = 'none'

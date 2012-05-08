@@ -36,7 +36,7 @@ class MainWindow ( wx.Frame ):
     
     def __init__( self ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Главное окно", 
-                            pos = wx.DefaultPosition, size = wx.Size( 800,600 ) )
+                            pos = wx.DefaultPosition, size = wx.Size( 1000,600 ) )
         
         self.SetSizeHintsSz( wx.Size( 800,600 ), wx.DefaultSize )
         
@@ -242,7 +242,7 @@ class MainWindow ( wx.Frame ):
                 self.panelMainStat.Layout()
                 
                 del busy
-        except Exception, info:
+        except TypeError, info:
             if "'NoneType' object is not iterable" in info:
                 wx.MessageBox(u'Выберите параметры для оценки качества данных преждем чем начать процесс оценки качества данных!')
             else:
@@ -303,6 +303,13 @@ class MainWindow ( wx.Frame ):
             logging.info(u'launch edit regexps module')
             regexps_editor.page_editor(self, self.schema, self.table, self.connection)
             
+            current_size = self.GetSize()
+            new_size = current_size + (1,1)
+            self.SetSize(new_size)
+            
+            if self.IsMaximized():
+                self.SetFocus()
+            
         
     def ChooseParams(self, event):
         try:
@@ -327,6 +334,7 @@ class MainWindow ( wx.Frame ):
     def show_help(self, event):
         frame = help.help_frame()
         frame.Show()
+        
         
     def __del__( self ):
         pass
