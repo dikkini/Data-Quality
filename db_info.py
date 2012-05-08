@@ -289,7 +289,6 @@ class work_con():
         try:
             #key = str(self.namecon)
             filename = '%s\\connections.dat' % self.path
-            print filename
             d = shelve.open(filename)
             keys = d.keys()
             d.close()

@@ -170,6 +170,7 @@ class MainWindow ( wx.Frame ):
         logging.info(u'######################################################################################')
         logging.info(u'start session')
         
+        
     def ConnectDB(self, event):
         logging.info(u'connect to db')
         frame = connections_manager.connections(self)

@@ -19,7 +19,8 @@ class page_editor():
         self.main = parent
         self.panel_regexps = wx.Panel( self.main, wx.ID_ANY, wx.DefaultPosition, (-1,-1), wx.TAB_TRAVERSAL )
         #bSizer3.Add(self.panel_regexps, wx.EXPAND, 1)
-        self.main.notebook.AddPage( self.panel_regexps, u"Редактор регулярных выражений", False, wx.NullBitmap )
+        title_page = (u"Редактор регулярных выражений %s:%s" % (self.main.schema, self.main.table))
+        self.main.notebook.AddPage( self.panel_regexps, title_page, False, wx.NullBitmap )
         bSizer1 = wx.BoxSizer( wx.VERTICAL )
         
         self.label1 = wx.StaticText( self.panel_regexps, wx.ID_ANY, u"Параметры оценки качества данных:", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -221,8 +222,7 @@ class page_editor():
             self.grid_table = GridTable(data, self.connection, self.table)
             cursor.close()
             #self.check_grid.SetTable(self.grid_table, True)
-            print self.grid_table
-            fsg = fs_grid.fullgrid(self.grid_table)
+            fsg = fs_grid.fullgrid(self, self.grid_table)
             fsg.Show()
         except Exception, info:
             info = str(info)

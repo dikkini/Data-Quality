@@ -8899,3 +8899,261 @@
 2012-05-02 19:24:07,145 INFO start session
 2012-05-02 19:24:12,051 INFO end session. but there are no connection to db
 2012-05-02 19:24:12,051 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-05 11:26:37,888 INFO ######################################################################################
+2012-05-05 11:26:37,890 INFO start session
+2012-05-05 11:26:39,177 INFO connect to db
+2012-05-05 11:26:39,259 INFO list of connections loaded
+2012-05-05 11:26:39,276 INFO list of connections loaded
+2012-05-05 11:26:39,283 INFO listing of conneciton succesfully loading
+2012-05-05 11:26:41,101 INFO list of connections loaded
+2012-05-05 11:26:41,105 INFO listing of conneciton succesfully loading
+2012-05-05 11:26:41,480 INFO end session. but there are no connection to db
+2012-05-05 11:26:41,480 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-05 11:28:54,549 INFO ######################################################################################
+2012-05-05 11:28:54,549 INFO start session
+2012-05-05 11:28:56,704 INFO connect to db
+2012-05-05 11:28:56,739 INFO list of connections loaded
+2012-05-05 11:28:56,756 INFO list of connections loaded
+2012-05-05 11:28:56,765 INFO listing of conneciton succesfully loading
+2012-05-05 11:28:56,848 INFO list of connections loaded
+2012-05-05 11:28:56,854 INFO listing of conneciton succesfully loading
+2012-05-05 11:28:57,729 INFO list of connections loaded
+2012-05-05 11:28:57,733 INFO listing of conneciton succesfully loading
+2012-05-05 11:28:58,431 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 11:28:58,434 INFO list of connections loaded
+2012-05-05 11:28:58,437 INFO listing of conneciton succesfully loading
+2012-05-05 11:29:01,025 INFO choose table
+2012-05-05 11:29:01,062 INFO list of schemas loaded successfully
+2012-05-05 11:29:02,726 INFO list of tables loaded successfully
+2012-05-05 11:29:02,726 INFO schema ARTUR choosed
+2012-05-05 11:29:03,992 INFO table TEST choosed
+2012-05-05 11:29:10,203 INFO launch edit regexps module
+2012-05-05 11:29:10,240 INFO connecting to local database successfully
+2012-05-05 11:29:12,107 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 11:29:12,874 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:29:14,539 INFO choose table
+2012-05-05 11:29:14,586 INFO list of schemas loaded successfully
+2012-05-05 11:29:17,220 INFO list of tables loaded successfully
+2012-05-05 11:29:17,221 INFO schema TEST_DIPLOM choosed
+2012-05-05 11:29:19,849 INFO table BIG_TEST1 choosed
+2012-05-05 11:29:21,849 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:29:22,665 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-05 11:29:24,049 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:29:27,763 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 11:29:29,746 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:31:34,253 INFO choose table
+2012-05-05 11:31:34,299 INFO list of schemas loaded successfully
+2012-05-05 11:31:35,907 INFO list of tables loaded successfully
+2012-05-05 11:31:35,907 INFO schema ARTUR choosed
+2012-05-05 11:31:37,138 INFO table TEST_IDEAL_UIR choosed
+2012-05-05 11:31:38,868 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 11:31:39,852 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:31:54,414 INFO launch edit regexps module
+2012-05-05 11:31:54,446 INFO connecting to local database successfully
+2012-05-05 11:31:55,446 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 11:31:57,134 INFO choose table
+2012-05-05 11:31:57,181 INFO list of schemas loaded successfully
+2012-05-05 11:31:59,135 INFO list of tables loaded successfully
+2012-05-05 11:31:59,135 INFO schema TEST_DIPLOM choosed
+2012-05-05 11:31:59,957 INFO table TEST_GOOD_1000 choosed
+2012-05-05 11:32:01,709 INFO table BIG_TEST1 choosed
+2012-05-05 11:32:03,983 INFO launch edit regexps module
+2012-05-05 11:32:04,017 INFO connecting to local database successfully
+2012-05-05 11:32:05,517 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 11:32:06,766 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:32:07,694 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 11:32:09,247 INFO choose table
+2012-05-05 11:32:09,283 INFO list of schemas loaded successfully
+2012-05-05 11:32:11,198 INFO list of tables loaded successfully
+2012-05-05 11:32:11,198 INFO schema TEST_DIPLOM choosed
+2012-05-05 11:32:12,558 INFO table BIG_TEST2 choosed
+2012-05-05 11:32:14,832 INFO launch edit regexps module
+2012-05-05 11:32:14,854 INFO connecting to local database successfully
+2012-05-05 11:32:16,367 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 11:32:17,078 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 11:32:18,391 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 11:32:19,631 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 12:12:38,427 INFO ######################################################################################
+2012-05-05 12:12:38,427 INFO start session
+2012-05-05 12:12:39,476 INFO connect to db
+2012-05-05 12:12:39,517 INFO list of connections loaded
+2012-05-05 12:12:39,539 INFO list of connections loaded
+2012-05-05 12:12:39,545 INFO listing of conneciton succesfully loading
+2012-05-05 12:12:40,714 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:12:40,717 INFO list of connections loaded
+2012-05-05 12:12:40,720 INFO listing of conneciton succesfully loading
+2012-05-05 12:12:41,002 INFO choose table
+2012-05-05 12:12:41,069 INFO list of schemas loaded successfully
+2012-05-05 12:12:42,398 INFO list of tables loaded successfully
+2012-05-05 12:12:42,398 INFO schema ARTUR choosed
+2012-05-05 12:12:43,026 INFO table TEST choosed
+2012-05-05 12:12:44,795 INFO launch edit regexps module
+2012-05-05 12:12:44,829 INFO connecting to local database successfully
+2012-05-05 12:12:50,743 INFO choose table
+2012-05-05 12:12:50,802 INFO list of schemas loaded successfully
+2012-05-05 12:12:52,625 INFO list of tables loaded successfully
+2012-05-05 12:12:52,627 INFO schema ARTUR choosed
+2012-05-05 12:12:54,299 INFO table TEST_IDEAL_UIR choosed
+2012-05-05 12:12:56,140 INFO launch edit regexps module
+2012-05-05 12:12:56,178 INFO connecting to local database successfully
+2012-05-05 12:13:04,677 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:13:06,381 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:13:38,351 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:13:40,401 INFO choose table
+2012-05-05 12:13:40,460 INFO list of schemas loaded successfully
+2012-05-05 12:13:46,194 INFO list of tables loaded successfully
+2012-05-05 12:13:46,194 INFO schema ARTUR choosed
+2012-05-05 12:13:47,063 INFO table TEST choosed
+2012-05-05 12:13:49,923 INFO list of tables loaded successfully
+2012-05-05 12:13:49,924 INFO schema TEST_DIPLOM choosed
+2012-05-05 12:13:51,279 INFO table BIG_TEST2 choosed
+2012-05-05 12:13:52,543 INFO launch edit regexps module
+2012-05-05 12:13:52,584 INFO connecting to local database successfully
+2012-05-05 12:13:55,049 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:41:15,375 INFO ######################################################################################
+2012-05-05 12:41:15,375 INFO start session
+2012-05-05 12:41:16,424 INFO connect to db
+2012-05-05 12:41:16,456 INFO list of connections loaded
+2012-05-05 12:41:16,474 INFO list of connections loaded
+2012-05-05 12:41:16,482 INFO listing of conneciton succesfully loading
+2012-05-05 12:41:17,470 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:41:17,473 INFO list of connections loaded
+2012-05-05 12:41:17,476 INFO listing of conneciton succesfully loading
+2012-05-05 12:41:17,789 INFO choose table
+2012-05-05 12:41:17,851 INFO list of schemas loaded successfully
+2012-05-05 12:41:19,509 INFO list of tables loaded successfully
+2012-05-05 12:41:19,509 INFO schema ARTUR choosed
+2012-05-05 12:41:20,102 INFO table TEST choosed
+2012-05-05 12:41:21,517 INFO launch edit regexps module
+2012-05-05 12:42:03,335 INFO ######################################################################################
+2012-05-05 12:42:03,335 INFO start session
+2012-05-05 12:42:07,911 INFO connect to db
+2012-05-05 12:42:07,940 INFO list of connections loaded
+2012-05-05 12:42:07,966 INFO list of connections loaded
+2012-05-05 12:42:07,971 INFO listing of conneciton succesfully loading
+2012-05-05 12:42:09,720 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:42:09,721 INFO list of connections loaded
+2012-05-05 12:42:09,724 INFO listing of conneciton succesfully loading
+2012-05-05 12:42:10,135 INFO choose table
+2012-05-05 12:42:10,190 INFO list of schemas loaded successfully
+2012-05-05 12:42:11,917 INFO list of tables loaded successfully
+2012-05-05 12:42:11,917 INFO schema ARTUR choosed
+2012-05-05 12:42:12,496 INFO table TEST choosed
+2012-05-05 12:42:13,526 INFO launch edit regexps module
+2012-05-05 12:42:13,559 INFO connecting to local database successfully
+2012-05-05 12:42:25,599 INFO choose table
+2012-05-05 12:42:25,651 INFO list of schemas loaded successfully
+2012-05-05 12:42:28,767 INFO list of tables loaded successfully
+2012-05-05 12:42:28,767 INFO schema TEST_DIPLOM choosed
+2012-05-05 12:42:30,701 INFO table BIG_TEST2 choosed
+2012-05-05 12:42:31,733 INFO launch edit regexps module
+2012-05-05 12:42:31,769 INFO connecting to local database successfully
+2012-05-05 12:42:58,500 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:42:59,427 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:43:01,604 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:44:37,875 INFO ######################################################################################
+2012-05-05 12:44:37,875 INFO start session
+2012-05-05 12:44:38,677 INFO connect to db
+2012-05-05 12:44:38,706 INFO list of connections loaded
+2012-05-05 12:44:38,730 INFO list of connections loaded
+2012-05-05 12:44:38,736 INFO listing of conneciton succesfully loading
+2012-05-05 12:44:39,750 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:44:39,753 INFO list of connections loaded
+2012-05-05 12:44:39,755 INFO listing of conneciton succesfully loading
+2012-05-05 12:44:39,861 INFO choose table
+2012-05-05 12:44:39,914 INFO list of schemas loaded successfully
+2012-05-05 12:44:41,026 INFO list of tables loaded successfully
+2012-05-05 12:44:41,026 INFO schema ARTUR choosed
+2012-05-05 12:44:41,612 INFO table TEST choosed
+2012-05-05 12:44:42,332 INFO connecting to local database successfully
+2012-05-05 12:44:44,085 INFO launch edit regexps module
+2012-05-05 12:44:44,115 INFO connecting to local database successfully
+2012-05-05 12:44:46,957 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:46:45,520 INFO ######################################################################################
+2012-05-05 12:46:45,522 INFO start session
+2012-05-05 12:46:46,740 INFO connect to db
+2012-05-05 12:46:46,766 INFO list of connections loaded
+2012-05-05 12:46:46,786 INFO list of connections loaded
+2012-05-05 12:46:46,792 INFO listing of conneciton succesfully loading
+2012-05-05 12:46:47,753 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:46:47,756 INFO list of connections loaded
+2012-05-05 12:46:47,759 INFO listing of conneciton succesfully loading
+2012-05-05 12:46:48,135 INFO choose table
+2012-05-05 12:46:48,190 INFO list of schemas loaded successfully
+2012-05-05 12:46:50,085 INFO list of tables loaded successfully
+2012-05-05 12:46:50,085 INFO schema ARTUR choosed
+2012-05-05 12:46:51,009 INFO table TEST choosed
+2012-05-05 12:46:51,480 INFO launch edit regexps module
+2012-05-05 12:46:51,515 INFO connecting to local database successfully
+2012-05-05 12:46:53,266 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-05 12:47:04,259 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 12:47:08,653 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-05 12:47:34,773 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 12:47:43,910 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:47:55,193 INFO ######################################################################################
+2012-05-05 12:47:55,194 INFO start session
+2012-05-05 12:47:56,263 INFO connect to db
+2012-05-05 12:47:56,293 INFO list of connections loaded
+2012-05-05 12:47:56,316 INFO list of connections loaded
+2012-05-05 12:47:56,322 INFO listing of conneciton succesfully loading
+2012-05-05 12:47:57,118 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:47:57,121 INFO list of connections loaded
+2012-05-05 12:47:57,124 INFO listing of conneciton succesfully loading
+2012-05-05 12:47:57,405 INFO choose table
+2012-05-05 12:47:57,461 INFO list of schemas loaded successfully
+2012-05-05 12:47:58,734 INFO list of tables loaded successfully
+2012-05-05 12:47:58,734 INFO schema ARTUR choosed
+2012-05-05 12:47:59,798 INFO table TEST choosed
+2012-05-05 12:48:01,948 INFO launch edit regexps module
+2012-05-05 12:48:01,980 INFO connecting to local database successfully
+2012-05-05 12:48:03,799 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:48:29,285 INFO ######################################################################################
+2012-05-05 12:48:29,285 INFO start session
+2012-05-05 12:48:30,569 INFO connect to db
+2012-05-05 12:48:30,599 INFO list of connections loaded
+2012-05-05 12:48:30,619 INFO list of connections loaded
+2012-05-05 12:48:30,625 INFO listing of conneciton succesfully loading
+2012-05-05 12:48:31,499 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:48:31,502 INFO list of connections loaded
+2012-05-05 12:48:31,503 INFO listing of conneciton succesfully loading
+2012-05-05 12:48:32,720 INFO choose table
+2012-05-05 12:48:32,773 INFO list of schemas loaded successfully
+2012-05-05 12:48:34,226 INFO list of tables loaded successfully
+2012-05-05 12:48:34,226 INFO schema ARTUR choosed
+2012-05-05 12:48:34,776 INFO table TEST choosed
+2012-05-05 12:48:38,848 INFO launch edit regexps module
+2012-05-05 12:48:38,881 INFO connecting to local database successfully
+2012-05-05 12:48:40,266 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:48:41,562 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:49:06,217 INFO ######################################################################################
+2012-05-05 12:49:06,217 INFO start session
+2012-05-05 12:49:07,476 INFO connect to db
+2012-05-05 12:49:07,493 INFO list of connections loaded
+2012-05-05 12:49:07,513 INFO list of connections loaded
+2012-05-05 12:49:07,519 INFO listing of conneciton succesfully loading
+2012-05-05 12:49:08,276 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-05 12:49:08,278 INFO list of connections loaded
+2012-05-05 12:49:08,280 INFO listing of conneciton succesfully loading
+2012-05-05 12:49:09,345 INFO choose table
+2012-05-05 12:49:09,404 INFO list of schemas loaded successfully
+2012-05-05 12:49:10,707 INFO list of tables loaded successfully
+2012-05-05 12:49:10,709 INFO schema ARTUR choosed
+2012-05-05 12:49:11,322 INFO table TEST choosed
+2012-05-05 12:49:11,809 INFO launch edit regexps module
+2012-05-05 12:49:11,842 INFO connecting to local database successfully
+2012-05-05 12:49:13,877 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-05 12:49:15,427 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 12:49:16,851 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 12:49:23,430 INFO choose table
+2012-05-05 12:49:23,489 INFO list of schemas loaded successfully
+2012-05-05 12:49:24,703 INFO list of tables loaded successfully
+2012-05-05 12:49:24,704 INFO schema TEST_DIPLOM choosed
+2012-05-05 12:49:26,451 INFO table BIG_TEST2 choosed
+2012-05-05 12:49:27,651 INFO launch edit regexps module
+2012-05-05 12:49:27,687 INFO connecting to local database successfully
+2012-05-05 12:49:29,798 INFO loading regular expressions for parameter harmony successfully 
+2012-05-05 12:49:30,924 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 12:49:31,677 INFO loading regular expressions for parameter no_information successfully 
+2012-05-05 12:49:32,533 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-05 19:12:56,529 INFO ######################################################################################
+2012-05-05 19:12:56,529 INFO start session
