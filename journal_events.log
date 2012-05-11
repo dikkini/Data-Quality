@@ -10777,3 +10777,447 @@
 2012-05-08 18:53:41,861 INFO table TEST_IDEAL choosed
 2012-05-08 18:53:44,726 INFO launch edit regexps module
 2012-05-08 18:53:44,795 INFO connecting to local database successfully
+2012-05-11 06:23:33,792 INFO ######################################################################################
+2012-05-11 06:23:33,792 INFO start session
+2012-05-11 06:23:35,835 INFO connect to db
+2012-05-11 06:23:36,288 INFO list of connections loaded
+2012-05-11 06:23:36,328 INFO list of connections loaded
+2012-05-11 06:23:36,339 INFO listing of conneciton succesfully loading
+2012-05-11 06:23:44,480 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-11 06:23:44,486 INFO list of connections loaded
+2012-05-11 06:23:44,489 INFO listing of conneciton succesfully loading
+2012-05-11 06:23:46,867 INFO choose table
+2012-05-11 06:23:47,131 INFO list of schemas loaded successfully
+2012-05-11 06:23:52,832 INFO list of tables loaded successfully
+2012-05-11 06:23:52,832 INFO schema ARTUR choosed
+2012-05-11 06:23:54,930 INFO table TEST choosed
+2012-05-11 06:23:56,493 INFO launch edit regexps module
+2012-05-11 06:23:56,526 INFO connecting to local database successfully
+2012-05-11 06:24:00,894 INFO connecting to local database successfully
+2012-05-11 06:24:03,187 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-11 06:24:05,201 INFO loading regular expressions for parameter no_information successfully 
+2012-05-11 06:24:07,914 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-11 06:24:09,516 INFO connecting to local database successfully
+2012-05-11 06:24:15,921 INFO loading regular expressions for parameter no_information successfully 
+2012-05-11 06:24:24,970 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-11 06:24:26,667 INFO connecting to local database successfully
+2012-05-11 06:24:33,730 INFO loading regular expressions for parameter no_information successfully 
+2012-05-11 06:24:36,201 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-11 06:24:37,125 INFO starting calculation data quality model
+2012-05-11 06:24:37,125 INFO connecting to local database successfully
+2012-05-11 06:24:37,338 INFO loading regular expressions for parameter no_information successfully 
+2012-05-11 06:24:37,354 INFO not informable parameter calculation successfully
+2012-05-11 06:24:37,354 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-11 06:24:45,526 INFO noise level parameter calculation successfully
+2012-05-11 06:24:45,618 INFO calculation successfully
+2012-05-12 01:42:56,538 INFO ######################################################################################
+2012-05-12 01:42:56,598 INFO start session
+2012-05-12 01:43:00,650 INFO connect to db
+2012-05-12 01:43:01,286 INFO list of connections loaded
+2012-05-12 01:43:01,388 INFO list of connections loaded
+2012-05-12 01:43:01,405 INFO listing of conneciton succesfully loading
+2012-05-12 01:43:04,434 INFO connecting to local database successfully
+2012-05-12 01:43:04,434 INFO new connection creating
+2012-05-12 01:43:04,436 INFO list of connections loaded
+2012-05-12 01:43:04,440 INFO listing of conneciton succesfully loading
+2012-05-12 01:43:04,444 INFO creating new connection
+2012-05-12 01:43:11,145 INFO new connection test  created
+2012-05-12 01:43:11,165 INFO list of connections loaded
+2012-05-12 01:43:11,171 INFO listing of conneciton succesfully loading
+2012-05-12 01:43:13,213 INFO trying to connect using conneciton: test
+2012-05-12 01:43:14,611 INFO delete connection test succesfully
+2012-05-12 01:43:14,701 INFO list of connections loaded
+2012-05-12 01:43:14,703 INFO try to delete connection: test
+2012-05-12 01:43:15,628 INFO trying to connect using conneciton: localhost
+2012-05-12 01:43:18,022 INFO connecting to local database successfully
+2012-05-12 01:43:18,022 INFO editing connection: localhost
+2012-05-12 01:43:18,028 INFO list of connections loaded
+2012-05-12 01:43:18,032 INFO listing of conneciton succesfully loading
+2012-05-12 01:43:18,038 INFO editing connection: localhost
+2012-05-12 01:43:19,164 INFO list of connections loaded
+2012-05-12 01:43:19,167 INFO listing of conneciton succesfully loading
+2012-05-12 01:43:35,131 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 01:43:35,138 INFO list of connections loaded
+2012-05-12 01:43:35,141 INFO listing of conneciton succesfully loading
+2012-05-12 01:43:37,848 INFO choose table
+2012-05-12 01:43:40,630 INFO list of schemas loaded successfully
+2012-05-12 01:47:52,391 INFO ######################################################################################
+2012-05-12 01:47:52,391 INFO start session
+2012-05-12 01:47:54,653 INFO connect to db
+2012-05-12 01:47:55,477 INFO list of connections loaded
+2012-05-12 01:47:55,532 INFO list of connections loaded
+2012-05-12 01:47:55,538 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:21,483 INFO list of connections loaded
+2012-05-12 01:48:21,487 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:23,273 INFO list of connections loaded
+2012-05-12 01:48:23,276 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:23,914 INFO list of connections loaded
+2012-05-12 01:48:23,917 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:24,923 ERROR connection error: ORA-12170: TNS:истекло время ожидания соединения
+
+2012-05-12 01:48:26,316 INFO connect to db
+2012-05-12 01:48:26,321 INFO list of connections loaded
+2012-05-12 01:48:26,336 INFO list of connections loaded
+2012-05-12 01:48:26,339 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:48,663 INFO list of connections loaded
+2012-05-12 01:48:48,667 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:50,168 INFO list of connections loaded
+2012-05-12 01:48:50,171 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:50,875 INFO list of connections loaded
+2012-05-12 01:48:50,878 INFO listing of conneciton succesfully loading
+2012-05-12 01:48:50,973 ERROR connection error: ORA-12170: TNS:истекло время ожидания соединения
+
+2012-05-12 01:50:57,760 INFO connect to db
+2012-05-12 01:50:57,766 INFO list of connections loaded
+2012-05-12 01:50:57,785 INFO list of connections loaded
+2012-05-12 01:50:57,792 INFO listing of conneciton succesfully loading
+2012-05-12 01:50:58,549 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 01:50:58,552 INFO list of connections loaded
+2012-05-12 01:50:58,553 INFO listing of conneciton succesfully loading
+2012-05-12 01:50:59,871 INFO choose table
+2012-05-12 01:50:59,963 INFO list of schemas loaded successfully
+2012-05-12 01:51:03,118 INFO list of tables loaded successfully
+2012-05-12 01:51:03,118 INFO schema TEST_DIPLOM choosed
+2012-05-12 01:51:05,000 INFO table BIG_TEST1 choosed
+2012-05-12 01:51:06,677 INFO launch edit regexps module
+2012-05-12 01:51:06,750 INFO connecting to local database successfully
+2012-05-12 01:51:08,436 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 01:51:09,450 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 01:51:10,322 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 01:51:10,335 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 01:51:10,338 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 01:51:10,342 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 01:51:10,344 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 01:51:10,394 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-12 01:51:10,767 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 01:51:10,769 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-12 01:51:10,772 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 01:51:10,815 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 01:51:10,818 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 01:51:10,819 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 01:51:10,846 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 01:51:10,848 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-12 01:51:10,861 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 01:51:10,862 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 01:51:11,398 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 01:51:11,401 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 01:51:11,821 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 01:51:11,822 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 01:51:11,825 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 01:51:11,829 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:00:22,765 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:00:22,821 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:00:22,825 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:00:22,829 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:00:23,250 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:00:23,253 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:00:23,253 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:00:23,255 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:00:23,256 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:00:23,309 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-12 02:00:23,309 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:00:23,519 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:00:23,545 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:00:23,565 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:00:23,598 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 02:00:25,223 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:34,811 INFO deleting regular expression regexp_like (ID, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:34,812 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:37,388 INFO deleting regular expression regexp_like (ACC_B, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:37,390 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:38,622 INFO deleting regular expression regexp_like (VD, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:38,622 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:39,801 INFO deleting regular expression regexp_like (AMR, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:39,801 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:41,155 INFO deleting regular expression regexp_like (SD, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:41,157 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:42,601 INFO deleting regular expression regexp_like (ND, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:42,602 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:44,355 INFO deleting regular expression regexp_like (NAMEU, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:44,357 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:45,789 INFO deleting regular expression regexp_like (KODCR, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:45,789 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:47,111 INFO deleting regular expression regexp_like (KODCN, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:47,112 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:48,368 INFO deleting regular expression regexp_like (ADRESS, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:48,368 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:49,512 INFO deleting regular expression regexp_like (KD, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:49,513 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:51,101 INFO deleting regular expression regexp_like (RG, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:51,101 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:52,657 INFO deleting regular expression regexp_like (NAME_B, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:52,657 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:53,937 INFO deleting regular expression regexp_like (BIK_B, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:53,937 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:02:55,878 INFO deleting regular expression regexp_like (GRP_NUM, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:02:55,880 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:03:13,769 INFO uploading regular expression regexp_like (ID, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:03:13,769 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:03:23,903 INFO uploading regular expression regexp_like (NAMEU, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:03:23,903 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:03:41,637 INFO uploading regular expression regexp_like (KODCR, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:03:41,637 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:03:50,160 INFO uploading regular expression regexp_like (KODCN, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:03:50,161 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:03:57,615 INFO uploading regular expression regexp_like (AMR, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:03:57,615 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:05,716 INFO uploading regular expression regexp_like (ADRESS, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:05,716 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:19,283 INFO uploading regular expression regexp_like (KD, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:19,283 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:25,894 INFO uploading regular expression regexp_like (SD, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:25,895 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:32,496 INFO uploading regular expression regexp_like (RG, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:32,497 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:38,517 INFO uploading regular expression regexp_like (VD, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:38,519 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:48,259 INFO uploading regular expression regexp_like (ND, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:48,259 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:54,375 INFO uploading regular expression regexp_like (ACC_B, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:54,375 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:54,552 INFO uploading regular expression regexp_like (ACC_B, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:54,552 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:56,829 INFO deleting regular expression regexp_like (ACC_B, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:56,829 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:04:58,141 INFO uploading regular expression regexp_like (ACC_B, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:04:58,142 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:05:05,042 INFO uploading regular expression regexp_like (NAME_B, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:05:05,042 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:05:11,930 INFO uploading regular expression regexp_like (BIK_B, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:05:11,930 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:05:19,765 INFO uploading regular expression regexp_like (GRP_NUM, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:05:19,765 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:06:50,421 INFO choose table
+2012-05-12 02:06:50,454 INFO list of schemas loaded successfully
+2012-05-12 02:06:51,892 INFO list of tables loaded successfully
+2012-05-12 02:06:51,892 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:06:52,957 INFO table BIG_TEST2 choosed
+2012-05-12 02:06:53,871 INFO launch edit regexps module
+2012-05-12 02:06:53,891 INFO connecting to local database successfully
+2012-05-12 02:06:56,092 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:28,417 INFO deleting regular expression regexp_like (SD0, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:07:28,417 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:29,717 INFO deleting regular expression regexp_like (RG0, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:07:29,717 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:31,194 INFO deleting regular expression regexp_like (NAIMEN, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:07:31,194 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:32,506 INFO deleting regular expression regexp_like (INN, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:07:32,506 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:33,750 INFO deleting regular expression regexp_like (AMR0, '\.+|\!+|\@+|\#+|\$+|\%+|\^+|\&+|\*+|\(+|\)+|\_+|\-+|\=+|\++|\\+|\|+|\/+|\-+\;+|\:+')  for parameter noise_level successfully
+2012-05-12 02:07:33,750 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:34,994 INFO uploading regular expression regexp_like (SD0, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:07:34,994 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:40,605 INFO uploading regular expression regexp_like (RG0, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:07:40,605 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:45,973 INFO uploading regular expression regexp_like (AMR0, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:07:45,973 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:51,696 INFO uploading regular expression regexp_like (NAIMEN, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:07:51,696 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:07:57,285 INFO uploading regular expression regexp_like (INN, '\.{2,}|\!{2,}|\@{2,}|\#{2,}|\${2,}|\%{2,}|\^{2,}|\&{2,}|\*{2,}|\({2,}|\){2,}|\_{2,}|\-{2,}|\={2,}|\{2,}{2,}|\\{2,}|\|{2,}|\/{2,}|\-{2,}\;{2,}|\:{2,}') for parameter noise_level successfully
+2012-05-12 02:07:57,285 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:08:27,013 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:08:28,125 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 02:08:29,627 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:08:31,466 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:08:32,834 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-12 02:08:34,512 INFO loading regular expressions for parameter inconsistency successfully 
+2012-05-12 02:08:37,575 INFO loading regular expressions for parameter reliability successfully 
+2012-05-12 02:08:39,306 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 02:13:17,681 INFO ######################################################################################
+2012-05-12 02:13:17,681 INFO start session
+2012-05-12 02:13:19,467 INFO connect to db
+2012-05-12 02:13:19,483 INFO list of connections loaded
+2012-05-12 02:13:19,502 INFO list of connections loaded
+2012-05-12 02:13:19,506 INFO listing of conneciton succesfully loading
+2012-05-12 02:13:20,282 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:13:20,285 INFO list of connections loaded
+2012-05-12 02:13:20,286 INFO listing of conneciton succesfully loading
+2012-05-12 02:13:20,619 INFO choose table
+2012-05-12 02:13:20,657 INFO list of schemas loaded successfully
+2012-05-12 02:13:22,586 INFO list of tables loaded successfully
+2012-05-12 02:13:22,586 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:13:24,046 INFO table BIG_TEST1 choosed
+2012-05-12 02:13:25,164 INFO launch edit regexps module
+2012-05-12 02:13:25,181 INFO connecting to local database successfully
+2012-05-12 02:13:26,558 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:14:02,592 INFO ######################################################################################
+2012-05-12 02:14:02,592 INFO start session
+2012-05-12 02:14:02,967 INFO connect to db
+2012-05-12 02:14:02,989 INFO list of connections loaded
+2012-05-12 02:14:03,012 INFO list of connections loaded
+2012-05-12 02:14:03,017 INFO listing of conneciton succesfully loading
+2012-05-12 02:14:03,921 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:14:03,924 INFO list of connections loaded
+2012-05-12 02:14:03,926 INFO listing of conneciton succesfully loading
+2012-05-12 02:14:04,217 INFO choose table
+2012-05-12 02:14:04,250 INFO list of schemas loaded successfully
+2012-05-12 02:14:05,456 INFO list of tables loaded successfully
+2012-05-12 02:14:05,456 INFO schema ARTUR choosed
+2012-05-12 02:14:06,624 INFO list of tables loaded successfully
+2012-05-12 02:14:06,624 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:14:08,377 INFO table BIG_TEST1 choosed
+2012-05-12 02:14:09,335 INFO launch edit regexps module
+2012-05-12 02:14:09,352 INFO connecting to local database successfully
+2012-05-12 02:14:10,759 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:15:42,714 INFO ######################################################################################
+2012-05-12 02:15:42,714 INFO start session
+2012-05-12 02:15:43,634 INFO connect to db
+2012-05-12 02:15:43,650 INFO list of connections loaded
+2012-05-12 02:15:43,667 INFO list of connections loaded
+2012-05-12 02:15:43,676 INFO listing of conneciton succesfully loading
+2012-05-12 02:15:44,713 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:15:44,716 INFO list of connections loaded
+2012-05-12 02:15:44,717 INFO listing of conneciton succesfully loading
+2012-05-12 02:15:44,940 INFO choose table
+2012-05-12 02:15:44,976 INFO list of schemas loaded successfully
+2012-05-12 02:15:46,487 INFO list of tables loaded successfully
+2012-05-12 02:15:46,487 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:15:47,108 INFO table TEST_GOOD_1000 choosed
+2012-05-12 02:15:48,519 INFO table BIG_TEST1 choosed
+2012-05-12 02:15:49,450 INFO launch edit regexps module
+2012-05-12 02:15:49,467 INFO connecting to local database successfully
+2012-05-12 02:15:50,891 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:15:57,039 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:16:21,318 INFO ######################################################################################
+2012-05-12 02:16:21,318 INFO start session
+2012-05-12 02:16:21,703 INFO connect to db
+2012-05-12 02:16:21,720 INFO list of connections loaded
+2012-05-12 02:16:21,737 INFO list of connections loaded
+2012-05-12 02:16:21,743 INFO listing of conneciton succesfully loading
+2012-05-12 02:16:22,545 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:16:22,546 INFO list of connections loaded
+2012-05-12 02:16:22,549 INFO listing of conneciton succesfully loading
+2012-05-12 02:16:22,816 INFO choose table
+2012-05-12 02:16:22,851 INFO list of schemas loaded successfully
+2012-05-12 02:16:25,667 INFO list of tables loaded successfully
+2012-05-12 02:16:25,667 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:16:26,540 INFO table BIG_TEST1 choosed
+2012-05-12 02:16:27,470 INFO launch edit regexps module
+2012-05-12 02:16:27,490 INFO connecting to local database successfully
+2012-05-12 02:16:28,848 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:17:08,661 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:17:10,467 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:19:48,924 INFO ######################################################################################
+2012-05-12 02:19:48,924 INFO start session
+2012-05-12 02:19:49,951 INFO connect to db
+2012-05-12 02:19:49,969 INFO list of connections loaded
+2012-05-12 02:19:49,987 INFO list of connections loaded
+2012-05-12 02:19:49,993 INFO listing of conneciton succesfully loading
+2012-05-12 02:19:52,854 INFO list of connections loaded
+2012-05-12 02:19:52,855 INFO listing of conneciton succesfully loading
+2012-05-12 02:19:53,700 INFO end session. but there are no connection to db
+2012-05-12 02:19:53,700 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-12 02:20:09,576 INFO ######################################################################################
+2012-05-12 02:20:09,576 INFO start session
+2012-05-12 02:20:09,999 INFO connect to db
+2012-05-12 02:20:10,015 INFO list of connections loaded
+2012-05-12 02:20:10,033 INFO list of connections loaded
+2012-05-12 02:20:10,038 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:10,845 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:20:10,848 INFO list of connections loaded
+2012-05-12 02:20:10,851 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:14,727 INFO ######################################################################################
+2012-05-12 02:20:14,727 INFO start session
+2012-05-12 02:20:15,334 INFO connect to db
+2012-05-12 02:20:15,349 INFO list of connections loaded
+2012-05-12 02:20:15,368 INFO list of connections loaded
+2012-05-12 02:20:15,375 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:16,321 INFO connecting to local database successfully
+2012-05-12 02:20:16,321 INFO editing connection: localhost
+2012-05-12 02:20:16,323 INFO list of connections loaded
+2012-05-12 02:20:16,328 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:16,334 INFO editing connection: localhost
+2012-05-12 02:20:17,292 INFO editing connection localhost successfully: localhost
+2012-05-12 02:20:17,295 INFO list of connections loaded
+2012-05-12 02:20:17,298 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:17,871 INFO list of connections loaded
+2012-05-12 02:20:17,874 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:19,361 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:20:19,368 INFO list of connections loaded
+2012-05-12 02:20:19,371 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:19,371 INFO trying connection to db
+2012-05-12 02:20:19,375 INFO list of connections loaded
+2012-05-12 02:20:19,375 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-12 02:20:27,232 INFO ######################################################################################
+2012-05-12 02:20:27,233 INFO start session
+2012-05-12 02:20:27,661 INFO connect to db
+2012-05-12 02:20:27,678 INFO list of connections loaded
+2012-05-12 02:20:27,697 INFO list of connections loaded
+2012-05-12 02:20:27,703 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:28,686 INFO connecting to local database successfully
+2012-05-12 02:20:28,686 INFO editing connection: localhost
+2012-05-12 02:20:28,690 INFO list of connections loaded
+2012-05-12 02:20:28,694 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:28,700 INFO editing connection: localhost
+2012-05-12 02:20:31,315 INFO editing connection localhost successfully: localhost
+2012-05-12 02:20:31,318 INFO list of connections loaded
+2012-05-12 02:20:31,321 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:34,043 INFO delete connection localhost succesfully
+2012-05-12 02:20:34,105 INFO list of connections loaded
+2012-05-12 02:20:34,105 INFO try to delete connection: localhost
+2012-05-12 02:20:34,933 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:20:34,936 INFO list of connections loaded
+2012-05-12 02:20:34,937 ERROR loading data connection  failed
+2012-05-12 02:20:34,937 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:40,809 INFO ######################################################################################
+2012-05-12 02:20:40,809 INFO start session
+2012-05-12 02:20:41,661 INFO connect to db
+2012-05-12 02:20:41,677 INFO list of connections loaded
+2012-05-12 02:20:41,697 INFO list of connections loaded
+2012-05-12 02:20:41,700 ERROR loading data connection  failed
+2012-05-12 02:20:41,700 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:42,832 INFO list of connections loaded
+2012-05-12 02:20:42,835 ERROR loading data connection  failed
+2012-05-12 02:20:42,835 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:43,684 INFO list of connections loaded
+2012-05-12 02:20:43,687 ERROR loading data connection  failed
+2012-05-12 02:20:43,687 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:44,177 INFO list of connections loaded
+2012-05-12 02:20:44,178 ERROR loading data connection  failed
+2012-05-12 02:20:44,180 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:44,586 INFO list of connections loaded
+2012-05-12 02:20:44,588 ERROR loading data connection  failed
+2012-05-12 02:20:44,588 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:45,661 INFO list of connections loaded
+2012-05-12 02:20:45,664 ERROR loading data connection  failed
+2012-05-12 02:20:45,664 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:46,244 INFO list of connections loaded
+2012-05-12 02:20:46,246 ERROR loading data connection  failed
+2012-05-12 02:20:46,246 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:46,828 INFO connecting to local database successfully
+2012-05-12 02:20:46,828 INFO new connection creating
+2012-05-12 02:20:46,835 INFO list of connections loaded
+2012-05-12 02:20:46,838 ERROR loading data connection  failed
+2012-05-12 02:20:46,838 INFO listing of conneciton succesfully loading
+2012-05-12 02:20:46,842 INFO creating new connection
+2012-05-12 02:21:07,006 INFO new connection localhost  created
+2012-05-12 02:21:07,009 INFO list of connections loaded
+2012-05-12 02:21:07,013 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:08,801 INFO list of connections loaded
+2012-05-12 02:21:08,805 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:09,732 INFO list of connections loaded
+2012-05-12 02:21:09,734 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:09,736 ERROR connection error: ORA-12541: TNS:нет прослушивателя
+
+2012-05-12 02:21:09,737 INFO list of connections loaded
+2012-05-12 02:21:09,740 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:11,296 INFO connect to db
+2012-05-12 02:21:11,301 INFO list of connections loaded
+2012-05-12 02:21:11,318 INFO list of connections loaded
+2012-05-12 02:21:11,322 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:13,654 INFO connecting to local database successfully
+2012-05-12 02:21:13,654 INFO editing connection: localhost
+2012-05-12 02:21:13,658 INFO list of connections loaded
+2012-05-12 02:21:13,661 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:13,667 INFO editing connection: localhost
+2012-05-12 02:21:16,628 INFO editing connection localhost successfully: localhost
+2012-05-12 02:21:16,631 INFO list of connections loaded
+2012-05-12 02:21:16,634 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:17,243 INFO list of connections loaded
+2012-05-12 02:21:17,246 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:18,641 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:21:18,648 INFO list of connections loaded
+2012-05-12 02:21:18,650 INFO listing of conneciton succesfully loading
+2012-05-12 02:21:18,651 INFO trying connection to db
+2012-05-12 02:21:18,654 INFO list of connections loaded
+2012-05-12 02:21:18,654 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.

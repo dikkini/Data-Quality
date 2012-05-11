@@ -5,6 +5,11 @@ import sqlite
 import db_info
 import cx_Oracle
 import logging
+try:
+    from agw import pybusyinfo as PBI
+except ImportError: # if it's not there locally, try the wxPython lib.
+    import wx.lib.agw.pybusyinfo as PBI
+
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 ###########################################################################
@@ -198,30 +203,30 @@ class connections ( wx.Frame ):
             self.GoConnect()
        
     def GoConnect( self ):
+        message = 'Пожалуйста подождите, происходит соединение с базой данных..'
         try:
+            busy = PBI.PyBusyInfo(message, parent=None, title="Соединение с базой данных...")
+            
+            wx.Yield()
+            
             self.dsn_tns = cx_Oracle.makedsn(self.dbdata[0], self.dbdata[1], self.dbdata[2])
             self.connection = cx_Oracle.connect(self.dbdata[3], self.dbdata[4], self.dsn_tns)
-            #Enable main menubar elements
             self.main.connection = self.connection
             self.main.statusbar.SetStatusText(u'Выполнено подключение к базе')
             self.main.BD.Enable(1, False)
             self.main.BD.Enable(2, True)
-            #self.main.DQ.Enable(4, True)
-            #self.main.DQ.Enable(5, True)
-            #self.main.regexp.Enable(6, True)
-            #self.main.regexp.Enable(7, True)
-            #self.main.logs.Enable(8, True)
-            #self.main.logs.Enable(9, True)
             logging.info(u'connection to database. info: %s, %s, %s, %s' % (self.dbdata[0], self.dbdata[1], self.dbdata[2], self.dbdata[3]))
             # Check ENCODING DATABASE
             dbenc = self.connection.encoding
             if dbenc != 'WINDOWS-1251':
+                del busy
                 wx.MessageBox(u'Не верная кодировка базы данных. Обратитесь к системному администратору.')
             self.Close()        
-            
+            del busy
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError, AttributeError), info:
             error = u'Не возможно подключиться к базе данных. Проверьте правильность введенных данных.'
             wx.MessageBox(error)
+            del busy
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
             logging.error(u'connection error: %s' % info)

@@ -8,6 +8,11 @@ import cx_Oracle
 import fs_grid
 import string
 import logging
+try:
+    from agw import pybusyinfo as PBI
+except ImportError: # if it's not there locally, try the wxPython lib.
+    import wx.lib.agw.pybusyinfo as PBI
+
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 ###########################################################################
@@ -207,7 +212,13 @@ class page_editor():
             self.regexp9 = self.edit_regexp_txt.GetValue()
     
     def OnTestBtn(self, event):
+        message = 'Пожалуйста подождите, получение информации из базы...'
         try:
+            busy = PBI.PyBusyInfo(message, parent=None, title="Формирование и отправка запроса к базе данных...")
+            
+            wx.Yield()
+            
+            
             cursor = cx_Oracle.Cursor(self.connection)
             regexp = self.edit_regexp_txt.GetValue()
             sql = ('select * from %s.%s where %s') % (self.schema, self.table, regexp)
@@ -217,6 +228,7 @@ class page_editor():
             for item in grid_data:
                 data.append(map(lambda a: a.decode('cp1251') if isinstance(a, basestring) else a, item))
             if not data:
+                del busy
                 wx.MessageBox(u'Нет данных!')
                 event.Skip()
                 return
@@ -225,7 +237,9 @@ class page_editor():
             #self.check_grid.SetTable(self.grid_table, True)
             fsg = fs_grid.fullgrid(self, self.grid_table)
             fsg.Show()
+            del busy
         except Exception, info:
+            del busy
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
             wx.MessageBox(info)
