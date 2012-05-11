@@ -177,6 +177,7 @@ class MainWindow ( wx.Frame ):
         frame.Show()
         self.statusbar.SetStatusText(u'Выполняется подключение к базе')
         self.flagres = None
+        print self.flagres
 
         
     def ChooseTable(self, event):
@@ -199,6 +200,7 @@ class MainWindow ( wx.Frame ):
     
     def DoDQ(self, event):
         message = 'Пожалуйста подождите, происходит оценка качества данных...'
+        print self.flagres
         try:
             if not sum(self.using_params):
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
@@ -253,7 +255,8 @@ class MainWindow ( wx.Frame ):
         temp_page = event.GetSelection()
         sel_page = self.notebook.GetPageText(temp_page)
         if u'Результаты оценки качества данных' in sel_page:
-            self.flagres is None
+            self.flagres = None
+            print 'flagres is None now. all okay'
         
     def HistDQ(self, event):
         try:

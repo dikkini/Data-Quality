@@ -17,7 +17,7 @@
 	<div class="header">
 		
 		<div class="title">
-			<h1>Report</h1>
+			<h1>Отчет по результатам оценки качества данных {{ date }}:</h1>
 		</div>
 
 		<div class="navigation">
@@ -32,7 +32,7 @@
 		<div class="content">
 		<text> Первоначальная статистика: </text>
 		<div>
-<table width="100%" border="15" cellspacing="0" cellpadding="0" align="">
+<table width="100%" border="3" cellspacing="0" cellpadding="0" align="">
 <tbody>
 {% for stat in main_s %}
 <tr>
@@ -50,7 +50,7 @@
 {% else %}
     <div><br /></div>
     <div>
-    <table width="100%" border="10" cellspacing="0" cellpadding="0" align="">
+    <table width="100%" border="3" cellspacing="0" cellpadding="0" align="">
     <tbody>
     <tr>
     {% for name in name_ext %}
@@ -84,8 +84,7 @@
 
 </div>
 
-<div class="footer">&copy; 2007 <a href="template.html">Website.com</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>. <a href="http://templates.arcsin.se/">Website template</a> by <a href="http://arcsin.se/">Arcsin</a>
-</div>
+<div class="footer">&copy; 2012 <a href="http://www.ifes.mephi.ru/">ИФЭБ НИЯУ МИФИ</a>.&nbsp;Автоматически сгенерированный отчет из программы Data Quality.</div>
 
 </body>
 

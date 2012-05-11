@@ -20,7 +20,7 @@ def make_report(name_main, main_stat, name_ext, ext_stat, date):
         main_s = zip(name_main, main_stat)
         env = Environment(loader=PackageLoader('DataQuality', '/data/source_reports/'))
         template = env.get_template('template.html')
-        code = template.render(main_s= main_s, date=date, name_ext=name_ext, ext_stat=ext_stat)
+        code = template.render(main_s=main_s, date=date, name_ext=name_ext, ext_stat=ext_stat)
         #todo-write_in_file: bad encoding
         with open(os.path.join(OUTPUT_ROOT, outfile), 'w') as f:
             f.write(code.encode('utf8'))

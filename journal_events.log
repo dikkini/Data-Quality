@@ -11221,3 +11221,222 @@
 2012-05-12 02:21:18,651 INFO trying connection to db
 2012-05-12 02:21:18,654 INFO list of connections loaded
 2012-05-12 02:21:18,654 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-12 02:23:42,059 INFO ######################################################################################
+2012-05-12 02:23:42,059 INFO start session
+2012-05-12 02:23:42,836 INFO connect to db
+2012-05-12 02:23:42,855 INFO list of connections loaded
+2012-05-12 02:23:42,877 INFO list of connections loaded
+2012-05-12 02:23:42,881 INFO listing of conneciton succesfully loading
+2012-05-12 02:23:43,588 INFO list of connections loaded
+2012-05-12 02:23:43,591 INFO listing of conneciton succesfully loading
+2012-05-12 02:23:44,990 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:23:44,999 INFO list of connections loaded
+2012-05-12 02:23:45,002 INFO listing of conneciton succesfully loading
+2012-05-12 02:23:45,003 INFO trying connection to db
+2012-05-12 02:23:45,006 INFO list of connections loaded
+2012-05-12 02:23:45,006 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-12 02:23:46,104 INFO choose table
+2012-05-12 02:23:46,138 INFO list of schemas loaded successfully
+2012-05-12 02:23:47,614 INFO list of tables loaded successfully
+2012-05-12 02:23:47,614 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:23:48,878 INFO table BIG_TEST1 choosed
+2012-05-12 02:23:50,594 INFO connecting to local database successfully
+2012-05-12 02:23:53,336 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 02:23:59,115 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:24:01,834 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:24:04,111 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:24:06,479 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:24:10,382 INFO starting calculation data quality model
+2012-05-12 02:24:10,407 INFO connecting to local database successfully
+2012-05-12 02:24:10,413 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:24:11,302 INFO bad fromat parameter calculation successfully
+2012-05-12 02:24:11,302 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:24:47,969 INFO noise level parameter calculation successfully
+2012-05-12 02:24:47,969 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:24:47,983 INFO identify parameter calculation successfully
+2012-05-12 02:24:47,983 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:24:47,993 INFO harmony parameter calculation successfully
+2012-05-12 02:24:48,059 INFO uniq parameter calculation successfully
+2012-05-12 02:24:48,240 INFO calculation successfully
+2012-05-12 02:25:38,477 INFO report succesfully done
+2012-05-12 02:27:01,316 INFO open local history
+2012-05-12 02:27:11,546 INFO choose table
+2012-05-12 02:27:11,578 INFO list of schemas loaded successfully
+2012-05-12 02:27:13,819 INFO list of tables loaded successfully
+2012-05-12 02:27:13,819 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:27:15,084 INFO table BIG_TEST2 choosed
+2012-05-12 02:27:16,290 INFO open local history
+2012-05-12 02:37:28,279 INFO ######################################################################################
+2012-05-12 02:37:28,279 INFO start session
+2012-05-12 02:37:29,312 INFO connect to db
+2012-05-12 02:37:29,331 INFO list of connections loaded
+2012-05-12 02:37:29,348 INFO list of connections loaded
+2012-05-12 02:37:29,354 INFO listing of conneciton succesfully loading
+2012-05-12 02:37:29,976 INFO list of connections loaded
+2012-05-12 02:37:29,979 INFO listing of conneciton succesfully loading
+2012-05-12 02:37:31,563 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:37:31,569 INFO list of connections loaded
+2012-05-12 02:37:31,572 INFO listing of conneciton succesfully loading
+2012-05-12 02:37:31,572 INFO trying connection to db
+2012-05-12 02:37:31,576 INFO list of connections loaded
+2012-05-12 02:37:31,578 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-12 02:37:34,334 INFO choose table
+2012-05-12 02:37:34,368 INFO list of schemas loaded successfully
+2012-05-12 02:37:36,104 INFO list of tables loaded successfully
+2012-05-12 02:37:36,104 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:37:37,260 INFO table BIG_TEST1 choosed
+2012-05-12 02:37:38,538 INFO connecting to local database successfully
+2012-05-12 02:37:43,006 INFO loading regular expressions for parameter no_information successfully 
+2012-05-12 02:37:46,191 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:37:48,148 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:37:50,200 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:37:52,322 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:37:57,342 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-12 02:38:00,767 INFO starting calculation data quality model
+2012-05-12 02:38:00,767 INFO connecting to local database successfully
+2012-05-12 02:38:00,960 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-12 02:38:01,838 INFO bad fromat parameter calculation successfully
+2012-05-12 02:38:01,838 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-12 02:38:37,823 INFO noise level parameter calculation successfully
+2012-05-12 02:38:37,823 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-12 02:38:37,835 INFO identify parameter calculation successfully
+2012-05-12 02:38:37,835 INFO loading regular expressions for parameter harmony successfully 
+2012-05-12 02:38:37,842 INFO harmony parameter calculation successfully
+2012-05-12 02:38:37,901 INFO uniq parameter calculation successfully
+2012-05-12 02:38:38,418 INFO calculation successfully
+2012-05-12 02:40:25,637 ERROR report failed: 'stat' is undefined -- code 28
+2012-05-12 02:40:59,046 ERROR report failed: 'stat' is undefined -- code 28
+2012-05-12 02:42:07,053 INFO open local history
+2012-05-12 02:42:12,730 ERROR report failed: 'stat' is undefined -- code 28
+2012-05-12 02:44:33,994 INFO ######################################################################################
+2012-05-12 02:44:33,994 INFO start session
+2012-05-12 02:44:35,825 INFO connect to db
+2012-05-12 02:44:35,844 INFO list of connections loaded
+2012-05-12 02:44:35,865 INFO list of connections loaded
+2012-05-12 02:44:35,871 INFO listing of conneciton succesfully loading
+2012-05-12 02:44:36,858 INFO list of connections loaded
+2012-05-12 02:44:36,861 INFO listing of conneciton succesfully loading
+2012-05-12 02:44:38,270 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:44:38,279 INFO list of connections loaded
+2012-05-12 02:44:38,280 INFO listing of conneciton succesfully loading
+2012-05-12 02:44:38,282 INFO trying connection to db
+2012-05-12 02:44:38,286 INFO list of connections loaded
+2012-05-12 02:44:38,286 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-12 02:44:38,773 INFO choose table
+2012-05-12 02:44:38,818 INFO list of schemas loaded successfully
+2012-05-12 02:44:40,255 INFO list of tables loaded successfully
+2012-05-12 02:44:40,255 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:44:41,226 INFO table BIG_TEST1 choosed
+2012-05-12 02:44:42,132 INFO launch edit regexps module
+2012-05-12 02:44:42,171 INFO connecting to local database successfully
+2012-05-12 02:44:43,979 INFO open local history
+2012-05-12 02:44:46,561 INFO report succesfully done
+2012-05-12 02:45:46,114 INFO connecting to local database successfully
+2012-05-12 02:45:49,913 INFO starting calculation data quality model
+2012-05-12 02:45:49,913 INFO connecting to local database successfully
+2012-05-12 02:45:50,276 INFO calculation successfully
+2012-05-12 02:45:53,440 INFO starting calculation data quality model
+2012-05-12 02:45:53,440 INFO connecting to local database successfully
+2012-05-12 02:45:53,720 INFO calculation successfully
+2012-05-12 02:46:33,154 INFO ######################################################################################
+2012-05-12 02:46:33,154 INFO start session
+2012-05-12 02:46:34,098 INFO connect to db
+2012-05-12 02:46:34,115 INFO list of connections loaded
+2012-05-12 02:46:34,135 INFO list of connections loaded
+2012-05-12 02:46:34,141 INFO listing of conneciton succesfully loading
+2012-05-12 02:46:34,733 INFO list of connections loaded
+2012-05-12 02:46:34,736 INFO listing of conneciton succesfully loading
+2012-05-12 02:46:36,161 INFO list of connections loaded
+2012-05-12 02:46:36,167 INFO listing of conneciton succesfully loading
+2012-05-12 02:46:36,167 INFO trying connection to db
+2012-05-12 02:46:36,720 INFO connecting to local database successfully
+2012-05-12 02:46:36,720 INFO editing connection: localhost
+2012-05-12 02:46:36,724 INFO list of connections loaded
+2012-05-12 02:46:36,732 INFO listing of conneciton succesfully loading
+2012-05-12 02:46:36,737 INFO editing connection: localhost
+2012-05-12 02:46:38,789 INFO editing connection localhost successfully: localhost
+2012-05-12 02:46:38,792 INFO list of connections loaded
+2012-05-12 02:46:38,796 INFO listing of conneciton succesfully loading
+2012-05-12 02:46:39,329 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:46:39,335 INFO list of connections loaded
+2012-05-12 02:46:39,338 INFO listing of conneciton succesfully loading
+2012-05-12 02:46:39,823 INFO choose table
+2012-05-12 02:46:39,858 INFO list of schemas loaded successfully
+2012-05-12 02:46:41,089 INFO list of tables loaded successfully
+2012-05-12 02:46:41,089 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:46:42,733 INFO table BIG_TEST1 choosed
+2012-05-12 02:46:43,720 INFO open local history
+2012-05-12 02:46:52,102 INFO choose table
+2012-05-12 02:46:52,135 INFO list of schemas loaded successfully
+2012-05-12 02:46:53,828 INFO connecting to local database successfully
+2012-05-12 02:46:57,651 INFO starting calculation data quality model
+2012-05-12 02:46:57,653 INFO connecting to local database successfully
+2012-05-12 02:46:57,980 INFO calculation successfully
+2012-05-12 02:47:01,000 INFO starting calculation data quality model
+2012-05-12 02:47:01,000 INFO connecting to local database successfully
+2012-05-12 02:47:01,302 INFO calculation successfully
+2012-05-12 02:50:35,976 INFO ######################################################################################
+2012-05-12 02:50:35,976 INFO start session
+2012-05-12 02:50:36,368 INFO connect to db
+2012-05-12 02:50:36,385 INFO list of connections loaded
+2012-05-12 02:50:36,404 INFO list of connections loaded
+2012-05-12 02:50:36,411 INFO listing of conneciton succesfully loading
+2012-05-12 02:50:37,061 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:50:37,062 INFO list of connections loaded
+2012-05-12 02:50:37,065 INFO listing of conneciton succesfully loading
+2012-05-12 02:50:37,256 INFO choose table
+2012-05-12 02:50:37,290 INFO list of schemas loaded successfully
+2012-05-12 02:50:38,515 INFO list of tables loaded successfully
+2012-05-12 02:50:38,516 INFO schema ARTUR choosed
+2012-05-12 02:50:39,869 INFO list of tables loaded successfully
+2012-05-12 02:50:39,869 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:50:41,217 INFO table BIG_TEST1 choosed
+2012-05-12 02:50:42,138 INFO connecting to local database successfully
+2012-05-12 02:50:45,101 INFO starting calculation data quality model
+2012-05-12 02:50:45,101 INFO connecting to local database successfully
+2012-05-12 02:50:45,426 INFO calculation successfully
+2012-05-12 02:50:47,634 INFO starting calculation data quality model
+2012-05-12 02:50:47,634 INFO connecting to local database successfully
+2012-05-12 02:50:47,937 INFO calculation successfully
+2012-05-12 02:51:37,163 INFO ######################################################################################
+2012-05-12 02:51:37,163 INFO start session
+2012-05-12 02:51:37,891 INFO connect to db
+2012-05-12 02:51:37,907 INFO list of connections loaded
+2012-05-12 02:51:37,930 INFO list of connections loaded
+2012-05-12 02:51:37,934 INFO listing of conneciton succesfully loading
+2012-05-12 02:51:40,334 INFO list of connections loaded
+2012-05-12 02:51:40,335 INFO listing of conneciton succesfully loading
+2012-05-12 02:51:40,549 INFO end session. but there are no connection to db
+2012-05-12 02:51:40,549 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-12 02:52:06,773 INFO ######################################################################################
+2012-05-12 02:52:06,773 INFO start session
+2012-05-12 02:52:07,127 INFO connect to db
+2012-05-12 02:52:07,144 INFO list of connections loaded
+2012-05-12 02:52:07,163 INFO list of connections loaded
+2012-05-12 02:52:07,167 INFO listing of conneciton succesfully loading
+2012-05-12 02:52:08,516 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:52:08,519 INFO list of connections loaded
+2012-05-12 02:52:08,520 INFO listing of conneciton succesfully loading
+2012-05-12 02:52:08,911 INFO choose table
+2012-05-12 02:52:08,947 INFO list of schemas loaded successfully
+2012-05-12 02:52:21,427 INFO ######################################################################################
+2012-05-12 02:52:21,427 INFO start session
+2012-05-12 02:52:22,703 INFO connect to db
+2012-05-12 02:52:22,719 INFO list of connections loaded
+2012-05-12 02:52:22,737 INFO list of connections loaded
+2012-05-12 02:52:22,743 INFO listing of conneciton succesfully loading
+2012-05-12 02:52:23,594 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-12 02:52:23,595 INFO list of connections loaded
+2012-05-12 02:52:23,598 INFO listing of conneciton succesfully loading
+2012-05-12 02:52:23,826 INFO choose table
+2012-05-12 02:52:23,861 INFO list of schemas loaded successfully
+2012-05-12 02:52:25,506 INFO list of tables loaded successfully
+2012-05-12 02:52:25,506 INFO schema TEST_DIPLOM choosed
+2012-05-12 02:52:27,296 INFO table BIG_TEST1 choosed
+2012-05-12 02:52:29,039 INFO connecting to local database successfully
+2012-05-12 02:52:32,188 INFO starting calculation data quality model
+2012-05-12 02:52:32,190 INFO connecting to local database successfully
+2012-05-12 02:52:32,499 INFO calculation successfully
+2012-05-12 02:52:35,055 INFO starting calculation data quality model
+2012-05-12 02:52:35,055 INFO connecting to local database successfully
+2012-05-12 02:52:35,398 INFO calculation successfully
