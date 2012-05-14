@@ -248,7 +248,7 @@ class history_stat():
             self.ext_cols.insert(0, u'Название параметра')
             self.ext_stat = self.stat.take_ext_stat(self.date)
             self.ext_stat = [ i for i in self.ext_stat if i is not None] 
-            frame = Popup(self.ext_cols, self.ext_stat)
+            frame = Popup(self.ext_cols, self.ext_stat, self.main.schema, self.main.table)
             frame.Show()
         except Exception, info:
             print info
@@ -301,8 +301,9 @@ class history_stat():
 
 class Popup ( wx.Frame ):
     
-    def __init__( self, columns, rows ):
-        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 900,250 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
+    def __init__( self, columns, rows, schema, table ):
+        titl = ('%s:%s' % (schema, table))
+        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = titl, pos = wx.DefaultPosition, size = wx.Size( 900,250 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
         
         self.SetSizeHintsSz( wx.Size( 700,230 ), wx.Size( 900,250 ) )
         
