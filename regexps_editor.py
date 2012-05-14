@@ -71,7 +71,6 @@ class page_editor():
         self.checksql_btn = wx.Button( self.panel_regexps, wx.ID_ANY, u"Проверка синтаксиса SQL", wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer1.Add( self.checksql_btn, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
         
-        
         self.panel_regexps.SetSizer( bSizer1 )
         self.panel_regexps.Layout()
         bSizer1.Fit( self.panel_regexps )
@@ -221,7 +220,10 @@ class page_editor():
             
             cursor = cx_Oracle.Cursor(self.connection)
             regexp = self.edit_regexp_txt.GetValue()
-            sql = ('select * from %s.%s where %s') % (self.schema, self.table, regexp)
+            if not regexp:
+                sql = ('select * from %s.%s') % (self.schema, self.table)
+            else:
+                sql = ('select * from %s.%s where %s') % (self.schema, self.table, regexp)
             cursor.execute(sql)
             grid_data=cursor.fetchall()
             data = []
