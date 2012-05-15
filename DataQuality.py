@@ -36,7 +36,7 @@ class MainWindow ( wx.Frame ):
     
     def __init__( self ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Главное окно", 
-                            pos = wx.DefaultPosition, size = wx.Size( 1000,600 ) )
+                            pos = wx.DefaultPosition, size = wx.Size( 900,600 ) )
         
         self.SetSizeHintsSz( wx.Size( 800,600 ), wx.DefaultSize )
         
@@ -46,14 +46,31 @@ class MainWindow ( wx.Frame ):
         self.panel1 = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         sizer2 = wx.BoxSizer( wx.VERTICAL )
         
-        self.logo = wx.StaticBitmap( self.panel1, wx.ID_ANY, wx.Bitmap( u"./data/img/mephi_logo.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
-        sizer2.Add( self.logo, 0, wx.ALL, 5 )
+        #self.logo = wx.StaticBitmap( self.panel1, wx.ID_ANY, wx.Bitmap( u"./data/img/mephi_logo.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
+        #sizer2.Add( self.logo, 0, wx.ALL, 5 )
 
         self.panel1.SetSizer( sizer2 )
         self.panel1.Layout()
         sizer2.Fit( self.panel1 )
-        self.notebook.AddPage( self.panel1, u"Welcome", True, wx.NullBitmap )
-
+        html_start_panel = self.CreateHTMLCtrl(self.panel1)
+        self.notebook.AddPage(html_start_panel , u"Welcome", True, wx.NullBitmap )
+        
+        start_page = '<h4><img src="./data/img/mephi_logo.png" border="0" />&nbsp;Data Quality -- &nbsp;приложение для оценки качества данных.</h4>' \
+                     '<div>Данная страничка расскажет о базовых элементах программы и поможет начать работу. Больше информации по работе с программой Вы можете найти в "Справке" (вызвать которую можно нажав клавишу F1) в разделе меню-бара "Помощь".</div>' \
+                     '<div><br /></div>' \
+                     '<div>Наверху окна можно увидеть главное навигационное меню. Основные функции находятся в пунктах меню, в различных разделах. Внизу окна программы статусная строка, объясняющая каждый пункт меню.</div>' \
+                     '<div><br /></div>' \
+                     '<div>Для начала работы необходимо:</div>' \
+                     '<div><br /></div> <div> <ul>' \
+                     '<li>Подключиться к базе данных Oracle</li>' \
+                     '<li>Выбрать схему и таблицу</li></ul>' \
+                     '<div>Далее уже можно приступать к непосредственному процессу оценки качества данных. Начать необходимо с написания регулярных выражений в модуле "Отладка регулярных выражений" находящемся в разделе меню-бара "Регулярные выражения".</div></div>' \
+                     '<div><br /></div>' \
+                     '<div>Удачи в работе!</div>' \
+                     '<div><br /></div>' \
+        
+        html_start_panel.SetPage(start_page)
+        
         self.sizer3 = wx.BoxSizer( wx.VERTICAL )
         
         self.sizer1.Add( self.notebook, 1, wx.EXPAND |wx.ALL, 5 )
@@ -169,7 +186,13 @@ class MainWindow ( wx.Frame ):
         
         logging.info(u'######################################################################################')
         logging.info(u'start session')
-        
+    
+    def CreateHTMLCtrl(self, parent=None):
+        if not parent:
+            parent = self
+
+        ctrl = wx.html.HtmlWindow(parent, -1, wx.DefaultPosition, wx.Size(400, 300))
+        return ctrl    
         
     def ConnectDB(self, event):
         logging.info(u'connect to db')
@@ -200,7 +223,6 @@ class MainWindow ( wx.Frame ):
     
     def DoDQ(self, event):
         message = 'Пожалуйста подождите, происходит оценка качества данных...'
-        print self.flagres
         try:
             if not sum(self.using_params):
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
@@ -256,7 +278,6 @@ class MainWindow ( wx.Frame ):
         sel_page = self.notebook.GetPageText(temp_page)
         if u'Результаты оценки качества данных' in sel_page:
             self.flagres = None
-            print 'flagres is None now. all okay'
         
     def HistDQ(self, event):
         try:
