@@ -1689,6 +1689,11 @@
 2012-04-12 12:50:03,909 INFO list of connections loaded
 2012-04-12 12:50:03,914 INFO listing of conneciton succesfully loading
 2012-04-12 12:50:07,121 INFO end session
+<<<<<<< HEAD
+2012-05-17 01:25:10,967 INFO ######################################################################################
+2012-05-17 01:25:11,009 INFO start session
+2012-05-17 01:25:16,039 INFO end session
+=======
 2012-04-16 19:41:34,247 INFO ######################################################################################
 2012-04-16 19:41:34,256 INFO start session
 2012-04-16 19:41:39,039 INFO connect to db
@@ -12034,5 +12039,17 @@
 2012-05-15 17:13:23,088 INFO calculation successfully
 2012-05-15 17:13:45,746 INFO open local history
 2012-05-15 17:14:10,990 INFO open local history
+<<<<<<< HEAD
 2012-05-17 01:02:00,295 INFO ######################################################################################
 2012-05-17 01:02:00,296 INFO start session
+=======
+>>>>>>> f1dcbd17dc369e0af890fc90aac844e3375be1b6
+2012-05-17 01:27:13,947 INFO ######################################################################################
+2012-05-17 01:27:13,948 INFO start session
+2012-05-17 01:27:16,223 INFO connect to db
+2012-05-17 01:27:16,240 INFO list of connections loaded
+2012-05-17 01:27:16,260 INFO list of connections loaded
+2012-05-17 01:27:16,269 INFO listing of conneciton succesfully loading
+2012-05-17 01:27:17,779 INFO list of connections loaded
+2012-05-17 01:27:17,782 INFO listing of conneciton succesfully loading
+>>>>>>> b9b4dd7f084725301a35eab043ba2177a1630b8c
