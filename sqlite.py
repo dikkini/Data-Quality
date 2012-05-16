@@ -22,23 +22,26 @@ class sqliteDB():
     def add_regexp(self, param, regexp):
         try:
             name = '%s_%s' % (self.schema, self.table)
+            data = (unicode(name), unicode(regexp))
             self.db.execute('create table if not exists %s (name, regexp)' % param)
-            self.db.execute('insert into %s values("%s", "%s")' % (param, name, regexp))
+            self.db.execute('insert into %s values(?, ?)' % param, data)
             self.db.commit()
             logging.info(u'uploading regular expression %s for parameter %s successfully' % (regexp, param))
         except (sqlite3.DatabaseError, sqlite3.DataError, sqlite3.OperationalError), info:
             wx.MessageBox(str(info))
+            print info
             logging.error(u'failed to upload regular expression %s for parameter %s: %s' % (regexp, param, str(info)))
 
     def del_regexp(self, param, regexp):
         try:
             name = '%s_%s' % (self.schema, self.table)
-            self.db.execute('DELETE FROM %s WHERE name="%s" and regexp="%s"' % (param, name, regexp))
+            what_delete = (name, regexp)
+            self.db.execute('DELETE FROM %s WHERE name=? and regexp=?' % param, what_delete)
             self.db.commit()
             logging.info(u'deleting regular expression %s for parameter %s successfully' % (regexp, param))
         except (sqlite3.DatabaseError, sqlite3.DataError, sqlite3.OperationalError), info:
             wx.MessageBox(str(info))
-            logging.error(u'deleting regular expression %s for parameter %s failed' % (regexp, param, str(info)))
+            logging.error(u'deleting regular expression %s for parameter %s failed: %s' % (regexp, param, str(info)))
 
     def take_regexps(self, param):
         try:

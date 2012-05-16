@@ -10,8 +10,10 @@ logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelnam
 
 class fullgrid ( wx.Frame ):
     
-    def __init__( self, gridtable ):
-        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 1000,700 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB )
+    def __init__( self, parent, gridtable ):
+        editor = parent
+        titl = ('%s:%s' % (editor.schema, editor.table))
+        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title=titl, pos = wx.DefaultPosition, size = wx.Size( 1000,700 ))#, style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU )
         
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
         
@@ -43,7 +45,7 @@ class fullgrid ( wx.Frame ):
         
         # Cell Defaults
         self.m_grid2.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
-        bSizer2.Add( self.m_grid2, 0, wx.ALL, 5 )
+        bSizer2.Add( self.m_grid2, 1, wx.EXPAND)
         
         self.m_panel1.SetSizer( bSizer2 )
         self.m_panel1.Layout()
@@ -59,7 +61,9 @@ class fullgrid ( wx.Frame ):
         
         self.m_panel1.Bind( wx.EVT_LEFT_DCLICK, self.OnRDC )
         #self.m_grid2.AutoSize(True)
-    
+        
+        self.SetFocus()
+        
     def OnRDC(self, event):
         self.Close()
         #self.Destroy()

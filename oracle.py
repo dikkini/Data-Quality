@@ -1,4 +1,4 @@
-# -*- coding: cp1251 -*- 
+# -*- coding: utf-8 -*-
 import cx_Oracle
 from itertools import chain
 import wx
@@ -10,14 +10,20 @@ class WorkDB():
         self.connection = connection
 
     def get_tables(self, schema):
-        cursor = cx_Oracle.Cursor(self.connection)
-        # Получать все таблицы доступные пользователю.
-        sql = ("select TABLE_NAME from dba_tables WHERE OWNER = '%s'" % schema)
-        cursor.execute(sql)
-        tables = cursor.fetchall()
-        tables=[i[0] for i in tables]
-        cursor.close()
-        return tables
+        try:
+            cursor = cx_Oracle.Cursor(self.connection)
+            # РџРѕР»СѓС‡Р°С‚СЊ РІСЃРµ С‚Р°Р±Р»РёС†С‹ РґРѕСЃС‚СѓРїРЅС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ.
+            sql = ("select TABLE_NAME from dba_tables WHERE OWNER = '%s'" % schema)
+            cursor.execute(sql)
+            tables = cursor.fetchall()
+            tables=[i[0] for i in tables]
+            cursor.close()
+            return tables
+        except Exception, info:
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…:%s - code 60' % info)
+            logging.error(u'loading list of tables failed - code 23:', str(info))
 
     def get_schemas(self):
         try:
@@ -29,8 +35,8 @@ class WorkDB():
             cursor.close()
             return schemas
         except TypeError, info:
-            wx.MessageBox(u'Подключитесь к базе данных!')
-            print info
+            wx.MessageBox(u'РџРѕРґРєР»СЋС‡РёС‚РµСЃСЊ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…!')
+
     def get_all_count(self, schema, table):
         try:
             cursor = cx_Oracle.Cursor(self.connection)
@@ -41,8 +47,10 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…: %s - code 48' % info)
+            
     def get_regexp_count(self, schema, table, regexp):
         try:
             cursor = cx_Oracle.Cursor(self.connection)
@@ -53,8 +61,9 @@ class WorkDB():
             cursor.close()
             return count
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…: %s - code 60' % info)
 
     def get_empty_values(self, schema, table):
         try:
@@ -70,8 +79,9 @@ class WorkDB():
             EV = float(EV)
             return EV
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С…: %s - code 78' % info)
 
     def get_uniq_values(self, column, schema, table):
         try:
@@ -83,8 +93,9 @@ class WorkDB():
             cursor.close()
             return cou
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
-            wx.MessageBox(u'Внешняя ошибка базы данных')
-            print info
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Р’РЅРµС€РЅСЏСЏ РѕС€РёР±РєР° Р±Р°Р·С‹ РґР°РЅРЅС‹С… - code 92')
 
     def get_cols(self, table):
         try:
@@ -95,6 +106,8 @@ class WorkDB():
             cursor.close()
             col_names = [i[1] for i in cuu]
         except (NameError, cx_Oracle.DatabaseError), info:
-            error = ("Database Error: %s" % info)
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            error = ("Database Error: %s - code 105" % info)
             wx.MessageBox(str(error))
         return col_names

@@ -72,49 +72,61 @@ class advices():
                 self.param11 = (u'%s: %s' % (self.names[11], perc))
                 self.ps.append(self.param11)
         
-        show = ShowAdv(self.ps, self.data_req, self.prev_dq)
+        show = show_adv(self.ps, self.data_req, self.prev_dq)
         show.Show()
-            
-class ShowAdv ( wx.Frame ):
+
+class show_adv ( wx.Frame ):
+    
     def __init__( self, data, alldata, prev_dq ):
-        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Советы", pos = wx.DefaultPosition, size = wx.Size( 700,400 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.TAB_TRAVERSAL )
+        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Советы по оценке качества данных", pos = wx.DefaultPosition, size = wx.Size( 650,300 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.TAB_TRAVERSAL )
         
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
         
-        bSizer1 = wx.BoxSizer( wx.VERTICAL )
+        main_sizer = wx.BoxSizer( wx.VERTICAL )
         
-        self.m_splitter1 = wx.SplitterWindow( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SP_3D )
-        self.m_splitter1.Bind( wx.EVT_IDLE, self.m_splitter1OnIdle )
+        self.params_adv_splitter = wx.SplitterWindow( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SP_3D )
+        self.params_adv_splitter.Bind( wx.EVT_IDLE, self.params_adv_splitterOnIdle )
+        self.params_adv_splitter.SetMinimumPaneSize( 123 )
         
-        self.m_panel2 = wx.Panel( self.m_splitter1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-        bSizer6 = wx.BoxSizer( wx.VERTICAL )
-        perc = '%'
-        for param in data:
-            paramet = ('%s%s' % (param, perc))
-            self.bad_params = wx.StaticText( self.m_panel2, wx.ID_ANY, paramet, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
-            self.bad_params.Wrap( -1 )
-            bSizer6.Add( self.bad_params, 0, wx.ALL, 5 )
+        self.panel_params = wx.Panel( self.params_adv_splitter, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        sizer_params = wx.BoxSizer( wx.VERTICAL )
         
-        self.m_panel2.SetSizer( bSizer6 )
-        self.m_panel2.Layout()
-        bSizer6.Fit( self.m_panel2 )
-        self.m_panel3 = wx.Panel( self.m_splitter1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-        bSizer7 = wx.BoxSizer( wx.VERTICAL )
+        self.label_head_params = wx.StaticText( self.panel_params, wx.ID_ANY, u"Самые критичные параметры:", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.label_head_params.Wrap( -1 )
+        sizer_params.Add( self.label_head_params, 0, wx.ALL, 5 )
+                
         
-        self.m_panel3.SetSizer( bSizer7 )
-        self.m_panel3.Layout()
-        bSizer7.Fit( self.m_panel3 )
-        self.m_splitter1.SplitHorizontally( self.m_panel2, self.m_panel3, 0 )
-        bSizer1.Add( self.m_splitter1, 1, wx.EXPAND, 5 )
+        self.panel_params.SetSizer( sizer_params )
+        self.panel_params.Layout()
+        sizer_params.Fit( self.panel_params )
+        self.panel_adv = wx.Panel( self.params_adv_splitter, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+        sizer_adv = wx.BoxSizer( wx.VERTICAL )
+        
+        self.html_page = self.CreateHTMLCtrl(self.panel_adv)
+        sizer_adv.Add( self.html_page, 0, wx.ALL, 5 )
         
         
-        self.SetSizer( bSizer1 )
+        self.panel_adv.SetSizer( sizer_adv )
+        self.panel_adv.Layout()
+        sizer_adv.Fit( self.panel_adv )
+        self.params_adv_splitter.SplitVertically( self.panel_params, self.panel_adv, 267 )
+        main_sizer.Add( self.params_adv_splitter, 1, wx.EXPAND, 5 )
+        
+        
+        self.SetSizer( main_sizer )
         self.Layout()
         
         self.Centre( wx.BOTH )
         
-        bSizer3 = wx.BoxSizer( wx.VERTICAL )
-        ### Function ###
+        ### Function№1 ###
+        perc = '%'
+        for param in data:
+            paramet = ('%s%s' % (param, perc))
+            self.bad_params = wx.StaticText( self.panel_params, wx.ID_ANY, paramet, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
+            self.bad_params.Wrap( -1 )
+            sizer_params.Add( self.bad_params, 0, wx.ALL, 5 )
+            
+        ### Function№2 ###
         for param in data:
             temp = param
             parse = temp.split(':')
@@ -124,25 +136,35 @@ class ShowAdv ( wx.Frame ):
                 try:
                     number = float(temp)
                 except ValueError:
-                    print "not float"
+                    wx.MessageBox(u'ошибка')
             alldata.remove(number)
             future_element = number + 10
             alldata.append(future_element)
             future_dq = sum(alldata) / len(alldata)
             delta_dq = round(float(future_dq), 2) - round(float(prev_dq), 2)
             future_dq = round(future_dq, 2)
+            
+            page = u'Если качество данных параметра - <b>%s%s</b> - увеличить на <u>10%s</u>, то качество данных возрастет на <u>%s%s</u> и итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (param, perc, perc, delta_dq, perc, future_dq, perc)
+            
+            self.html_page.AppendToPage(page)
+        
 
-            info = (u'Если качество данных параметра -  %s%s - увеличить на 10%s,\n то качество данных возрастет на %s%s и итоговый процент будет составлять %s%s.                       ' % (param, perc, perc, delta_dq, perc, future_dq, perc))
-            self.text_adv = wx.StaticText( self.m_panel3, wx.ID_ANY, info, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
-            self.text_adv.Wrap( -1 )
-            bSizer3.Add( self.text_adv, 0, wx.ALL, 5 )
-        
-        
-        self.m_panel2.Bind(wx.EVT_LEFT_DCLICK, self.OnLEFT_DCLICK)
+        self.panel_adv.Bind(wx.EVT_LEFT_DCLICK, self.OnLEFT_DCLICK)
+        self.panel_params.Bind(wx.EVT_LEFT_DCLICK, self.OnLEFT_DCLICK)
+
+    def params_adv_splitterOnIdle( self, event ):
+        self.params_adv_splitter.SetSashPosition( 208 )
+        self.params_adv_splitter.Unbind( wx.EVT_IDLE )
+            
+    def __del__( self ):
+        pass
     
     def OnLEFT_DCLICK(self, event):
         self.Close()
+    
+    def CreateHTMLCtrl(self, parent=None):
+        if not parent:
+            parent = self
 
-    def m_splitter1OnIdle( self, event ):
-        self.m_splitter1.SetSashPosition( 0 )
-        self.m_splitter1.Unbind( wx.EVT_IDLE )
+        ctrl = wx.html.HtmlWindow(parent, -1, wx.DefaultPosition, wx.Size(400, 300))
+        return ctrl

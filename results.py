@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf8 -*-
 
 import wx
 import sys
@@ -7,7 +7,7 @@ import wx.lib.mixins.listctrl as listmix #@UnusedImport
 import adv
 import oracle
 import logging
-import report
+import report_html
 
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
@@ -56,9 +56,8 @@ class main_stat(listmix.ColumnSorterMixin):
         self.itemDataMap = data
         listmix.ColumnSorterMixin.__init__(self, 3)
         
-        self.ext_list = extend_stat(self.main.panelMainStat, self.ext_cols, wx.EmptyString)
-        self.ext_list.list.SetSize((900, 150))
-        self.ext_list.list.Show(False)
+        
+        #self.ext_list.list.Show(False)
         
     def GetListCtrl(self):
         return self.list
@@ -86,27 +85,34 @@ class main_stat(listmix.ColumnSorterMixin):
             self.list.PopupMenu(menu)
       
     def OnExtStat(self, event):
-        self.ext_list.list.DeleteAllItems()      
+        try:
+            self.ext_list.list.DeleteAllItems()
+            self.ext_list.list.Destroy()
+        except Exception:
+            pass
+        
+#        self.main.Freeze()
         self.ext_stat = self.stat.take_ext_stat(self.date)
-        for param in self.ext_stat:
-            if param == 'None':
-                self.ext_stat.remove(param)
-        if self.ext_stat[0] is not None:
-            self.ext_list.list.Append(self.ext_stat[0])
-        if self.ext_stat[1] is not None:
-            self.ext_list.list.Append(self.ext_stat[1])
-        if self.ext_stat[2] is not None:
-            self.ext_list.list.Append(self.ext_stat[2])
-        if self.ext_stat[3] is not None:
-            self.ext_list.list.Append(self.ext_stat[3])
-        self.ext_list.list.Show(True)
-
+        self.ext_stat = [ i for i in self.ext_stat if i is not None] 
+        self.ext_list = extend_stat(self.main.panelMainStat, self.ext_cols, self.ext_stat)
+        self.main.sizer.Add(self.ext_list.list, 2, wx.EXPAND)
+        self.main.panelMainStat.SetSizer(self.main.sbs)
+        self.main.panelMainStat.Layout()
+        size = self.main.GetSize()
+        newsize = size - (1,1)
+        print size
+        print newsize
+        self.main.SetSize(newsize)
+        
+        
+        #Тут графический баг. При полноэкранном расширении получение расширенной статистики для результатов оценки качества данных идут с багом.
+        
     def OnAdviceMode(self, event):
         mod = adv.advices(self.data)
         mod.TextAdv()
     
     def OnReport(self, event):
-        report.CreateRep(self.data)
+        report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat, self.date)
         
     def OnColClick(self, event):
         print ("OnColClick: %d\n" % event.GetColumn())
@@ -167,7 +173,7 @@ class history_stat():
         self.main = parent
         
         self.stat = statistic.stats(self.main.schema, self.main.table)
-        
+    
         self.list = wx.ListCtrl(self.main.panelHist, 0,
                                  style=wx.LC_REPORT
                                  | wx.BORDER_NONE
@@ -199,7 +205,7 @@ class history_stat():
         self.list.SetColumnWidth(14, 55) 
         self.list.SetColumnWidth(15, 55)
         self.list.SetColumnWidth(16, 40)
-        self.list.SetSize((900,350))
+        #self.list.SetSize((900,350))
         #self.list.Bind(wx.EVT_LIST_COL_CLICK, self.OnColClick, self.list)
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
         self.list.Bind(wx.EVT_LIST_ITEM_SELECTED, self.OnItemSelected)
@@ -238,17 +244,14 @@ class history_stat():
     
     def OnExtStat(self, event):
         try:
-            cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
-            cols.insert(0, u'Название параметра')
+            self.ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
+            self.ext_cols.insert(0, u'Название параметра')
             self.ext_stat = self.stat.take_ext_stat(self.date)
-            for param in self.ext_stat:
-                if param is None:
-                    index = self.ext_stat.index(param)
-                    self.ext_stat.pop(index)
-                    del self.ext_stat[index]
-            frame = Popup(cols, self.ext_stat)
+            self.ext_stat = [ i for i in self.ext_stat if i is not None] 
+            frame = Popup(self.ext_cols, self.ext_stat, self.main.schema, self.main.table)
             frame.Show()
         except Exception, info:
+            print info
             if 'object is not subscriptable' in str(info):
                 wx.MessageBox(u'Для данной статистике нет расширенной статистики')
 
@@ -257,7 +260,10 @@ class history_stat():
         mod.TextAdv()
     
     def OnReport(self, event):
-        report.CreateRep(self.data)
+        ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
+        ext_cols.insert(0, u'Название параметра')
+        ext_stat = self.stat.take_ext_stat(self.date)
+        report_html.make_report(self.columns, self.data, ext_cols, ext_stat, self.date)
 
     def OnDelStat(self, event):
         self.stat.del_stat(self.date)
@@ -292,10 +298,12 @@ class history_stat():
         
     def destr(self):
         self.list.Destroy()
+
 class Popup ( wx.Frame ):
     
-    def __init__( self, columns, rows ):
-        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 900,250 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
+    def __init__( self, columns, rows, schema, table ):
+        titl = ('%s:%s' % (schema, table))
+        wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = titl, pos = wx.DefaultPosition, size = wx.Size( 900,250 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
         
         self.SetSizeHintsSz( wx.Size( 700,230 ), wx.Size( 900,250 ) )
         

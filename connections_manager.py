@@ -5,6 +5,11 @@ import sqlite
 import db_info
 import cx_Oracle
 import logging
+try:
+    from agw import pybusyinfo as PBI
+except ImportError: # if it's not there locally, try the wxPython lib.
+    import wx.lib.agw.pybusyinfo as PBI
+
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 ###########################################################################
@@ -53,9 +58,6 @@ class connections ( wx.Frame ):
         fgSizer7.Add( self.m_staticText18, 0, wx.ALL, 5 )
         
         # Получаем список коннектов
-        self.sqlite = sqlite.sqliteDB(self.main.schema, self.main.table)
-        
-        #items = self.sqlite.take_cons()
         items = self.wc.take_cons()
         self.connections_choice = wx.Choice( self.m_panel2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, items, 0 )
         
@@ -144,12 +146,18 @@ class connections ( wx.Frame ):
             event.Skip()
             logging.info(u'listing of conneciton succesfully loading')
         except wx._core.PyDeadObjectError, info:
+            info = str(info)
+            info = info.encode('utf8')
             logging.error(u'exit programm with code 0 before close all windows: %s' % info)
 
             return
         
     def OnChoiceCon( self, event ):
         namecon = self.connections_choice.GetStringSelection()
+        if not namecon:
+            namecon = 'none'
+            event.Skip()
+            return
         self.dbdata = self.wc.take_data_con(namecon)
         logging.info(u'trying to connect using conneciton: %s' % (namecon))
         
@@ -164,6 +172,10 @@ class connections ( wx.Frame ):
     def OnEditCon( self, event ):
         flag = False
         namecon = self.connections_choice.GetStringSelection()
+        if not namecon:
+            wx.MessageBox(u'Создайте новое соединение!')
+            event.Skip()
+            return
         editcon = db_info.dbinfo(flag, namecon, self.main)
         editcon.Show()
         logging.info(u'editing connection: %s' % (namecon))
@@ -179,6 +191,10 @@ class connections ( wx.Frame ):
         event.Skip()
     
     def OnOk( self, event ):
+        if not self.dbdata:
+            wx.MessageBox(u'Создайте новое соединение!')
+            event.Skip()
+            return
         if self.dbdata[4] == wx.EmptyString:
             passw = db_info.AskPassw(self)
             passw.ShowModal()
@@ -187,31 +203,33 @@ class connections ( wx.Frame ):
             self.GoConnect()
        
     def GoConnect( self ):
+        message = 'Пожалуйста подождите, происходит соединение с базой данных..'
         try:
+            busy = PBI.PyBusyInfo(message, parent=None, title="Соединение с базой данных...")
+            
+            wx.Yield()
+            
             self.dsn_tns = cx_Oracle.makedsn(self.dbdata[0], self.dbdata[1], self.dbdata[2])
             self.connection = cx_Oracle.connect(self.dbdata[3], self.dbdata[4], self.dsn_tns)
-            #Enable main menubar elements
             self.main.connection = self.connection
             self.main.statusbar.SetStatusText(u'Выполнено подключение к базе')
             self.main.BD.Enable(1, False)
             self.main.BD.Enable(2, True)
-            #self.main.DQ.Enable(4, True)
-            #self.main.DQ.Enable(5, True)
-            #self.main.regexp.Enable(6, True)
-            #self.main.regexp.Enable(7, True)
-            #self.main.logs.Enable(8, True)
-            #self.main.logs.Enable(9, True)
             logging.info(u'connection to database. info: %s, %s, %s, %s' % (self.dbdata[0], self.dbdata[1], self.dbdata[2], self.dbdata[3]))
             # Check ENCODING DATABASE
             dbenc = self.connection.encoding
             if dbenc != 'WINDOWS-1251':
+                del busy
                 wx.MessageBox(u'Не верная кодировка базы данных. Обратитесь к системному администратору.')
             self.Close()        
-            
+            del busy
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError, AttributeError), info:
             error = u'Не возможно подключиться к базе данных. Проверьте правильность введенных данных.'
             wx.MessageBox(error)
-            logging.error(u'connection error')
+            del busy
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            logging.error(u'connection error: %s' % info)
             self.Close()
             
     def OnCancel( self, event ):

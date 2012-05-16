@@ -5,6 +5,7 @@ import sqlite
 import string
 import logging
 import shelve
+import os
 
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
@@ -143,7 +144,11 @@ class dbinfo ( wx.Frame ):
                 elif dbdata[5] == u'service':
                     self.service_radio.SetValue(True)
                     self.service_ctrl.SetValue(dbdata[2])
-            except IndexError, info:
+            except (IndexError, TypeError), info:
+                info = str(info)
+                info = info.encode('utf8')
+                if "'NoneType' object is not subscriptable" in info:
+                    wx.MessageBox(u'Создайте новое подключение!')
                 logging.error(u'filling forms connection error:', info)
                 self.name_ctrl.SetValue(namecon)
 
@@ -278,19 +283,23 @@ class AskPassw(wx.Dialog):
 
 class work_con():
     def __init__(self):
-        pass
+        self.path = os.path.join(os.path.dirname(__file__),'data','oracle')
     
     def take_cons(self):
         try:
             #key = str(self.namecon)
-            filename = './data/oracle/connections.dat'
+            filename = '%s\\connections.dat' % self.path
             d = shelve.open(filename)
             keys = d.keys()
             d.close()
             logging.info(u'list of connections loaded')
             return keys
         except Exception, info:
-            logging.error(u'list of connections not loaded: ', str(info))
+            info = str(info)
+            info = info.encode('utf8')
+            wx.MessageBox(u'PIZDETS')
+            print info
+            logging.error(u'list of connections not loaded')
     
     def new_con(self, namecon, data):
         try:
@@ -302,6 +311,8 @@ class work_con():
             d.close()
             logging.info(u'new connection %s  created' % (key))
         except Exception, info:
+            info = str(info)
+            info = info.encode('utf8')
             logging.info(u'new connection was not created')
         
     def edit_con(self, newname, data, namecon):
@@ -317,7 +328,9 @@ class work_con():
             d.close()
             logging.info(u'editing connection %s successfully: %s' % (namecon, newname))
         except Exception, info:
-            logging.info(u'editing connection %s failed:' % (namecon))
+            namecon = str(namecon)
+            namecon = namecon.encode('utf8')
+            logging.info(u'editing connection %s failed:', namecon)
     
     def take_data_con(self, namecon):
         try:
@@ -327,7 +340,9 @@ class work_con():
             data = d[key]
             return data
             logging.info(u'loading data connection %s succesfully' % (namecon))
-        except Exception, info:
+        except Exception:
+            namecon = str(namecon)
+            namecon = namecon.encode('utf8')
             logging.error(u'loading data connection %s failed' % (namecon))
         
     def del_con(self, namecon):
@@ -338,6 +353,10 @@ class work_con():
             del d[key]
             logging.info(u'delete connection %s succesfully' % (namecon))
         except Exception, info:
-            logging.error(u'delete connection %s failed: %s' % (namecon, str(info)))
+            info = str(info)
+            info = info.encode('utf8')
+            namecon = str(namecon)
+            namecon = namecon.encode('utf8')
+            logging.error(u'delete connection failed: %s', namecon)
             
         

@@ -3,3 +3,11 @@ Check encoding:
 import chardet
 enc = chardet.detect(item)
 print item[1], enc['encoding']
+
+Filtering by bool value:
+print filter(bool, [None, None, None, [1]])
+
+
+For Oracle DBA Errors:
+        info = str(info)
+        info = info.decode('cp1251').encode('utf8')
