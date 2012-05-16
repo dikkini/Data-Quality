@@ -112,7 +112,7 @@ class MainWindow ( wx.Frame ):
         self.regexp.AppendItem( self.m_menuItem6 )
         
         self.m_menuItem7 = wx.MenuItem( self.regexp, 7, u"Выбор регулярных выражения для оценки\tCtrl+E", 
-                                        u'На их основе будет производится оценка качества данных', wx.ITEM_NORMAL )
+                                        u'На основе выбранных параметрах будет производиться оценка качества данных', wx.ITEM_NORMAL )
         
         self.regexp.AppendItem( self.m_menuItem7 )
         
@@ -121,9 +121,6 @@ class MainWindow ( wx.Frame ):
         self.logs = wx.Menu()
         self.m_menuItem8 = wx.MenuItem( self.logs, 8, u"Журнал событий\tCtrl+I", wx.EmptyString, wx.ITEM_NORMAL )
         self.logs.AppendItem( self.m_menuItem8 )
-        
-        self.m_menuItem9 = wx.MenuItem( self.logs, 9, u"Журнал действий\tCtrl+U", wx.EmptyString, wx.ITEM_NORMAL )
-        self.logs.AppendItem( self.m_menuItem9 )
         
         self.menubar.Append( self.logs, u"Журналы" ) 
         
@@ -158,7 +155,6 @@ class MainWindow ( wx.Frame ):
         self.regexp.Enable(6, False)
         self.regexp.Enable(7, False)
         self.logs.Enable(8, False)
-        self.logs.Enable(9, False)
         
         #Binds on MenuItems
         self.Bind(wx.EVT_MENU, self.ConnectDB, id=1)
@@ -169,7 +165,6 @@ class MainWindow ( wx.Frame ):
         self.Bind(wx.EVT_MENU, self.EditRegexps, id=6)
         self.Bind(wx.EVT_MENU, self.ChooseParams, id=7)
         self.Bind(wx.EVT_MENU, self.logEvents, id=8)
-        self.Bind(wx.EVT_MENU, self.logUses, id=9)
         self.Bind(wx.EVT_MENU, self.About, id=10)
         self.Bind(wx.EVT_MENU, self.show_help, id=11)
         
@@ -182,7 +177,7 @@ class MainWindow ( wx.Frame ):
         # Main results data
         self.main_stat_columns = [u'Дата', u'Пустые', u'Не несущие информацию', u'Не соответствующие формату', u'Уровень шума', 
                           u'Идентифицируемость', u'Согласованность', u'Унификация', u'Оперативность', 
-                          u'Противоречивость', u'Достоверность', u'Степень классификации', u'Степень структуризации', u'Итого', u'Таблица'] 
+                          u'Противоречивость', u'Степень классификации', u'Степень структуризации', u'Итого', u'Таблица'] 
         
         logging.info(u'######################################################################################')
         logging.info(u'start session')
@@ -347,9 +342,6 @@ class MainWindow ( wx.Frame ):
             os.system('notepad.exe ' + file)
         except Exception, info:
             logging.error(u'error while opening journal events - code 250 ', str(info))
-        
-    def logUses(self, event):
-        print "Log Uses"
         
     def About(self, event):
         frame = about.about()

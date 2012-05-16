@@ -102,7 +102,6 @@ class choose_table ( wx.Dialog ):
         self.main.regexp.Enable(6, True)
         self.main.regexp.Enable(7, True)
         self.main.logs.Enable(8, True)
-        self.main.logs.Enable(9, True)
         self.Close()
         
     def OnCancelBtn(self, event):

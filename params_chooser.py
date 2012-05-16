@@ -39,7 +39,7 @@ class frame_chooser ( wx.Frame ):
         
         self.params_quality_choices = [u'Пустые значения', u'Не несущие информацию значения', u'Не соответствующие формату значения',
                                         u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Унификация', 
-                                        u'Оперативность', u'Противоречивость', u'Достоверность', u'Степень классификации', 
+                                        u'Оперативность', u'Противоречивость', u'Степень классификации', 
                                         u'Степень структуризации']
         
         self.params_choice_pull = wx.Choice( self.m_panel2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 
@@ -228,7 +228,7 @@ class frame_chooser ( wx.Frame ):
             if self.use_param_checkbox.IsChecked():
                 self.using_params[9] = 1
                 self.weights_params[9] = self.weights_txt.GetValue()
-                param = 'reliability'
+                param = 'degree_of_classification'
                 test = self.db.take_regexps(param)
                 if not test:
                     wx.MessageBox(u'Для данного параметра не введены регулярные выражения.')
@@ -243,7 +243,7 @@ class frame_chooser ( wx.Frame ):
             if self.use_param_checkbox.IsChecked():
                 self.using_params[10] = 1
                 self.weights_params[10] = self.weights_txt.GetValue()
-                param = 'degree_of_classification'
+                param = 'degree_of_structuring'
                 test = self.db.take_regexps(param)
                 if not test:
                     wx.MessageBox(u'Для данного параметра не введены регулярные выражения.')
@@ -254,21 +254,6 @@ class frame_chooser ( wx.Frame ):
             else:
                 self.using_params[10] = 0
                 self.weights_params[10] = 0
-        elif self.params_choice_pull.GetStringSelection() == self.params_quality_choices[11]:
-            if self.use_param_checkbox.IsChecked():
-                self.using_params[11] = 1
-                self.weights_params[11] = self.weights_txt.GetValue()
-                param = 'degree_of_structuring'
-                test = self.db.take_regexps(param)
-                if not test:
-                    wx.MessageBox(u'Для данного параметра не введены регулярные выражения.')
-                    self.using_params[11] = 0
-                    self.weights_params[11] = 0
-                    self.use_param_checkbox.SetValue(False)
-                    self.weights_txt.Clear()
-            else:
-                self.using_params[11] = 0
-                self.weights_params[11] = 0
     
     def OnChParamDQ(self, event):
         if self.params_choice_pull.GetStringSelection() == self.params_quality_choices[0]:

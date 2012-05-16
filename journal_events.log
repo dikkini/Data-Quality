@@ -12048,3 +12048,125 @@
 2012-05-17 01:27:16,269 INFO listing of conneciton succesfully loading
 2012-05-17 01:27:17,779 INFO list of connections loaded
 2012-05-17 01:27:17,782 INFO listing of conneciton succesfully loading
+2012-05-17 01:28:03,410 INFO ######################################################################################
+2012-05-17 01:28:03,410 INFO start session
+2012-05-17 01:28:09,575 INFO end session. but there are no connection to db
+2012-05-17 01:28:09,575 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-17 03:16:13,098 INFO ######################################################################################
+2012-05-17 03:16:13,105 INFO start session
+2012-05-17 03:16:14,250 INFO connect to db
+2012-05-17 03:16:14,358 INFO list of connections loaded
+2012-05-17 03:16:14,381 INFO list of connections loaded
+2012-05-17 03:16:14,408 INFO listing of conneciton succesfully loading
+2012-05-17 03:16:15,187 INFO list of connections loaded
+2012-05-17 03:16:15,190 INFO listing of conneciton succesfully loading
+2012-05-17 03:16:17,819 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:16:17,825 INFO list of connections loaded
+2012-05-17 03:16:17,828 INFO listing of conneciton succesfully loading
+2012-05-17 03:16:17,828 INFO trying connection to db
+2012-05-17 03:16:17,832 INFO list of connections loaded
+2012-05-17 03:16:17,832 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:16:18,538 INFO choose table
+2012-05-17 03:16:18,569 INFO list of schemas loaded successfully
+2012-05-17 03:16:20,654 INFO list of tables loaded successfully
+2012-05-17 03:16:20,654 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:16:21,703 INFO table BIG_TEST1 choosed
+2012-05-17 03:16:33,259 INFO ######################################################################################
+2012-05-17 03:16:33,259 INFO start session
+2012-05-17 03:16:33,930 INFO connect to db
+2012-05-17 03:16:33,944 INFO list of connections loaded
+2012-05-17 03:16:33,961 INFO list of connections loaded
+2012-05-17 03:16:33,967 INFO listing of conneciton succesfully loading
+2012-05-17 03:16:34,500 INFO list of connections loaded
+2012-05-17 03:16:34,503 INFO listing of conneciton succesfully loading
+2012-05-17 03:16:36,052 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:16:36,059 INFO list of connections loaded
+2012-05-17 03:16:36,061 INFO listing of conneciton succesfully loading
+2012-05-17 03:16:36,062 INFO trying connection to db
+2012-05-17 03:16:36,066 INFO list of connections loaded
+2012-05-17 03:16:36,066 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:16:36,569 INFO choose table
+2012-05-17 03:16:36,599 INFO list of schemas loaded successfully
+2012-05-17 03:16:38,171 INFO list of tables loaded successfully
+2012-05-17 03:16:38,171 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:16:39,703 INFO table BIG_TEST1 choosed
+2012-05-17 03:16:40,874 INFO launch edit regexps module
+2012-05-17 03:16:40,924 INFO connecting to local database successfully
+2012-05-17 03:16:42,911 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 03:16:43,959 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 03:16:46,967 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-17 03:16:48,430 INFO loading regular expressions for parameter inconsistency successfully 
+2012-05-17 03:16:49,775 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-17 03:16:50,974 INFO loading regular expressions for parameter efficiency successfully 
+2012-05-17 03:16:52,319 INFO loading regular expressions for parameter harmony successfully 
+2012-05-17 03:17:01,910 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 03:17:06,760 INFO uploading regular expression test проверка for parameter no_information successfully
+2012-05-17 03:17:06,760 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 03:17:08,782 INFO deleting regular expression test проверка for parameter no_information successfully
+2012-05-17 03:17:08,782 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 03:17:10,351 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 03:17:13,223 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 03:17:14,375 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-17 03:17:17,167 INFO loading regular expressions for parameter degree_of_structuring successfully 
+2012-05-17 03:17:19,734 INFO loading regular expressions for parameter degree_of_classification successfully 
+2012-05-17 03:17:22,302 INFO loading regular expressions for parameter degree_of_structuring successfully 
+2012-05-17 03:17:25,572 INFO connecting to local database successfully
+2012-05-17 03:17:32,293 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 03:17:35,934 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-17 03:17:38,302 INFO loading regular expressions for parameter harmony successfully 
+2012-05-17 03:17:45,039 INFO starting calculation data quality model
+2012-05-17 03:17:45,075 INFO connecting to local database successfully
+2012-05-17 03:17:45,266 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 03:17:46,151 INFO bad fromat parameter calculation successfully
+2012-05-17 03:17:46,153 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-17 03:17:46,161 INFO identify parameter calculation successfully
+2012-05-17 03:17:46,163 INFO loading regular expressions for parameter harmony successfully 
+2012-05-17 03:17:46,170 INFO harmony parameter calculation successfully
+2012-05-17 03:17:46,203 INFO uniq parameter calculation successfully
+2012-05-17 03:17:46,203 ERROR avegrage assessment of all parameters calculation failed: global name 'avgreliab' is not defined
+2012-05-17 03:17:46,203 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 03:17:53,832 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 03:18:34,944 INFO ######################################################################################
+2012-05-17 03:18:34,944 INFO start session
+2012-05-17 03:18:35,352 INFO connect to db
+2012-05-17 03:18:35,368 INFO list of connections loaded
+2012-05-17 03:18:35,390 INFO list of connections loaded
+2012-05-17 03:18:35,394 INFO listing of conneciton succesfully loading
+2012-05-17 03:18:36,042 INFO list of connections loaded
+2012-05-17 03:18:36,046 INFO listing of conneciton succesfully loading
+2012-05-17 03:18:37,391 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:18:37,397 INFO list of connections loaded
+2012-05-17 03:18:37,398 INFO listing of conneciton succesfully loading
+2012-05-17 03:18:37,398 INFO trying connection to db
+2012-05-17 03:18:37,404 INFO list of connections loaded
+2012-05-17 03:18:37,404 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:18:38,424 INFO choose table
+2012-05-17 03:18:38,454 INFO list of schemas loaded successfully
+2012-05-17 03:18:39,881 INFO list of tables loaded successfully
+2012-05-17 03:18:39,882 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:18:41,165 INFO table BIG_TEST1 choosed
+2012-05-17 03:18:41,897 INFO launch edit regexps module
+2012-05-17 03:18:41,911 INFO connecting to local database successfully
+2012-05-17 03:18:44,148 INFO connecting to local database successfully
+2012-05-17 03:18:51,390 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 03:18:54,765 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 03:18:57,141 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-17 03:19:00,493 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-17 03:19:02,453 INFO loading regular expressions for parameter harmony successfully 
+2012-05-17 03:19:06,910 INFO starting calculation data quality model
+2012-05-17 03:19:06,911 INFO connecting to local database successfully
+2012-05-17 03:19:07,107 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 03:19:08,003 INFO bad fromat parameter calculation successfully
+2012-05-17 03:19:08,005 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-17 03:19:45,450 INFO noise level parameter calculation successfully
+2012-05-17 03:19:45,450 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-17 03:19:45,460 INFO identify parameter calculation successfully
+2012-05-17 03:19:45,461 INFO loading regular expressions for parameter harmony successfully 
+2012-05-17 03:19:45,471 INFO harmony parameter calculation successfully
+2012-05-17 03:19:45,532 INFO uniq parameter calculation successfully
+2012-05-17 03:19:45,846 INFO calculation successfully
+2012-05-17 03:21:02,759 INFO report succesfully done
+2012-05-17 03:23:51,341 INFO ######################################################################################
+2012-05-17 03:23:51,341 INFO start session
+2012-05-17 03:23:53,653 INFO end session. but there are no connection to db
+2012-05-17 03:23:53,653 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'

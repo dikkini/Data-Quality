@@ -35,7 +35,7 @@ class page_editor():
         
         self.params_regexps_choices = [u'Не несущие информацию значения', u'Не соответствующие формату значения', 
                                        u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Оперативность', 
-                                       u'Противоречивость', u'Достоверность', u'Степень классификации', u'Степень структуризации']
+                                       u'Противоречивость', u'Степень классификации', u'Степень структуризации']
         
 
         self.regexp_choice_pull = wx.Choice( self.panel_regexps, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 
@@ -97,8 +97,8 @@ class page_editor():
 #        self.OK_btn.Bind(wx.EVT_BUTTON, self.OnConfirmBtn)
         
         # Variables
-        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         
         #SQLITE
         self.db = sqlite.sqliteDB(self.main.schema, self.main.table)
@@ -159,21 +159,15 @@ class page_editor():
             except AttributeError:
                 self.edit_regexp_txt.SetValue(wx.EmptyString)
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'reliability'
+            self.param = 'degree_of_classification'
             try:
                 self.edit_regexp_txt.SetValue(self.regexp7)
             except AttributeError:
                 self.edit_regexp_txt.SetValue(wx.EmptyString)
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
-            self.param = 'degree_of_classification'
-            try:
-                self.edit_regexp_txt.SetValue(self.regexp8)
-            except AttributeError:
-                self.edit_regexp_txt.SetValue(wx.EmptyString)
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[9]:
             self.param = 'degree_of_structuring'
             try:
-                self.edit_regexp_txt.SetValue(self.regexp9)
+                self.edit_regexp_txt.SetValue(self.regexp8)
             except AttributeError:
                 self.edit_regexp_txt.SetValue(wx.EmptyString)
             
@@ -207,8 +201,6 @@ class page_editor():
             self.regexp7 = self.edit_regexp_txt.GetValue()
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.regexp8 = self.edit_regexp_txt.GetValue()
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[9]:
-            self.regexp9 = self.edit_regexp_txt.GetValue()
     
     def OnTestBtn(self, event):
         message = 'Пожалуйста подождите, получение информации из базы...'
@@ -262,10 +254,8 @@ class page_editor():
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
             self.param = 'inconsistency'
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'reliability'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_classification'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[9]:
+        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_structuring'
             
         regexp =  self.edit_regexp_txt.GetValue()
@@ -290,10 +280,8 @@ class page_editor():
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
             self.param = 'inconsistency'
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'reliability'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_classification'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[9]:
+        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_structuring'
             
         regexp =  self.regexps_listbox.GetStringSelection()

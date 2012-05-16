@@ -5,7 +5,7 @@ class advices():
     def __init__(self, data):
         self.names = [u'Пустые значения', u'Не несущие информацию значения', u'Не соответствующие формату значения',
                                         u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Унификация', 
-                                        u'Оперативность', u'Противоречивость', u'Достоверность', u'Степень классификации', 
+                                        u'Оперативность', u'Противоречивость', u'Степень классификации', 
                                         u'Степень структуризации']
         data = list(data)
         data.pop()
@@ -141,6 +141,7 @@ class show_adv ( wx.Frame ):
             future_element = number + 10
             alldata.append(future_element)
             future_dq = sum(alldata) / len(alldata)
+            print future_dq, prev_dq
             delta_dq = round(float(future_dq), 2) - round(float(prev_dq), 2)
             future_dq = round(future_dq, 2)
             

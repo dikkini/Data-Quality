@@ -276,36 +276,16 @@ class DQ(object):
 			print 'inconsistency:', avgincon, '%'
 		except Exception, info:
 			logging.error(u'inconsistency parameter calculation failed: %s' % str(info))
-			
-		# Достоверность
-		try:
-			if self.using_params[9] == 1:
-				count9 = []
-				param = 'reliability'
-				regexp = sql.take_regexps(param)
-				for i in range(len(regexp)):
-					count9.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
-				avgreliab = (sum(count9) / len(count9)) * self.weights[9]
-				avgreliab = float(avgreliab)
-				avgreliab = avgreliab / self.countall * 100
-				self.data.append(str(avgreliab))
-				logging.info(u'reliability parameter calculation successfully')
-			else:
-				avgreliab = 0
-				self.data.append(u'-')
-			print 'reliability:', avgreliab, '%'
-		except Exception, info:
-			logging.error(u'reliability parameter calculation failed: %s' % str(info))
 
 		# Степень классификации
 		try:
-			if self.using_params[10] == 1:
-				count10 = []
+			if self.using_params[9] == 1:
+				count9 = []
 				param = 'degree_of_classification'
 				regexp = sql.take_regexps(param)
 				for i in range(len(regexp)):
-					count10.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
-				avgdoc = (sum(count10) / len(count10)) * self.weights[10]
+					count9.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
+				avgdoc = (sum(count9) / len(count10)) * self.weights[9]
 				avgdoc = float(avgdoc)
 				avgdoc = avgdoc / self.countall * 100
 				self.data.append(str(avgdoc))
@@ -319,13 +299,13 @@ class DQ(object):
 			
 		# Степень структуризации
 		try:
-			if self.using_params[11] == 1:
-				count11 = []
+			if self.using_params[10] == 1:
+				count10 = []
 				param = 'degree_of_structuring'
 				regexp = sql.take_regexps(param)
 				for i in range(len(regexp)):
 					count11.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
-				avgdos = (sum(count11) / len(count11)) * self.weights[11]
+				avgdos = (sum(count10) / len(count10)) * self.weights[10]
 				avgdos = float(avgdos)
 				avgdos = avgdos / self.countall * 100
 				self.data.append(str(avgdos))
@@ -337,7 +317,7 @@ class DQ(object):
 		except Exception, info:
 			logging.error(u'degree_of_structuring parameter calculation failed: %s' % str(info))
 		try:
-			avgall = emptyvalues + avgnoinf + avgbadform + avgnoise + avgident + avgharm + avguniq + avgeffic + avgincon + avgreliab + avgdoc + avgdos
+			avgall = emptyvalues + avgnoinf + avgbadform + avgnoise + avgident + avgharm + avguniq + avgeffic + avgincon + avgdoc + avgdos
 			allweight = sum(self.weights)
 		except Exception, info:
 			logging.error(u'avegrage assessment of all parameters calculation failed: %s' % str(info))
