@@ -29,4 +29,4 @@ def make_report(name_main, main_stat, name_ext, ext_stat, date):
     except Exception, info:
         wx.MessageBox(str(info))
         wx.MessageBox(u'В ходе формирования отчета произошла непоправимая ошибка!')
-        logging.error('report failed: %s -- code 28' % str(info))
+        logging.error('report failed: %s -- code 32' % str(info))

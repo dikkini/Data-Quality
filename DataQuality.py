@@ -213,7 +213,7 @@ class MainWindow ( wx.Frame ):
             if "'NoneType' object has no attribute 'close'" in info:
                 logging.info(u'end session. but there are no connection to db')
             self.Destroy()
-            logging.error(u'end session error - code 178: %s' % str(info))
+            logging.error(u'end session error - code 216: %s' % str(info))
             sys.exit()
     
     def DoDQ(self, event):
@@ -294,7 +294,7 @@ class MainWindow ( wx.Frame ):
             
         except TypeError, info:
             wx.MessageBox(str(info))
-            logging.error(u'error while looking history - code: 222 - %s' % str(info))
+            logging.error(u'error while looking history - code: 297 - %s' % str(info))
     
     def RefrshHist(self):
         try:
@@ -341,7 +341,7 @@ class MainWindow ( wx.Frame ):
             file = 'journal_events.log'
             os.system('notepad.exe ' + file)
         except Exception, info:
-            logging.error(u'error while opening journal events - code 250 ', str(info))
+            logging.error(u'error while opening journal events - code 344 ', str(info))
         
     def About(self, event):
         frame = about.about()
