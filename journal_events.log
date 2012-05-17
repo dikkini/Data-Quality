@@ -12968,3 +12968,5 @@
 2012-05-17 08:28:47,476 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
 2012-05-17 08:30:14,009 INFO ######################################################################################
 2012-05-17 08:30:14,009 INFO start session
+2012-05-17 16:13:18,443 INFO end session. but there are no connection to db
+2012-05-17 16:13:18,443 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
