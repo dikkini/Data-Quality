@@ -199,6 +199,7 @@ class MainWindow ( wx.Frame ):
 
         
     def ChooseTable(self, event):
+        self.using_params = None
         logging.info(u'choose table')
         frame = schematable.choose_table(self.connection, self)
         frame.ShowModal()

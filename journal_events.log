@@ -839,3 +839,44 @@
 2012-05-18 03:00:32,437 INFO degree_of_classification parameter calculation successfully
 2012-05-18 03:00:32,578 INFO calculation successfully
 2012-05-18 03:00:41,015 INFO report succesfully done
+2012-05-18 03:06:48,023 INFO ######################################################################################
+2012-05-18 03:06:48,023 INFO start session
+2012-05-18 03:06:48,596 INFO connect to db
+2012-05-18 03:06:48,615 INFO list of connections loaded
+2012-05-18 03:06:48,637 INFO list of connections loaded
+2012-05-18 03:06:48,642 INFO listing of conneciton succesfully loading
+2012-05-18 03:06:49,259 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 03:06:49,262 INFO list of connections loaded
+2012-05-18 03:06:49,263 INFO listing of conneciton succesfully loading
+2012-05-18 03:06:49,503 INFO choose table
+2012-05-18 03:06:49,536 INFO list of schemas loaded successfully
+2012-05-18 03:06:50,721 INFO list of tables loaded successfully
+2012-05-18 03:06:50,721 INFO schema TEST_DIPLOM choosed
+2012-05-18 03:06:51,589 INFO table BIG_TEST1 choosed
+2012-05-18 03:06:52,334 INFO connecting to local database successfully
+2012-05-18 03:07:01,540 INFO starting calculation data quality model
+2012-05-18 03:07:01,542 INFO connecting to local database successfully
+2012-05-18 03:07:01,773 INFO uniq parameter calculation successfully
+2012-05-18 03:07:01,900 INFO calculation successfully
+2012-05-18 03:07:04,744 INFO report succesfully done
+2012-05-18 03:07:43,660 INFO ######################################################################################
+2012-05-18 03:07:43,660 INFO start session
+2012-05-18 03:07:45,581 INFO connect to db
+2012-05-18 03:07:45,598 INFO list of connections loaded
+2012-05-18 03:07:45,618 INFO list of connections loaded
+2012-05-18 03:07:45,622 INFO listing of conneciton succesfully loading
+2012-05-18 03:07:46,240 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 03:07:46,243 INFO list of connections loaded
+2012-05-18 03:07:46,246 INFO listing of conneciton succesfully loading
+2012-05-18 03:07:46,650 INFO choose table
+2012-05-18 03:07:46,683 INFO list of schemas loaded successfully
+2012-05-18 03:07:49,440 INFO list of tables loaded successfully
+2012-05-18 03:07:49,440 INFO schema ARTUR choosed
+2012-05-18 03:07:51,214 INFO table TEST choosed
+2012-05-18 03:07:53,806 INFO connecting to local database successfully
+2012-05-18 03:07:58,904 INFO choose table
+2012-05-18 03:07:58,937 INFO list of schemas loaded successfully
+2012-05-18 03:08:03,346 INFO list of tables loaded successfully
+2012-05-18 03:08:03,346 INFO schema TEST_DIPLOM choosed
+2012-05-18 03:08:04,421 INFO table BIG_TEST1 choosed
+2012-05-18 03:08:06,079 ERROR failed calculation dq - code 224: NO PARAMS FOR DATA QUALITY
