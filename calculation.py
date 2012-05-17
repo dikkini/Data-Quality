@@ -39,7 +39,8 @@ class DQ(object):
 			count0 = count0 * self.weights[0]
 			emptyvalues = count0 / self.countall * 100
 			emptyvalues = 100 - emptyvalues
-			self.data.append(str(emptyvalues))
+			emptyvalues = str(round(emptyvalues, 2))
+			self.data.append(emptyvalues)
 		else:
 			emptyvalues = 0
 			self.data.append(u'-')
@@ -64,7 +65,8 @@ class DQ(object):
 				avgnoinf = float(avgnoinf)
 				avgnoinf = avgnoinf / self.countall * 100
 				avgnoinf = 100 - avgnoinf
-				self.data.append(str(avgnoinf))
+				avgnoinf = str(round(avgnoinf, 2))
+				self.data.append(avgnoinf)
 
 				# Расчет расширенной статистики по колонкам
 				ext_stat = []
@@ -106,7 +108,8 @@ class DQ(object):
 				avgbadform = float(avgbadform)
 				avgbadform = avgbadform / self.countall * 100
 				avgbadform = 100 - avgbadform
-				self.data.append(str(avgbadform))
+				avgbadform = str(round(avgbadform, 2))
+				self.data.append(avgbadform)
 				ext_stat = []
 				info = [u'Не соответствующие формату']
 				
@@ -146,7 +149,8 @@ class DQ(object):
 				avgnoise = float(avgnoise)
 				avgnoise = avgnoise / self.countall * 100
 				avgnoise = 100 - avgnoise
-				self.data.append(str(avgnoise))
+				avgnoise = str(round(avgnoise, 2))
+				self.data.append(avgnoise)
 
 				ext_stat = []
 				info = [u'Уровень шума']
@@ -178,7 +182,8 @@ class DQ(object):
 				avgident = (sum(count4) / len(count4)) * self.weights[4]
 				avgident = float(avgident)
 				avgident = avgident / self.countall * 100
-				self.data.append(str(avgident))
+				avgident = str(round(avgident, 2))
+				self.data.append(avgident)
 				logging.info(u'identify parameter calculation successfully')
 			else:
 				avgident = 0
@@ -199,7 +204,8 @@ class DQ(object):
 				avgharm = (sum(count5) / len(count5)) * self.weights[5]
 				avgharm = float(avgharm)
 				avgharm = avgharm / self.countall * 100
-				self.data.append(str(avgharm))
+				avgharm = str(round(avgharm, 2))
+				self.data.append(avgharm)
 				logging.info(u'harmony parameter calculation successfully')
 			else:
 				avgharm = 0
@@ -218,7 +224,8 @@ class DQ(object):
 				avguniq = (sum(count6) / len(count6)) * self.weights[6]
 				avguniq = float(avguniq)
 				avguniq = avguniq / self.countall * 100
-				self.data.append(str(avguniq))
+				avguniq = str(round(avguniq, 2))
+				self.data.append(avguniq)
 
 				ext_stat = []
 				info = [u'Унификация']
@@ -247,7 +254,8 @@ class DQ(object):
 				avgeffic = (sum(count7) / len(count7)) * self.weights[7]
 				avgeffic = float(avgeffic)
 				avgeffic = avgeffic / self.countall * 100
-				self.data.append(str(avgeffic))
+				avgeffic = str(round(avgeffic, 2))
+				self.data.append(avgeffic)
 				logging.info(u'efficiency parameter calculation successfully')
 			else:
 				avgeffic = 0
@@ -268,7 +276,8 @@ class DQ(object):
 				avgincon = float(avgincon)
 				avgincon = avgincon / self.countall * 100
 				avgincon = 100 - avgincon
-				self.data.append(str(avgincon))
+				avgincon = str(round(avgincon, 2))
+				self.data.append(avgincon)
 				logging.info(u'inconsistency parameter calculation successfully')
 			else:
 				avgincon = 0
@@ -304,7 +313,8 @@ class DQ(object):
 					avgdoc = float(float(user_choice_catalog) / i)
 					avgdoc = avgdoc * self.weights[9] * 100
 					avgdoc = float(avgdoc)
-					self.data.append(str(avgdoc))
+					avgdoc = str(round(avgdoc, 2))
+					self.data.append(avgdoc)
 					logging.info(u'degree_of_classification parameter calculation successfully')
 			else:
 				avgdoc = 0
@@ -324,7 +334,8 @@ class DQ(object):
 				avgdos = (sum(count10) / len(count10)) * self.weights[10]
 				avgdos = float(avgdos)
 				avgdos = avgdos / self.countall * 100
-				self.data.append(str(avgdos))
+				avgdos = str(round(avgdos, 2))
+				self.data.append(avgdos)
 				logging.info(u'degree_of_structuring parameter calculation successfully')
 			else:
 				avgdos = 0
