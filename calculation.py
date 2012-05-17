@@ -44,7 +44,6 @@ class DQ(object):
 		else:
 			emptyvalues = 0
 			self.data.append(u'-')
-		print 'Empty:', emptyvalues, '%'
 
 		self.extend_stat = []
 
@@ -85,7 +84,6 @@ class DQ(object):
 				avgnoinf = 0
 				self.data.append(u'-')
 				self.extend_stat.append(None)
-			print 'No_Inform:', avgnoinf, '%'
 		except Exception, info:
 			logging.error(u'not informable parameter calculation failed: %s' % str(info))
 
@@ -128,9 +126,7 @@ class DQ(object):
 				avgbadform = 0
 				self.data.append(u'-')
 				self.extend_stat.append(None)
-			print 'bad_format', avgbadform, '%'
 		except Exception, info:
-			print info
 			logging.error(u'bad format parameter calculation failed: %s' % str(info))
 
 		# Значение уровня шума
@@ -167,7 +163,6 @@ class DQ(object):
 				avgnoise = 0
 				self.data.append(u'-')
 				self.extend_stat.append(None)
-			print 'noise_level:', avgnoise, '%'
 		except Exception, info:
 			logging.error(u'noise level parameter calculation failed: %s' % str(info))
 
@@ -188,7 +183,6 @@ class DQ(object):
 			else:
 				avgident = 0
 				self.data.append(u'-')
-			print 'identifiabilit:', avgident, '%'
 			
 		except Exception, info:
 			logging.error(u'indentify parameter calculation failed: %s' % str(info))
@@ -210,7 +204,6 @@ class DQ(object):
 			else:
 				avgharm = 0
 				self.data.append(u'-')
-			print 'harmony:', avgharm, '%'
 		except Exception, info:
 			logging.error(u'harmony parameter calculation failed: %s' % str(info))
 
@@ -239,7 +232,6 @@ class DQ(object):
 				avguniq = 0
 				self.data.append(u'-')
 				self.extend_stat.append(None)
-			print 'Uniq:', avguniq, '%'
 		except Exception, info:
 			logging.error(u'uniq parameter calculation failed: %s' % str(info))
 			
@@ -260,7 +252,6 @@ class DQ(object):
 			else:
 				avgeffic = 0
 				self.data.append(u'-')
-			print 'efficiency:', avgeffic, '%'
 		except Exception, info:
 			logging.error(u'efficiency parameter calculation failed: %s' % str(info))
 
@@ -282,7 +273,6 @@ class DQ(object):
 			else:
 				avgincon = 0
 				self.data.append(u'-')
-			print 'inconsistency:', avgincon, '%'
 		except Exception, info:
 			logging.error(u'inconsistency parameter calculation failed: %s' % str(info))
 
@@ -319,7 +309,6 @@ class DQ(object):
 			else:
 				avgdoc = 0
 				self.data.append(u'-')
-			print 'degree_of_classification:', avgdoc, '%'
 		except Exception, info:
 			logging.error(u'degree_of_classification parameter calculation failed: %s' % str(info))
 		
@@ -340,7 +329,6 @@ class DQ(object):
 			else:
 				avgdos = 0
 				self.data.append(u'-')
-			print 'degree_of_structuring:', avgdos, '%'
 		except Exception, info:
 			logging.error(u'degree_of_structuring parameter calculation failed: %s' % str(info))
 		try:
@@ -348,7 +336,6 @@ class DQ(object):
 			allweight = sum(self.weights)
 		except Exception, info:
 			logging.error(u'average assessment of all parameters calculation failed: %s' % str(info))
-			print info
 		try:
 			result = avgall / allweight
 		except Exception, info:
@@ -359,8 +346,6 @@ class DQ(object):
 		self.data.append(self.table)
 		self.dat = []
 		self.dat.append(self.data)
-
-		print 'ITOGO:', result, '%'
 
 		stat.add_main_stat(timedq, self.data)
 		stat.add_ext_stat(timedq, self.extend_stat)

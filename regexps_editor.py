@@ -35,7 +35,7 @@ class page_editor():
         
         self.params_regexps_choices = [u'Не несущие информацию значения', u'Не соответствующие формату значения', 
                                        u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Оперативность', 
-                                       u'Противоречивость', u'Степень классификации', u'Степень структуризации']
+                                       u'Противоречивость', u'Степень структуризации']
         
 
         self.regexp_choice_pull = wx.Choice( self.panel_regexps, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 
@@ -68,22 +68,13 @@ class page_editor():
         self.del_regexp_btn = wx.Button( self.panel_regexps, wx.ID_ANY, u"Удалить регулярное выражение", wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer1.Add( self.del_regexp_btn, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
         
-        self.checksql_btn = wx.Button( self.panel_regexps, wx.ID_ANY, u"Проверка синтаксиса SQL", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.checksql_btn = wx.Button( self.panel_regexps, wx.ID_ANY, u"Выполнить запрос", wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer1.Add( self.checksql_btn, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
         
         self.panel_regexps.SetSizer( bSizer1 )
         self.panel_regexps.Layout()
         bSizer1.Fit( self.panel_regexps )
         bSizer3.Add( self.panel_regexps, wx.EXPAND, 1 )
-        
-        
-#        self.main.SetSizer( bSizer3 )
-#        self.Layout()
-#        
-#        self.Centre( wx.BOTH )
-        
-        #Properties
-#        self.regexp_choice_pull.
         
         # Binds Events
         self.regexps_listbox.Bind(wx.EVT_LISTBOX_DCLICK, self.OnChRegexp)
@@ -94,12 +85,7 @@ class page_editor():
         self.checksql_btn.Bind(wx.EVT_BUTTON, self.OnTestBtn)
         self.add_regexp_btn.Bind(wx.EVT_BUTTON, self.OnAddBtn)
         self.del_regexp_btn.Bind(wx.EVT_BUTTON, self.OnDelBtn)
-#        self.OK_btn.Bind(wx.EVT_BUTTON, self.OnConfirmBtn)
-        
-        # Variables
-        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        
+
         #SQLITE
         self.db = sqlite.sqliteDB(self.main.schema, self.main.table)
         
@@ -159,15 +145,9 @@ class page_editor():
             except AttributeError:
                 self.edit_regexp_txt.SetValue(wx.EmptyString)
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'degree_of_classification'
-            try:
-                self.edit_regexp_txt.SetValue(self.regexp7)
-            except AttributeError:
-                self.edit_regexp_txt.SetValue(wx.EmptyString)
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_structuring'
             try:
-                self.edit_regexp_txt.SetValue(self.regexp8)
+                self.edit_regexp_txt.SetValue(self.regexp7)
             except AttributeError:
                 self.edit_regexp_txt.SetValue(wx.EmptyString)
             
@@ -199,8 +179,6 @@ class page_editor():
             self.regexp6 = self.edit_regexp_txt.GetValue()
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
             self.regexp7 = self.edit_regexp_txt.GetValue()
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
-            self.regexp8 = self.edit_regexp_txt.GetValue()
     
     def OnTestBtn(self, event):
         message = 'Пожалуйста подождите, получение информации из базы...'
@@ -228,7 +206,6 @@ class page_editor():
                 return
             self.grid_table = GridTable(data, self.connection, self.table)
             cursor.close()
-            #self.check_grid.SetTable(self.grid_table, True)
             fsg = fs_grid.fullgrid(self, self.grid_table)
             fsg.Show()
             del busy
@@ -254,8 +231,6 @@ class page_editor():
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
             self.param = 'inconsistency'
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'degree_of_classification'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_structuring'
             
         regexp =  self.edit_regexp_txt.GetValue()
@@ -280,8 +255,6 @@ class page_editor():
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
             self.param = 'inconsistency'
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'degree_of_classification'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[8]:
             self.param = 'degree_of_structuring'
             
         regexp =  self.regexps_listbox.GetStringSelection()

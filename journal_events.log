@@ -12950,6 +12950,7 @@
 2012-05-17 01:29:49,956 INFO end session. but there are no connection to db
 2012-05-17 01:29:49,956 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
 >>>>>>> 7b8186c39ce992cd10e97bc0001aa483b12b35f1
+<<<<<<< HEAD
 2012-05-17 08:17:07,226 INFO ######################################################################################
 2012-05-17 08:17:07,242 INFO start session
 2012-05-17 08:17:28,977 INFO end session. but there are no connection to db
@@ -12970,3 +12971,20 @@
 2012-05-17 08:30:14,009 INFO start session
 2012-05-17 16:13:18,443 INFO end session. but there are no connection to db
 2012-05-17 16:13:18,443 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+=======
+2012-05-17 06:10:02,279 INFO ######################################################################################
+2012-05-17 06:10:02,305 INFO start session
+2012-05-17 06:10:05,127 INFO connect to db
+2012-05-17 06:10:05,668 INFO list of connections loaded
+2012-05-17 06:10:05,698 INFO list of connections loaded
+2012-05-17 06:10:05,729 INFO listing of conneciton succesfully loading
+2012-05-17 06:10:08,730 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 06:10:08,757 INFO list of connections loaded
+2012-05-17 06:10:08,760 INFO listing of conneciton succesfully loading
+2012-05-17 06:10:10,006 INFO choose table
+2012-05-17 06:10:10,096 INFO list of schemas loaded successfully
+2012-05-17 06:10:11,779 INFO list of tables loaded successfully
+2012-05-17 06:10:11,779 INFO schema TEST_DIPLOM choosed
+2012-05-17 06:10:13,131 INFO table BIG_TEST1 choosed
+2012-05-17 06:10:13,957 INFO connecting to local database successfully
+>>>>>>> f30e7dd3d9e931807a06a13f2667bdbc5f25eca0

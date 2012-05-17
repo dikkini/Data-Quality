@@ -297,8 +297,6 @@ class work_con():
         except Exception, info:
             info = str(info)
             info = info.encode('utf8')
-            wx.MessageBox(u'PIZDETS')
-            print info
             logging.error(u'list of connections not loaded')
     
     def new_con(self, namecon, data):

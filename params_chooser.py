@@ -16,7 +16,7 @@ logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelnam
 class frame_chooser ( wx.Frame ):
     
     def __init__(self, parent, schema, table, connection):
-        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 400,188 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.TAB_TRAVERSAL )
+        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u'Выбор параметров для оценки качества данных', pos = wx.DefaultPosition, size = wx.Size( 400,200 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.TAB_TRAVERSAL )
         
         self.main = parent
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
@@ -92,7 +92,6 @@ class frame_chooser ( wx.Frame ):
         self.main.weights = self.weights_params 
         self.main.using_params = self.using_params
         self.main.user_choice_catalog = self.user_number_catalog
-        print self.using_params
         self.Close()   
 
     def OnCheckUseParam(self, event):
@@ -408,6 +407,5 @@ class WeightsValidator(wx.PyValidator):
             else:
                 return False
         except ValueError, info:
-            print info
             return False
         return   

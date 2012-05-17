@@ -100,8 +100,6 @@ class main_stat(listmix.ColumnSorterMixin):
         self.main.panelMainStat.Layout()
         size = self.main.GetSize()
         newsize = size - (1,1)
-        print size
-        print newsize
         self.main.SetSize(newsize)
         
         
@@ -251,7 +249,6 @@ class history_stat():
             frame = Popup(self.ext_cols, self.ext_stat, self.main.schema, self.main.table)
             frame.Show()
         except Exception, info:
-            print info
             if 'object is not subscriptable' in str(info):
                 wx.MessageBox(u'Для данной статистике нет расширенной статистики')
 
