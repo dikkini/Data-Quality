@@ -75,9 +75,9 @@ class frame_chooser ( wx.Frame ):
         self.params_choice_pull.Bind(wx.EVT_CHOICE, self.OnChParamDQ)
         self.Bind(wx.EVT_BUTTON, self.OnConfirmBtn, self.OK_btn)  
         
-        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        
+        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.user_number_catalog = None
         #SQLITE
         self.db = sqlite.sqliteDB(self.main.schema, self.main.table)
         
@@ -91,6 +91,7 @@ class frame_chooser ( wx.Frame ):
     def OnConfirmBtn(self, event):
         self.main.weights = self.weights_params 
         self.main.using_params = self.using_params
+        self.main.user_choice_catalog = self.user_number_catalog
         print self.using_params
         self.Close()   
 
@@ -229,16 +230,13 @@ class frame_chooser ( wx.Frame ):
                 self.using_params[9] = 1
                 self.weights_params[9] = self.weights_txt.GetValue()
                 param = 'degree_of_classification'
-                test = self.db.take_regexps(param)
-                if not test:
-                    wx.MessageBox(u'Для данного параметра не введены регулярные выражения.')
-                    self.using_params[9] = 0
-                    self.weights_params[9] = 0
-                    self.use_param_checkbox.SetValue(False)
-                    self.weights_txt.Clear()
+                ask = AskCatalogs(self)
+                ask.ShowModal()
+                
             else:
                 self.using_params[9] = 0
                 self.weights_params[9] = 0
+                
         elif self.params_choice_pull.GetStringSelection() == self.params_quality_choices[10]:
             if self.use_param_checkbox.IsChecked():
                 self.using_params[10] = 1
@@ -333,13 +331,55 @@ class frame_chooser ( wx.Frame ):
             else:
                 self.use_param_checkbox.SetValue(False)
                 self.weights_txt.Clear()
-        elif self.params_choice_pull.GetStringSelection() == self.params_quality_choices[11]:
-            if self.using_params[11] == 1:
-                self.use_param_checkbox.SetValue(True)
-                self.weights_txt.SetValue(self.weights_params[11])
-            else:
-                self.use_param_checkbox.SetValue(False)
-                self.weights_txt.Clear()
+                
+class AskCatalogs(wx.Dialog): 
+    def __init__(self, parent): 
+        wx.Dialog. __init__(self, None, -1, u'Укажите пожалуйста число справочников использовавшееся для заполнения таблицы:',style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB|wx.TAB_TRAVERSAL) 
+        # Create the text controls 
+        txt  = wx.StaticText(self, -1, u"Число:")
+        # Parent connection 
+        self.par_ch = parent
+        self.text_ctrl = wx.TextCtrl(self)     
+        # Use standard button IDs 
+        okay = wx.Button(self, wx.ID_OK) 
+        okay.SetDefault() 
+        cancel = wx.Button(self, wx.ID_CANCEL) 
+        # Layout with sizers 
+        sizer = wx.BoxSizer(wx.VERTICAL) 
+        sizer.Add(wx.StaticLine(self), 0, wx.EXPAND|wx.ALL, 5) 
+        
+        fgs = wx.FlexGridSizer(3, 2, 5, 5) 
+        fgs.Add(txt, 0, wx.ALIGN_RIGHT) 
+        fgs.Add(self.text_ctrl, 0, wx.EXPAND) 
+        fgs.AddGrowableCol(1) 
+        sizer.Add(fgs, 0, wx.EXPAND|wx.ALL, 5) 
+        btns = wx.StdDialogButtonSizer() 
+        btns.AddButton(okay) 
+        btns.AddButton(cancel) 
+        btns.Realize() 
+        sizer.Add(btns, 0, wx.EXPAND|wx.ALL, 5) 
+        self.SetSizer(sizer) 
+        sizer.Fit(self)
+        okay.Bind(wx.EVT_BUTTON, self.OnOk)
+        cancel.Bind(wx.EVT_BUTTON, self.OnCancel)
+        self.Center()
+        
+    def OnOk(self, event):
+        value = self.text_ctrl.GetValue()
+        if len(value) == 0:
+            wx.MessageBox(u'Введите число!')
+        else:
+            self.par_ch.user_number_catalog = value
+            self.par_ch.using_params[9] = 1
+            self.par_ch.weights_params[9] = 1
+            self.par_ch.use_param_checkbox.SetValue(True)
+            self.Close()
+    
+    def OnCancel(self, event):
+        self.par_ch.using_params[9] = 0
+        self.par_ch.weights_params[9] = 0
+        self.par_ch.use_param_checkbox.SetValue(False)
+        self.par_ch.weights_txt.Clear()
 
 class WeightsValidator(wx.PyValidator):
     def __init__(self):

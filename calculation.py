@@ -13,7 +13,7 @@ class DQ(object):
 		self.table = table
 		self.schema = schema
 
-	def mathDQ(self, weights, using_params):
+	def mathDQ(self, weights, using_params, user_choice_catalog):
 		logging.info(u'starting calculation data quality model')
 		self.data = []
 		dt = datetime.datetime.now()
@@ -280,23 +280,39 @@ class DQ(object):
 		# Степень классификации
 		try:
 			if self.using_params[9] == 1:
+				const = 0.1
+				uniq_values = []
 				count9 = []
 				param = 'degree_of_classification'
-				regexp = sql.take_regexps(param)
-				for i in range(len(regexp)):
-					count9.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
-				avgdoc = (sum(count9) / len(count10)) * self.weights[9]
-				avgdoc = float(avgdoc)
-				avgdoc = avgdoc / self.countall * 100
-				self.data.append(str(avgdoc))
-				logging.info(u'degree_of_classification parameter calculation successfully')
+				
+				for column in self.namecols:
+					uniq_values.append(orcl.get_uniq_values(column, self.schema, self.table))
+				
+				for value in uniq_values:
+					count9.append(value / self.countall)
+				i = 0
+				for value in count9:
+					if value < const:
+						i = i + 1
+				
+				if i == 0:
+					wx.MessageBox(u'Для данного массива данных степень классификации не может быть посчитана, так как ни одно поле не заполнено по справочнику')
+					logging.info(u'degree_of_classification parameter not calculated, because there are no catalogs used')
+					avgdoc = 0
+					self.data.append(u'-')
+				else:
+					avgdoc = float(float(user_choice_catalog) / i)
+					avgdoc = avgdoc * self.weights[9] * 100
+					avgdoc = float(avgdoc)
+					self.data.append(str(avgdoc))
+					logging.info(u'degree_of_classification parameter calculation successfully')
 			else:
 				avgdoc = 0
 				self.data.append(u'-')
 			print 'degree_of_classification:', avgdoc, '%'
 		except Exception, info:
 			logging.error(u'degree_of_classification parameter calculation failed: %s' % str(info))
-			
+		
 		# Степень структуризации
 		try:
 			if self.using_params[10] == 1:
@@ -320,7 +336,7 @@ class DQ(object):
 			avgall = emptyvalues + avgnoinf + avgbadform + avgnoise + avgident + avgharm + avguniq + avgeffic + avgincon + avgdoc + avgdos
 			allweight = sum(self.weights)
 		except Exception, info:
-			logging.error(u'avegrage assessment of all parameters calculation failed: %s' % str(info))
+			logging.error(u'average assessment of all parameters calculation failed: %s' % str(info))
 			print info
 		try:
 			result = avgall / allweight

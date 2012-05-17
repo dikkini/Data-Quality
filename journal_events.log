@@ -12170,3 +12170,771 @@
 2012-05-17 03:23:51,341 INFO start session
 2012-05-17 03:23:53,653 INFO end session. but there are no connection to db
 2012-05-17 03:23:53,653 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+2012-05-17 03:40:03,101 INFO ######################################################################################
+2012-05-17 03:40:03,101 INFO start session
+2012-05-17 03:40:04,542 INFO connect to db
+2012-05-17 03:40:04,559 INFO list of connections loaded
+2012-05-17 03:40:04,579 INFO list of connections loaded
+2012-05-17 03:40:04,588 INFO listing of conneciton succesfully loading
+2012-05-17 03:40:05,454 INFO list of connections loaded
+2012-05-17 03:40:05,459 INFO listing of conneciton succesfully loading
+2012-05-17 03:40:07,085 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:40:07,091 INFO list of connections loaded
+2012-05-17 03:40:07,094 INFO listing of conneciton succesfully loading
+2012-05-17 03:40:07,095 INFO trying connection to db
+2012-05-17 03:40:07,099 INFO list of connections loaded
+2012-05-17 03:40:07,099 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:40:07,871 INFO choose table
+2012-05-17 03:40:07,907 INFO list of schemas loaded successfully
+2012-05-17 03:40:09,569 INFO list of tables loaded successfully
+2012-05-17 03:40:09,571 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:40:10,740 INFO table BIG_TEST1 choosed
+2012-05-17 03:40:11,503 INFO launch edit regexps module
+2012-05-17 03:40:11,522 INFO connecting to local database successfully
+2012-05-17 03:40:14,845 INFO connecting to local database successfully
+2012-05-17 03:41:20,730 INFO ######################################################################################
+2012-05-17 03:41:20,730 INFO start session
+2012-05-17 03:41:22,668 INFO connect to db
+2012-05-17 03:41:22,686 INFO list of connections loaded
+2012-05-17 03:41:22,703 INFO list of connections loaded
+2012-05-17 03:41:22,710 INFO listing of conneciton succesfully loading
+2012-05-17 03:41:23,730 INFO list of connections loaded
+2012-05-17 03:41:23,733 INFO listing of conneciton succesfully loading
+2012-05-17 03:41:25,385 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:41:25,391 INFO list of connections loaded
+2012-05-17 03:41:25,394 INFO listing of conneciton succesfully loading
+2012-05-17 03:41:25,394 INFO trying connection to db
+2012-05-17 03:41:25,398 INFO list of connections loaded
+2012-05-17 03:41:25,400 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:41:27,727 INFO choose table
+2012-05-17 03:41:27,762 INFO list of schemas loaded successfully
+2012-05-17 03:41:29,555 INFO list of tables loaded successfully
+2012-05-17 03:41:29,555 INFO schema ARTUR choosed
+2012-05-17 03:49:59,811 INFO ######################################################################################
+2012-05-17 03:49:59,812 INFO start session
+2012-05-17 03:50:00,395 INFO connect to db
+2012-05-17 03:50:00,414 INFO list of connections loaded
+2012-05-17 03:50:00,434 INFO list of connections loaded
+2012-05-17 03:50:00,440 INFO listing of conneciton succesfully loading
+2012-05-17 03:50:01,270 INFO list of connections loaded
+2012-05-17 03:50:01,275 INFO listing of conneciton succesfully loading
+2012-05-17 03:50:02,730 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:50:02,736 INFO list of connections loaded
+2012-05-17 03:50:02,739 INFO listing of conneciton succesfully loading
+2012-05-17 03:50:02,739 INFO trying connection to db
+2012-05-17 03:50:02,744 INFO list of connections loaded
+2012-05-17 03:50:02,744 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:50:03,180 INFO choose table
+2012-05-17 03:50:03,214 INFO list of schemas loaded successfully
+2012-05-17 03:50:05,724 INFO list of tables loaded successfully
+2012-05-17 03:50:05,724 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:50:06,776 INFO table BIG_TEST1 choosed
+2012-05-17 03:50:07,625 INFO connecting to local database successfully
+2012-05-17 03:51:44,219 INFO ######################################################################################
+2012-05-17 03:51:44,219 INFO start session
+2012-05-17 03:51:45,457 INFO connect to db
+2012-05-17 03:51:45,473 INFO list of connections loaded
+2012-05-17 03:51:45,493 INFO list of connections loaded
+2012-05-17 03:51:45,500 INFO listing of conneciton succesfully loading
+2012-05-17 03:51:46,190 INFO list of connections loaded
+2012-05-17 03:51:46,194 INFO listing of conneciton succesfully loading
+2012-05-17 03:51:47,526 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:51:47,532 INFO list of connections loaded
+2012-05-17 03:51:47,535 INFO listing of conneciton succesfully loading
+2012-05-17 03:51:47,536 INFO trying connection to db
+2012-05-17 03:51:47,542 INFO list of connections loaded
+2012-05-17 03:51:47,542 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:51:48,667 INFO choose table
+2012-05-17 03:51:48,701 INFO list of schemas loaded successfully
+2012-05-17 03:51:50,082 INFO list of tables loaded successfully
+2012-05-17 03:51:50,082 INFO schema ARTUR choosed
+2012-05-17 03:51:51,486 INFO list of tables loaded successfully
+2012-05-17 03:51:51,486 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:51:52,734 INFO table BIG_TEST1 choosed
+2012-05-17 03:51:53,674 INFO connecting to local database successfully
+2012-05-17 03:52:42,908 INFO ######################################################################################
+2012-05-17 03:52:42,910 INFO start session
+2012-05-17 03:52:44,112 INFO connect to db
+2012-05-17 03:52:44,130 INFO list of connections loaded
+2012-05-17 03:52:44,148 INFO list of connections loaded
+2012-05-17 03:52:44,154 INFO listing of conneciton succesfully loading
+2012-05-17 03:52:45,013 INFO list of connections loaded
+2012-05-17 03:52:45,016 INFO listing of conneciton succesfully loading
+2012-05-17 03:52:46,384 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:52:46,392 INFO list of connections loaded
+2012-05-17 03:52:46,394 INFO listing of conneciton succesfully loading
+2012-05-17 03:52:46,394 INFO trying connection to db
+2012-05-17 03:52:46,400 INFO list of connections loaded
+2012-05-17 03:52:46,400 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:52:46,665 INFO choose table
+2012-05-17 03:52:46,701 INFO list of schemas loaded successfully
+2012-05-17 03:52:48,046 INFO list of tables loaded successfully
+2012-05-17 03:52:48,048 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:52:48,752 INFO table TEST_GOOD_1000 choosed
+2012-05-17 03:52:49,974 INFO table BIG_TEST1 choosed
+2012-05-17 03:52:51,834 INFO choose table
+2012-05-17 03:52:51,868 INFO list of schemas loaded successfully
+2012-05-17 03:52:55,384 INFO connecting to local database successfully
+2012-05-17 03:54:28,509 INFO ######################################################################################
+2012-05-17 03:54:28,509 INFO start session
+2012-05-17 03:54:28,970 INFO connect to db
+2012-05-17 03:54:28,986 INFO list of connections loaded
+2012-05-17 03:54:29,006 INFO list of connections loaded
+2012-05-17 03:54:29,012 INFO listing of conneciton succesfully loading
+2012-05-17 03:54:29,915 INFO list of connections loaded
+2012-05-17 03:54:29,920 INFO listing of conneciton succesfully loading
+2012-05-17 03:54:31,243 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:54:31,250 INFO list of connections loaded
+2012-05-17 03:54:31,253 INFO listing of conneciton succesfully loading
+2012-05-17 03:54:31,253 INFO trying connection to db
+2012-05-17 03:54:31,259 INFO list of connections loaded
+2012-05-17 03:54:31,259 ERROR exit programm with code 0 before close all windows: The C++ part of the Choice object has been deleted, attribute access no longer allowed.
+2012-05-17 03:54:31,993 INFO choose table
+2012-05-17 03:54:32,029 INFO list of schemas loaded successfully
+2012-05-17 03:54:33,578 INFO list of tables loaded successfully
+2012-05-17 03:54:33,579 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:54:34,486 INFO table BIG_TEST1 choosed
+2012-05-17 03:54:35,913 INFO connecting to local database successfully
+2012-05-17 03:56:05,762 INFO ######################################################################################
+2012-05-17 03:56:05,762 INFO start session
+2012-05-17 03:56:06,168 INFO connect to db
+2012-05-17 03:56:06,187 INFO list of connections loaded
+2012-05-17 03:56:06,203 INFO list of connections loaded
+2012-05-17 03:56:06,210 INFO listing of conneciton succesfully loading
+2012-05-17 03:56:07,188 INFO list of connections loaded
+2012-05-17 03:56:07,191 INFO listing of conneciton succesfully loading
+2012-05-17 03:56:08,098 INFO list of connections loaded
+2012-05-17 03:56:08,101 INFO listing of conneciton succesfully loading
+2012-05-17 03:56:08,101 INFO trying connection to db
+2012-05-17 03:56:08,627 INFO connecting to local database successfully
+2012-05-17 03:56:08,627 INFO editing connection: localhost
+2012-05-17 03:56:08,631 INFO list of connections loaded
+2012-05-17 03:56:08,634 INFO listing of conneciton succesfully loading
+2012-05-17 03:56:08,642 INFO editing connection: localhost
+2012-05-17 03:56:11,490 INFO editing connection localhost successfully: localhost
+2012-05-17 03:56:11,493 INFO list of connections loaded
+2012-05-17 03:56:11,496 INFO listing of conneciton succesfully loading
+2012-05-17 03:56:12,183 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 03:56:12,187 INFO list of connections loaded
+2012-05-17 03:56:12,188 INFO listing of conneciton succesfully loading
+2012-05-17 03:56:12,617 INFO choose table
+2012-05-17 03:56:12,651 INFO list of schemas loaded successfully
+2012-05-17 03:56:14,082 INFO list of tables loaded successfully
+2012-05-17 03:56:14,082 INFO schema TEST_DIPLOM choosed
+2012-05-17 03:56:15,573 INFO table BIG_TEST1 choosed
+2012-05-17 03:56:16,296 INFO launch edit regexps module
+2012-05-17 03:56:16,312 INFO connecting to local database successfully
+2012-05-17 03:56:19,030 INFO connecting to local database successfully
+2012-05-17 04:00:18,953 INFO ######################################################################################
+2012-05-17 04:00:18,953 INFO start session
+2012-05-17 04:00:20,358 INFO connect to db
+2012-05-17 04:00:20,375 INFO list of connections loaded
+2012-05-17 04:00:20,395 INFO list of connections loaded
+2012-05-17 04:00:20,401 INFO listing of conneciton succesfully loading
+2012-05-17 04:00:21,174 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:00:21,177 INFO list of connections loaded
+2012-05-17 04:00:21,178 INFO listing of conneciton succesfully loading
+2012-05-17 04:00:21,687 INFO choose table
+2012-05-17 04:00:21,723 INFO list of schemas loaded successfully
+2012-05-17 04:00:23,417 INFO list of tables loaded successfully
+2012-05-17 04:00:23,417 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:00:24,900 INFO table BIG_TEST1 choosed
+2012-05-17 04:00:25,990 INFO connecting to local database successfully
+2012-05-17 04:00:52,476 INFO ######################################################################################
+2012-05-17 04:00:52,476 INFO start session
+2012-05-17 04:00:53,190 INFO connect to db
+2012-05-17 04:00:53,209 INFO list of connections loaded
+2012-05-17 04:00:53,226 INFO list of connections loaded
+2012-05-17 04:00:53,240 INFO listing of conneciton succesfully loading
+2012-05-17 04:00:54,246 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:00:54,249 INFO list of connections loaded
+2012-05-17 04:00:54,252 INFO listing of conneciton succesfully loading
+2012-05-17 04:00:54,358 INFO choose table
+2012-05-17 04:00:54,394 INFO list of schemas loaded successfully
+2012-05-17 04:00:55,601 INFO list of tables loaded successfully
+2012-05-17 04:00:55,601 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:00:56,940 INFO table BIG_TEST1 choosed
+2012-05-17 04:00:57,973 INFO connecting to local database successfully
+2012-05-17 04:01:52,095 INFO ######################################################################################
+2012-05-17 04:01:52,095 INFO start session
+2012-05-17 04:01:52,759 INFO connect to db
+2012-05-17 04:01:52,776 INFO list of connections loaded
+2012-05-17 04:01:52,795 INFO list of connections loaded
+2012-05-17 04:01:52,801 INFO listing of conneciton succesfully loading
+2012-05-17 04:01:53,493 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:01:53,494 INFO list of connections loaded
+2012-05-17 04:01:53,496 INFO listing of conneciton succesfully loading
+2012-05-17 04:01:53,703 INFO choose table
+2012-05-17 04:01:53,739 INFO list of schemas loaded successfully
+2012-05-17 04:01:55,153 INFO list of tables loaded successfully
+2012-05-17 04:01:55,153 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:01:56,380 INFO table BIG_TEST1 choosed
+2012-05-17 04:01:57,046 INFO connecting to local database successfully
+2012-05-17 04:02:02,765 INFO starting calculation data quality model
+2012-05-17 04:02:02,765 INFO connecting to local database successfully
+2012-05-17 04:02:02,805 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'NoneType' and 'int'
+2012-05-17 04:02:02,805 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:02:02,805 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:02:05,532 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:04:48,792 INFO ######################################################################################
+2012-05-17 04:04:48,792 INFO start session
+2012-05-17 04:04:49,334 INFO connect to db
+2012-05-17 04:04:49,349 INFO list of connections loaded
+2012-05-17 04:04:49,368 INFO list of connections loaded
+2012-05-17 04:04:49,372 INFO listing of conneciton succesfully loading
+2012-05-17 04:04:50,056 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:04:50,059 INFO list of connections loaded
+2012-05-17 04:04:50,061 INFO listing of conneciton succesfully loading
+2012-05-17 04:04:50,132 INFO choose table
+2012-05-17 04:04:50,168 INFO list of schemas loaded successfully
+2012-05-17 04:04:51,782 INFO list of tables loaded successfully
+2012-05-17 04:04:51,782 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:04:53,082 INFO table BIG_TEST1 choosed
+2012-05-17 04:04:53,780 INFO launch edit regexps module
+2012-05-17 04:04:53,799 INFO connecting to local database successfully
+2012-05-17 04:04:54,963 INFO connecting to local database successfully
+2012-05-17 04:12:42,308 INFO ######################################################################################
+2012-05-17 04:12:42,308 INFO start session
+2012-05-17 04:12:42,690 INFO connect to db
+2012-05-17 04:12:42,707 INFO list of connections loaded
+2012-05-17 04:12:42,726 INFO list of connections loaded
+2012-05-17 04:12:42,733 INFO listing of conneciton succesfully loading
+2012-05-17 04:12:43,548 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:12:43,551 INFO list of connections loaded
+2012-05-17 04:12:43,552 INFO listing of conneciton succesfully loading
+2012-05-17 04:12:43,730 INFO choose table
+2012-05-17 04:12:43,766 INFO list of schemas loaded successfully
+2012-05-17 04:12:45,584 INFO list of tables loaded successfully
+2012-05-17 04:12:45,584 INFO schema TEST_UIR choosed
+2012-05-17 04:12:48,467 INFO list of tables loaded successfully
+2012-05-17 04:12:48,467 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:12:49,367 INFO table TEST_GOOD_1000 choosed
+2012-05-17 04:12:50,272 INFO connecting to local database successfully
+2012-05-17 04:13:31,085 INFO ######################################################################################
+2012-05-17 04:13:31,085 INFO start session
+2012-05-17 04:13:32,279 INFO connect to db
+2012-05-17 04:13:32,299 INFO list of connections loaded
+2012-05-17 04:13:32,318 INFO list of connections loaded
+2012-05-17 04:13:32,322 INFO listing of conneciton succesfully loading
+2012-05-17 04:13:33,142 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:13:33,144 INFO list of connections loaded
+2012-05-17 04:13:33,148 INFO listing of conneciton succesfully loading
+2012-05-17 04:13:33,426 INFO choose table
+2012-05-17 04:13:33,460 INFO list of schemas loaded successfully
+2012-05-17 04:13:35,026 INFO list of tables loaded successfully
+2012-05-17 04:13:35,026 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:13:36,815 INFO table BIG_TEST1 choosed
+2012-05-17 04:13:38,848 INFO connecting to local database successfully
+2012-05-17 04:14:27,088 INFO ######################################################################################
+2012-05-17 04:14:27,089 INFO start session
+2012-05-17 04:14:27,792 INFO connect to db
+2012-05-17 04:14:27,811 INFO list of connections loaded
+2012-05-17 04:14:27,832 INFO list of connections loaded
+2012-05-17 04:14:27,836 INFO listing of conneciton succesfully loading
+2012-05-17 04:14:28,687 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:14:28,690 INFO list of connections loaded
+2012-05-17 04:14:28,691 INFO listing of conneciton succesfully loading
+2012-05-17 04:14:28,928 INFO choose table
+2012-05-17 04:14:28,963 INFO list of schemas loaded successfully
+2012-05-17 04:14:30,611 INFO list of tables loaded successfully
+2012-05-17 04:14:30,611 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:14:31,621 INFO table BIG_TEST1 choosed
+2012-05-17 04:14:32,447 INFO connecting to local database successfully
+2012-05-17 04:14:38,342 INFO starting calculation data quality model
+2012-05-17 04:14:38,344 INFO connecting to local database successfully
+2012-05-17 04:14:38,382 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:14:38,382 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:14:38,382 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:14:40,783 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:15:27,809 INFO ######################################################################################
+2012-05-17 04:15:27,809 INFO start session
+2012-05-17 04:15:28,321 INFO connect to db
+2012-05-17 04:15:28,338 INFO list of connections loaded
+2012-05-17 04:15:28,358 INFO list of connections loaded
+2012-05-17 04:15:28,367 INFO listing of conneciton succesfully loading
+2012-05-17 04:15:29,200 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:15:29,203 INFO list of connections loaded
+2012-05-17 04:15:29,206 INFO listing of conneciton succesfully loading
+2012-05-17 04:15:29,280 INFO choose table
+2012-05-17 04:15:29,319 INFO list of schemas loaded successfully
+2012-05-17 04:15:30,602 INFO list of tables loaded successfully
+2012-05-17 04:15:30,602 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:15:31,829 INFO table BIG_TEST1 choosed
+2012-05-17 04:15:33,168 INFO choose table
+2012-05-17 04:15:33,203 INFO list of schemas loaded successfully
+2012-05-17 04:15:34,528 INFO connecting to local database successfully
+2012-05-17 04:15:40,871 INFO starting calculation data quality model
+2012-05-17 04:15:40,871 INFO connecting to local database successfully
+2012-05-17 04:15:40,911 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:15:40,911 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:15:40,911 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:15:41,864 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:16:57,805 INFO ######################################################################################
+2012-05-17 04:16:57,805 INFO start session
+2012-05-17 04:16:59,766 INFO connect to db
+2012-05-17 04:16:59,782 INFO list of connections loaded
+2012-05-17 04:16:59,801 INFO list of connections loaded
+2012-05-17 04:16:59,806 INFO listing of conneciton succesfully loading
+2012-05-17 04:17:00,562 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:17:00,565 INFO list of connections loaded
+2012-05-17 04:17:00,568 INFO listing of conneciton succesfully loading
+2012-05-17 04:17:00,832 INFO choose table
+2012-05-17 04:17:00,867 INFO list of schemas loaded successfully
+2012-05-17 04:17:03,394 INFO list of tables loaded successfully
+2012-05-17 04:17:03,395 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:17:04,788 INFO table BIG_TEST1 choosed
+2012-05-17 04:17:05,487 INFO launch edit regexps module
+2012-05-17 04:17:05,506 INFO connecting to local database successfully
+2012-05-17 04:17:06,496 INFO connecting to local database successfully
+2012-05-17 04:17:11,046 INFO starting calculation data quality model
+2012-05-17 04:17:11,048 INFO connecting to local database successfully
+2012-05-17 04:17:11,091 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:17:11,091 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:17:11,091 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:17:12,551 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:17:35,013 INFO ######################################################################################
+2012-05-17 04:17:35,013 INFO start session
+2012-05-17 04:17:36,447 INFO connect to db
+2012-05-17 04:17:36,464 INFO list of connections loaded
+2012-05-17 04:17:36,486 INFO list of connections loaded
+2012-05-17 04:17:36,492 INFO listing of conneciton succesfully loading
+2012-05-17 04:17:37,240 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:17:37,243 INFO list of connections loaded
+2012-05-17 04:17:37,246 INFO listing of conneciton succesfully loading
+2012-05-17 04:17:37,328 INFO choose table
+2012-05-17 04:17:37,365 INFO list of schemas loaded successfully
+2012-05-17 04:17:38,970 INFO list of tables loaded successfully
+2012-05-17 04:17:38,970 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:17:40,029 INFO table BIG_TEST1 choosed
+2012-05-17 04:17:40,627 INFO connecting to local database successfully
+2012-05-17 04:17:47,062 INFO starting calculation data quality model
+2012-05-17 04:17:47,062 INFO connecting to local database successfully
+2012-05-17 04:17:47,104 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:18:40,082 INFO ######################################################################################
+2012-05-17 04:18:40,084 INFO start session
+2012-05-17 04:18:41,039 INFO connect to db
+2012-05-17 04:18:41,055 INFO list of connections loaded
+2012-05-17 04:18:41,076 INFO list of connections loaded
+2012-05-17 04:18:41,082 INFO listing of conneciton succesfully loading
+2012-05-17 04:18:42,091 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:18:42,094 INFO list of connections loaded
+2012-05-17 04:18:42,095 INFO listing of conneciton succesfully loading
+2012-05-17 04:18:42,158 INFO choose table
+2012-05-17 04:18:42,194 INFO list of schemas loaded successfully
+2012-05-17 04:18:44,651 INFO list of tables loaded successfully
+2012-05-17 04:18:44,651 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:19:01,894 INFO ######################################################################################
+2012-05-17 04:19:01,895 INFO start session
+2012-05-17 04:19:02,351 INFO connect to db
+2012-05-17 04:19:02,368 INFO list of connections loaded
+2012-05-17 04:19:02,387 INFO list of connections loaded
+2012-05-17 04:19:02,392 INFO listing of conneciton succesfully loading
+2012-05-17 04:19:03,036 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:19:03,039 INFO list of connections loaded
+2012-05-17 04:19:03,040 INFO listing of conneciton succesfully loading
+2012-05-17 04:19:03,184 INFO choose table
+2012-05-17 04:19:03,220 INFO list of schemas loaded successfully
+2012-05-17 04:19:04,802 INFO list of tables loaded successfully
+2012-05-17 04:19:04,802 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:19:05,891 INFO table BIG_TEST1 choosed
+2012-05-17 04:19:07,134 INFO choose table
+2012-05-17 04:19:07,171 INFO list of schemas loaded successfully
+2012-05-17 04:19:08,607 INFO launch edit regexps module
+2012-05-17 04:19:08,625 INFO connecting to local database successfully
+2012-05-17 04:19:09,838 INFO connecting to local database successfully
+2012-05-17 04:19:18,436 INFO loading regular expressions for parameter no_information successfully 
+2012-05-17 04:19:21,339 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-17 04:19:23,323 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-17 04:19:25,323 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-17 04:19:27,500 INFO loading regular expressions for parameter harmony successfully 
+2012-05-17 04:19:42,686 INFO connecting to local database successfully
+2012-05-17 04:27:45,213 INFO ######################################################################################
+2012-05-17 04:27:45,213 INFO start session
+2012-05-17 04:27:45,628 INFO connect to db
+2012-05-17 04:27:45,644 INFO list of connections loaded
+2012-05-17 04:27:45,667 INFO list of connections loaded
+2012-05-17 04:27:45,674 INFO listing of conneciton succesfully loading
+2012-05-17 04:27:46,301 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:27:46,303 INFO list of connections loaded
+2012-05-17 04:27:46,305 INFO listing of conneciton succesfully loading
+2012-05-17 04:27:46,459 INFO choose table
+2012-05-17 04:27:46,496 INFO list of schemas loaded successfully
+2012-05-17 04:27:49,046 INFO list of tables loaded successfully
+2012-05-17 04:27:49,046 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:27:50,063 INFO table BIG_TEST1 choosed
+2012-05-17 04:27:51,019 INFO connecting to local database successfully
+2012-05-17 04:27:58,305 INFO starting calculation data quality model
+2012-05-17 04:27:58,305 INFO connecting to local database successfully
+2012-05-17 04:27:58,535 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:27:58,535 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:27:58,535 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:28:03,346 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:28:46,651 INFO ######################################################################################
+2012-05-17 04:28:46,651 INFO start session
+2012-05-17 04:28:48,026 INFO connect to db
+2012-05-17 04:28:48,042 INFO list of connections loaded
+2012-05-17 04:28:48,061 INFO list of connections loaded
+2012-05-17 04:28:48,065 INFO listing of conneciton succesfully loading
+2012-05-17 04:28:48,970 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:28:48,973 INFO list of connections loaded
+2012-05-17 04:28:48,976 INFO listing of conneciton succesfully loading
+2012-05-17 04:28:49,418 INFO choose table
+2012-05-17 04:28:49,453 INFO list of schemas loaded successfully
+2012-05-17 04:28:51,141 INFO list of tables loaded successfully
+2012-05-17 04:28:51,141 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:28:52,431 INFO table BIG_TEST1 choosed
+2012-05-17 04:28:53,450 INFO choose table
+2012-05-17 04:28:53,486 INFO list of schemas loaded successfully
+2012-05-17 04:28:56,730 INFO connecting to local database successfully
+2012-05-17 04:29:06,497 INFO starting calculation data quality model
+2012-05-17 04:29:06,497 INFO connecting to local database successfully
+2012-05-17 04:29:06,721 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:29:06,721 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:29:06,721 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:29:11,153 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:29:27,759 INFO ######################################################################################
+2012-05-17 04:29:27,759 INFO start session
+2012-05-17 04:29:29,051 INFO connect to db
+2012-05-17 04:29:29,068 INFO list of connections loaded
+2012-05-17 04:29:29,086 INFO list of connections loaded
+2012-05-17 04:29:29,094 INFO listing of conneciton succesfully loading
+2012-05-17 04:29:30,082 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:29:30,085 INFO list of connections loaded
+2012-05-17 04:29:30,086 INFO listing of conneciton succesfully loading
+2012-05-17 04:29:30,362 INFO choose table
+2012-05-17 04:29:30,397 INFO list of schemas loaded successfully
+2012-05-17 04:29:32,181 INFO list of tables loaded successfully
+2012-05-17 04:29:32,181 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:29:33,648 INFO table BIG_TEST1 choosed
+2012-05-17 04:29:35,128 INFO connecting to local database successfully
+2012-05-17 04:29:43,105 INFO starting calculation data quality model
+2012-05-17 04:29:43,105 INFO connecting to local database successfully
+2012-05-17 04:29:43,331 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:29:43,332 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:29:43,332 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:29:48,321 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:30:25,757 INFO ######################################################################################
+2012-05-17 04:30:25,759 INFO start session
+2012-05-17 04:30:26,793 INFO connect to db
+2012-05-17 04:30:26,812 INFO list of connections loaded
+2012-05-17 04:30:26,832 INFO list of connections loaded
+2012-05-17 04:30:26,836 INFO listing of conneciton succesfully loading
+2012-05-17 04:30:27,496 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:30:27,500 INFO list of connections loaded
+2012-05-17 04:30:27,502 INFO listing of conneciton succesfully loading
+2012-05-17 04:30:27,625 INFO choose table
+2012-05-17 04:30:27,663 INFO list of schemas loaded successfully
+2012-05-17 04:30:29,092 INFO list of tables loaded successfully
+2012-05-17 04:30:29,092 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:30:30,102 INFO table BIG_TEST1 choosed
+2012-05-17 04:30:31,177 INFO connecting to local database successfully
+2012-05-17 04:30:37,042 INFO starting calculation data quality model
+2012-05-17 04:30:37,042 INFO connecting to local database successfully
+2012-05-17 04:30:37,079 ERROR degree_of_classification parameter calculation failed: unsupported operand type(s) for /: 'unicode' and 'int'
+2012-05-17 04:30:37,079 ERROR avegrage assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:30:37,079 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:30:39,674 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:32:07,651 INFO ######################################################################################
+2012-05-17 04:32:07,651 INFO start session
+2012-05-17 04:32:08,441 INFO connect to db
+2012-05-17 04:32:08,459 INFO list of connections loaded
+2012-05-17 04:32:08,476 INFO list of connections loaded
+2012-05-17 04:32:08,483 INFO listing of conneciton succesfully loading
+2012-05-17 04:32:09,832 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:32:09,835 INFO list of connections loaded
+2012-05-17 04:32:09,838 INFO listing of conneciton succesfully loading
+2012-05-17 04:32:10,280 INFO choose table
+2012-05-17 04:32:10,315 INFO list of schemas loaded successfully
+2012-05-17 04:32:11,740 INFO list of tables loaded successfully
+2012-05-17 04:32:11,740 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:32:12,901 INFO table BIG_TEST1 choosed
+2012-05-17 04:32:13,785 INFO connecting to local database successfully
+2012-05-17 04:32:19,424 INFO starting calculation data quality model
+2012-05-17 04:32:19,424 INFO connecting to local database successfully
+2012-05-17 04:32:19,464 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:32:19,586 INFO calculation successfully
+2012-05-17 04:32:32,667 INFO ######################################################################################
+2012-05-17 04:32:32,667 INFO start session
+2012-05-17 04:32:33,855 INFO connect to db
+2012-05-17 04:32:33,872 INFO list of connections loaded
+2012-05-17 04:32:33,891 INFO list of connections loaded
+2012-05-17 04:32:33,895 INFO listing of conneciton succesfully loading
+2012-05-17 04:32:34,772 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:32:34,775 INFO list of connections loaded
+2012-05-17 04:32:34,776 INFO listing of conneciton succesfully loading
+2012-05-17 04:32:34,842 INFO choose table
+2012-05-17 04:32:34,877 INFO list of schemas loaded successfully
+2012-05-17 04:32:36,618 INFO list of tables loaded successfully
+2012-05-17 04:32:36,618 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:32:37,773 INFO table BIG_TEST1 choosed
+2012-05-17 04:32:38,871 INFO connecting to local database successfully
+2012-05-17 04:32:44,927 INFO starting calculation data quality model
+2012-05-17 04:32:44,927 INFO connecting to local database successfully
+2012-05-17 04:32:44,970 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:32:45,076 INFO calculation successfully
+2012-05-17 04:33:25,096 INFO ######################################################################################
+2012-05-17 04:33:25,096 INFO start session
+2012-05-17 04:33:26,088 INFO connect to db
+2012-05-17 04:33:26,105 INFO list of connections loaded
+2012-05-17 04:33:26,161 INFO list of connections loaded
+2012-05-17 04:33:26,165 INFO listing of conneciton succesfully loading
+2012-05-17 04:33:27,361 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:33:27,364 INFO list of connections loaded
+2012-05-17 04:33:27,365 INFO listing of conneciton succesfully loading
+2012-05-17 04:33:27,496 INFO choose table
+2012-05-17 04:33:27,533 INFO list of schemas loaded successfully
+2012-05-17 04:33:28,923 INFO list of tables loaded successfully
+2012-05-17 04:33:28,923 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:33:30,237 INFO table BIG_TEST1 choosed
+2012-05-17 04:33:30,951 INFO connecting to local database successfully
+2012-05-17 04:33:36,190 INFO starting calculation data quality model
+2012-05-17 04:33:36,191 INFO connecting to local database successfully
+2012-05-17 04:33:36,233 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:33:36,345 INFO calculation successfully
+2012-05-17 04:34:08,904 INFO ######################################################################################
+2012-05-17 04:34:08,905 INFO start session
+2012-05-17 04:34:09,944 INFO connect to db
+2012-05-17 04:34:09,961 INFO list of connections loaded
+2012-05-17 04:34:09,983 INFO list of connections loaded
+2012-05-17 04:34:09,989 INFO listing of conneciton succesfully loading
+2012-05-17 04:34:11,010 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:34:11,013 INFO list of connections loaded
+2012-05-17 04:34:11,015 INFO listing of conneciton succesfully loading
+2012-05-17 04:34:11,128 INFO choose table
+2012-05-17 04:34:11,173 INFO list of schemas loaded successfully
+2012-05-17 04:34:13,315 INFO list of tables loaded successfully
+2012-05-17 04:34:13,315 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:34:14,358 INFO table BIG_TEST1 choosed
+2012-05-17 04:34:16,055 INFO connecting to local database successfully
+2012-05-17 04:34:29,151 INFO starting calculation data quality model
+2012-05-17 04:34:29,151 INFO connecting to local database successfully
+2012-05-17 04:34:29,190 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:34:29,315 INFO calculation successfully
+2012-05-17 04:40:10,793 INFO ######################################################################################
+2012-05-17 04:40:10,793 INFO start session
+2012-05-17 04:40:11,190 INFO connect to db
+2012-05-17 04:40:11,207 INFO list of connections loaded
+2012-05-17 04:40:11,227 INFO list of connections loaded
+2012-05-17 04:40:11,236 INFO listing of conneciton succesfully loading
+2012-05-17 04:40:11,976 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:40:11,979 INFO list of connections loaded
+2012-05-17 04:40:11,980 INFO listing of conneciton succesfully loading
+2012-05-17 04:40:12,085 INFO choose table
+2012-05-17 04:40:12,124 INFO list of schemas loaded successfully
+2012-05-17 04:40:15,634 INFO list of tables loaded successfully
+2012-05-17 04:40:15,634 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:40:16,770 INFO table BIG_TEST1 choosed
+2012-05-17 04:40:17,461 INFO choose table
+2012-05-17 04:40:17,499 INFO list of schemas loaded successfully
+2012-05-17 04:40:18,801 INFO list of tables loaded successfully
+2012-05-17 04:40:18,801 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:40:20,035 INFO table BIG_TEST1 choosed
+2012-05-17 04:40:21,653 INFO connecting to local database successfully
+2012-05-17 04:40:27,323 INFO starting calculation data quality model
+2012-05-17 04:40:27,325 INFO connecting to local database successfully
+2012-05-17 04:40:27,364 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:40:27,492 INFO calculation successfully
+2012-05-17 04:41:08,890 INFO ######################################################################################
+2012-05-17 04:41:08,890 INFO start session
+2012-05-17 04:41:09,269 INFO connect to db
+2012-05-17 04:41:09,286 INFO list of connections loaded
+2012-05-17 04:41:09,306 INFO list of connections loaded
+2012-05-17 04:41:09,312 INFO listing of conneciton succesfully loading
+2012-05-17 04:41:10,144 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:41:10,147 INFO list of connections loaded
+2012-05-17 04:41:10,148 INFO listing of conneciton succesfully loading
+2012-05-17 04:41:10,374 INFO choose table
+2012-05-17 04:41:10,411 INFO list of schemas loaded successfully
+2012-05-17 04:41:12,256 INFO list of tables loaded successfully
+2012-05-17 04:41:12,256 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:41:13,529 INFO table BIG_TEST1 choosed
+2012-05-17 04:41:15,413 INFO connecting to local database successfully
+2012-05-17 04:41:20,859 INFO starting calculation data quality model
+2012-05-17 04:41:20,859 INFO connecting to local database successfully
+2012-05-17 04:41:20,900 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:41:21,005 INFO calculation successfully
+2012-05-17 04:41:31,013 INFO connecting to local database successfully
+2012-05-17 04:41:41,540 ERROR starting calculate dq process failed - code 204: mathDQ() takes exactly 4 arguments (3 given)
+2012-05-17 04:42:11,119 INFO ######################################################################################
+2012-05-17 04:42:11,119 INFO start session
+2012-05-17 04:42:16,180 INFO connect to db
+2012-05-17 04:42:16,197 INFO list of connections loaded
+2012-05-17 04:42:16,220 INFO list of connections loaded
+2012-05-17 04:42:16,226 INFO listing of conneciton succesfully loading
+2012-05-17 04:42:16,901 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:42:16,904 INFO list of connections loaded
+2012-05-17 04:42:16,907 INFO listing of conneciton succesfully loading
+2012-05-17 04:42:17,237 INFO choose table
+2012-05-17 04:42:17,273 INFO list of schemas loaded successfully
+2012-05-17 04:42:18,778 INFO list of tables loaded successfully
+2012-05-17 04:42:18,778 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:42:19,793 INFO table BIG_TEST1 choosed
+2012-05-17 04:42:22,357 INFO connecting to local database successfully
+2012-05-17 04:42:27,243 INFO starting calculation data quality model
+2012-05-17 04:42:27,243 INFO connecting to local database successfully
+2012-05-17 04:42:27,285 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:42:27,408 INFO calculation successfully
+2012-05-17 04:42:51,332 INFO launch edit regexps module
+2012-05-17 04:42:51,351 INFO connecting to local database successfully
+2012-05-17 04:56:47,446 INFO ######################################################################################
+2012-05-17 04:56:47,446 INFO start session
+2012-05-17 04:56:51,023 INFO connect to db
+2012-05-17 04:56:51,040 INFO list of connections loaded
+2012-05-17 04:56:51,059 INFO list of connections loaded
+2012-05-17 04:56:51,065 INFO listing of conneciton succesfully loading
+2012-05-17 04:56:51,838 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:56:51,841 INFO list of connections loaded
+2012-05-17 04:56:51,842 INFO listing of conneciton succesfully loading
+2012-05-17 04:56:52,127 INFO choose table
+2012-05-17 04:56:52,167 INFO list of schemas loaded successfully
+2012-05-17 04:56:53,865 INFO list of tables loaded successfully
+2012-05-17 04:56:53,865 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:56:55,380 INFO table BIG_TEST1 choosed
+2012-05-17 04:56:57,388 INFO connecting to local database successfully
+2012-05-17 04:57:00,371 INFO loading regular expressions for parameter degree_of_structuring successfully 
+2012-05-17 04:57:11,046 INFO starting calculation data quality model
+2012-05-17 04:57:11,046 INFO connecting to local database successfully
+2012-05-17 04:57:11,084 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:57:11,223 INFO calculation successfully
+2012-05-17 04:57:17,726 INFO choose table
+2012-05-17 04:57:17,763 INFO list of schemas loaded successfully
+2012-05-17 04:57:21,233 INFO list of tables loaded successfully
+2012-05-17 04:57:21,233 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:57:23,323 INFO table BIG_TEST2 choosed
+2012-05-17 04:57:25,101 INFO connecting to local database successfully
+2012-05-17 04:57:31,029 INFO starting calculation data quality model
+2012-05-17 04:57:31,030 INFO connecting to local database successfully
+2012-05-17 04:57:31,559 INFO degree_of_classification parameter calculation successfully
+2012-05-17 04:57:31,947 INFO calculation successfully
+2012-05-17 04:57:52,351 INFO choose table
+2012-05-17 04:57:52,387 INFO list of schemas loaded successfully
+2012-05-17 04:57:53,969 INFO list of tables loaded successfully
+2012-05-17 04:57:53,969 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:57:55,803 INFO table TEST_GOOD_1000 choosed
+2012-05-17 04:57:58,141 INFO connecting to local database successfully
+2012-05-17 04:58:04,325 INFO starting calculation data quality model
+2012-05-17 04:58:04,325 INFO connecting to local database successfully
+2012-05-17 04:58:04,470 ERROR degree_of_classification parameter calculation failed: float division by zero
+2012-05-17 04:58:04,470 ERROR average assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:58:04,470 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:58:08,174 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:58:48,463 INFO ######################################################################################
+2012-05-17 04:58:48,463 INFO start session
+2012-05-17 04:58:49,924 INFO connect to db
+2012-05-17 04:58:49,943 INFO list of connections loaded
+2012-05-17 04:58:49,961 INFO list of connections loaded
+2012-05-17 04:58:49,967 INFO listing of conneciton succesfully loading
+2012-05-17 04:58:51,217 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:58:51,219 INFO list of connections loaded
+2012-05-17 04:58:51,220 INFO listing of conneciton succesfully loading
+2012-05-17 04:58:52,318 INFO choose table
+2012-05-17 04:58:52,357 INFO list of schemas loaded successfully
+2012-05-17 04:58:53,857 INFO list of tables loaded successfully
+2012-05-17 04:58:53,857 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:58:55,010 INFO table BIG_TEST1 choosed
+2012-05-17 04:58:57,068 INFO table TEST_GOOD_1000 choosed
+2012-05-17 04:58:58,572 INFO connecting to local database successfully
+2012-05-17 04:59:07,411 INFO starting calculation data quality model
+2012-05-17 04:59:07,413 INFO connecting to local database successfully
+2012-05-17 04:59:07,424 ERROR degree_of_classification parameter calculation failed: float division by zero
+2012-05-17 04:59:07,424 ERROR average assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:59:07,424 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:59:09,069 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 04:59:25,377 INFO ######################################################################################
+2012-05-17 04:59:25,377 INFO start session
+2012-05-17 04:59:26,029 INFO connect to db
+2012-05-17 04:59:26,048 INFO list of connections loaded
+2012-05-17 04:59:26,066 INFO list of connections loaded
+2012-05-17 04:59:26,071 INFO listing of conneciton succesfully loading
+2012-05-17 04:59:26,785 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 04:59:26,788 INFO list of connections loaded
+2012-05-17 04:59:26,790 INFO listing of conneciton succesfully loading
+2012-05-17 04:59:26,894 INFO choose table
+2012-05-17 04:59:26,937 INFO list of schemas loaded successfully
+2012-05-17 04:59:28,447 INFO list of tables loaded successfully
+2012-05-17 04:59:28,447 INFO schema TEST_DIPLOM choosed
+2012-05-17 04:59:30,546 INFO table TEST_GOOD_1000 choosed
+2012-05-17 04:59:31,469 INFO connecting to local database successfully
+2012-05-17 04:59:36,788 INFO starting calculation data quality model
+2012-05-17 04:59:36,788 INFO connecting to local database successfully
+2012-05-17 04:59:36,799 ERROR degree_of_classification parameter calculation failed: float division by zero
+2012-05-17 04:59:36,799 ERROR average assessment of all parameters calculation failed: local variable 'avgdoc' referenced before assignment
+2012-05-17 04:59:36,799 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-17 04:59:38,005 ERROR starting calculate dq process failed - code 204: 'bool' object is not iterable
+2012-05-17 05:02:29,536 INFO ######################################################################################
+2012-05-17 05:02:29,536 INFO start session
+2012-05-17 05:02:29,948 INFO connect to db
+2012-05-17 05:02:29,966 INFO list of connections loaded
+2012-05-17 05:02:29,984 INFO list of connections loaded
+2012-05-17 05:02:29,989 INFO listing of conneciton succesfully loading
+2012-05-17 05:02:30,802 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 05:02:30,805 INFO list of connections loaded
+2012-05-17 05:02:30,808 INFO listing of conneciton succesfully loading
+2012-05-17 05:02:30,924 INFO choose table
+2012-05-17 05:02:30,960 INFO list of schemas loaded successfully
+2012-05-17 05:02:32,969 INFO list of tables loaded successfully
+2012-05-17 05:02:32,969 INFO schema TEST_DIPLOM choosed
+2012-05-17 05:02:34,953 INFO table TEST_GOOD_1000 choosed
+2012-05-17 05:02:47,463 INFO ######################################################################################
+2012-05-17 05:02:47,463 INFO start session
+2012-05-17 05:02:48,076 INFO connect to db
+2012-05-17 05:02:48,092 INFO list of connections loaded
+2012-05-17 05:02:48,114 INFO list of connections loaded
+2012-05-17 05:02:48,118 INFO listing of conneciton succesfully loading
+2012-05-17 05:02:49,026 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 05:02:49,029 INFO list of connections loaded
+2012-05-17 05:02:49,030 INFO listing of conneciton succesfully loading
+2012-05-17 05:02:49,437 INFO choose table
+2012-05-17 05:02:49,473 INFO list of schemas loaded successfully
+2012-05-17 05:02:51,224 INFO list of tables loaded successfully
+2012-05-17 05:02:51,224 INFO schema TEST_DIPLOM choosed
+2012-05-17 05:02:52,144 INFO table BIG_TEST1 choosed
+2012-05-17 05:02:52,923 INFO connecting to local database successfully
+2012-05-17 05:03:02,627 INFO starting calculation data quality model
+2012-05-17 05:03:02,627 INFO connecting to local database successfully
+2012-05-17 05:03:02,857 INFO degree_of_classification parameter calculation successfully
+2012-05-17 05:03:03,043 INFO calculation successfully
+2012-05-17 05:03:18,846 INFO ######################################################################################
+2012-05-17 05:03:18,846 INFO start session
+2012-05-17 05:03:20,033 INFO connect to db
+2012-05-17 05:03:20,051 INFO list of connections loaded
+2012-05-17 05:03:20,069 INFO list of connections loaded
+2012-05-17 05:03:20,076 INFO listing of conneciton succesfully loading
+2012-05-17 05:03:20,917 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 05:03:20,921 INFO list of connections loaded
+2012-05-17 05:03:20,924 INFO listing of conneciton succesfully loading
+2012-05-17 05:03:21,085 INFO choose table
+2012-05-17 05:03:21,125 INFO list of schemas loaded successfully
+2012-05-17 05:03:22,447 INFO list of tables loaded successfully
+2012-05-17 05:03:22,447 INFO schema TEST_DIPLOM choosed
+2012-05-17 05:03:23,448 INFO table BIG_TEST1 choosed
+2012-05-17 05:03:24,378 INFO connecting to local database successfully
+2012-05-17 05:03:28,513 INFO starting calculation data quality model
+2012-05-17 05:03:28,513 INFO connecting to local database successfully
+2012-05-17 05:03:28,552 INFO degree_of_classification parameter calculation successfully
+2012-05-17 05:03:28,690 INFO calculation successfully
+2012-05-17 05:03:43,930 INFO choose table
+2012-05-17 05:03:43,967 INFO list of schemas loaded successfully
+2012-05-17 05:03:46,246 INFO list of tables loaded successfully
+2012-05-17 05:03:46,246 INFO schema TEST_DIPLOM choosed
+2012-05-17 05:03:47,224 INFO table BIG_TEST1 choosed
+2012-05-17 05:03:48,154 INFO connecting to local database successfully
+2012-05-17 05:03:53,316 INFO ######################################################################################
+2012-05-17 05:03:53,316 INFO start session
+2012-05-17 05:03:54,203 INFO connect to db
+2012-05-17 05:03:54,220 INFO list of connections loaded
+2012-05-17 05:03:54,243 INFO list of connections loaded
+2012-05-17 05:03:54,247 INFO listing of conneciton succesfully loading
+2012-05-17 05:03:54,839 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-17 05:03:54,842 INFO list of connections loaded
+2012-05-17 05:03:54,845 INFO listing of conneciton succesfully loading
+2012-05-17 05:03:55,099 INFO choose table
+2012-05-17 05:03:55,137 INFO list of schemas loaded successfully
+2012-05-17 05:03:56,309 INFO list of tables loaded successfully
+2012-05-17 05:03:56,311 INFO schema TEST_DIPLOM choosed
+2012-05-17 05:03:57,273 INFO table BIG_TEST1 choosed
+2012-05-17 05:03:58,714 INFO connecting to local database successfully
+2012-05-17 05:04:08,961 INFO starting calculation data quality model
+2012-05-17 05:04:08,963 INFO connecting to local database successfully
+2012-05-17 05:04:11,657 INFO degree_of_classification parameter not calculated, because there are no catalogs used
+2012-05-17 05:04:11,769 INFO calculation successfully

@@ -147,6 +147,7 @@ class MainWindow ( wx.Frame ):
         #DQ vars
         self.weights = None
         self.using_params = None
+        self.user_choice_catalog = None
 
         #Disable menuitems
         self.BD.Enable(2, False)
@@ -195,7 +196,6 @@ class MainWindow ( wx.Frame ):
         frame.Show()
         self.statusbar.SetStatusText(u'Выполняется подключение к базе')
         self.flagres = None
-        print self.flagres
 
         
     def ChooseTable(self, event):
@@ -231,7 +231,7 @@ class MainWindow ( wx.Frame ):
                 
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
                 self.dataquality = calculation.DQ(self.connection, self.schema,  self.table)
-                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params)
+                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog)
                 if result is None:
                     event.Skip()
                     return None
@@ -254,7 +254,7 @@ class MainWindow ( wx.Frame ):
 
                 wx.Yield()
                     
-                result2 = self.dataquality.mathDQ(self.weights, self.using_params)
+                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog)
                 self.result_ctrl.list.Append(result2[0])
                 
                 self.panelMainStat.SetSizer(self.sbs)
