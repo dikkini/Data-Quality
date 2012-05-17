@@ -141,7 +141,6 @@ class show_adv ( wx.Frame ):
             future_element = number + 10
             alldata.append(future_element)
             future_dq = sum(alldata) / len(alldata)
-            print future_dq, prev_dq
             delta_dq = round(float(future_dq), 2) - round(float(prev_dq), 2)
             future_dq = round(future_dq, 2)
             

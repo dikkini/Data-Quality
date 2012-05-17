@@ -311,7 +311,7 @@ class MainWindow ( wx.Frame ):
             self.panelHist.SetSizer(sbs)
             self.panelHist.Layout()
         except Exception, info:
-            print info
+            wx.MessageBox(info)
         
     def EditRegexps(self, event):
         if self.connection is None:
@@ -334,7 +334,7 @@ class MainWindow ( wx.Frame ):
         try:
             params_chooser.frame_chooser(self, self.schema, self.table, self.connection).Show()
         except Exception, info:
-            print info
+            wx.MessageBox(info)
         
     def logEvents(self, event):
         try:
