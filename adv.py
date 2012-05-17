@@ -8,7 +8,10 @@ class advices():
                                         u'Оперативность', u'Противоречивость', u'Степень классификации', 
                                         u'Степень структуризации']
         data = list(data)
+        print data
         data.pop()
+        data.pop()
+        print data
         self.prev_dq = data[-1]
         data.pop()
         self.data = map(lambda a: float(a) if a != '-' else 0, data)
@@ -24,7 +27,10 @@ class advices():
         for i in self.data_req:
             if not i:
                 self.data_req.remove(i)
-        max_val = sum(self.data_req) / float(len(self.data_req))
+        try:
+            max_val = sum(self.data_req) / float(len(self.data_req))
+        except ZeroDivisionError:
+            wx.MessageBox(u'Вся статистика нулевая.')
         #minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val)
         minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val and isinstance(i, float))
         return sorted(minimals, key=lambda a: a[1])
@@ -68,9 +74,6 @@ class advices():
             if num == 10:
                 self.param10 = (u'%s: %s' % (self.names[10], perc))
                 self.ps.append(self.param10)
-            if num == 11:
-                self.param11 = (u'%s: %s' % (self.names[11], perc))
-                self.ps.append(self.param11)
         
         show = show_adv(self.ps, self.data_req, self.prev_dq)
         show.Show()

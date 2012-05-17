@@ -12,9 +12,11 @@ import report_html
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 class main_stat(listmix.ColumnSorterMixin): 
-    def __init__( self, main, rows, ext_cols ): 
+    def __init__( self, main, rows, ext_cols,  schema, table ): 
         self.main = main
-        self.stat = statistic.stats(self.main.schema, self.main.table)
+        self.schema = schema
+        self.table = table
+        self.stat = statistic.stats(self.schema, self.table)
         
         self.ext_cols = ext_cols
         self.ext_cols.insert(0, u'Название параметра')
@@ -26,7 +28,7 @@ class main_stat(listmix.ColumnSorterMixin):
         self.columns = self.main.main_stat_columns       
         for col, text in enumerate(self.columns):
             self.list.InsertColumn(col, text) 
-        for item in rows:   
+        for item in rows:
             info = '%s:(%s)' % (col, item)
             data.append(info)
             index = self.list.InsertStringItem(sys.maxint, item[0]) 
@@ -88,8 +90,8 @@ class main_stat(listmix.ColumnSorterMixin):
         try:
             self.ext_list.list.DeleteAllItems()
             self.ext_list.list.Destroy()
-        except Exception:
-            pass
+        except Exception, info:
+            print info
         
 #        self.main.Freeze()
         self.ext_stat = self.stat.take_ext_stat(self.date)
@@ -110,6 +112,8 @@ class main_stat(listmix.ColumnSorterMixin):
         mod.TextAdv()
     
     def OnReport(self, event):
+        self.ext_stat = self.stat.take_ext_stat(self.date)
+        self.ext_stat = [ i for i in self.ext_stat if i is not None] 
         report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat, self.date)
         
     def OnColClick(self, event):
@@ -167,10 +171,11 @@ class extend_stat():
         self.list.SetSize((900,350))
         
 class history_stat(): 
-    def __init__(self, parent, columns, rows): 
+    def __init__(self, parent, columns, rows, schema, table): 
         self.main = parent
-        
-        self.stat = statistic.stats(self.main.schema, self.main.table)
+        self.schema = schema
+        self.table = table
+        self.stat = statistic.stats(self.schema, self.table)
     
         self.list = wx.ListCtrl(self.main.panelHist, 0,
                                  style=wx.LC_REPORT
@@ -242,11 +247,11 @@ class history_stat():
     
     def OnExtStat(self, event):
         try:
-            self.ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
+            self.ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.table)
             self.ext_cols.insert(0, u'Название параметра')
             self.ext_stat = self.stat.take_ext_stat(self.date)
             self.ext_stat = [ i for i in self.ext_stat if i is not None] 
-            frame = Popup(self.ext_cols, self.ext_stat, self.main.schema, self.main.table)
+            frame = Popup(self.ext_cols, self.ext_stat, self.schema, self.table)
             frame.Show()
         except Exception, info:
             if 'object is not subscriptable' in str(info):
@@ -257,7 +262,7 @@ class history_stat():
         mod.TextAdv()
     
     def OnReport(self, event):
-        ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.main.table)
+        ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.table)
         ext_cols.insert(0, u'Название параметра')
         ext_stat = self.stat.take_ext_stat(self.date)
         report_html.make_report(self.columns, self.data, ext_cols, ext_stat, self.date)

@@ -12,8 +12,9 @@ class DQ(object):
 		self.connection = connection
 		self.table = table
 		self.schema = schema
-
+	
 	def mathDQ(self, weights, using_params, user_choice_catalog):
+		print weights, using_params
 		logging.info(u'starting calculation data quality model')
 		self.data = []
 		dt = datetime.datetime.now()
@@ -74,7 +75,7 @@ class DQ(object):
 					if i == 0.0 and type(i) is float:
 						ext_stat.append('-')
 					else:
-						ext_stat.append(str((float(i) / self.countall * 100)))
+						ext_stat.append(str(round((float(i) / self.countall * 100),2)))
 				
 				for i in ext_stat:
 					info.append(i)
@@ -115,7 +116,7 @@ class DQ(object):
 					if i == 0.0 and type(i) is float:
 						ext_stat.append('-')
 					else:
-						ext_stat.append(str((float(i) / self.countall * 100)))
+						ext_stat.append(str(round((float(i) / self.countall * 100),2)))
 				
 				for i in ext_stat:
 					info.append(i)
@@ -154,7 +155,7 @@ class DQ(object):
 					if i == 0.0 and type(i) is float:
 						ext_stat.append('-')
 					else:
-						ext_stat.append(str((float(i) / self.countall * 100)))
+						ext_stat.append(str(round((float(i) / self.countall * 100),2)))
 				for i in ext_stat:
 					info.append(i)
 				self.extend_stat.append(info)
@@ -223,7 +224,7 @@ class DQ(object):
 				ext_stat = []
 				info = [u'Унификация']
 				for i in count6:
-					ext_stat.append(str((float(i) / self.countall * 100)))
+					ext_stat.append(str(round((float(i) / self.countall * 100),2)))
 				for i in ext_stat:
 					info.append(i)
 				self.extend_stat.append(info)
@@ -332,12 +333,16 @@ class DQ(object):
 		except Exception, info:
 			logging.error(u'degree_of_structuring parameter calculation failed: %s' % str(info))
 		try:
-			avgall = emptyvalues + avgnoinf + avgbadform + avgnoise + avgident + avgharm + avguniq + avgeffic + avgincon + avgdoc + avgdos
-			allweight = sum(self.weights)
+			avgall = float(emptyvalues) + float(avgnoinf) + float(avgbadform) + float(avgnoise) + float(avgident) + float(avgharm) + float(avguniq) + float(avgeffic) + float(avgincon) + float(avgdoc) + float(avgdos)
+			i = 0
+			for param in self.using_params:
+				if param == 1:
+					i = i + 1
+			print i
 		except Exception, info:
 			logging.error(u'average assessment of all parameters calculation failed: %s' % str(info))
 		try:
-			result = avgall / allweight
+			result = avgall / i
 		except Exception, info:
 			logging.error(u'calculation dq failed: %s' % str(info))
 			return False

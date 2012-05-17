@@ -219,14 +219,12 @@ class MainWindow ( wx.Frame ):
     def DoDQ(self, event):
         message = 'Пожалуйста подождите, происходит оценка качества данных...'
         try:
-            if not sum(self.using_params):
+            if not self.using_params:
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
-                logging.error(u'failed calculation dq - code 185: NO PARAMS FOR DATA QUALITY')
+                logging.error(u'failed calculation dq - code 224: NO PARAMS FOR DATA QUALITY')
                 return False
             if self.flagres is None:
-                
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
-
                 wx.Yield()
                 
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
@@ -236,8 +234,7 @@ class MainWindow ( wx.Frame ):
                     event.Skip()
                     return None
                 self.notebook.AddPage( self.panelMainStat, u"Результаты оценки качества данных", False, wx.NullBitmap )
-                self.result_ctrl = results.main_stat( self, result, self.dataquality.namecols )
-                
+                self.result_ctrl = results.main_stat( self, result, self.dataquality.namecols, self.schema, self.table )
                 
                 self.sb = wx.StaticBox(self.panelMainStat)
                 self.sbs = wx.StaticBoxSizer(self.sb, orient=wx.VERTICAL)
@@ -251,7 +248,6 @@ class MainWindow ( wx.Frame ):
                 del busy
             else:
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
-
                 wx.Yield()
                     
                 result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog)
@@ -261,12 +257,9 @@ class MainWindow ( wx.Frame ):
                 self.panelMainStat.Layout()
                 
                 del busy
-        except TypeError, info:
-            if "'NoneType' object is not iterable" in info:
-                wx.MessageBox(u'Выберите параметры для оценки качества данных преждем чем начать процесс оценки качества данных!')
-            else:
+        except Exception, info:
                 wx.MessageBox(str(info))
-                logging.error(u'starting calculate dq process failed - code 204: %s' % (str(info)))
+                logging.error(u'starting calculate dq process failed - code 262: %s' % (str(info)))
     
     def OnTabClose(self, event):
         temp_page = event.GetSelection()
@@ -281,7 +274,7 @@ class MainWindow ( wx.Frame ):
             self.notebook.AddPage( self.panelHist, u"История оценки качества данных", False, wx.NullBitmap )
             self.histcols = self.main_stat_columns
             histrows = statistic.stats(self.schema, self.table).history_stat(self) 
-            self.histres = results.history_stat(self, self.histcols, histrows)
+            self.histres = results.history_stat(self, self.histcols, histrows, self.schema, self.table)
             
             sb = wx.StaticBox(self.panelHist)
             sbs = wx.StaticBoxSizer(sb, orient=wx.VERTICAL)
@@ -297,21 +290,18 @@ class MainWindow ( wx.Frame ):
             logging.error(u'error while looking history - code: 297 - %s' % str(info))
     
     def RefrshHist(self):
-        try:
-            self.histres.destr()
-            histrows = statistic.stats(self.schema, self.table).history_stat(self) 
-            self.histres = results.history_stat(self, self.histcols, histrows)
+        self.histres.destr()
+        histrows = statistic.stats(self.schema, self.table).history_stat(self) 
+        self.histres = results.history_stat(self, self.histcols, histrows, self.schema, self.table)
             
-            sb = wx.StaticBox(self.panelHist)
-            sbs = wx.StaticBoxSizer(sb, orient=wx.VERTICAL)
-            sizer = wx.BoxSizer(wx.VERTICAL)
+        sb = wx.StaticBox(self.panelHist)
+        sbs = wx.StaticBoxSizer(sb, orient=wx.VERTICAL)
+        sizer = wx.BoxSizer(wx.VERTICAL)
             
-            sizer.Add(self.histres.list, 1, wx.EXPAND)
-            sbs.Add(sizer, proportion=1,flag=wx.EXPAND|wx.ALL)
-            self.panelHist.SetSizer(sbs)
-            self.panelHist.Layout()
-        except Exception, info:
-            wx.MessageBox(info)
+        sizer.Add(self.histres.list, 1, wx.EXPAND)
+        sbs.Add(sizer, proportion=1,flag=wx.EXPAND|wx.ALL)
+        self.panelHist.SetSizer(sbs)
+        self.panelHist.Layout()
         
     def EditRegexps(self, event):
         if self.connection is None:

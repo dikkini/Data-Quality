@@ -81,7 +81,7 @@ class WorkDB():
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
-            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 78' % info)
+            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 84' % info)
 
     def get_uniq_values(self, column, schema, table):
         try:
@@ -95,7 +95,7 @@ class WorkDB():
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
-            wx.MessageBox(u'Внешняя ошибка базы данных - code 92')
+            wx.MessageBox(u'Внешняя ошибка базы данных - code 98')
 
     def get_cols(self, table):
         try:
@@ -108,6 +108,6 @@ class WorkDB():
         except (NameError, cx_Oracle.DatabaseError), info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
-            error = ("Database Error: %s - code 105" % info)
+            error = ("Database Error: %s - code 111" % info)
             wx.MessageBox(str(error))
         return col_names
