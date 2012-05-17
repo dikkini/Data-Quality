@@ -12053,3 +12053,7 @@
 2012-05-17 01:27:17,779 INFO list of connections loaded
 2012-05-17 01:27:17,782 INFO listing of conneciton succesfully loading
 >>>>>>> b9b4dd7f084725301a35eab043ba2177a1630b8c
+2012-05-17 01:29:47,934 INFO ######################################################################################
+2012-05-17 01:29:47,934 INFO start session
+2012-05-17 01:29:49,956 INFO end session. but there are no connection to db
+2012-05-17 01:29:49,956 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
