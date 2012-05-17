@@ -12039,6 +12039,10 @@
 2012-05-15 17:13:23,088 INFO calculation successfully
 2012-05-15 17:13:45,746 INFO open local history
 2012-05-15 17:14:10,990 INFO open local history
+<<<<<<< HEAD
+2012-05-17 01:02:00,295 INFO ######################################################################################
+2012-05-17 01:02:00,296 INFO start session
+=======
 >>>>>>> f1dcbd17dc369e0af890fc90aac844e3375be1b6
 2012-05-17 01:27:13,947 INFO ######################################################################################
 2012-05-17 01:27:13,948 INFO start session
@@ -12048,6 +12052,7 @@
 2012-05-17 01:27:16,269 INFO listing of conneciton succesfully loading
 2012-05-17 01:27:17,779 INFO list of connections loaded
 2012-05-17 01:27:17,782 INFO listing of conneciton succesfully loading
+<<<<<<< HEAD
 2012-05-17 01:28:03,410 INFO ######################################################################################
 2012-05-17 01:28:03,410 INFO start session
 2012-05-17 01:28:09,575 INFO end session. but there are no connection to db
@@ -12938,3 +12943,10 @@
 2012-05-17 05:04:08,963 INFO connecting to local database successfully
 2012-05-17 05:04:11,657 INFO degree_of_classification parameter not calculated, because there are no catalogs used
 2012-05-17 05:04:11,769 INFO calculation successfully
+=======
+>>>>>>> b9b4dd7f084725301a35eab043ba2177a1630b8c
+2012-05-17 01:29:47,934 INFO ######################################################################################
+2012-05-17 01:29:47,934 INFO start session
+2012-05-17 01:29:49,956 INFO end session. but there are no connection to db
+2012-05-17 01:29:49,956 ERROR end session error - code 178: 'NoneType' object has no attribute 'close'
+>>>>>>> 7b8186c39ce992cd10e97bc0001aa483b12b35f1
