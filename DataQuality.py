@@ -219,7 +219,7 @@ class MainWindow ( wx.Frame ):
         try:
             if not self.using_params or sum(self.using_params) == 0:
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
-                logging.error(u'failed calculation dq - code 224: NO PARAMS FOR DATA QUALITY')
+                logging.error(u'failed calculation dq - code 222: NO PARAMS FOR DATA QUALITY')
                 return False
             if self.flagres is None:
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")

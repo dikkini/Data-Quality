@@ -331,7 +331,7 @@ class DQ(object):
 		except Exception, info:
 			logging.error(u'degree_of_structuring parameter calculation failed: %s' % str(info))
 		try:
-			avgall = float(emptyvalues) + float(avgnoinf) + float(avgbadform) + float(avgnoise) + float(avgident) + float(avgharm) + float(avguniq) + float(avgeffic) + float(avgincon) + float(avgdoc) + float(avgdos)
+			avgall = float(100 - float(emptyvalues)) + float(100 - float(avgnoinf)) + float(100 - float(avgbadform)) + float(100 - float(avgnoise)) + float(avgident) + float(avgharm) + float(avguniq) + float(avgeffic) + float(avgincon) + float(avgdoc) + float(avgdos)
 			# Вычисляем количество параметров имеющих оценку
 			i = 0
 			for param in self.using_params:

@@ -1779,3 +1779,312 @@
 2012-05-18 17:47:53,111 INFO schema TEST_DIPLOM choosed
 2012-05-18 17:47:54,171 INFO table TEST_MIDDLE_1000 choosed
 2012-05-18 17:47:56,608 INFO open local history
+2012-05-18 17:56:07,757 INFO ######################################################################################
+2012-05-18 17:56:07,757 INFO start session
+2012-05-18 17:56:12,108 INFO connect to db
+2012-05-18 17:56:12,138 INFO list of connections loaded
+2012-05-18 17:56:12,153 INFO list of connections loaded
+2012-05-18 17:56:12,161 INFO listing of conneciton succesfully loading
+2012-05-18 17:56:13,170 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 17:56:13,173 INFO list of connections loaded
+2012-05-18 17:56:13,177 INFO listing of conneciton succesfully loading
+2012-05-18 17:56:13,417 INFO choose table
+2012-05-18 17:56:13,471 INFO list of schemas loaded successfully
+2012-05-18 17:56:16,542 INFO list of tables loaded successfully
+2012-05-18 17:56:16,542 INFO schema TEST_DIPLOM choosed
+2012-05-18 17:56:19,513 INFO table TEST_GOOD_1000 choosed
+2012-05-18 17:56:21,224 INFO table BIG_TEST1 choosed
+2012-05-18 17:56:25,230 INFO connecting to local database successfully
+2012-05-18 17:56:27,697 INFO launch edit regexps module
+2012-05-18 17:56:27,730 INFO connecting to local database successfully
+2012-05-18 17:56:30,403 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 17:56:39,956 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 17:56:41,250 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 17:58:21,835 INFO uploading regular expression regexp_like(ID, '^\D+') for parameter no_information successfully
+2012-05-18 17:58:21,836 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:00:26,565 INFO uploading regular expression regexp_like(NAMEU, '^\d+$') or regexp_like(NAMEU, '\None') for parameter no_information successfully
+2012-05-18 18:00:26,565 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:07:29,846 INFO uploading regular expression regexp_like(KODCR, '^\D+$') for parameter no_information successfully
+2012-05-18 18:07:29,848 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:37:08,604 INFO uploading regular expression regexp_like(KODCN, '^\D+$') for parameter no_information successfully
+2012-05-18 18:37:08,604 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:37:31,262 INFO uploading regular expression regexp_like(AMR, '^\d+$') or regexp_like(AMR, '\None') for parameter no_information successfully
+2012-05-18 18:37:31,262 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:37:46,963 INFO uploading regular expression regexp_like(ADRESS, '^\d+$') or regexp_like(ADRESS, '\None') for parameter no_information successfully
+2012-05-18 18:37:46,964 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:38:07,289 INFO uploading regular expression regexp_like(KD, '^\D+$') for parameter no_information successfully
+2012-05-18 18:38:07,290 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:38:11,088 INFO uploading regular expression regexp_like(SD, '^\D+$') for parameter no_information successfully
+2012-05-18 18:38:11,089 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:38:17,928 INFO uploading regular expression regexp_like(RG, '^\D+$') for parameter no_information successfully
+2012-05-18 18:38:17,930 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:38:21,799 INFO uploading regular expression regexp_like(ND, '^\D+$') for parameter no_information successfully
+2012-05-18 18:38:21,801 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:39:44,078 INFO uploading regular expression regexp_like(VD, '^\d+$') or regexp_like(VD, '\Нет данных') regexp_like(VD, '\None') for parameter no_information successfully
+2012-05-18 18:39:44,079 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:40:02,763 INFO uploading regular expression regexp_like(ACC_B, '^\D+$') for parameter no_information successfully
+2012-05-18 18:40:02,765 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:40:16,217 INFO uploading regular expression regexp_like(NAME_B, '^\d+$') or regexp_like(NAME_B, '\None') for parameter no_information successfully
+2012-05-18 18:40:16,219 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:40:37,096 INFO uploading regular expression regexp_like(BIK_B, '^\D+$') for parameter no_information successfully
+2012-05-18 18:40:37,096 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:40:43,233 INFO uploading regular expression regexp_like(GRP_NUM, '^\D+$') for parameter no_information successfully
+2012-05-18 18:40:43,233 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:40:49,096 INFO choose table
+2012-05-18 18:40:49,160 INFO list of schemas loaded successfully
+2012-05-18 18:40:51,200 INFO list of tables loaded successfully
+2012-05-18 18:40:51,200 INFO schema TEST_DIPLOM choosed
+2012-05-18 18:40:53,177 INFO table BIG_TEST2 choosed
+2012-05-18 18:40:55,061 INFO launch edit regexps module
+2012-05-18 18:40:55,119 INFO connecting to local database successfully
+2012-05-18 18:40:56,881 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 18:40:57,608 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:44:40,250 INFO uploading regular expression regexp_like(INN, '^\D+') for parameter no_information successfully
+2012-05-18 18:44:40,250 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:46:26,578 INFO uploading regular expression regexp_like(NAIMEN, '^\d+{10,}') or regexp_like(NAIMEN, '^\d+$') for parameter no_information successfully
+2012-05-18 18:46:26,579 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:48:00,423 INFO uploading regular expression regexp_like(INN, '^\D+') or regexp_like(INN, '^\d$') or regexp_like(INN, '\d{13,}') for parameter no_information successfully
+2012-05-18 18:48:00,424 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 18:48:05,319 INFO deleting regular expression regexp_like(INN, '^\D+') for parameter no_information successfully
+2012-05-18 18:48:05,321 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:06:59,651 INFO uploading regular expression regexp_like(AMR0, '\НЕ ОПРЕДЕЛЕН') or regexp_like(AMR0, '^\d+{10,}') or regexp_like(AMR0, '^\d+$') for parameter no_information successfully
+2012-05-18 19:06:59,653 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:10:05,040 INFO uploading regular expression regexp_like(RG0, '^\D+') or regexp_like(RG0, '^\d$') or regexp_like(RG0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:10:05,042 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:10:17,578 INFO uploading regular expression regexp_like(SD0, '^\D+') or regexp_like(SD0, '^\d$') or regexp_like(SD0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:10:17,578 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:10:28,591 INFO loading regular expressions for parameter harmony successfully 
+2012-05-18 19:10:29,542 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:10:32,378 INFO choose table
+2012-05-18 19:10:32,444 INFO list of schemas loaded successfully
+2012-05-18 19:10:34,769 INFO list of tables loaded successfully
+2012-05-18 19:10:34,769 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:10:36,141 INFO table TEST_GOOD_1000 choosed
+2012-05-18 19:10:37,262 INFO launch edit regexps module
+2012-05-18 19:10:37,298 INFO connecting to local database successfully
+2012-05-18 19:10:45,693 INFO uploading regular expression regexp_like(SD0, '^\D+') or regexp_like(SD0, '^\d$') or regexp_like(SD0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:10:45,693 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:10:51,460 INFO uploading regular expression regexp_like(NAIMEN, '^\d+{10,}') or regexp_like(NAIMEN, '^\d+$') for parameter no_information successfully
+2012-05-18 19:10:51,460 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:10:56,996 INFO uploading regular expression regexp_like(INN, '^\D+') or regexp_like(INN, '^\d$') or regexp_like(INN, '\d{13,}') for parameter no_information successfully
+2012-05-18 19:10:56,996 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:01,532 INFO uploading regular expression regexp_like(AMR0, '\НЕ ОПРЕДЕЛЕН') or regexp_like(AMR0, '^\d+{10,}') or regexp_like(AMR0, '^\d+$') for parameter no_information successfully
+2012-05-18 19:11:01,533 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:08,660 INFO uploading regular expression regexp_like(RG0, '^\D+') or regexp_like(RG0, '^\d$') or regexp_like(RG0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:11:08,661 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:19,197 INFO choose table
+2012-05-18 19:11:19,269 INFO list of schemas loaded successfully
+2012-05-18 19:11:21,576 INFO list of tables loaded successfully
+2012-05-18 19:11:21,578 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:11:22,762 INFO table TEST_BAD_1000 choosed
+2012-05-18 19:11:24,039 INFO launch edit regexps module
+2012-05-18 19:11:24,075 INFO connecting to local database successfully
+2012-05-18 19:11:29,750 INFO uploading regular expression regexp_like(SD0, '^\D+') or regexp_like(SD0, '^\d$') or regexp_like(SD0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:11:29,752 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:34,183 INFO uploading regular expression regexp_like(AMR0, '\НЕ ОПРЕДЕЛЕН') or regexp_like(AMR0, '^\d+{10,}') or regexp_like(AMR0, '^\d+$') for parameter no_information successfully
+2012-05-18 19:11:34,183 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:38,487 INFO uploading regular expression regexp_like(RG0, '^\D+') or regexp_like(RG0, '^\d$') or regexp_like(RG0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:11:38,487 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:43,648 INFO uploading regular expression regexp_like(INN, '^\D+') or regexp_like(INN, '^\d$') or regexp_like(INN, '\d{13,}') for parameter no_information successfully
+2012-05-18 19:11:43,648 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:47,585 INFO uploading regular expression regexp_like(NAIMEN, '^\d+{10,}') or regexp_like(NAIMEN, '^\d+$') for parameter no_information successfully
+2012-05-18 19:11:47,585 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:11:50,180 INFO choose table
+2012-05-18 19:11:50,249 INFO list of schemas loaded successfully
+2012-05-18 19:11:52,230 INFO list of tables loaded successfully
+2012-05-18 19:11:52,232 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:11:53,844 INFO table TEST_MIDDLE_1000 choosed
+2012-05-18 19:11:55,552 INFO launch edit regexps module
+2012-05-18 19:11:55,594 INFO connecting to local database successfully
+2012-05-18 19:12:00,352 INFO uploading regular expression regexp_like(NAIMEN, '^\d+{10,}') or regexp_like(NAIMEN, '^\d+$') for parameter no_information successfully
+2012-05-18 19:12:00,354 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:12:04,298 INFO uploading regular expression regexp_like(INN, '^\D+') or regexp_like(INN, '^\d$') or regexp_like(INN, '\d{13,}') for parameter no_information successfully
+2012-05-18 19:12:04,299 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:12:08,427 INFO uploading regular expression regexp_like(AMR0, '\НЕ ОПРЕДЕЛЕН') or regexp_like(AMR0, '^\d+{10,}') or regexp_like(AMR0, '^\d+$') for parameter no_information successfully
+2012-05-18 19:12:08,428 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:12:12,016 INFO uploading regular expression regexp_like(RG0, '^\D+') or regexp_like(RG0, '^\d$') or regexp_like(RG0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:12:12,017 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:12:15,611 INFO uploading regular expression regexp_like(SD0, '^\D+') or regexp_like(SD0, '^\d$') or regexp_like(SD0, '^\0{3,}') for parameter no_information successfully
+2012-05-18 19:12:15,611 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:12:23,762 INFO choose table
+2012-05-18 19:12:23,832 INFO list of schemas loaded successfully
+2012-05-18 19:12:25,430 INFO list of tables loaded successfully
+2012-05-18 19:12:25,430 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:12:26,453 INFO table TEST_GOOD_1000 choosed
+2012-05-18 19:12:27,365 INFO connecting to local database successfully
+2012-05-18 19:12:32,039 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:12:35,255 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:12:37,454 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:12:40,582 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:12:43,151 INFO loading regular expressions for parameter harmony successfully 
+2012-05-18 19:13:01,829 INFO starting calculation data quality model
+2012-05-18 19:13:01,829 INFO connecting to local database successfully
+2012-05-18 19:13:01,864 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:13:01,964 INFO not informable parameter calculation successfully
+2012-05-18 19:13:01,964 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:13:02,032 INFO bad fromat parameter calculation successfully
+2012-05-18 19:13:02,032 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:13:04,183 INFO noise level parameter calculation successfully
+2012-05-18 19:13:04,184 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:13:04,229 INFO identify parameter calculation successfully
+2012-05-18 19:13:04,237 INFO uniq parameter calculation successfully
+2012-05-18 19:13:22,311 INFO degree_of_classification parameter not calculated, because there are no catalogs used
+2012-05-18 19:13:22,349 INFO calculation successfully
+2012-05-18 19:33:14,325 INFO ######################################################################################
+2012-05-18 19:33:14,326 INFO start session
+2012-05-18 19:33:15,303 INFO connect to db
+2012-05-18 19:33:15,418 INFO list of connections loaded
+2012-05-18 19:33:15,440 INFO list of connections loaded
+2012-05-18 19:33:15,447 INFO listing of conneciton succesfully loading
+2012-05-18 19:33:16,944 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 19:33:16,947 INFO list of connections loaded
+2012-05-18 19:33:16,950 INFO listing of conneciton succesfully loading
+2012-05-18 19:33:16,953 INFO choose table
+2012-05-18 19:33:17,002 INFO list of schemas loaded successfully
+2012-05-18 19:33:18,706 INFO list of tables loaded successfully
+2012-05-18 19:33:18,706 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:33:19,625 INFO table TEST_GOOD_1000 choosed
+2012-05-18 19:33:20,746 INFO open local history
+2012-05-18 19:33:25,684 INFO connecting to local database successfully
+2012-05-18 19:33:30,411 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:33:32,394 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:33:34,755 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:33:39,371 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:33:41,595 INFO loading regular expressions for parameter harmony successfully 
+2012-05-18 19:33:48,921 INFO starting calculation data quality model
+2012-05-18 19:33:48,921 INFO connecting to local database successfully
+2012-05-18 19:33:48,957 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:33:49,059 INFO not informable parameter calculation successfully
+2012-05-18 19:33:49,059 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:33:49,124 INFO bad fromat parameter calculation successfully
+2012-05-18 19:33:49,124 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:33:51,276 INFO noise level parameter calculation successfully
+2012-05-18 19:33:51,276 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:33:51,323 INFO identify parameter calculation successfully
+2012-05-18 19:33:51,329 INFO uniq parameter calculation successfully
+2012-05-18 19:33:51,331 ERROR average assessment of all parameters calculation failed: unsupported operand type(s) for -: 'int' and 'str'
+2012-05-18 19:33:51,331 ERROR calculation dq failed: local variable 'avgall' referenced before assignment
+2012-05-18 19:33:55,881 ERROR starting calculate dq process failed - code 260: 'bool' object is not iterable
+2012-05-18 19:37:35,543 INFO ######################################################################################
+2012-05-18 19:37:35,543 INFO start session
+2012-05-18 19:37:35,964 INFO connect to db
+2012-05-18 19:37:35,996 INFO list of connections loaded
+2012-05-18 19:37:36,029 INFO list of connections loaded
+2012-05-18 19:37:36,038 INFO listing of conneciton succesfully loading
+2012-05-18 19:37:36,796 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 19:37:36,799 INFO list of connections loaded
+2012-05-18 19:37:36,802 INFO listing of conneciton succesfully loading
+2012-05-18 19:37:36,976 INFO choose table
+2012-05-18 19:37:37,029 INFO list of schemas loaded successfully
+2012-05-18 19:37:38,322 INFO list of tables loaded successfully
+2012-05-18 19:37:38,322 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:37:39,796 INFO table TEST_BAD_1000 choosed
+2012-05-18 19:37:40,556 INFO table TEST_GOOD_1000 choosed
+2012-05-18 19:37:41,759 INFO connecting to local database successfully
+2012-05-18 19:37:47,414 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:37:49,789 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:37:52,181 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:37:54,540 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:38:04,963 INFO starting calculation data quality model
+2012-05-18 19:38:04,963 INFO connecting to local database successfully
+2012-05-18 19:38:04,990 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:38:05,086 INFO not informable parameter calculation successfully
+2012-05-18 19:38:05,088 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:38:05,151 INFO bad fromat parameter calculation successfully
+2012-05-18 19:38:05,153 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:38:07,405 INFO noise level parameter calculation successfully
+2012-05-18 19:38:07,407 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:38:07,453 INFO identify parameter calculation successfully
+2012-05-18 19:38:07,463 INFO uniq parameter calculation successfully
+2012-05-18 19:38:07,480 INFO calculation successfully
+2012-05-18 19:38:29,345 INFO choose table
+2012-05-18 19:38:29,411 INFO list of schemas loaded successfully
+2012-05-18 19:38:31,907 INFO list of tables loaded successfully
+2012-05-18 19:38:31,907 INFO schema TEST_DIPLOM choosed
+2012-05-18 19:38:33,433 INFO table TEST_BAD_1000 choosed
+2012-05-18 19:38:34,733 INFO connecting to local database successfully
+2012-05-18 19:38:39,601 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:38:43,184 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:38:46,609 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:38:49,257 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:39:11,732 INFO starting calculation data quality model
+2012-05-18 19:39:11,733 INFO connecting to local database successfully
+2012-05-18 19:39:11,930 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 19:39:11,989 INFO not informable parameter calculation successfully
+2012-05-18 19:39:11,990 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 19:39:12,036 INFO bad fromat parameter calculation successfully
+2012-05-18 19:39:12,036 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 19:39:12,992 INFO noise level parameter calculation successfully
+2012-05-18 19:39:12,993 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 19:39:13,040 INFO identify parameter calculation successfully
+2012-05-18 19:39:13,069 INFO uniq parameter calculation successfully
+2012-05-18 19:39:27,112 INFO degree_of_classification parameter not calculated, because there are no catalogs used
+2012-05-18 19:39:27,178 INFO calculation successfully
+2012-05-18 20:00:38,230 INFO choose table
+2012-05-18 20:00:38,298 INFO list of schemas loaded successfully
+2012-05-18 20:00:40,210 INFO list of tables loaded successfully
+2012-05-18 20:00:40,211 INFO schema TEST_DIPLOM choosed
+2012-05-18 20:00:41,713 INFO table TEST_MIDDLE_1000 choosed
+2012-05-18 20:00:42,924 INFO connecting to local database successfully
+2012-05-18 20:00:47,417 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 20:00:49,842 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 20:00:52,161 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 20:00:54,289 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 20:00:58,033 INFO starting calculation data quality model
+2012-05-18 20:00:58,035 INFO connecting to local database successfully
+2012-05-18 20:00:58,229 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 20:00:58,305 INFO not informable parameter calculation successfully
+2012-05-18 20:00:58,305 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 20:00:58,359 INFO bad fromat parameter calculation successfully
+2012-05-18 20:00:58,359 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 20:00:59,994 INFO noise level parameter calculation successfully
+2012-05-18 20:00:59,996 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 20:01:00,023 INFO identify parameter calculation successfully
+2012-05-18 20:01:00,040 INFO uniq parameter calculation successfully
+2012-05-18 20:01:00,072 INFO calculation successfully
+2012-05-18 20:12:01,724 INFO ######################################################################################
+2012-05-18 20:12:01,726 INFO start session
+2012-05-18 20:12:02,611 INFO connect to db
+2012-05-18 20:12:02,638 INFO list of connections loaded
+2012-05-18 20:12:02,665 INFO list of connections loaded
+2012-05-18 20:12:02,680 INFO listing of conneciton succesfully loading
+2012-05-18 20:12:03,816 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 20:12:03,819 INFO list of connections loaded
+2012-05-18 20:12:03,822 INFO listing of conneciton succesfully loading
+2012-05-18 20:12:04,102 INFO choose table
+2012-05-18 20:12:04,168 INFO list of schemas loaded successfully
+2012-05-18 20:12:05,628 INFO list of tables loaded successfully
+2012-05-18 20:12:05,630 INFO schema TEST_DIPLOM choosed
+2012-05-18 20:12:07,115 INFO table TEST_GOOD_1000 choosed
+2012-05-18 20:12:08,368 INFO open local history
+2012-05-18 20:12:48,690 INFO ######################################################################################
+2012-05-18 20:12:48,690 INFO start session
+2012-05-18 20:12:49,862 INFO connect to db
+2012-05-18 20:12:49,890 INFO list of connections loaded
+2012-05-18 20:12:49,914 INFO list of connections loaded
+2012-05-18 20:12:49,921 INFO listing of conneciton succesfully loading
+2012-05-18 20:12:51,163 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-18 20:12:51,165 INFO list of connections loaded
+2012-05-18 20:12:51,168 INFO listing of conneciton succesfully loading
+2012-05-18 20:12:51,364 INFO choose table
+2012-05-18 20:12:51,426 INFO list of schemas loaded successfully
+2012-05-18 20:12:52,727 INFO list of tables loaded successfully
+2012-05-18 20:12:52,727 INFO schema TEST_DIPLOM choosed
+2012-05-18 20:12:54,335 INFO table TEST_GOOD_1000 choosed
+2012-05-18 20:12:56,145 INFO connecting to local database successfully
+2012-05-18 20:13:01,151 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 20:13:03,079 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 20:13:05,375 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 20:13:07,848 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 20:13:14,938 INFO starting calculation data quality model
+2012-05-18 20:13:14,938 INFO connecting to local database successfully
+2012-05-18 20:13:14,973 INFO loading regular expressions for parameter no_information successfully 
+2012-05-18 20:13:15,069 INFO not informable parameter calculation successfully
+2012-05-18 20:13:15,071 INFO loading regular expressions for parameter bad_format successfully 
+2012-05-18 20:13:15,134 INFO bad fromat parameter calculation successfully
+2012-05-18 20:13:15,134 INFO loading regular expressions for parameter noise_level successfully 
+2012-05-18 20:13:17,290 INFO noise level parameter calculation successfully
+2012-05-18 20:13:17,290 INFO loading regular expressions for parameter identifiability successfully 
+2012-05-18 20:13:17,339 INFO identify parameter calculation successfully
+2012-05-18 20:13:17,345 INFO uniq parameter calculation successfully
+2012-05-18 20:13:17,417 INFO calculation successfully
