@@ -45,9 +45,6 @@ class MainWindow ( wx.Frame ):
         self.notebook = wx.aui.AuiNotebook( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.aui.AUI_NB_DEFAULT_STYLE )
         self.panel1 = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         sizer2 = wx.BoxSizer( wx.VERTICAL )
-        
-        #self.logo = wx.StaticBitmap( self.panel1, wx.ID_ANY, wx.Bitmap( u"./data/img/mephi_logo.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
-        #sizer2.Add( self.logo, 0, wx.ALL, 5 )
 
         self.panel1.SetSizer( sizer2 )
         self.panel1.Layout()
@@ -214,13 +211,13 @@ class MainWindow ( wx.Frame ):
             if "'NoneType' object has no attribute 'close'" in info:
                 logging.info(u'end session. but there are no connection to db')
             self.Destroy()
-            logging.error(u'end session error - code 216: %s' % str(info))
+            logging.error(u'end session error - code 215: %s' % str(info))
             sys.exit()
     
     def DoDQ(self, event):
         message = 'Пожалуйста подождите, происходит оценка качества данных...'
         try:
-            if not self.using_params:
+            if not self.using_params or sum(self.using_params) == 0:
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
                 logging.error(u'failed calculation dq - code 224: NO PARAMS FOR DATA QUALITY')
                 return False
@@ -229,13 +226,13 @@ class MainWindow ( wx.Frame ):
                 wx.Yield()
                 
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-                self.dataquality = calculation.DQ(self.connection, self.schema,  self.table)
-                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog)
+                self.dataquality = calculation.DQ(self.connection)
+                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.schema,  self.table)
                 if result is None:
                     event.Skip()
                     return None
                 self.notebook.AddPage( self.panelMainStat, u"Результаты оценки качества данных", False, wx.NullBitmap )
-                self.result_ctrl = results.main_stat( self, result, self.dataquality.namecols, self.schema, self.table )
+                self.result_ctrl = results.main_stat( self, result, self.dataquality.namecols )
                 
                 self.sb = wx.StaticBox(self.panelMainStat)
                 self.sbs = wx.StaticBoxSizer(self.sb, orient=wx.VERTICAL)
@@ -251,7 +248,7 @@ class MainWindow ( wx.Frame ):
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
                 wx.Yield()
                     
-                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog)
+                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.schema,  self.table)
                 self.result_ctrl.list.Append(result2[0])
                 
                 self.panelMainStat.SetSizer(self.sbs)
@@ -272,7 +269,8 @@ class MainWindow ( wx.Frame ):
         try:
             logging.info(u'open local history')
             self.panelHist = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-            self.notebook.AddPage( self.panelHist, u"История оценки качества данных", False, wx.NullBitmap )
+            hist_title = (u"История оценки качества данных %s.%s" % (self.schema, self.table))
+            self.notebook.AddPage( self.panelHist, hist_title, False, wx.NullBitmap )
             self.histcols = self.main_stat_columns
             histrows = statistic.stats(self.schema, self.table).history_stat(self) 
             self.histres = results.history_stat(self, self.histcols, histrows, self.schema, self.table)
@@ -288,7 +286,7 @@ class MainWindow ( wx.Frame ):
             
         except TypeError, info:
             wx.MessageBox(str(info))
-            logging.error(u'error while looking history - code: 297 - %s' % str(info))
+            logging.error(u'error while looking history - code: 289 - %s' % str(info))
     
     def RefrshHist(self):
         self.histres.destr()
@@ -332,7 +330,7 @@ class MainWindow ( wx.Frame ):
             file = 'journal_events.log'
             os.system('notepad.exe ' + file)
         except Exception, info:
-            logging.error(u'error while opening journal events - code 344 ', str(info))
+            logging.error(u'error while opening journal events - code 333 ', str(info))
         
     def About(self, event):
         frame = about.about()

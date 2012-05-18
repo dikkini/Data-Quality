@@ -12,20 +12,18 @@ import report_html
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 class main_stat(listmix.ColumnSorterMixin): 
-    def __init__( self, main, rows, ext_cols,  schema, table ): 
+    def __init__( self, main, rows, ext_cols): 
         self.main = main
-        self.schema = schema
-        self.table = table
-        self.stat = statistic.stats(self.schema, self.table)
         
         self.ext_cols = ext_cols
+        
         self.ext_cols.insert(0, u'Название параметра')
         
         data = []
         
         self.list = wx.ListCtrl(self.main.panelMainStat, 0,
                                  style=wx.LC_REPORT | wx.BORDER_NONE | wx.LC_EDIT_LABELS | wx.LC_SORT_ASCENDING | wx.LC_SINGLE_SEL)
-        self.columns = self.main.main_stat_columns       
+        self.columns = self.main.main_stat_columns
         for col, text in enumerate(self.columns):
             self.list.InsertColumn(col, text) 
         for item in rows:
@@ -50,16 +48,12 @@ class main_stat(listmix.ColumnSorterMixin):
         self.list.SetColumnWidth(11, 50)
         self.list.SetColumnWidth(12, 50)   
         self.list.SetColumnWidth(14, 50) 
-        self.list.SetColumnWidth(15, 50) 
-        self.list.SetColumnWidth(16, 40)
+        self.list.SetColumnWidth(15, 50)
         self.list.Bind(wx.EVT_LIST_COL_CLICK, self.OnColClick, self.list)
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
         self.list.Bind(wx.EVT_LIST_ITEM_SELECTED, self.OnItemSelected)
         self.itemDataMap = data
         listmix.ColumnSorterMixin.__init__(self, 3)
-        
-        
-        #self.ext_list.list.Show(False)
         
     def GetListCtrl(self):
         return self.list
@@ -87,25 +81,34 @@ class main_stat(listmix.ColumnSorterMixin):
             self.list.PopupMenu(menu)
       
     def OnExtStat(self, event):
+        schema_table = (self.getColumnText(self.currentItem, 13))
+        schema_table = schema_table.split(':')
+        self.schema = schema_table[0]
+        self.table = schema_table[1]
+        
+        orcl = oracle.WorkDB(self.main.connection)
+        namecols = orcl.get_cols(self.table)
+        namecols.insert(0, u'Название параметра')
+        
         try:
             self.ext_list.list.DeleteAllItems()
             self.ext_list.list.Destroy()
         except Exception, info:
-            print info
+            pass
         
-#        self.main.Freeze()
+        self.stat = statistic.stats(self.schema, self.table)
         self.ext_stat = self.stat.take_ext_stat(self.date)
+        if self.ext_stat == [None, None, None, None]:
+                wx.MessageBox(u'Для данной статистике нет расширенной статистики')
+                return False
         self.ext_stat = [ i for i in self.ext_stat if i is not None] 
-        self.ext_list = extend_stat(self.main.panelMainStat, self.ext_cols, self.ext_stat)
+        self.ext_list = extend_stat(self.main.panelMainStat, namecols, self.ext_stat)
         self.main.sizer.Add(self.ext_list.list, 2, wx.EXPAND)
         self.main.panelMainStat.SetSizer(self.main.sbs)
         self.main.panelMainStat.Layout()
         size = self.main.GetSize()
         newsize = size - (1,1)
         self.main.SetSize(newsize)
-        
-        
-        #Тут графический баг. При полноэкранном расширении получение расширенной статистики для результатов оценки качества данных идут с багом.
         
     def OnAdviceMode(self, event):
         mod = adv.advices(self.data)
@@ -134,9 +137,7 @@ class main_stat(listmix.ColumnSorterMixin):
                             self.getColumnText(self.currentItem, 10),
                             self.getColumnText(self.currentItem, 11),
                             self.getColumnText(self.currentItem, 12),
-                            self.getColumnText(self.currentItem, 13),
-                            self.getColumnText(self.currentItem, 14))
-        
+                            self.getColumnText(self.currentItem, 13))
         
 class extend_stat(): 
     def __init__(self, panel, columns, rows): 
@@ -165,9 +166,7 @@ class extend_stat():
         self.list.SetColumnWidth(11, 55)
         self.list.SetColumnWidth(12, 55) 
         self.list.SetColumnWidth(13, 55)
-        self.list.SetColumnWidth(14, 55) 
-        self.list.SetColumnWidth(15, 55)
-        self.list.SetColumnWidth(16, 40)
+        self.list.SetColumnWidth(14, 55)
         self.list.SetSize((900,350))
         
 class history_stat(): 
@@ -205,11 +204,8 @@ class history_stat():
         self.list.SetColumnWidth(11, 55)
         self.list.SetColumnWidth(12, 55) 
         self.list.SetColumnWidth(13, 55)
-        self.list.SetColumnWidth(14, 55) 
-        self.list.SetColumnWidth(15, 55)
-        self.list.SetColumnWidth(16, 40)
-        #self.list.SetSize((900,350))
-        #self.list.Bind(wx.EVT_LIST_COL_CLICK, self.OnColClick, self.list)
+        self.list.SetColumnWidth(14, 55)
+
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
         self.list.Bind(wx.EVT_LIST_ITEM_SELECTED, self.OnItemSelected)
                 
@@ -250,12 +246,14 @@ class history_stat():
             self.ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.table)
             self.ext_cols.insert(0, u'Название параметра')
             self.ext_stat = self.stat.take_ext_stat(self.date)
+            if self.ext_stat == [None, None, None, None]:
+                wx.MessageBox(u'Для данной статистике нет расширенной статистики')
+                return False
             self.ext_stat = [ i for i in self.ext_stat if i is not None] 
             frame = Popup(self.ext_cols, self.ext_stat, self.schema, self.table)
             frame.Show()
         except Exception, info:
-            if 'object is not subscriptable' in str(info):
-                wx.MessageBox(u'Для данной статистике нет расширенной статистики')
+            wx.MessageBox(info)
 
     def OnAdviceMode(self, event):
         mod = adv.advices(self.data)
@@ -270,8 +268,6 @@ class history_stat():
     def OnDelStat(self, event):
         self.stat.del_stat(self.date)
         self.main.RefrshHist()
-        #self.list.DeleteAllItems()
-        #self.stat.history_stat(self.main)
 
     def OnColClick(self, event):
         print ("OnColClick: %d\n" % event.GetColumn())
@@ -291,8 +287,8 @@ class history_stat():
                             self.getColumnText(self.currentItem, 10),
                             self.getColumnText(self.currentItem, 11),
                             self.getColumnText(self.currentItem, 12),
-                            self.getColumnText(self.currentItem, 13),
-                            self.getColumnText(self.currentItem, 14))
+                            self.getColumnText(self.currentItem, 13))
+        
     def OnRefresh(self, event):
 #        self.list.DeleteAllItems()
 #        self.stat.history_stat(self.main)

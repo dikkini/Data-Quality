@@ -8,13 +8,13 @@ import logging
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
 class DQ(object):
-	def __init__(self, connection, schema, table):
+	def __init__(self, connection):
 		self.connection = connection
+		
+	
+	def mathDQ(self, weights, using_params, user_choice_catalog, schema, table):
 		self.table = table
 		self.schema = schema
-	
-	def mathDQ(self, weights, using_params, user_choice_catalog):
-		print weights, using_params
 		logging.info(u'starting calculation data quality model')
 		self.data = []
 		dt = datetime.datetime.now()
@@ -39,7 +39,6 @@ class DQ(object):
 			count0 = orcl.get_empty_values(self.schema, self.table)
 			count0 = count0 * self.weights[0]
 			emptyvalues = count0 / self.countall * 100
-			emptyvalues = 100 - emptyvalues
 			emptyvalues = str(round(emptyvalues, 2))
 			self.data.append(emptyvalues)
 		else:
@@ -64,7 +63,6 @@ class DQ(object):
 				avgnoinf = (sum(count1) / len(count1)) * self.weights[1]
 				avgnoinf = float(avgnoinf)
 				avgnoinf = avgnoinf / self.countall * 100
-				avgnoinf = 100 - avgnoinf
 				avgnoinf = str(round(avgnoinf, 2))
 				self.data.append(avgnoinf)
 
@@ -106,7 +104,6 @@ class DQ(object):
 				avgbadform = (sum(count2) / len(count2)) * self.weights[2]
 				avgbadform = float(avgbadform)
 				avgbadform = avgbadform / self.countall * 100
-				avgbadform = 100 - avgbadform
 				avgbadform = str(round(avgbadform, 2))
 				self.data.append(avgbadform)
 				ext_stat = []
@@ -145,7 +142,6 @@ class DQ(object):
 				avgnoise = (sum(count3) / len(count3)) * self.weights[3]
 				avgnoise = float(avgnoise)
 				avgnoise = avgnoise / self.countall * 100
-				avgnoise = 100 - avgnoise
 				avgnoise = str(round(avgnoise, 2))
 				self.data.append(avgnoise)
 
@@ -334,11 +330,12 @@ class DQ(object):
 			logging.error(u'degree_of_structuring parameter calculation failed: %s' % str(info))
 		try:
 			avgall = float(emptyvalues) + float(avgnoinf) + float(avgbadform) + float(avgnoise) + float(avgident) + float(avgharm) + float(avguniq) + float(avgeffic) + float(avgincon) + float(avgdoc) + float(avgdos)
+			# Вычисляем количество параметров имеющих оценку
 			i = 0
 			for param in self.using_params:
 				if param == 1:
 					i = i + 1
-			print i
+			
 		except Exception, info:
 			logging.error(u'average assessment of all parameters calculation failed: %s' % str(info))
 		try:
@@ -348,7 +345,8 @@ class DQ(object):
 			return False
 		result = str(round(result, 2))
 		self.data.append(result)
-		self.data.append(self.table)
+		tabl_schema = ('%s:%s' % (self.schema, self.table))
+		self.data.append(tabl_schema)
 		self.dat = []
 		self.dat.append(self.data)
 

@@ -8,10 +8,7 @@ class advices():
                                         u'Оперативность', u'Противоречивость', u'Степень классификации', 
                                         u'Степень структуризации']
         data = list(data)
-        print data
         data.pop()
-        data.pop()
-        print data
         self.prev_dq = data[-1]
         data.pop()
         self.data = map(lambda a: float(a) if a != '-' else 0, data)
