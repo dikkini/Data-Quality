@@ -33,6 +33,8 @@ class DQ(object):
 			self.weights[i] = float(self.weights[i])
 
 		self.namecols = orcl.get_cols(self.table)
+		
+		
 		# Пустые значения
 		if self.using_params[0] == 1:
 			# Количество значений подпадающих под критерий

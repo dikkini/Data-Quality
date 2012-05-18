@@ -38,7 +38,7 @@ class MainWindow ( wx.Frame ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Data Quality -- Главное окно", 
                             pos = wx.DefaultPosition, size = wx.Size( 900,600 ) )
         
-        self.SetSizeHintsSz( wx.Size( 800,600 ), wx.DefaultSize )
+        self.SetSizeHintsSz( wx.Size( 1000,600 ), wx.DefaultSize )
         
         self.sizer1 = wx.BoxSizer( wx.VERTICAL )
         
@@ -211,7 +211,7 @@ class MainWindow ( wx.Frame ):
             if "'NoneType' object has no attribute 'close'" in info:
                 logging.info(u'end session. but there are no connection to db')
             self.Destroy()
-            logging.error(u'end session error - code 215: %s' % str(info))
+            logging.error(u'end session error - code 214: %s' % str(info))
             sys.exit()
     
     def DoDQ(self, event):
@@ -257,7 +257,7 @@ class MainWindow ( wx.Frame ):
                 del busy
         except Exception, info:
                 wx.MessageBox(str(info))
-                logging.error(u'starting calculate dq process failed - code 262: %s' % (str(info)))
+                logging.error(u'starting calculate dq process failed - code 260: %s' % (str(info)))
     
     def OnTabClose(self, event):
         temp_page = event.GetSelection()
@@ -317,7 +317,6 @@ class MainWindow ( wx.Frame ):
             
             if self.IsMaximized():
                 self.SetFocus()
-            
         
     def ChooseParams(self, event):
         try:

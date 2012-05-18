@@ -45,10 +45,10 @@ class main_stat(listmix.ColumnSorterMixin):
         self.list.SetColumnWidth(8, 55)   
         self.list.SetColumnWidth(9, 55) 
         self.list.SetColumnWidth(10, 55) 
-        self.list.SetColumnWidth(11, 50)
-        self.list.SetColumnWidth(12, 50)   
-        self.list.SetColumnWidth(14, 50) 
-        self.list.SetColumnWidth(15, 50)
+        self.list.SetColumnWidth(11, 55)
+        self.list.SetColumnWidth(12, 55)
+        self.list.SetColumnWidth(13, 120) 
+        self.list.SetColumnWidth(14, 120)
         self.list.Bind(wx.EVT_LIST_COL_CLICK, self.OnColClick, self.list)
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
         self.list.Bind(wx.EVT_LIST_ITEM_SELECTED, self.OnItemSelected)
@@ -152,6 +152,8 @@ class extend_stat():
             index = self.list.InsertStringItem(sys.maxint, item[0]) 
             for col, text in enumerate(item[1:]): 
                 self.list.SetStringItem(index, col+1, text) 
+                
+        self.list.SetSize((900,350))
         self.list.SetColumnWidth(0, 120)   
         self.list.SetColumnWidth(1, 55) 
         self.list.SetColumnWidth(2, 55) 
@@ -165,9 +167,9 @@ class extend_stat():
         self.list.SetColumnWidth(10, 55) 
         self.list.SetColumnWidth(11, 55)
         self.list.SetColumnWidth(12, 55) 
-        self.list.SetColumnWidth(13, 55)
-        self.list.SetColumnWidth(14, 55)
-        self.list.SetSize((900,350))
+        self.list.SetColumnWidth(13, 120)
+        self.list.SetColumnWidth(14, 120)
+        
         
 class history_stat(): 
     def __init__(self, parent, columns, rows, schema, table): 
