@@ -6,27 +6,38 @@ class advices():
         self.names = [u'Пустые значения', u'Не несущие информацию значения', u'Не соответствующие формату значения',
                                         u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Унификация', 
                                         u'Оперативность', u'Противоречивость', u'Степень классификации', 
-                                        u'Степень структуризации']
+                                        u'Степень структуризации', u'Степень идентифицируемости']
+        print 'FULLLLLL DATA', data
         data = list(data)
         data.pop()
-        self.prev_dq = data[-1]
+        print 'fulldata-1', data
         data.pop()
+        print 'fulldata-1-1', data
+        self.prev_dq = self.max_val = data.pop()
+        print 'max_val and prev_dq:', self.max_val
+        print 'fulldata-1-1-1', data
         self.data = map(lambda a: float(a) if a != '-' else 0, data)
         
 # ----- функция получения списка минимальных значений оценки ---- 
     def get_mins(self):
         # получение среднего. удаление неиспользуемых параметров
         # убираем одинаковые значения -- useless (???)
-        self.data_req = list(set(self.data))
-        for i in self.data_req:
-            if not i:
-                self.data_req.remove(i)
-        try:
-            max_val = sum(self.data_req) / float(len(self.data_req))
-        except ZeroDivisionError:
-            wx.MessageBox(u'Вся статистика нулевая.')
+        print 'full data:', self.data
+        # Does not working, because it is very bad mehtod to delete all zero but not zero.zero
+        #self.data_req = list(set(self.data))
+        
+        for i in self.data:
+            if i == '0' and i != '0.0' and int(i) == 0 and float(i) != 0.0:
+                print i
+                print self.data.remove(i)
+                
+        print 'set(data)', self.data
+#        try:
+#            max_val = sum(self.data_req) / float(len(self.data_req))
+#        except ZeroDivisionError:
+#            wx.MessageBox(u'Вся статистика нулевая.')
         #minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val)
-        minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val and isinstance(i, float))
+        minimals = ((idx, i) for idx, i in enumerate(self.data) if i < self.max_val and isinstance(i, float))
         return sorted(minimals, key=lambda a: a[1])
         
     def TextAdv(self, flag):
@@ -68,6 +79,9 @@ class advices():
             if num == 10:
                 self.param10 = (u'%s: %s' % (self.names[10], perc))
                 self.ps.append(self.param10)
+            if num == 11:
+                self.param11 = (u'%s: %s' % (self.names[11], perc))
+                self.ps.append(self.param11)
                 
         adv_params = self.Function1_params()
         adv_pages = self.Function2_pages()
@@ -90,19 +104,23 @@ class advices():
         perc = '%'
         adv_pages = []
         for param in self.ps:
+            print 'self.ps:',self.ps
             temp = param
+            print 'temp1:', temp
             parse = temp.split(':')
             if len(parse) > 1:
                 temp = parse[-1]
                 temp = temp.strip()
+                print 'temp2:', temp
                 try:
                     number = float(temp)
+                    print 'number:', number
                 except ValueError:
                     wx.MessageBox(u'ошибка')
-            self.data_req.remove(number)
+            self.data.remove(number)
             future_element = number + 10
-            self.data_req.append(future_element)
-            future_dq = sum(self.data_req) / len(self.data_req)
+            self.data.append(future_element)
+            future_dq = sum(self.data) / len(self.data)
             delta_dq = round(float(future_dq), 2) - round(float(self.prev_dq), 2)
             future_dq = round(future_dq, 2)
             

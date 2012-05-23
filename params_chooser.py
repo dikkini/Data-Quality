@@ -40,7 +40,7 @@ class frame_chooser ( wx.Frame ):
         self.params_quality_choices = [u'Пустые значения', u'Не несущие информацию значения', u'Не соответствующие формату значения',
                                         u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Унификация', 
                                         u'Оперативность', u'Противоречивость', u'Степень классификации', 
-                                        u'Степень структуризации']
+                                        u'Степень структуризации', u'Степень идентифицируемости']
         
         self.params_choice_pull = wx.Choice( self.m_panel2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 
                                              self.params_quality_choices, 0 )
@@ -75,9 +75,11 @@ class frame_chooser ( wx.Frame ):
         self.params_choice_pull.Bind(wx.EVT_CHOICE, self.OnChParamDQ)
         self.Bind(wx.EVT_BUTTON, self.OnConfirmBtn, self.OK_btn)  
         
-        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.using_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.weights_params = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         self.user_number_catalog = None
+        self.user_number_composite_fileds = None
+        self.user_number_allfields = None
         #SQLITE
         self.db = sqlite.sqliteDB(self.main.schema, self.main.table)
         
@@ -89,9 +91,15 @@ class frame_chooser ( wx.Frame ):
         self.connection = connection
  
     def OnConfirmBtn(self, event):
+        # Весовые коэффициенты параметров
         self.main.weights = self.weights_params 
+        # Используемые параметры
         self.main.using_params = self.using_params
+        # Число используемых справочников для параметра Степень классификации
         self.main.user_choice_catalog = self.user_number_catalog
+        # Два числа для расчета параметра Степень структуризации - allfields - все поля, composite_fields - составные поля
+        self.main.user_number_allfields = self.user_number_allfields
+        self.main.user_number_composite_fileds = self.user_number_composite_fileds
         self.Close()   
 
     def OnCheckUseParam(self, event):
@@ -241,16 +249,20 @@ class frame_chooser ( wx.Frame ):
                 self.using_params[10] = 1
                 self.weights_params[10] = self.weights_txt.GetValue()
                 param = 'degree_of_structuring'
-                test = self.db.take_regexps(param)
-                if not test:
-                    wx.MessageBox(u'Для данного параметра не введены регулярные выражения.')
-                    self.using_params[10] = 0
-                    self.weights_params[10] = 0
-                    self.use_param_checkbox.SetValue(False)
-                    self.weights_txt.Clear()
+                ask = AskDoS(self)
+                ask.ShowModal()
             else:
                 self.using_params[10] = 0
                 self.weights_params[10] = 0
+                
+        elif self.params_choice_pull.GetStringSelection() == self.params_quality_choices[11]:
+            if self.use_param_checkbox.IsChecked():
+                self.using_params[11] = 1
+                self.weights_params[11] = self.weights_txt.GetValue()
+                param = 'degree_of_indent'
+            else:
+                self.using_params[11] = 0
+                self.weights_params[11] = 0
     
     def OnChParamDQ(self, event):
         if self.params_choice_pull.GetStringSelection() == self.params_quality_choices[0]:
@@ -330,12 +342,19 @@ class frame_chooser ( wx.Frame ):
             else:
                 self.use_param_checkbox.SetValue(False)
                 self.weights_txt.Clear()
+        elif self.params_choice_pull.GetStringSelection() == self.params_quality_choices[11]:
+            if self.using_params[11] == 1:
+                self.use_param_checkbox.SetValue(True)
+                self.weights_txt.SetValue(self.weights_params[11])
+            else:
+                self.use_param_checkbox.SetValue(False)
+                self.weights_txt.Clear()
                 
 class AskCatalogs(wx.Dialog): 
     def __init__(self, parent): 
-        wx.Dialog. __init__(self, None, -1, u'Укажите пожалуйста число справочников использовавшееся для заполнения таблицы:',style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB|wx.TAB_TRAVERSAL) 
+        wx.Dialog. __init__(self, None, -1, u'Укажите пожалуйста Количество справочников использовавшееся для заполнения таблицы:',style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB|wx.TAB_TRAVERSAL) 
         # Create the text controls 
-        txt  = wx.StaticText(self, -1, u"Число:")
+        txt  = wx.StaticText(self, -1, u"Количество справочников:")
         # Parent connection 
         self.par_ch = parent
         self.text_ctrl = wx.TextCtrl(self)     
@@ -366,7 +385,7 @@ class AskCatalogs(wx.Dialog):
     def OnOk(self, event):
         value = self.text_ctrl.GetValue()
         if len(value) == 0:
-            wx.MessageBox(u'Введите число!')
+            wx.MessageBox(u'Все поля необходимо заполнить!')
         else:
             self.par_ch.user_number_catalog = value
             self.par_ch.using_params[9] = 1
@@ -379,6 +398,64 @@ class AskCatalogs(wx.Dialog):
         self.par_ch.weights_params[9] = 0
         self.par_ch.use_param_checkbox.SetValue(False)
         self.par_ch.weights_txt.Clear()
+        self.Close()
+        
+class AskDoS(wx.Dialog): 
+    def __init__(self, parent): 
+        wx.Dialog. __init__(self, None, -1, u'Укажите пожалуйста входные данные для параметра:',style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.ALWAYS_SHOW_SB|wx.TAB_TRAVERSAL) 
+        # Create the text controls 
+        txt1  = wx.StaticText(self, -1, u"Количество всех полей:")
+        txt2  = wx.StaticText(self, -1, u"Количество составных полей:")
+        # Parent connection 
+        self.par_ch = parent
+        self.text1_ctrl = wx.TextCtrl(self)
+        self.text2_ctrl = wx.TextCtrl(self)     
+        # Use standard button IDs 
+        okay = wx.Button(self, wx.ID_OK) 
+        okay.SetDefault() 
+        cancel = wx.Button(self, wx.ID_CANCEL) 
+        # Layout with sizers 
+        sizer = wx.BoxSizer(wx.VERTICAL) 
+        sizer.Add(txt1, 0, wx.EXPAND|wx.ALL, 5)
+        sizer.Add(txt2, 0, wx.EXPAND|wx.ALL, 5)  
+        
+        fgs = wx.FlexGridSizer(3, 2, 5, 5) 
+        fgs.Add(txt1, 0, wx.ALIGN_RIGHT)
+        fgs.Add(txt2, 0, wx.ALIGN_RIGHT)
+        fgs.Add(self.text1_ctrl, 0, wx.EXPAND)
+        fgs.Add(self.text2_ctrl, 0, wx.EXPAND) 
+        fgs.AddGrowableCol(1) 
+        sizer.Add(fgs, 0, wx.EXPAND|wx.ALL, 5) 
+        btns = wx.StdDialogButtonSizer() 
+        btns.AddButton(okay) 
+        btns.AddButton(cancel) 
+        btns.Realize() 
+        sizer.Add(btns, 0, wx.EXPAND|wx.ALL, 5) 
+        self.SetSizer(sizer) 
+        sizer.Fit(self)
+        okay.Bind(wx.EVT_BUTTON, self.OnOk)
+        cancel.Bind(wx.EVT_BUTTON, self.OnCancel)
+        self.Center()
+        
+    def OnOk(self, event):
+        allfields = self.text1_ctrl.GetValue()
+        composite_fileds = self.text2_ctrl.GetValue()
+        if len(allfields) == 0 or len(composite_fileds) == 0:
+            wx.MessageBox(u'Все поля необходимо заполнить!')
+        else:
+            self.par_ch.user_number_allfields = allfields
+            self.par_ch.user_number_composite_fileds = composite_fileds
+            self.par_ch.using_params[10] = 1
+            self.par_ch.weights_params[10] = 1
+            self.par_ch.use_param_checkbox.SetValue(True)
+            self.Close()
+    
+    def OnCancel(self, event):
+        self.par_ch.using_params[10] = 0
+        self.par_ch.weights_params[10] = 0
+        self.par_ch.use_param_checkbox.SetValue(False)
+        self.par_ch.weights_txt.Clear()        
+        self.Close()
 
 class WeightsValidator(wx.PyValidator):
     def __init__(self):
