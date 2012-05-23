@@ -2088,3 +2088,20 @@
 2012-05-18 20:13:17,339 INFO identify parameter calculation successfully
 2012-05-18 20:13:17,345 INFO uniq parameter calculation successfully
 2012-05-18 20:13:17,417 INFO calculation successfully
+2012-05-22 01:31:02,697 INFO ######################################################################################
+2012-05-22 01:31:02,697 INFO start session
+2012-05-22 01:31:07,132 INFO connect to db
+2012-05-22 01:31:08,217 INFO list of connections loaded
+2012-05-22 01:31:08,234 INFO list of connections loaded
+2012-05-22 01:31:08,246 INFO listing of conneciton succesfully loading
+2012-05-22 01:31:13,470 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-22 01:31:13,473 INFO list of connections loaded
+2012-05-22 01:31:13,476 INFO listing of conneciton succesfully loading
+2012-05-22 01:31:15,694 INFO choose table
+2012-05-22 01:31:15,729 INFO list of schemas loaded successfully
+2012-05-22 01:31:21,423 INFO list of tables loaded successfully
+2012-05-22 01:31:21,423 INFO schema TEST_DIPLOM choosed
+2012-05-22 01:31:24,812 INFO table BIG_TEST1 choosed
+2012-05-22 01:31:26,700 INFO launch edit regexps module
+2012-05-22 01:31:26,723 INFO connecting to local database successfully
+2012-05-22 01:31:29,558 INFO loading regular expressions for parameter no_information successfully 
