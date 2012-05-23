@@ -2105,3 +2105,346 @@
 2012-05-22 01:31:26,700 INFO launch edit regexps module
 2012-05-22 01:31:26,723 INFO connecting to local database successfully
 2012-05-22 01:31:29,558 INFO loading regular expressions for parameter no_information successfully 
+2012-05-23 10:01:46,605 INFO ######################################################################################
+2012-05-23 10:01:46,607 INFO start session
+2012-05-23 10:01:47,262 INFO connect to db
+2012-05-23 10:01:47,312 INFO list of connections loaded
+2012-05-23 10:01:47,338 INFO list of connections loaded
+2012-05-23 10:01:47,344 INFO listing of conneciton succesfully loading
+2012-05-23 10:01:48,460 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:01:48,463 INFO list of connections loaded
+2012-05-23 10:01:48,466 INFO listing of conneciton succesfully loading
+2012-05-23 10:01:48,470 INFO choose table
+2012-05-23 10:01:48,510 INFO list of schemas loaded successfully
+2012-05-23 10:01:50,118 INFO list of tables loaded successfully
+2012-05-23 10:01:50,119 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:01:51,246 INFO table BIG_TEST1 choosed
+2012-05-23 10:02:45,329 INFO open local history
+2012-05-23 10:03:59,874 INFO ######################################################################################
+2012-05-23 10:03:59,874 INFO start session
+2012-05-23 10:04:00,183 INFO connect to db
+2012-05-23 10:04:00,200 INFO list of connections loaded
+2012-05-23 10:04:00,221 INFO list of connections loaded
+2012-05-23 10:04:00,226 INFO listing of conneciton succesfully loading
+2012-05-23 10:04:00,980 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:04:00,982 INFO list of connections loaded
+2012-05-23 10:04:00,984 INFO listing of conneciton succesfully loading
+2012-05-23 10:04:01,255 INFO choose table
+2012-05-23 10:04:01,311 INFO list of schemas loaded successfully
+2012-05-23 10:04:02,644 INFO list of tables loaded successfully
+2012-05-23 10:04:02,644 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:04:03,559 INFO table BIG_TEST1 choosed
+2012-05-23 10:04:04,279 INFO launch edit regexps module
+2012-05-23 10:04:04,312 INFO connecting to local database successfully
+2012-05-23 10:04:06,167 INFO open local history
+2012-05-23 10:04:09,109 INFO report succesfully done
+2012-05-23 10:04:43,994 INFO ######################################################################################
+2012-05-23 10:04:43,996 INFO start session
+2012-05-23 10:04:44,665 INFO connect to db
+2012-05-23 10:04:44,696 INFO list of connections loaded
+2012-05-23 10:04:44,726 INFO list of connections loaded
+2012-05-23 10:04:44,736 INFO listing of conneciton succesfully loading
+2012-05-23 10:04:45,301 INFO connecting to local database successfully
+2012-05-23 10:04:45,302 INFO editing connection: localhost
+2012-05-23 10:04:45,308 INFO list of connections loaded
+2012-05-23 10:04:45,312 INFO listing of conneciton succesfully loading
+2012-05-23 10:04:45,318 INFO editing connection: localhost
+2012-05-23 10:04:46,326 INFO list of connections loaded
+2012-05-23 10:04:46,335 INFO listing of conneciton succesfully loading
+2012-05-23 10:04:46,951 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:04:46,953 INFO list of connections loaded
+2012-05-23 10:04:46,956 INFO listing of conneciton succesfully loading
+2012-05-23 10:04:47,483 INFO choose table
+2012-05-23 10:04:47,536 INFO list of schemas loaded successfully
+2012-05-23 10:04:49,625 INFO list of tables loaded successfully
+2012-05-23 10:04:49,625 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:04:50,730 INFO table BIG_TEST1 choosed
+2012-05-23 10:04:51,578 INFO open local history
+2012-05-23 10:08:21,737 INFO ######################################################################################
+2012-05-23 10:08:21,739 INFO start session
+2012-05-23 10:08:22,059 INFO connect to db
+2012-05-23 10:08:22,089 INFO list of connections loaded
+2012-05-23 10:08:22,118 INFO list of connections loaded
+2012-05-23 10:08:22,127 INFO listing of conneciton succesfully loading
+2012-05-23 10:08:23,167 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:08:23,171 INFO list of connections loaded
+2012-05-23 10:08:23,174 INFO listing of conneciton succesfully loading
+2012-05-23 10:08:23,305 INFO choose table
+2012-05-23 10:08:23,368 INFO list of schemas loaded successfully
+2012-05-23 10:08:24,674 INFO list of tables loaded successfully
+2012-05-23 10:08:24,674 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:08:26,059 INFO table BIG_TEST1 choosed
+2012-05-23 10:08:27,082 INFO open local history
+2012-05-23 10:08:32,309 INFO report succesfully done
+2012-05-23 10:09:23,273 INFO ######################################################################################
+2012-05-23 10:09:23,273 INFO start session
+2012-05-23 10:09:23,615 INFO connect to db
+2012-05-23 10:09:23,641 INFO list of connections loaded
+2012-05-23 10:09:23,663 INFO list of connections loaded
+2012-05-23 10:09:23,668 INFO listing of conneciton succesfully loading
+2012-05-23 10:09:24,424 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:09:24,427 INFO list of connections loaded
+2012-05-23 10:09:24,430 INFO listing of conneciton succesfully loading
+2012-05-23 10:09:24,654 INFO choose table
+2012-05-23 10:09:24,709 INFO list of schemas loaded successfully
+2012-05-23 10:09:26,319 INFO list of tables loaded successfully
+2012-05-23 10:09:26,319 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:09:27,240 INFO table BIG_TEST1 choosed
+2012-05-23 10:09:28,351 INFO open local history
+2012-05-23 10:09:31,579 INFO report succesfully done
+2012-05-23 10:14:40,654 INFO ######################################################################################
+2012-05-23 10:14:40,654 INFO start session
+2012-05-23 10:14:41,798 INFO connect to db
+2012-05-23 10:14:41,822 INFO list of connections loaded
+2012-05-23 10:14:41,842 INFO list of connections loaded
+2012-05-23 10:14:41,849 INFO listing of conneciton succesfully loading
+2012-05-23 10:14:42,854 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:14:42,858 INFO list of connections loaded
+2012-05-23 10:14:42,861 INFO listing of conneciton succesfully loading
+2012-05-23 10:14:43,125 INFO choose table
+2012-05-23 10:14:43,174 INFO list of schemas loaded successfully
+2012-05-23 10:14:44,891 INFO list of tables loaded successfully
+2012-05-23 10:14:44,891 INFO schema ARTUR choosed
+2012-05-23 10:15:05,141 INFO list of tables loaded successfully
+2012-05-23 10:15:05,141 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:15:06,288 INFO table BIG_TEST1 choosed
+2012-05-23 10:15:07,736 INFO open local history
+2012-05-23 10:15:12,914 ERROR report failed: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'. -- code 32
+2012-05-23 10:15:20,434 INFO ######################################################################################
+2012-05-23 10:15:20,434 INFO start session
+2012-05-23 10:15:22,921 INFO connect to db
+2012-05-23 10:15:22,938 INFO list of connections loaded
+2012-05-23 10:15:22,959 INFO list of connections loaded
+2012-05-23 10:15:22,966 INFO listing of conneciton succesfully loading
+2012-05-23 10:15:23,664 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:15:23,667 INFO list of connections loaded
+2012-05-23 10:15:23,668 INFO listing of conneciton succesfully loading
+2012-05-23 10:15:23,769 INFO choose table
+2012-05-23 10:15:23,825 INFO list of schemas loaded successfully
+2012-05-23 10:15:25,556 INFO list of tables loaded successfully
+2012-05-23 10:15:25,556 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:15:26,898 INFO table BIG_TEST1 choosed
+2012-05-23 10:15:28,186 INFO launch edit regexps module
+2012-05-23 10:15:28,217 INFO connecting to local database successfully
+2012-05-23 10:15:30,937 INFO choose table
+2012-05-23 10:15:30,996 INFO list of schemas loaded successfully
+2012-05-23 10:15:32,441 INFO open local history
+2012-05-23 10:15:39,903 INFO report succesfully done
+2012-05-23 10:16:58,283 INFO ######################################################################################
+2012-05-23 10:16:58,285 INFO start session
+2012-05-23 10:16:59,039 INFO connect to db
+2012-05-23 10:16:59,071 INFO list of connections loaded
+2012-05-23 10:16:59,091 INFO list of connections loaded
+2012-05-23 10:16:59,096 INFO listing of conneciton succesfully loading
+2012-05-23 10:16:59,862 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:16:59,865 INFO list of connections loaded
+2012-05-23 10:16:59,868 INFO listing of conneciton succesfully loading
+2012-05-23 10:17:00,160 INFO choose table
+2012-05-23 10:17:00,217 INFO list of schemas loaded successfully
+2012-05-23 10:17:01,552 INFO list of tables loaded successfully
+2012-05-23 10:17:01,552 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:17:03,144 INFO table BIG_TEST1 choosed
+2012-05-23 10:17:03,983 INFO open local history
+2012-05-23 10:17:07,556 INFO report succesfully done
+2012-05-23 10:18:01,029 INFO ######################################################################################
+2012-05-23 10:18:01,029 INFO start session
+2012-05-23 10:18:01,332 INFO connect to db
+2012-05-23 10:18:01,365 INFO list of connections loaded
+2012-05-23 10:18:01,391 INFO list of connections loaded
+2012-05-23 10:18:01,398 INFO listing of conneciton succesfully loading
+2012-05-23 10:18:02,371 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:18:02,375 INFO list of connections loaded
+2012-05-23 10:18:02,378 INFO listing of conneciton succesfully loading
+2012-05-23 10:18:02,628 INFO choose table
+2012-05-23 10:18:02,687 INFO list of schemas loaded successfully
+2012-05-23 10:18:04,322 INFO list of tables loaded successfully
+2012-05-23 10:18:04,322 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:18:05,157 INFO table BIG_TEST1 choosed
+2012-05-23 10:18:06,453 INFO launch edit regexps module
+2012-05-23 10:18:06,473 INFO connecting to local database successfully
+2012-05-23 10:18:08,164 INFO open local history
+2012-05-23 10:18:11,410 INFO report succesfully done
+2012-05-23 10:36:00,210 INFO ######################################################################################
+2012-05-23 10:36:00,210 INFO start session
+2012-05-23 10:36:00,707 INFO connect to db
+2012-05-23 10:36:00,753 INFO list of connections loaded
+2012-05-23 10:36:00,775 INFO list of connections loaded
+2012-05-23 10:36:00,779 INFO listing of conneciton succesfully loading
+2012-05-23 10:36:02,180 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:36:02,183 INFO list of connections loaded
+2012-05-23 10:36:02,186 INFO listing of conneciton succesfully loading
+2012-05-23 10:36:02,190 INFO choose table
+2012-05-23 10:36:02,240 INFO list of schemas loaded successfully
+2012-05-23 10:36:03,921 INFO list of tables loaded successfully
+2012-05-23 10:36:03,921 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:36:04,908 INFO table BIG_TEST1 choosed
+2012-05-23 10:36:05,684 INFO open local history
+2012-05-23 10:36:08,658 INFO report succesfully done
+2012-05-23 10:37:20,427 INFO ######################################################################################
+2012-05-23 10:37:20,427 INFO start session
+2012-05-23 10:38:03,339 INFO connect to db
+2012-05-23 10:38:03,369 INFO list of connections loaded
+2012-05-23 10:38:03,397 INFO list of connections loaded
+2012-05-23 10:38:03,401 INFO listing of conneciton succesfully loading
+2012-05-23 10:38:04,351 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:38:04,354 INFO list of connections loaded
+2012-05-23 10:38:04,355 INFO listing of conneciton succesfully loading
+2012-05-23 10:38:05,132 INFO choose table
+2012-05-23 10:38:05,187 INFO list of schemas loaded successfully
+2012-05-23 10:38:10,901 INFO list of tables loaded successfully
+2012-05-23 10:38:10,903 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:38:12,493 INFO table BIG_TEST1 choosed
+2012-05-23 10:38:13,773 INFO open local history
+2012-05-23 10:38:17,161 INFO report succesfully done
+2012-05-23 10:40:05,707 INFO ######################################################################################
+2012-05-23 10:40:05,707 INFO start session
+2012-05-23 10:40:07,638 INFO connect to db
+2012-05-23 10:40:07,665 INFO list of connections loaded
+2012-05-23 10:40:07,688 INFO list of connections loaded
+2012-05-23 10:40:07,694 INFO listing of conneciton succesfully loading
+2012-05-23 10:40:08,335 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:40:08,336 INFO list of connections loaded
+2012-05-23 10:40:08,339 INFO listing of conneciton succesfully loading
+2012-05-23 10:40:08,581 INFO choose table
+2012-05-23 10:40:08,638 INFO list of schemas loaded successfully
+2012-05-23 10:40:09,996 INFO list of tables loaded successfully
+2012-05-23 10:40:09,996 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:40:10,982 INFO table BIG_TEST1 choosed
+2012-05-23 10:40:11,812 INFO open local history
+2012-05-23 10:40:17,516 INFO report succesfully done
+2012-05-23 10:41:22,838 INFO ######################################################################################
+2012-05-23 10:41:22,838 INFO start session
+2012-05-23 10:41:23,805 INFO connect to db
+2012-05-23 10:41:23,835 INFO list of connections loaded
+2012-05-23 10:41:23,859 INFO list of connections loaded
+2012-05-23 10:41:23,867 INFO listing of conneciton succesfully loading
+2012-05-23 10:41:24,776 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:41:24,779 INFO list of connections loaded
+2012-05-23 10:41:24,782 INFO listing of conneciton succesfully loading
+2012-05-23 10:41:25,085 INFO choose table
+2012-05-23 10:41:25,150 INFO list of schemas loaded successfully
+2012-05-23 10:41:26,697 INFO list of tables loaded successfully
+2012-05-23 10:41:26,697 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:41:27,614 INFO table BIG_TEST1 choosed
+2012-05-23 10:41:28,428 INFO open local history
+2012-05-23 10:41:37,894 INFO connecting to local database successfully
+2012-05-23 10:41:41,078 INFO starting calculation data quality model
+2012-05-23 10:41:41,078 INFO connecting to local database successfully
+2012-05-23 10:41:41,477 INFO calculation successfully
+2012-05-23 10:42:43,147 INFO ######################################################################################
+2012-05-23 10:42:43,147 INFO start session
+2012-05-23 10:42:44,178 INFO connect to db
+2012-05-23 10:42:44,207 INFO list of connections loaded
+2012-05-23 10:42:44,229 INFO list of connections loaded
+2012-05-23 10:42:44,234 INFO listing of conneciton succesfully loading
+2012-05-23 10:42:44,921 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:42:44,924 INFO list of connections loaded
+2012-05-23 10:42:44,927 INFO listing of conneciton succesfully loading
+2012-05-23 10:42:45,187 INFO choose table
+2012-05-23 10:42:45,242 INFO list of schemas loaded successfully
+2012-05-23 10:42:46,628 INFO list of tables loaded successfully
+2012-05-23 10:42:46,630 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:42:47,427 INFO table BIG_TEST1 choosed
+2012-05-23 10:42:48,132 INFO connecting to local database successfully
+2012-05-23 10:42:51,240 INFO starting calculation data quality model
+2012-05-23 10:42:51,240 INFO connecting to local database successfully
+2012-05-23 10:42:51,601 INFO calculation successfully
+2012-05-23 10:43:01,517 INFO report succesfully done
+2012-05-23 10:46:28,709 INFO ######################################################################################
+2012-05-23 10:46:28,710 INFO start session
+2012-05-23 10:46:29,878 INFO connect to db
+2012-05-23 10:46:29,990 INFO list of connections loaded
+2012-05-23 10:46:30,009 INFO list of connections loaded
+2012-05-23 10:46:30,013 INFO listing of conneciton succesfully loading
+2012-05-23 10:46:31,312 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:46:31,315 INFO list of connections loaded
+2012-05-23 10:46:31,319 INFO listing of conneciton succesfully loading
+2012-05-23 10:46:31,322 INFO choose table
+2012-05-23 10:46:31,364 INFO list of schemas loaded successfully
+2012-05-23 10:46:32,736 INFO list of tables loaded successfully
+2012-05-23 10:46:32,736 INFO schema MGMT_VIEW choosed
+2012-05-23 10:46:34,351 INFO list of tables loaded successfully
+2012-05-23 10:46:34,351 INFO schema SYS choosed
+2012-05-23 10:46:34,588 INFO list of tables loaded successfully
+2012-05-23 10:46:34,588 INFO schema SYSTEM choosed
+2012-05-23 10:46:34,674 INFO list of tables loaded successfully
+2012-05-23 10:46:34,674 INFO schema TEST_UIR choosed
+2012-05-23 10:46:35,664 INFO list of tables loaded successfully
+2012-05-23 10:46:35,664 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:46:36,750 INFO table BIG_TEST1 choosed
+2012-05-23 10:46:37,542 INFO open local history
+2012-05-23 10:46:46,352 ERROR report failed: Unexpected end of template. Jinja was looking for the following tags: 'endif'. The innermost block that needs to be closed is 'if'. -- code 32
+2012-05-23 10:47:03,756 INFO ######################################################################################
+2012-05-23 10:47:03,756 INFO start session
+2012-05-23 10:47:04,273 INFO connect to db
+2012-05-23 10:47:04,292 INFO list of connections loaded
+2012-05-23 10:47:04,312 INFO list of connections loaded
+2012-05-23 10:47:04,318 INFO listing of conneciton succesfully loading
+2012-05-23 10:47:05,026 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:47:05,028 INFO list of connections loaded
+2012-05-23 10:47:05,030 INFO listing of conneciton succesfully loading
+2012-05-23 10:47:05,233 INFO choose table
+2012-05-23 10:47:05,288 INFO list of schemas loaded successfully
+2012-05-23 10:47:06,598 INFO list of tables loaded successfully
+2012-05-23 10:47:06,598 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:47:07,450 INFO table BIG_TEST1 choosed
+2012-05-23 10:47:08,226 INFO open local history
+2012-05-23 10:47:11,246 INFO report succesfully done
+2012-05-23 10:47:28,707 INFO report succesfully done
+2012-05-23 10:47:31,588 INFO report succesfully done
+2012-05-23 10:51:43,380 INFO ######################################################################################
+2012-05-23 10:51:43,380 INFO start session
+2012-05-23 10:51:43,950 INFO connect to db
+2012-05-23 10:51:43,980 INFO list of connections loaded
+2012-05-23 10:51:44,003 INFO list of connections loaded
+2012-05-23 10:51:44,006 INFO listing of conneciton succesfully loading
+2012-05-23 10:51:44,877 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:51:44,880 INFO list of connections loaded
+2012-05-23 10:51:44,882 INFO listing of conneciton succesfully loading
+2012-05-23 10:51:45,071 INFO choose table
+2012-05-23 10:51:45,122 INFO list of schemas loaded successfully
+2012-05-23 10:51:46,821 INFO list of tables loaded successfully
+2012-05-23 10:51:46,821 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:51:47,694 INFO table BIG_TEST1 choosed
+2012-05-23 10:51:48,430 INFO open local history
+2012-05-23 10:52:07,815 INFO report succesfully done
+2012-05-23 10:52:09,696 INFO report succesfully done
+2012-05-23 10:52:12,599 INFO report succesfully done
+2012-05-23 10:52:14,668 INFO report succesfully done
+2012-05-23 10:54:46,404 INFO ######################################################################################
+2012-05-23 10:54:46,404 INFO start session
+2012-05-23 10:54:46,759 INFO connect to db
+2012-05-23 10:54:46,789 INFO list of connections loaded
+2012-05-23 10:54:46,812 INFO list of connections loaded
+2012-05-23 10:54:46,818 INFO listing of conneciton succesfully loading
+2012-05-23 10:54:47,615 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:54:47,618 INFO list of connections loaded
+2012-05-23 10:54:47,619 INFO listing of conneciton succesfully loading
+2012-05-23 10:54:47,911 INFO choose table
+2012-05-23 10:54:47,973 INFO list of schemas loaded successfully
+2012-05-23 10:54:49,216 INFO list of tables loaded successfully
+2012-05-23 10:54:49,216 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:54:50,207 INFO table BIG_TEST1 choosed
+2012-05-23 10:54:50,903 INFO connecting to local database successfully
+2012-05-23 10:54:53,855 INFO starting calculation data quality model
+2012-05-23 10:54:53,857 INFO connecting to local database successfully
+2012-05-23 10:54:54,203 INFO calculation successfully
+2012-05-23 10:56:36,890 INFO ######################################################################################
+2012-05-23 10:56:36,890 INFO start session
+2012-05-23 10:56:37,930 INFO connect to db
+2012-05-23 10:56:37,960 INFO list of connections loaded
+2012-05-23 10:56:37,983 INFO list of connections loaded
+2012-05-23 10:56:37,989 INFO listing of conneciton succesfully loading
+2012-05-23 10:56:38,733 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-23 10:56:38,734 INFO list of connections loaded
+2012-05-23 10:56:38,737 INFO listing of conneciton succesfully loading
+2012-05-23 10:56:38,890 INFO choose table
+2012-05-23 10:56:38,953 INFO list of schemas loaded successfully
+2012-05-23 10:56:40,763 INFO list of tables loaded successfully
+2012-05-23 10:56:40,763 INFO schema TEST_DIPLOM choosed
+2012-05-23 10:56:41,697 INFO table BIG_TEST1 choosed
+2012-05-23 10:56:42,473 INFO open local history
+2012-05-23 10:57:03,207 INFO connecting to local database successfully
+2012-05-23 10:57:06,997 INFO starting calculation data quality model
+2012-05-23 10:57:06,999 INFO connecting to local database successfully
+2012-05-23 10:57:07,354 INFO calculation successfully

@@ -111,10 +111,14 @@ class main_stat(listmix.ColumnSorterMixin):
         self.main.SetSize(newsize)
         
     def OnAdviceMode(self, event):
+        flag = True
         mod = adv.advices(self.data)
-        mod.TextAdv()
+        mod.TextAdv(flag)
     
     def OnReport(self, event):
+        flag = False
+        mod = adv.advices(self.data)
+        adv_dat = mod.TextAdv(flag)
         self.ext_stat = self.stat.take_ext_stat(self.date)
         self.ext_stat = [ i for i in self.ext_stat if i is not None] 
         report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat, self.date)
@@ -258,14 +262,18 @@ class history_stat():
             wx.MessageBox(info)
 
     def OnAdviceMode(self, event):
+        flag = True
         mod = adv.advices(self.data)
-        mod.TextAdv()
+        mod.TextAdv(flag)
     
     def OnReport(self, event):
+        flag = False
+        mod = adv.advices(self.data)
+        adv_dat = mod.TextAdv(flag)
         ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.table)
         ext_cols.insert(0, u'Название параметра')
         ext_stat = self.stat.take_ext_stat(self.date)
-        report_html.make_report(self.columns, self.data, ext_cols, ext_stat, self.date)
+        report_html.make_report(self.columns, self.data, ext_cols, ext_stat, self.date, adv_dat)
 
     def OnDelStat(self, event):
         self.stat.del_stat(self.date)

@@ -10,7 +10,7 @@ logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelnam
 ## Class ReportClass
 ###########################################################################
 
-def make_report(name_main, main_stat, name_ext, ext_stat, date):
+def make_report(name_main, main_stat, name_ext, ext_stat, date, adv_data):
     try:
         OUTPUT_ROOT = os.path.join(os.path.dirname(__file__), 'reports')
         outfile = 'Report-%s.html' % date
@@ -20,7 +20,9 @@ def make_report(name_main, main_stat, name_ext, ext_stat, date):
         main_s = zip(name_main, main_stat)
         env = Environment(loader=PackageLoader('DataQuality', '/data/source_reports/'))
         template = env.get_template('template.html')
-        code = template.render(main_s=main_s, date=date, name_ext=name_ext, ext_stat=ext_stat)
+        adv_params = adv_data[0]
+        adv_text = adv_data[1]
+        code = template.render(main_s=main_s, date=date, name_ext=name_ext, ext_stat=ext_stat, adv_params=adv_params, adv_text=adv_text)
         #todo-write_in_file: bad encoding
         with open(os.path.join(OUTPUT_ROOT, outfile), 'w') as f:
             f.write(code.encode('utf8'))

@@ -12,9 +12,6 @@ class advices():
         self.prev_dq = data[-1]
         data.pop()
         self.data = map(lambda a: float(a) if a != '-' else 0, data)
-#        self.minperc = min(self.data)
-#        self.count = len(self.data)
-#        self.param12 = 'working!'
         
 # ----- функция получения списка минимальных значений оценки ---- 
     def get_mins(self):
@@ -32,7 +29,7 @@ class advices():
         minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val and isinstance(i, float))
         return sorted(minimals, key=lambda a: a[1])
         
-    def TextAdv(self):
+    def TextAdv(self, flag):
         data = self.get_mins()
         self.ps = []
         for num_param in data:
@@ -71,13 +68,51 @@ class advices():
             if num == 10:
                 self.param10 = (u'%s: %s' % (self.names[10], perc))
                 self.ps.append(self.param10)
+                
+        adv_params = self.Function1_params()
+        adv_pages = self.Function2_pages()
+        dat_adv = [adv_params, adv_pages]
+        if flag is True:
+            show = show_adv( adv_params, adv_pages )
+            show.Show()
+        else:
+            return dat_adv
         
-        show = show_adv(self.ps, self.data_req, self.prev_dq)
-        show.Show()
+    def Function1_params(self):
+        perc = '%'
+        adv_params = []
+        for param in self.ps:
+            paramet = ('%s%s' % (param, perc))
+            adv_params.append(paramet)
+        return adv_params
+    
+    def Function2_pages(self):
+        perc = '%'
+        adv_pages = []
+        for param in self.ps:
+            temp = param
+            parse = temp.split(':')
+            if len(parse) > 1:
+                temp = parse[-1]
+                temp = temp.strip()
+                try:
+                    number = float(temp)
+                except ValueError:
+                    wx.MessageBox(u'ошибка')
+            self.data_req.remove(number)
+            future_element = number + 10
+            self.data_req.append(future_element)
+            future_dq = sum(self.data_req) / len(self.data_req)
+            delta_dq = round(float(future_dq), 2) - round(float(self.prev_dq), 2)
+            future_dq = round(future_dq, 2)
+            
+            page = u'Если качество данных параметра - <b>%s%s</b> - увеличить на <u>10%s</u>, то качество данных возрастет на <u>%s%s</u> и итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (param, perc, perc, delta_dq, perc, future_dq, perc)
+            adv_pages.append(page)
+        return adv_pages
 
 class show_adv ( wx.Frame ):
     
-    def __init__( self, data, alldata, prev_dq ):
+    def __init__( self, adv_params, pages ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Советы по оценке качества данных", pos = wx.DefaultPosition, size = wx.Size( 650,300 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.TAB_TRAVERSAL )
         
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
@@ -91,7 +126,7 @@ class show_adv ( wx.Frame ):
         self.panel_params = wx.Panel( self.params_adv_splitter, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         sizer_params = wx.BoxSizer( wx.VERTICAL )
         
-        self.label_head_params = wx.StaticText( self.panel_params, wx.ID_ANY, u"Самые критичные параметры:", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.label_head_params = wx.StaticText( self.panel_params, wx.ID_ANY, u"Критичные параметры:", wx.DefaultPosition, wx.DefaultSize, 0 )
         self.label_head_params.Wrap( -1 )
         sizer_params.Add( self.label_head_params, 0, wx.ALL, 5 )
                 
@@ -120,32 +155,13 @@ class show_adv ( wx.Frame ):
         
         ### Function№1 ###
         perc = '%'
-        for param in data:
-            paramet = ('%s%s' % (param, perc))
-            self.bad_params = wx.StaticText( self.panel_params, wx.ID_ANY, paramet, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
+        for param in adv_params:
+            self.bad_params = wx.StaticText( self.panel_params, wx.ID_ANY, param, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
             self.bad_params.Wrap( -1 )
             sizer_params.Add( self.bad_params, 0, wx.ALL, 5 )
             
         ### Function№2 ###
-        for param in data:
-            temp = param
-            parse = temp.split(':')
-            if len(parse) > 1:
-                temp = parse[-1]
-                temp = temp.strip()
-                try:
-                    number = float(temp)
-                except ValueError:
-                    wx.MessageBox(u'ошибка')
-            alldata.remove(number)
-            future_element = number + 10
-            alldata.append(future_element)
-            future_dq = sum(alldata) / len(alldata)
-            delta_dq = round(float(future_dq), 2) - round(float(prev_dq), 2)
-            future_dq = round(future_dq, 2)
-            
-            page = u'Если качество данных параметра - <b>%s%s</b> - увеличить на <u>10%s</u>, то качество данных возрастет на <u>%s%s</u> и итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (param, perc, perc, delta_dq, perc, future_dq, perc)
-            
+        for page in pages:
             self.html_page.AppendToPage(page)
         
 

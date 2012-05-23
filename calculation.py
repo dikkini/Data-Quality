@@ -44,7 +44,7 @@ class DQ(object):
 			emptyvalues = str(round(emptyvalues, 2))
 			self.data.append(emptyvalues)
 		else:
-			emptyvalues = 0
+			emptyvalues = 100
 			self.data.append(u'-')
 
 		self.extend_stat = []
@@ -82,7 +82,7 @@ class DQ(object):
 				self.extend_stat.append(info)
 				logging.info(u'not informable parameter calculation successfully')
 			else:
-				avgnoinf = 0
+				avgnoinf = 100
 				self.data.append(u'-')
 				self.extend_stat.append(None)
 		except Exception, info:
@@ -123,7 +123,7 @@ class DQ(object):
 				self.extend_stat.append(info)
 				logging.info(u'bad fromat parameter calculation successfully')
 			else:
-				avgbadform = 0
+				avgbadform = 100
 				self.data.append(u'-')
 				self.extend_stat.append(None)
 		except Exception, info:
@@ -159,7 +159,7 @@ class DQ(object):
 				self.extend_stat.append(info)
 				logging.info(u'noise level parameter calculation successfully')
 			else:
-				avgnoise = 0
+				avgnoise = 100
 				self.data.append(u'-')
 				self.extend_stat.append(None)
 		except Exception, info:
@@ -337,7 +337,6 @@ class DQ(object):
 			for param in self.using_params:
 				if param == 1:
 					i = i + 1
-			
 		except Exception, info:
 			logging.error(u'average assessment of all parameters calculation failed: %s' % str(info))
 		try:
