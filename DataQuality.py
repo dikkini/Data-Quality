@@ -50,7 +50,7 @@ class MainWindow ( wx.Frame ):
         self.panel1.Layout()
         sizer2.Fit( self.panel1 )
         html_start_panel = self.CreateHTMLCtrl(self.panel1)
-        self.notebook.AddPage(html_start_panel , u"Welcome", True, wx.NullBitmap )
+        self.notebook.AddPage(html_start_panel , u"Добро пожаловать", True, wx.NullBitmap )
         
         start_page = '<h4><img src="./data/img/mephi_logo.png" border="0" />&nbsp;Data Quality -- &nbsp;приложение для оценки качества данных.</h4>' \
                      '<div>Данная страничка расскажет о базовых элементах программы и поможет начать работу. Больше информации по работе с программой Вы можете найти в "Справке" (вызвать которую можно нажав клавишу F1) в разделе меню-бара "Помощь".</div>' \
@@ -145,6 +145,8 @@ class MainWindow ( wx.Frame ):
         self.weights = None
         self.using_params = None
         self.user_choice_catalog = None
+        self.user_number_allfields = None
+        self.user_number_composite_fileds = None
 
         #Disable menuitems
         self.BD.Enable(2, False)
@@ -175,7 +177,7 @@ class MainWindow ( wx.Frame ):
         # Main results data
         self.main_stat_columns = [u'Дата', u'Пустые', u'Не несущие информацию', u'Не соответствующие формату', u'Уровень шума', 
                           u'Идентифицируемость', u'Согласованность', u'Унификация', u'Оперативность', 
-                          u'Противоречивость', u'Степень классификации', u'Степень структуризации', u'Итого', u'Таблица'] 
+                          u'Противоречивость', u'Степень классификации', u'Степень структуризации', u'Степень идентифицируемости', u'Итого', u'Таблица'] 
         
         logging.info(u'######################################################################################')
         logging.info(u'start session')
@@ -227,7 +229,9 @@ class MainWindow ( wx.Frame ):
                 
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
                 self.dataquality = calculation.DQ(self.connection)
-                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.schema,  self.table)
+                print self.user_number_allfields
+                print self.user_number_composite_fileds
+                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.user_number_allfields, self.user_number_composite_fileds, self.schema,  self.table)
                 if result is None:
                     event.Skip()
                     return None
@@ -248,7 +252,7 @@ class MainWindow ( wx.Frame ):
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
                 wx.Yield()
                     
-                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.schema,  self.table)
+                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.user_number_allfields, self.user_number_composite_fileds, self.schema,  self.table)
                 self.result_ctrl.list.Append(result2[0])
                 
                 self.panelMainStat.SetSizer(self.sbs)

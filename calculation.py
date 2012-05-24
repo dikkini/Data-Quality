@@ -12,7 +12,7 @@ class DQ(object):
 		self.connection = connection
 		
 	
-	def mathDQ(self, weights, using_params, user_choice_catalog, schema, table):
+	def mathDQ(self, weights, using_params, user_choice_catalog, user_number_allfields, user_number_composite_fileds, schema, table):
 		self.table = table
 		self.schema = schema
 		logging.info(u'starting calculation data quality model')
@@ -44,7 +44,7 @@ class DQ(object):
 			emptyvalues = str(round(emptyvalues, 2))
 			self.data.append(emptyvalues)
 		else:
-			emptyvalues = 0
+			emptyvalues = 100
 			self.data.append(u'-')
 
 		self.extend_stat = []
@@ -82,7 +82,7 @@ class DQ(object):
 				self.extend_stat.append(info)
 				logging.info(u'not informable parameter calculation successfully')
 			else:
-				avgnoinf = 0
+				avgnoinf = 100
 				self.data.append(u'-')
 				self.extend_stat.append(None)
 		except Exception, info:
@@ -123,7 +123,7 @@ class DQ(object):
 				self.extend_stat.append(info)
 				logging.info(u'bad fromat parameter calculation successfully')
 			else:
-				avgbadform = 0
+				avgbadform = 100
 				self.data.append(u'-')
 				self.extend_stat.append(None)
 		except Exception, info:
@@ -159,7 +159,7 @@ class DQ(object):
 				self.extend_stat.append(info)
 				logging.info(u'noise level parameter calculation successfully')
 			else:
-				avgnoise = 0
+				avgnoise = 100
 				self.data.append(u'-')
 				self.extend_stat.append(None)
 		except Exception, info:
@@ -316,13 +316,10 @@ class DQ(object):
 			if self.using_params[10] == 1:
 				count10 = []
 				param = 'degree_of_structuring'
-				regexp = sql.take_regexps(param)
-				for i in range(len(regexp)):
-					count11.append(orcl.get_regexp_count(self.schema, self.table, regexp[i]))
-				avgdos = (sum(count10) / len(count10)) * self.weights[10]
+				avgdos = int(user_number_composite_fileds) / int(user_number_allfields) * 100
 				avgdos = float(avgdos)
-				avgdos = avgdos / self.countall * 100
-				avgdos = str(round(avgdos, 2))
+				avgdos = round(avgdos, 2)
+				avgdos = str(avgdos)
 				self.data.append(avgdos)
 				logging.info(u'degree_of_structuring parameter calculation successfully')
 			else:
@@ -330,14 +327,26 @@ class DQ(object):
 				self.data.append(u'-')
 		except Exception, info:
 			logging.error(u'degree_of_structuring parameter calculation failed: %s' % str(info))
+		
 		try:
-			avgall = float(100 - float(emptyvalues)) + float(100 - float(avgnoinf)) + float(100 - float(avgbadform)) + float(100 - float(avgnoise)) + float(avgident) + float(avgharm) + float(avguniq) + float(avgeffic) + float(avgincon) + float(avgdoc) + float(avgdos)
+			if self.using_params[11] == 1:
+				count11 = []
+				param = 'degree_of_indent'
+				avgdoi = None
+				logging.info(u'degree_of_ident parameter calculation successfully')
+			else:
+				avgdoi = 0
+				self.data.append(u'-')
+		except Exception, info:
+			logging.error(u'degree_of_ident parameter calculation failed: %s' % str(info))
+			
+		try:
+			avgall = float(100 - float(emptyvalues)) + float(100 - float(avgnoinf)) + float(100 - float(avgbadform)) + float(100 - float(avgnoise)) + float(avgident) + float(avgharm) + float(avguniq) + float(avgeffic) + float(avgincon) + float(avgdoc) + float(avgdos) + float(avgdoi)
 			# Вычисляем количество параметров имеющих оценку
 			i = 0
 			for param in self.using_params:
 				if param == 1:
 					i = i + 1
-			
 		except Exception, info:
 			logging.error(u'average assessment of all parameters calculation failed: %s' % str(info))
 		try:

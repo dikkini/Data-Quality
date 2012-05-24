@@ -30,7 +30,7 @@
 	<div class="main">
 		
 		<div class="content">
-		<text> Первоначальная статистика: </text>
+		<b>Первоначальная статистика:</b>
 		<div>
 <table width="100%" border="3" cellspacing="0" cellpadding="0" align="">
 <tbody>
@@ -44,9 +44,9 @@
 </table>
 <br />
 </div>
-<div>Расширенная статистика:</div>
+<div><b>Расширенная статистика:</b></div>
 {% if not ext_stat %}
-            <text>Для данных результатов нет расширенной статистики.</text>
+            Для данных результатов нет расширенной статистики.
 {% else %}
     <div><br /></div>
     <div>
@@ -74,6 +74,26 @@
     </tbody>
     </table>
     </div>
+{% endif %}
+</div>
+<div>
+<b>Критичные параметры:</b>
+<br />
+{% if not adv_params %}
+	Для данных результатов нет критичных параметров.
+{% else %}
+	<div>
+	{% for param in adv_params %}
+		{{ param }}
+	{% endfor %}
+	</div>
+	<br />
+	<div>
+	<b>Советы по оценке критичных параметров:</b>
+	{% for text in adv_text %}
+		{{ text }}
+	{% endfor %}
+	</div>
 {% endif %}
 </div>
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 
 
-temp = 'hello:world'
-
-temp = temp.split(':')
-print temp[0]
+list1 = [1,2,3]
+a = list1.pop()
+print list1
+print a

@@ -6,33 +6,41 @@ class advices():
         self.names = [u'Пустые значения', u'Не несущие информацию значения', u'Не соответствующие формату значения',
                                         u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Унификация', 
                                         u'Оперативность', u'Противоречивость', u'Степень классификации', 
-                                        u'Степень структуризации']
+                                        u'Степень структуризации', u'Степень идентифицируемости']
+        print 'FULLLLLL DATA', data
         data = list(data)
         data.pop()
-        self.prev_dq = data[-1]
+        print 'fulldata-1', data
         data.pop()
+        print 'fulldata-1-1', data
+        self.prev_dq = self.max_val = data.pop()
+        print 'max_val and prev_dq:', self.max_val
+        print 'fulldata-1-1-1', data
         self.data = map(lambda a: float(a) if a != '-' else 0, data)
-#        self.minperc = min(self.data)
-#        self.count = len(self.data)
-#        self.param12 = 'working!'
         
 # ----- функция получения списка минимальных значений оценки ---- 
     def get_mins(self):
         # получение среднего. удаление неиспользуемых параметров
         # убираем одинаковые значения -- useless (???)
-        self.data_req = list(set(self.data))
-        for i in self.data_req:
-            if not i:
-                self.data_req.remove(i)
-        try:
-            max_val = sum(self.data_req) / float(len(self.data_req))
-        except ZeroDivisionError:
-            wx.MessageBox(u'Вся статистика нулевая.')
+        print 'full data:', self.data
+        # Does not working, because it is very bad mehtod to delete all zero but not zero.zero
+        #self.data_req = list(set(self.data))
+        
+        for i in self.data:
+            if i == '0' and i != '0.0' and int(i) == 0 and float(i) != 0.0:
+                print i
+                print self.data.remove(i)
+                
+        print 'set(data)', self.data
+#        try:
+#            max_val = sum(self.data_req) / float(len(self.data_req))
+#        except ZeroDivisionError:
+#            wx.MessageBox(u'Вся статистика нулевая.')
         #minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val)
-        minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val and isinstance(i, float))
+        minimals = ((idx, i) for idx, i in enumerate(self.data) if i < self.max_val and isinstance(i, float))
         return sorted(minimals, key=lambda a: a[1])
         
-    def TextAdv(self):
+    def TextAdv(self, flag):
         data = self.get_mins()
         self.ps = []
         for num_param in data:
@@ -71,13 +79,58 @@ class advices():
             if num == 10:
                 self.param10 = (u'%s: %s' % (self.names[10], perc))
                 self.ps.append(self.param10)
+            if num == 11:
+                self.param11 = (u'%s: %s' % (self.names[11], perc))
+                self.ps.append(self.param11)
+                
+        adv_params = self.Function1_params()
+        adv_pages = self.Function2_pages()
+        dat_adv = [adv_params, adv_pages]
+        if flag is True:
+            show = show_adv( adv_params, adv_pages )
+            show.Show()
+        else:
+            return dat_adv
         
-        show = show_adv(self.ps, self.data_req, self.prev_dq)
-        show.Show()
+    def Function1_params(self):
+        perc = '%'
+        adv_params = []
+        for param in self.ps:
+            paramet = ('%s%s' % (param, perc))
+            adv_params.append(paramet)
+        return adv_params
+    
+    def Function2_pages(self):
+        perc = '%'
+        adv_pages = []
+        for param in self.ps:
+            print 'self.ps:',self.ps
+            temp = param
+            print 'temp1:', temp
+            parse = temp.split(':')
+            if len(parse) > 1:
+                temp = parse[-1]
+                temp = temp.strip()
+                print 'temp2:', temp
+                try:
+                    number = float(temp)
+                    print 'number:', number
+                except ValueError:
+                    wx.MessageBox(u'ошибка')
+            self.data.remove(number)
+            future_element = number + 10
+            self.data.append(future_element)
+            future_dq = sum(self.data) / len(self.data)
+            delta_dq = round(float(future_dq), 2) - round(float(self.prev_dq), 2)
+            future_dq = round(future_dq, 2)
+            
+            page = u'Если качество данных параметра - <b>%s%s</b> - увеличить на <u>10%s</u>, то качество данных возрастет на <u>%s%s</u> и итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (param, perc, perc, delta_dq, perc, future_dq, perc)
+            adv_pages.append(page)
+        return adv_pages
 
 class show_adv ( wx.Frame ):
     
-    def __init__( self, data, alldata, prev_dq ):
+    def __init__( self, adv_params, pages ):
         wx.Frame.__init__ ( self, parent=None, id = wx.ID_ANY, title = u"Советы по оценке качества данных", pos = wx.DefaultPosition, size = wx.Size( 650,300 ), style = wx.CAPTION|wx.STAY_ON_TOP|wx.SYSTEM_MENU|wx.TAB_TRAVERSAL )
         
         self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
@@ -91,7 +144,7 @@ class show_adv ( wx.Frame ):
         self.panel_params = wx.Panel( self.params_adv_splitter, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         sizer_params = wx.BoxSizer( wx.VERTICAL )
         
-        self.label_head_params = wx.StaticText( self.panel_params, wx.ID_ANY, u"Самые критичные параметры:", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.label_head_params = wx.StaticText( self.panel_params, wx.ID_ANY, u"Критичные параметры:", wx.DefaultPosition, wx.DefaultSize, 0 )
         self.label_head_params.Wrap( -1 )
         sizer_params.Add( self.label_head_params, 0, wx.ALL, 5 )
                 
@@ -120,32 +173,13 @@ class show_adv ( wx.Frame ):
         
         ### Function№1 ###
         perc = '%'
-        for param in data:
-            paramet = ('%s%s' % (param, perc))
-            self.bad_params = wx.StaticText( self.panel_params, wx.ID_ANY, paramet, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
+        for param in adv_params:
+            self.bad_params = wx.StaticText( self.panel_params, wx.ID_ANY, param, wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
             self.bad_params.Wrap( -1 )
             sizer_params.Add( self.bad_params, 0, wx.ALL, 5 )
             
         ### Function№2 ###
-        for param in data:
-            temp = param
-            parse = temp.split(':')
-            if len(parse) > 1:
-                temp = parse[-1]
-                temp = temp.strip()
-                try:
-                    number = float(temp)
-                except ValueError:
-                    wx.MessageBox(u'ошибка')
-            alldata.remove(number)
-            future_element = number + 10
-            alldata.append(future_element)
-            future_dq = sum(alldata) / len(alldata)
-            delta_dq = round(float(future_dq), 2) - round(float(prev_dq), 2)
-            future_dq = round(future_dq, 2)
-            
-            page = u'Если качество данных параметра - <b>%s%s</b> - увеличить на <u>10%s</u>, то качество данных возрастет на <u>%s%s</u> и итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (param, perc, perc, delta_dq, perc, future_dq, perc)
-            
+        for page in pages:
             self.html_page.AppendToPage(page)
         
 
