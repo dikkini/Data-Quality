@@ -3367,3 +3367,20 @@
 2012-05-23 21:06:31,997 INFO schema TEST_DIPLOM choosed
 2012-05-23 21:06:33,282 INFO table TEST_GOOD_1000 choosed
 2012-05-23 21:06:34,098 INFO open local history
+2012-05-24 11:44:59,653 INFO ######################################################################################
+2012-05-24 11:44:59,677 INFO start session
+2012-05-24 11:45:06,362 INFO connect to db
+2012-05-24 11:45:06,602 INFO list of connections loaded
+2012-05-24 11:45:06,619 INFO list of connections loaded
+2012-05-24 11:45:06,625 INFO listing of conneciton succesfully loading
+2012-05-24 11:45:08,734 INFO connection to database. info: 192.168.56.101, 1521, orcl, artur
+2012-05-24 11:45:08,736 INFO list of connections loaded
+2012-05-24 11:45:08,739 INFO listing of conneciton succesfully loading
+2012-05-24 11:45:10,290 INFO choose table
+2012-05-24 11:45:10,344 INFO list of schemas loaded successfully
+2012-05-24 11:45:11,928 INFO list of tables loaded successfully
+2012-05-24 11:45:11,928 INFO schema TEST_DIPLOM choosed
+2012-05-24 11:45:12,780 INFO table TEST_GOOD_1000 choosed
+2012-05-24 11:45:13,835 INFO launch edit regexps module
+2012-05-24 11:45:13,979 INFO connecting to local database successfully
+2012-05-24 11:45:15,880 INFO loading regular expressions for parameter harmony successfully 
