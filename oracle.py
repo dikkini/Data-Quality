@@ -22,8 +22,8 @@ class WorkDB():
         except Exception, info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
-            wx.MessageBox(u'Внешняя ошибка базы данных:%s - code 60' % info)
-            logging.error(u'loading list of tables failed - code 23:', str(info))
+            wx.MessageBox(u'Внешняя ошибка базы данных:%s - code 25' % info)
+            logging.error(u'loading list of tables failed - code 26:', str(info))
 
     def get_schemas(self):
         try:
@@ -49,7 +49,7 @@ class WorkDB():
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
-            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 48' % info)
+            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 52' % info)
             
     def get_regexp_count(self, schema, table, regexp):
         try:
@@ -63,7 +63,7 @@ class WorkDB():
         except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
             info = str(info)
             info = info.decode('cp1251').encode('utf8')
-            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 60' % info)
+            wx.MessageBox(u'Внешняя ошибка базы данных: %s - code 66' % info)
 
     def get_empty_values(self, schema, table):
         try:
@@ -111,3 +111,18 @@ class WorkDB():
             error = ("Database Error: %s - code 111" % info)
             wx.MessageBox(str(error))
         return col_names
+
+    def get_date_table(self, table, schema):
+        try:
+            cursor = cx_Oracle.Cursor(self.connection)
+            sql = ("select created from dba_objects where owner=\'%s\' and object_name=\'%s\' and object_type=\'TABLE\'" % (schema, table))
+            cursor.execute(sql)
+            count = cursor.fetchall()
+            date = count[0][0]
+            cursor.close()
+        except (cx_Oracle.DatabaseError, cx_Oracle.DataError), info:
+            info = str(info)
+            info = info.decode('cp1251').encode('utf8')
+            wx.MessageBox(u'Внешняя ошибка базы данных - code 126')
+        return date
+            

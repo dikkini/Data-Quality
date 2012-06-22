@@ -20,9 +20,11 @@ try:
     from agw import pybusyinfo as PBI
 except ImportError: # if it's not there locally, try the wxPython lib.
     import wx.lib.agw.pybusyinfo as PBI
-    
+
+# Функция журналирования
 logging.basicConfig(filename='journal_events.log',format='%(asctime)s %(levelname)s %(message)s',level=logging.DEBUG)
 
+# Установка кодировки, для вывода грида с правильной кодировкой
 # Set Envroiment
 # Encoding for database Oracle
 os.environ["NLS_LANG"] = "RUSSIAN_CIS.CL8MSWIN1251"
@@ -52,19 +54,19 @@ class MainWindow ( wx.Frame ):
         html_start_panel = self.CreateHTMLCtrl(self.panel1)
         self.notebook.AddPage(html_start_panel , u"Добро пожаловать", True, wx.NullBitmap )
         
-        start_page = '<h4><img src="./data/img/mephi_logo.png" border="0" />&nbsp;Data Quality -- &nbsp;приложение для оценки качества данных.</h4>' \
-                     '<div>Данная страничка расскажет о базовых элементах программы и поможет начать работу. Больше информации по работе с программой Вы можете найти в "Справке" (вызвать которую можно нажав клавишу F1) в разделе меню-бара "Помощь".</div>' \
-                     '<div><br /></div>' \
-                     '<div>Наверху окна можно увидеть главное навигационное меню. Основные функции находятся в пунктах меню, в различных разделах. Внизу окна программы статусная строка, объясняющая каждый пункт меню.</div>' \
-                     '<div><br /></div>' \
-                     '<div>Для начала работы необходимо:</div>' \
-                     '<div><br /></div> <div> <ul>' \
-                     '<li>Подключиться к базе данных Oracle</li>' \
-                     '<li>Выбрать схему и таблицу</li></ul>' \
-                     '<div>Далее уже можно приступать к непосредственному процессу оценки качества данных. Начать необходимо с написания регулярных выражений в модуле "Отладка регулярных выражений" находящемся в разделе меню-бара "Регулярные выражения".</div></div>' \
-                     '<div><br /></div>' \
-                     '<div>Удачи в работе!</div>' \
-                     '<div><br /></div>' \
+        start_page = u'<h4><img src="./data/img/mephi_logo.png" border="0" />&nbsp;Data Quality -- &nbsp;приложение для оценки качества данных.</h4>' \
+                     u'<div>Данная страничка расскажет о базовых элементах программы и поможет начать работу. Больше информации по работе с программой Вы можете найти в "Справке" (вызвать которую можно нажав клавишу F1) в разделе меню-бара "Помощь".</div>' \
+                     u'<div><br /></div>' \
+                     u'<div>Наверху окна можно увидеть главное навигационное меню. Основные функции находятся в пунктах меню, в различных разделах. Внизу окна программы статусная строка, объясняющая каждый пункт меню.</div>' \
+                     u'<div><br /></div>' \
+                     u'<div>Для начала работы необходимо:</div>' \
+                     u'<div><br /></div> <div> <ul>' \
+                     u'<li>Подключиться к базе данных Oracle</li>' \
+                     u'<li>Выбрать схему и таблицу</li></ul>' \
+                     u'<div>Далее уже можно приступать к непосредственному процессу оценки качества данных. Начать необходимо с написания регулярных выражений в модуле "Отладка регулярных выражений" находящемся в разделе меню-бара "Регулярные выражения".</div></div>' \
+                     u'<div><br /></div>' \
+                     u'<div>Удачи в работе!</div>' \
+                     u'<div><br /></div>' \
         
         html_start_panel.SetPage(start_page)
         
@@ -147,7 +149,8 @@ class MainWindow ( wx.Frame ):
         self.user_choice_catalog = None
         self.user_number_allfields = None
         self.user_number_composite_fileds = None
-
+        self.user_days_can_be = None
+        self.incon_fields = None
         #Disable menuitems
         self.BD.Enable(2, False)
         self.DQ.Enable(4, False)
@@ -177,11 +180,12 @@ class MainWindow ( wx.Frame ):
         # Main results data
         self.main_stat_columns = [u'Дата', u'Пустые', u'Не несущие информацию', u'Не соответствующие формату', u'Уровень шума', 
                           u'Идентифицируемость', u'Согласованность', u'Унификация', u'Оперативность', 
-                          u'Противоречивость', u'Степень классификации', u'Степень структуризации', u'Степень идентифицируемости', u'Итого', u'Таблица'] 
+                          u'Противоречивость', u'Степень классификации', u'Степень структуризации', u'Итого', u'Таблица'] 
         
         logging.info(u'######################################################################################')
         logging.info(u'start session')
     
+    # Создание html контрола, который добавляется в вкладку welcome. Такая же система используется в справке, только без вкладок.
     def CreateHTMLCtrl(self, parent=None):
         if not parent:
             parent = self
@@ -216,22 +220,24 @@ class MainWindow ( wx.Frame ):
             logging.error(u'end session error - code 214: %s' % str(info))
             sys.exit()
     
+    #Функция оценки качества данных
     def DoDQ(self, event):
-        message = 'Пожалуйста подождите, происходит оценка качества данных...'
-        try:
+            message = u'Пожалуйста подождите, происходит оценка качества данных...'
+#        try:
             if not self.using_params or sum(self.using_params) == 0:
                 wx.MessageBox(u'Вы не выбрали ни одного параметра для оценки!')
                 logging.error(u'failed calculation dq - code 222: NO PARAMS FOR DATA QUALITY')
                 return False
             if self.flagres is None:
-                busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
+                busy = PBI.PyBusyInfo(message, parent=None, title=u"Оцениваем данные...")
                 wx.Yield()
                 
                 self.panelMainStat = wx.Panel( self.notebook, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
                 self.dataquality = calculation.DQ(self.connection)
-                print self.user_number_allfields
-                print self.user_number_composite_fileds
-                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.user_number_allfields, self.user_number_composite_fileds, self.schema,  self.table)
+                self.flagres = result = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, 
+                                                                self.user_number_allfields, self.user_number_composite_fileds, 
+                                                                self.user_days_can_be, self.incon_fields, self.schema,  self.table)
+                
                 if result is None:
                     event.Skip()
                     return None
@@ -252,16 +258,19 @@ class MainWindow ( wx.Frame ):
                 busy = PBI.PyBusyInfo(message, parent=None, title="Оцениваем данные...")
                 wx.Yield()
                     
-                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, self.user_number_allfields, self.user_number_composite_fileds, self.schema,  self.table)
+                result2 = self.dataquality.mathDQ(self.weights, self.using_params, self.user_choice_catalog, 
+                                                  self.user_number_allfields, self.user_number_composite_fileds, 
+                                                  self.user_days_can_be, self.incon_fields, self.schema,  self.table)
+                
                 self.result_ctrl.list.Append(result2[0])
                 
                 self.panelMainStat.SetSizer(self.sbs)
                 self.panelMainStat.Layout()
                 
                 del busy
-        except Exception, info:
-                wx.MessageBox(str(info))
-                logging.error(u'starting calculate dq process failed - code 260: %s' % (str(info)))
+#        except Exception, info:
+#                wx.MessageBox(str(info))
+#                logging.error(u'starting calculate dq process failed - code 263: %s' % (str(info)))
     
     def OnTabClose(self, event):
         temp_page = event.GetSelection()
@@ -291,7 +300,7 @@ class MainWindow ( wx.Frame ):
         except TypeError, info:
             wx.MessageBox(str(info))
             logging.error(u'error while looking history - code: 289 - %s' % str(info))
-    
+    # Обновление списка оценок в истории
     def RefrshHist(self):
         self.histres.destr()
         histrows = statistic.stats(self.schema, self.table).history_stat(self) 

@@ -34,8 +34,7 @@ class page_editor():
         bSizer1.Add( self.label1, 0, wx.ALL, 5 )
         
         self.params_regexps_choices = [u'Не несущие информацию значения', u'Не соответствующие формату значения', 
-                                       u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Оперативность', 
-                                       u'Противоречивость', u'Степень структуризации']
+                                       u'Значение уровня шума', u'Идентифицируемость', u'Согласованность']
         
 
         self.regexp_choice_pull = wx.Choice( self.panel_regexps, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 
@@ -132,24 +131,6 @@ class page_editor():
                 self.edit_regexp_txt.SetValue(self.regexp4)
             except AttributeError:
                 self.edit_regexp_txt.SetValue(wx.EmptyString)
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[5]:
-            self.param = 'efficiency'
-            try:
-                self.edit_regexp_txt.SetValue(self.regexp5)
-            except AttributeError:
-                self.edit_regexp_txt.SetValue(wx.EmptyString)
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
-            self.param = 'inconsistency'
-            try:
-                self.edit_regexp_txt.SetValue(self.regexp6)
-            except AttributeError:
-                self.edit_regexp_txt.SetValue(wx.EmptyString)
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'degree_of_structuring'
-            try:
-                self.edit_regexp_txt.SetValue(self.regexp7)
-            except AttributeError:
-                self.edit_regexp_txt.SetValue(wx.EmptyString)
             
         items = self.db.take_regexps(self.param)
         self.regexps_listbox.SetItems(items)
@@ -173,20 +154,13 @@ class page_editor():
             self.regexp3 = self.edit_regexp_txt.GetValue()
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[4]:
             self.regexp4 = self.edit_regexp_txt.GetValue()
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[5]:
-            self.regexp5 = self.edit_regexp_txt.GetValue()
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
-            self.regexp6 = self.edit_regexp_txt.GetValue()
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.regexp7 = self.edit_regexp_txt.GetValue()
     
     def OnTestBtn(self, event):
-        message = 'Пожалуйста подождите, получение информации из базы...'
+        message = u'Пожалуйста подождите, получение информации из базы...'
         try:
-            busy = PBI.PyBusyInfo(message, parent=None, title="Формирование и отправка запроса к базе данных...")
+            busy = PBI.PyBusyInfo(message, parent=None, title=u"Формирование и отправка запроса к базе данных...")
             
             wx.Yield()
-            
             
             cursor = cx_Oracle.Cursor(self.connection)
             regexp = self.edit_regexp_txt.GetValue()
@@ -226,15 +200,10 @@ class page_editor():
             self.param = 'identifiability'
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[4]:
             self.param = 'harmony'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[5]:
-            self.param = 'efficiency'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
-            self.param = 'inconsistency'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'degree_of_structuring'
             
         regexp =  self.edit_regexp_txt.GetValue()
-        regexp = str(regexp)
+        #regexp = regexp.encode('utf8')
+        #regexp = str(unicode(regexp))
         self.db.add_regexp(self.param, regexp)
         items = self.db.take_regexps(self.param)
         self.regexps_listbox.SetItems(items)
@@ -250,12 +219,6 @@ class page_editor():
             self.param = 'identifiability'
         elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[4]:
             self.param = 'harmony'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[5]:
-            self.param = 'efficiency'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[6]:
-            self.param = 'inconsistency'
-        elif self.regexp_choice_pull.GetStringSelection() == self.params_regexps_choices[7]:
-            self.param = 'degree_of_structuring'
             
         regexp =  self.regexps_listbox.GetStringSelection()
         self.db.del_regexp(self.param, regexp)

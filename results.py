@@ -19,7 +19,6 @@ class main_stat(listmix.ColumnSorterMixin):
         
         
         self.ext_cols.insert(0, u'Название параметра')
-        print 'rows:', rows
         data = []
         
         self.list = wx.ListCtrl(self.main.panelMainStat, 0,
@@ -48,7 +47,7 @@ class main_stat(listmix.ColumnSorterMixin):
         self.list.SetColumnWidth(10, 55) 
         self.list.SetColumnWidth(11, 55)
         self.list.SetColumnWidth(12, 55)
-        self.list.SetColumnWidth(13, 120) 
+        self.list.SetColumnWidth(13, 180) 
         self.list.SetColumnWidth(14, 120)
         self.list.Bind(wx.EVT_LIST_COL_CLICK, self.OnColClick, self.list)
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
@@ -83,8 +82,7 @@ class main_stat(listmix.ColumnSorterMixin):
             self.list.PopupMenu(menu)
       
     def OnExtStat(self, event):
-        schema_table = (self.getColumnText(self.currentItem, 14))
-        print schema_table
+        schema_table = (self.getColumnText(self.currentItem, 13))
         schema_table = schema_table.split(':')
         self.schema = schema_table[0]
         self.table = schema_table[1]
@@ -116,18 +114,23 @@ class main_stat(listmix.ColumnSorterMixin):
     def OnAdviceMode(self, event):
         flag = True
         mod = adv.advices(self.data)
-        mod.TextAdv(flag)
+        mod.get_advices(flag)
     
     def OnReport(self, event):
         flag = False
         mod = adv.advices(self.data)
-        adv_dat = mod.TextAdv(flag)
+        adv_dat = mod.get_advices(flag)
+        schema_table = (self.getColumnText(self.currentItem, 13))
+        schema_table = schema_table.split(':')
+        self.schema = schema_table[0]
+        self.table = schema_table[1]
+        self.stat = statistic.stats(self.schema, self.table)                        
         self.ext_stat = self.stat.take_ext_stat(self.date)
         self.ext_stat = [ i for i in self.ext_stat if i is not None] 
-        report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat, self.date)
+        report_html.make_report(self.columns, self.data, self.ext_cols, self.ext_stat, self.date, adv_dat)
         
     def OnColClick(self, event):
-        print ("OnColClick: %d\n" % event.GetColumn())
+#        print ("OnColClick: %d\n" % event.GetColumn())
         event.Skip()
     
     def OnItemSelected(self, event):
@@ -144,9 +147,7 @@ class main_stat(listmix.ColumnSorterMixin):
                             self.getColumnText(self.currentItem, 10),
                             self.getColumnText(self.currentItem, 11),
                             self.getColumnText(self.currentItem, 12),
-                            self.getColumnText(self.currentItem, 13),
-                            self.getColumnText(self.currentItem, 14),
-                            self.getColumnText(self.currentItem, 15))
+                            self.getColumnText(self.currentItem, 13))
         
 class extend_stat(): 
     def __init__(self, panel, columns, rows): 
@@ -176,7 +177,7 @@ class extend_stat():
         self.list.SetColumnWidth(10, 55) 
         self.list.SetColumnWidth(11, 55)
         self.list.SetColumnWidth(12, 55) 
-        self.list.SetColumnWidth(13, 120)
+        self.list.SetColumnWidth(13, 180)
         self.list.SetColumnWidth(14, 120)
         
         
@@ -214,7 +215,7 @@ class history_stat():
         self.list.SetColumnWidth(10, 55) 
         self.list.SetColumnWidth(11, 55)
         self.list.SetColumnWidth(12, 55) 
-        self.list.SetColumnWidth(13, 55)
+        self.list.SetColumnWidth(13, 180)
         self.list.SetColumnWidth(14, 55)
 
         self.list.Bind(wx.EVT_COMMAND_RIGHT_CLICK, self.OnRightClick)
@@ -269,12 +270,12 @@ class history_stat():
     def OnAdviceMode(self, event):
         flag = True
         mod = adv.advices(self.data)
-        mod.TextAdv(flag)
+        mod.get_advices(flag)
     
     def OnReport(self, event):
         flag = False
         mod = adv.advices(self.data)
-        adv_dat = mod.TextAdv(flag)
+        adv_dat = mod.get_advices(flag)
         ext_cols = oracle.WorkDB(self.main.connection).get_cols(self.table)
         ext_cols.insert(0, u'Название параметра')
         ext_stat = self.stat.take_ext_stat(self.date)
@@ -302,9 +303,7 @@ class history_stat():
                             self.getColumnText(self.currentItem, 10),
                             self.getColumnText(self.currentItem, 11),
                             self.getColumnText(self.currentItem, 12),
-                            self.getColumnText(self.currentItem, 13),
-                            self.getColumnText(self.currentItem, 14),
-                            self.getColumnText(self.currentItem, 15))
+                            self.getColumnText(self.currentItem, 13))
         
     def OnRefresh(self, event):
 #        self.list.DeleteAllItems()

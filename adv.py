@@ -1,4 +1,4 @@
-#-*- coding: utf8 -*-
+# -*- coding: utf-8 -*- 
 import wx
 
 class advices():
@@ -6,127 +6,177 @@ class advices():
         self.names = [u'Пустые значения', u'Не несущие информацию значения', u'Не соответствующие формату значения',
                                         u'Значение уровня шума', u'Идентифицируемость', u'Согласованность', u'Унификация', 
                                         u'Оперативность', u'Противоречивость', u'Степень классификации', 
-                                        u'Степень структуризации', u'Степень идентифицируемости']
+                                        u'Степень структуризации']
+        self.data_normal = data
         print 'FULLLLLL DATA', data
         data = list(data)
         data.pop()
         print 'fulldata-1', data
-        data.pop()
-        print 'fulldata-1-1', data
         self.prev_dq = self.max_val = data.pop()
         print 'max_val and prev_dq:', self.max_val
-        print 'fulldata-1-1-1', data
-        self.data = map(lambda a: float(a) if a != '-' else 0, data)
+        self.data = data
         
-# ----- функция получения списка минимальных значений оценки ---- 
-    def get_mins(self):
-        # получение среднего. удаление неиспользуемых параметров
-        # убираем одинаковые значения -- useless (???)
-        print 'full data:', self.data
-        # Does not working, because it is very bad mehtod to delete all zero but not zero.zero
-        #self.data_req = list(set(self.data))
+    def get_future_dq(self, data):
+        data = map(lambda a: float(a) if a != '-' else 111, data)
         
-        for i in self.data:
-            if i == '0' and i != '0.0' and int(i) == 0 and float(i) != 0.0:
-                print i
-                print self.data.remove(i)
-                
-        print 'set(data)', self.data
-#        try:
-#            max_val = sum(self.data_req) / float(len(self.data_req))
-#        except ZeroDivisionError:
-#            wx.MessageBox(u'Вся статистика нулевая.')
-        #minimals = ((idx, i) for idx, i in enumerate(self.data) if i < max_val)
-        minimals = ((idx, i) for idx, i in enumerate(self.data) if i < self.max_val and isinstance(i, float))
-        return sorted(minimals, key=lambda a: a[1])
+        data[0] = float(100 - float(data[0]))
+        data[1] = float(100 - float(data[1]))
+        data[2] = float(100 - float(data[2]))
+        data[3] = float(100 - float(data[3]))
+        data[8] = float(100 - float(data[8]))
+        print 'future data 1:', data
+        if data[0] == -11:
+            data[0] = 0
+        if data[1] == -11:
+            data[1] = 0
+        if data[2] == -11:
+            data[2] = 0
+        if data[3] == -11:
+            data[3] = 0
+        if data[4] == 111:
+            data[4] = 0
+        if data[5] == 111:
+            data[5] = 0
+        if data[6] == 111:
+            data[6] = 0
+        if data[7] == 111:
+            data[7] = 0
+        if data[8] == -11:
+            data[8] = 0
+        if data[9] == 111:
+            data[9] = 0
+        if data[10] == 111:
+            data[10] = 0
+        print 'fut data 2:', data
+        dq = sum(data)
+        return dq
+    
+    def get_advices(self, flag):
+        perc = '%'
+        pages = []
+        params = []
+        if self.data[0] == '-' or self.data[0] < self.max_val:
+            pass
+        if self.data[0] != '-' and self.data[0] > self.max_val and (float(self.data[0])+10 < 100) and (float(self.data[0])-10 > 0):
+            index = 0
+            name_param = self.names[0]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[0], self.data_normal[0], perc))
+            
+        if self.data[1] == '-' or self.data[1] < self.max_val:
+            pass
+        if self.data[1] != '-' and self.data[1] > self.max_val and (float(self.data[1])+10 < 100) and (float(self.data[1])-10 > 0):
+            index = 1
+            name_param = self.names[1]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[1], self.data_normal[1], perc))
         
-    def TextAdv(self, flag):
-        data = self.get_mins()
-        self.ps = []
-        for num_param in data:
-            num = num_param[0]
-            perc = num_param[1]
-            if num == 0:
-                self.param0 = (u'%s: %s' % (self.names[0], perc))
-                self.ps.append(self.param0)
-            if num == 1:
-                self.param1 = (u'%s: %s' % (self.names[1], perc))
-                self.ps.append(self.param1)
-            if num == 2:
-                self.param2 = (u'%s: %s' % (self.names[2], perc))
-                self.ps.append(self.param2)
-            if num == 3:
-                self.param3 = (u'%s: %s' % (self.names[3], perc))
-                self.ps.append(self.param3)
-            if num == 4:
-                self.param4 = (u'%s: %s' % (self.names[4], perc))
-                self.ps.append(self.param4)
-            if num == 5:
-                self.param5 = (u'%s: %s' % (self.names[5], perc))
-                self.ps.append(self.param5)
-            if num == 6:
-                self.param6 = (u'%s: %s' % (self.names[6], perc))
-                self.ps.append(self.param6)
-            if num == 7:
-                self.param7 = (u'%s: %s' % (self.names[7], perc))
-                self.ps.append(self.param7)
-            if num == 8:
-                self.param8 = (u'%s: %s' % (self.names[8], perc))
-                self.ps.append(self.param8)
-            if num == 9:
-                self.param9 = (u'%s: %s' % (self.names[9], perc))
-                self.ps.append(self.param9)
-            if num == 10:
-                self.param10 = (u'%s: %s' % (self.names[10], perc))
-                self.ps.append(self.param10)
-            if num == 11:
-                self.param11 = (u'%s: %s' % (self.names[11], perc))
-                self.ps.append(self.param11)
-                
-        adv_params = self.Function1_params()
-        adv_pages = self.Function2_pages()
-        dat_adv = [adv_params, adv_pages]
+        if self.data[2] == '-' or self.data[2] < self.max_val:
+            pass
+        if self.data[2] != '-' and self.data[2] > self.max_val and (float(self.data[2])+10 < 100) and (float(self.data[2])-10 > 0):
+            index = 2
+            name_param = self.names[2]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[2], self.data_normal[2], perc))
+        
+        if self.data[3] == '-' or self.data[3] < self.max_val:
+            pass
+        if self.data[3] != '-' and self.data[3] > self.max_val and (float(self.data[3])+10 < 100) and (float(self.data[3])-10 > 0):
+            index = 3
+            name_param = self.names[3]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[3], self.data_normal[3], perc))
+        
+        if self.data[4] == '-' or self.data[4] > self.max_val:
+            pass
+        if self.data[4] != '-' and self.data[4] < self.max_val and (float(self.data[4])+10 < 100):
+            index = 4
+            name_param = self.names[4]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[4], self.data_normal[4], perc))
+        
+        if self.data[5] == '-' or self.data[5] > self.max_val:
+            pass
+        if self.data[5] != '-' and self.data[5] < self.max_val and (float(self.data[5])+10 < 100):
+            index = 5
+            name_param = self.names[5]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[5], self.data_normal[5], perc))
+        
+        if self.data[6] == '-' or self.data[6] > self.max_val:
+            pass
+        if self.data[6] != '-' and self.data[6] < self.max_val and (float(self.data[6])+10 < 100):
+            index = 6
+            name_param = self.names[6]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[6], self.data_normal[6], perc))
+        
+        if self.data[7] == '-' or self.data[7] > self.max_val:
+            pass
+        if self.data[7] != '-' and self.data[7] < self.max_val and (float(self.data[7])+10 < 100):
+            index = 7
+            name_param = self.names[7]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[7], self.data_normal[7], perc))
+        
+        if self.data[8] == '-' or self.data[8] < self.max_val:
+            pass
+        if self.data[8] != '-' and self.data[8] > self.max_val and (float(self.data[8])+10 < 100) and (float(self.data[8])-10 > 0):
+            index = 8
+            name_param = self.names[8]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[8], self.data_normal[8], perc))
+        
+        if self.data[9] == '-' or self.data[9] > self.max_val:
+            pass
+        if self.data[9] != '-' and self.data[9] < self.max_val and (float(self.data[9])+10 < 100):
+            index = 9
+            name_param = self.names[9]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[9], self.data_normal[9], perc))
+        
+        if self.data[10] == '-' or self.data[10] > self.max_val:
+            pass
+        if self.data[10] != '-' and self.data[10] < self.max_val and (float(self.data[10])+10 < 100):
+            index = 10
+            name_param = self.names[10]
+            pages.append(self.take_negative_page(name_param, index, self.data))
+            params.append(u'%s: %s%s' % (self.names[10], self.data_normal[10], perc))
+        
+        advices = [params, pages]
         if flag is True:
-            show = show_adv( adv_params, adv_pages )
+            show = show_adv( params, pages )
             show.Show()
         else:
-            return dat_adv
-        
-    def Function1_params(self):
-        perc = '%'
-        adv_params = []
-        for param in self.ps:
-            paramet = ('%s%s' % (param, perc))
-            adv_params.append(paramet)
-        return adv_params
+            return advices
     
-    def Function2_pages(self):
+    def take_negative_page(self, name_param, index, data):
         perc = '%'
-        adv_pages = []
-        for param in self.ps:
-            print 'self.ps:',self.ps
-            temp = param
-            print 'temp1:', temp
-            parse = temp.split(':')
-            if len(parse) > 1:
-                temp = parse[-1]
-                temp = temp.strip()
-                print 'temp2:', temp
-                try:
-                    number = float(temp)
-                    print 'number:', number
-                except ValueError:
-                    wx.MessageBox(u'ошибка')
-            self.data.remove(number)
-            future_element = number + 10
-            self.data.append(future_element)
-            future_dq = sum(self.data) / len(self.data)
-            delta_dq = round(float(future_dq), 2) - round(float(self.prev_dq), 2)
-            future_dq = round(future_dq, 2)
-            
-            page = u'Если качество данных параметра - <b>%s%s</b> - увеличить на <u>10%s</u>, то качество данных возрастет на <u>%s%s</u> и итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (param, perc, perc, delta_dq, perc, future_dq, perc)
-            adv_pages.append(page)
-        return adv_pages
+        dat = []
+        if index == 0 or index == 1 or index == 2 or index == 3 or index == 8:
+            new_value = float(data[index]) - 10
+        if index == 4 or index == 5 or index == 6 or index == 7 or index == 9 or index == 10:
+            new_value = float(data[index]) + 10
+        data[index] = new_value
+        for i in data:
+            if i == '-':
+                pass
+            else:
+                dat.append(float(i))
+        future_dq = self.get_future_dq(data) / len(dat)
+        future_dq = float(future_dq)
+        future_dq = round(future_dq, 2)
+        delta = future_dq - round(float(self.prev_dq), 2)
+        if index == 0 or index == 1 or index == 2 or index == 3 or index == 8:
+            text = (u'Если качество данных - <b>%s</b> - уменьшить на <u>10%s</u>, то есть количество записей параметра <b>%s</b> уменьшится на <u>10%s</u>, \
+                то качество данных возрастет на <u>%s%s</u> и \
+                итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (name_param, perc, name_param, perc, delta, perc, future_dq, perc))
+        if index == 4 or index == 5 or index == 6 or index == 7 or index == 9 or index == 10:
+            text = (u'Если качество данных - <b>%s</b> - увеличить на <u>10%s</u>, то есть количество записей параметра <b>%s</b> увеличится на <u>10%s</u>, \
+                то качество данных возрастет на <u>%s%s</u> и \
+                итоговый процент будет составлять <u>%s%s</u>.<div><br /></div>' % (name_param, perc, name_param, perc, delta, perc, future_dq, perc))
+        return text
+
 
 class show_adv ( wx.Frame ):
     

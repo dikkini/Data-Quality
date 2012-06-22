@@ -203,9 +203,9 @@ class connections ( wx.Frame ):
             self.GoConnect()
        
     def GoConnect( self ):
-        message = 'Пожалуйста подождите, происходит соединение с базой данных..'
+        message = u'Пожалуйста подождите, происходит соединение с базой данных..'
         try:
-            busy = PBI.PyBusyInfo(message, parent=None, title="Соединение с базой данных...")
+            busy = PBI.PyBusyInfo(message, parent=None, title=u"Соединение с базой данных...")
             
             wx.Yield()
             
